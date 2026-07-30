@@ -1,0 +1,11 @@
+primary_hourly_threshold: 2_of_4
+descriptive_sensitivity:
+- 1_of_4
+- 3_of_4
+- 4_of_4
+selection_rule: must_not_select_using_final_test_MAE_or_other_performance
+common_requirements:
+- complete_hour_boundary
+- same_cleaning_policy
+- confidence>=0.80
+- same_theoretical_denominator

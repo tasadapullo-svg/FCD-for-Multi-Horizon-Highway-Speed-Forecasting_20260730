@@ -1,0 +1,10 @@
+﻿process_id,name,creation_date,sanitized_activity,writes_source_project_possible
+27336,python.exe,/Date(1785220019511)/,run_phase6_campaign.py,True
+27404,python.exe,/Date(1785220019642)/,run_phase6_campaign.py,True
+26136,python.exe,/Date(1785220020207)/,run_phase6_parallel.py,True
+6888,python.exe,/Date(1785220020219)/,run_phase6_parallel.py,True
+2080,python.exe,/Date(1785231512018)/,run_phase6_trial.py,True
+8828,python.exe,/Date(1785231512047)/,run_phase6_trial.py,True
+22076,powershell.exe,/Date(1785232270687)/,v2-project-related process,False
+12976,python.exe,/Date(1785232270802)/,v2-project-related process,False
+5004,powershell.exe,/Date(1785232271657)/,v2-project-related process,False

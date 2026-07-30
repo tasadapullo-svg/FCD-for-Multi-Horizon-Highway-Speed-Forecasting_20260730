@@ -1,0 +1,5 @@
+﻿level,definition,time_bins,nodes,theoretical_rows
+15min,legacy observed-window denominator,7915,51,403665
+15min,new complete-bin denominator,7912,51,403512
+hourly,legacy denominator including partial first hour,1980,51,100980
+hourly,new complete-hour denominator,1978,51,100878

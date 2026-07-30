@@ -1,0 +1,14 @@
+# Dependency entry point reconstructed from imports and recorded run metadata.
+# The original exact environment lock was not found; see REPRODUCIBILITY.md.
+numpy
+pandas
+PyYAML
+pyarrow
+scipy
+scikit-learn
+xgboost
+torch
+matplotlib
+openpyxl
+python-docx
+

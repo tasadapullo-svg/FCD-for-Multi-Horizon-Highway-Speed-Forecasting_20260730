@@ -1,0 +1,14 @@
+﻿rule,candidate_parameter,would_exclude_records,current_v2_enforced
+timestamp finite,not-null,0,True
+speed finite,finite,0,True
+speed minimum,> 0.0,0,False
+confidence finite and range,0 <= confidence <= 1,0,True
+confidence primary,>= 0.80,1170,False
+travel time minimum,> 0.0,0,False
+valid_record flag,True,0,False
+road_closure,False,0,False
+duplicate excess,mean_of_valid_records,807,True
+speed maximum candidate,<= 120 km/h,0,False
+speed maximum candidate,<= 130 km/h,0,False
+speed maximum candidate,<= 160 km/h,0,False
+speed maximum candidate,<= 200 km/h,0,False

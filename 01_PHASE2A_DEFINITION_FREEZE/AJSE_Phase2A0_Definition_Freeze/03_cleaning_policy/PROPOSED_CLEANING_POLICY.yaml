@@ -1,0 +1,35 @@
+status: DRAFT_BLOCKED_PENDING_USER_APPROVAL
+confidence_min_primary: 0.8
+confidence_inclusive: true
+speed_min_exclusive: 0.0
+speed_max: USER_APPROVAL_REQUIRED
+speed_max_candidates_kmh:
+- 120
+- 130
+- 160
+- 200
+travel_time_min_exclusive: 0.0
+duplicate_rule: mean_of_valid_records_within_node_and_floored_15min
+provider_status_field: ABSENT
+accepted_status_whitelist: USER_APPROVAL_REQUIRED_NO_PROVIDER_STATUS_FIELD
+proposed_required_boolean_flags:
+  valid_record: true
+  valid_coordinates: true
+  valid_speed: true
+  valid_travel_time: true
+  valid_confidence: true
+  valid_time: true
+road_closure_policy: PROPOSED_ACCEPT_FALSE_ONLY; USER_APPROVAL_REQUIRED
+traffic_state_policy: do_not_use_as_quality_status; preserve all observed categories
+current_v2_actual_conditions:
+- timestamp_not_null
+- speed_finite
+- speed>=0
+- confidence_finite
+- 0<=confidence<=1
+current_v2_not_enforced:
+- confidence>=0.80
+- speed maximum
+- travel_time>0
+- valid_* flags
+- road_closure filter

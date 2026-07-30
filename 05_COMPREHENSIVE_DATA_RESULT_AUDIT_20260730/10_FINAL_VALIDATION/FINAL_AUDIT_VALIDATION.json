@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-07-30T10:29:29.097195+08:00",
+  "output_root": "D:\\2026_AJSE_FINAL\\05_COMPREHENSIVE_DATA_RESULT_AUDIT_20260730",
+  "checks": [
+    {
+      "check": "prediction_file_rows_105",
+      "passed": true,
+      "detail": "105"
+    },
+    {
+      "check": "prediction_metrics_recomputed_match",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "check": "targets_fully_recomputed",
+      "passed": true,
+      "detail": "36309/36309"
+    },
+    {
+      "check": "common_sample_hash_per_horizon",
+      "passed": true,
+      "detail": "[{'horizon': 1, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 3, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 6, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}]"
+    },
+    {
+      "check": "common_truth_hash_per_horizon",
+      "passed": true,
+      "detail": "[{'horizon': 1, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 3, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 6, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}]"
+    },
+    {
+      "check": "six_fold_not_misreported",
+      "passed": true,
+      "detail": "[{'experiment_step': 'A7', 'requirement': 'Six-fold multi-horizon benchmark', 'status': 'NOT_EXECUTED', 'evidence_summary': 'No canonical six-fold future-window-mean result set found', 'source_evidence': 'D-drive scan; Phase2A status', 'required_action': 'Required for primary manuscript evidence'}]"
+    },
+    {
+      "check": "h6_boundary_mismatch_recorded",
+      "passed": true,
+      "detail": "[{'horizon': 1, 'prediction_files': 35, 'boundary_excluded_rows_per_file': 0, 'mean_MAE_change': 0.0, 'max_absolute_MAE_change': 0.0, 'all_files_match_boundary': True}, {'horizon': 3, 'prediction_files': 35, 'boundary_excluded_rows_per_file': 0, 'mean_MAE_change': 0.0, 'max_absolute_MAE_change': 0.0, 'all_files_match_boundary': True}, {'horizon': 6, 'prediction_files': 35, 'boundary_excluded_rows_per_file': 51, 'mean_MAE_change': -0.0025077244604576, 'max_absolute_MAE_change': 0.0038750692260144, 'all_files_match_boundary': False}]"
+    },
+    {
+      "check": "copied_evidence_hashes_match",
+      "passed": true,
+      "detail": "copied=21"
+    },
+    {
+      "check": "workbook_zip_integrity",
+      "passed": true,
+      "detail": "None"
+    },
+    {
+      "check": "workbook_sheet_count_16",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "check": "workbook_formula_error_scan_zero",
+      "passed": true,
+      "detail": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "check": "workbook_preview_count_16",
+      "passed": true,
+      "detail": "16"
+    },
+    {
+      "check": "report_contains_PRIMARY_RESULTS_NOT_READY",
+      "passed": true,
+      "detail": "PRIMARY_RESULTS_NOT_READY"
+    },
+    {
+      "check": "report_contains_six-fold",
+      "passed": true,
+      "detail": "six-fold"
+    },
+    {
+      "check": "report_contains_future-window mean",
+      "passed": true,
+      "detail": "future-window mean"
+    },
+    {
+      "check": "report_contains_51 samples",
+      "passed": true,
+      "detail": "51 samples"
+    },
+    {
+      "check": "report_contains_independent blind test",
+      "passed": true,
+      "detail": "independent blind test"
+    }
+  ],
+  "primary_scientific_status": "PRIMARY_RESULTS_NOT_READY",
+  "original_experiment_files_modified": false
+}

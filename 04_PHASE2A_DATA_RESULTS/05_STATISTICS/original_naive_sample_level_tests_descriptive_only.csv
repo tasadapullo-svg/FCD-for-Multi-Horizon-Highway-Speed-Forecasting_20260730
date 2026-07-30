@@ -1,0 +1,16 @@
+comparison,horizon,paired_unit,n_pairs,dependence_risk,mean_difference_a_minus_b,raw_p,confirmatory_use
+XGBoost_vs_GRU,1,segment_hour_sample,38201,HIGH,-0.2035026967590841,0.0,PROHIBITED
+XGBoost_vs_Ridge,1,segment_hour_sample,38201,HIGH,-0.2755202495468136,0.0,PROHIBITED
+XGBoost_vs_SeasonalHA,1,segment_hour_sample,38201,HIGH,-0.02692534310401038,0.0,PROHIBITED
+Persistence_vs_HA,1,segment_hour_sample,38201,HIGH,-0.8776078751452961,0.0,PROHIBITED
+GRU_vs_Ridge,1,segment_hour_sample,38201,HIGH,-0.07201755278772948,0.9508663351754747,PROHIBITED
+XGBoost_vs_GRU,3,segment_hour_sample,24805,HIGH,-0.2039290088597546,0.0,PROHIBITED
+XGBoost_vs_Ridge,3,segment_hour_sample,24805,HIGH,-0.30087962141282404,0.0,PROHIBITED
+XGBoost_vs_SeasonalHA,3,segment_hour_sample,24805,HIGH,-0.04372690876573271,1.943165717886356e-55,PROHIBITED
+Persistence_vs_HA,3,segment_hour_sample,24805,HIGH,-0.528647622088333,0.0,PROHIBITED
+GRU_vs_Ridge,3,segment_hour_sample,24805,HIGH,-0.09695061255306944,3.083021239491769e-08,PROHIBITED
+XGBoost_vs_GRU,6,segment_hour_sample,29141,HIGH,-0.19358910914265454,0.0,PROHIBITED
+XGBoost_vs_Ridge,6,segment_hour_sample,29141,HIGH,-0.31940254681024993,0.0,PROHIBITED
+XGBoost_vs_SeasonalHA,6,segment_hour_sample,29141,HIGH,-0.03708653507228518,2.4424658674265834e-06,PROHIBITED
+Persistence_vs_HA,6,segment_hour_sample,29141,HIGH,-0.03381734200549584,0.0,PROHIBITED
+GRU_vs_Ridge,6,segment_hour_sample,29141,HIGH,-0.12581343766759537,1.0540977758912017e-46,PROHIBITED

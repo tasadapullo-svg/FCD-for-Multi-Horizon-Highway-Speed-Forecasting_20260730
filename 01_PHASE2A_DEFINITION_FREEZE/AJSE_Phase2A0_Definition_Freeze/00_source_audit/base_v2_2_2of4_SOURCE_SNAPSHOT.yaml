@@ -1,0 +1,154 @@
+project:
+  name: crg_tcn_final_week_blind_v2_2_2of4
+  version: '2.2-2of4-primary'
+  timezone: Asia/Kuala_Lumpur
+  output_root: results
+  screening_seeds: [42, 2025, 2026, 3407, 202607]
+  final_seeds: [42, 17, 73, 101, 512, 1024, 2025, 2026, 3407, 202607]
+  core_extra_seeds: [9187, 1109, 2048, 4096, 7777, 8888, 13579, 24680, 31415, 65537]
+  perturbation_seeds: [1101, 2202, 3303]
+  core_comparison_baseline: '__SELECT_STRONGEST_STOCHASTIC_BASELINE_AFTER_P4__'
+
+p0:
+  manifest_root: manifests/v2_2_2of4
+  result_root: results/P0_v2_2_2of4
+  freeze_extra_paths:
+    - README.md
+    - PROTOCOL_V2_2_2OF4.md
+    - prompts/P0_audit_and_freeze_v2_2.md
+    - configs/matrices/phase1_smoke_v2_2.yaml
+
+data:
+  raw_path: data/raw/tomtom_cleaned_records.csv.gz
+  segment_metadata_path: data/raw/node_order_verified.csv
+  static_metadata_path: data/raw/node_static_context_ordered.csv
+  static_features_path: data/processed/v2_2/static_features_model_ready.csv
+  normalized_15min_path: data/interim/v2_2/fcd_15min_normalized.parquet
+  hourly_path: data/processed/v2_2/hourly_panel.parquet
+  hourly_sensitivity_paths:
+    '2': data/processed/v2_2/hourly_panel.parquet
+    '3': data/processed/v2_2/hourly_panel_min3.parquet
+    '4': data/processed/v2_2/hourly_panel_min4.parquet
+  quality_features_path: data/processed/v2_2/quality_features_causal.parquet
+  adjacency_path: data/processed/v2_2/corridor_adjacency_directed.csv
+  splits_path: manifests/v2_2_2of4/temporal_splits.json
+  development_hourly_path: data/blind/v2_2/development_hourly_panel.parquet
+  final_week_stream_path: data/blind/v2_2/final_week_input_stream.parquet
+  final_week_index_path: data/blind/v2_2/final_week_forecast_index.parquet
+  final_week_truth_path: data/locked_truth/v2_2/final_week_truth_locked.parquet
+  timestamp_col: event_time
+  segment_col: node_id
+  speed_col: current_speed
+  confidence_col: confidence
+  coverage_col: coverage
+  metadata_segment_col: node_id
+  metadata_order_col: node_order_verified
+  metadata_distance_col: corridor_km
+  expected_segments: 51
+  expected_start: '2025-12-08 00:00:00'
+  expected_end: '2026-02-28 23:45:00'
+  expected_observed_start: '2025-12-08 13:15:00'
+  expected_observed_end: '2026-02-28 23:45:00'
+  expected_frequency_minutes: 15
+  timestamp_bin_method: floor
+  duplicate_policy: aggregate_15min_mean
+  raw_timestamp_assumption: local_wall_clock
+  speed_min_kmh: 0.0
+  speed_max_kmh_soft: 160.0
+  primary_hourly_min_valid: 2
+  sensitivity_hourly_min_valid: [2, 3, 4]
+  input_history_hours: 168
+  forecast_horizon_hours: 24
+  forecast_horizons_hours: [1, 3, 6, 12, 18, 24]
+
+static_feature_contract:
+  numeric_columns: [corridor_km, latitude, longitude, lane_count, elevation]
+  categorical_columns: [road_class, urban_rural]
+  group_median_imputation:
+    lane_count: road_class
+  excluded_unavailable_columns:
+    - speed_limit
+    - slope
+    - curvature
+    - distance_to_nearest_junction
+    - distance_to_settlement
+    - bridge_flag
+
+splits:
+  train_start: '2025-12-08 13:00:00'
+  train_end: '2026-02-07 23:00:00'
+  validation_start: '2026-02-08 00:00:00'
+  validation_end: '2026-02-14 23:00:00'
+  confirmation_start: '2026-02-15 00:00:00'
+  confirmation_end: '2026-02-21 23:00:00'
+  development_end: '2026-02-21 23:00:00'
+  final_week_start: '2026-02-22 00:00:00'
+  final_week_end: '2026-02-28 23:00:00'
+  folds:
+    - name: fold1
+      train_start: '2025-12-15 00:00:00'
+      train_end: '2026-01-11 23:00:00'
+      eval_start: '2026-01-12 00:00:00'
+      eval_end: '2026-01-18 23:00:00'
+    - name: fold2
+      train_start: '2025-12-15 00:00:00'
+      train_end: '2026-01-18 23:00:00'
+      eval_start: '2026-01-19 00:00:00'
+      eval_end: '2026-01-25 23:00:00'
+    - name: fold3
+      train_start: '2025-12-15 00:00:00'
+      train_end: '2026-01-25 23:00:00'
+      eval_start: '2026-01-26 00:00:00'
+      eval_end: '2026-02-01 23:00:00'
+    - name: fold4
+      train_start: '2025-12-15 00:00:00'
+      train_end: '2026-02-01 23:00:00'
+      eval_start: '2026-02-02 00:00:00'
+      eval_end: '2026-02-08 23:00:00'
+
+models:
+  deterministic: [persistence, seasonal_ha, ridge]
+  stochastic: [xgboost, gru, tcn, st_transformer_lite, crg_tcn]
+  temporal_validation: [seasonal_ha, xgboost, tcn, crg_tcn]
+  spatial_holdout: [xgboost, tcn, crg_tcn]
+  mandatory_final_week: [persistence, seasonal_ha, xgboost, tcn, crg_tcn]
+  recommended_final_week: [ridge, gru, st_transformer_lite]
+
+robustness:
+  patterns:
+    random_point: [0.10, 0.20, 0.30]
+    continuous_block_hours: [3, 6, 12]
+    node_outage_fraction: [0.10, 0.20, 0.30]
+  key_horizons_hours: [1, 6, 24]
+  model_seeds_to_use: [42, 2025, 2026, 3407, 202607]
+
+statistics:
+  signed_error_definition: prediction_minus_observation
+  bootstrap_block_hours: 24
+  bootstrap_repetitions: 2000
+  bias_to_mae_internal_threshold: 0.25
+  ranking_stability_threshold: 0.80
+  max_unexplained_fold_degradation: 0.05
+
+validation:
+  min_final_week_hourly_label_coverage_per_segment: 0.60
+  min_overall_hourly_label_coverage_per_segment: 0.70
+  min_valid_hours_per_segment_day: 18
+  min_valid_final_week_days_per_segment: 5
+  min_eligible_segments: 45
+  metric_tolerance: 1.0e-8
+  deterministic_repeat_tolerance: 1.0e-6
+  expected_targets_per_horizon: 8568
+  expected_all_horizon_targets: 51408
+
+runtime:
+  python_specifier: '>=3.10,<3.13'
+  min_free_disk_gb: 20
+  max_parallel_jobs: 1
+  deterministic: true
+  fail_on_nan: true
+  save_predictions: true
+  save_checkpoint: true
+  forbid_truth_columns_before_unlock: true
+  sanctioned_placeholders:
+    - '__SELECT_STRONGEST_STOCHASTIC_BASELINE_AFTER_P4__'

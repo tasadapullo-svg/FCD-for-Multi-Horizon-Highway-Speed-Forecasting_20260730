@@ -1,0 +1,14 @@
+﻿item,value,interpretation
+Overall audit status,PRIMARY_RESULTS_NOT_READY,Primary manuscript result set is incomplete
+Canonical target,FUTURE_WINDOW_MEAN_SPEED,Mean observed speed over next H hours
+Canonical horizons,1/3/6,H1/H3/H6
+Phase2A-0 status,BLOCKED,Independent confirmatory route blocked by contamination
+Phase2A-1 result files,0,No six-fold canonical result set found
+Six-fold rolling origin completed,False,Required primary experiment remains outstanding
+Legacy Phase13 predictions audited,105,Expected 105
+Legacy metric mismatch files,0,0 means stored metrics reproduced
+Legacy H6 canonical boundary,MISMATCH: 51 samples/file,Target windows extend to 2026-03-01 00:00
+v2.2 primary reuse,PROHIBITED_POINT_TARGET,Point target differs from manuscript task
+Independent blind-test claim,PROHIBITED,Use retrospective historical wording
+Original experiment files modified,False,Audit is read-only with new outputs
+DOCX visual render QA,False,Structural parse completed; LibreOffice unavailable

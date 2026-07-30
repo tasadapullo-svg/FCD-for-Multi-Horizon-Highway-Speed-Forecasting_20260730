@@ -1,0 +1,42 @@
+﻿path,type,size_bytes,last_write_time,research_candidate,family,reuse_status,classification_note
+D:\$RECYCLE.BIN,directory,,2026-02-03T14:18:17.614444+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\2026_07_23,directory,,2026-07-30T10:19:10.379690+08:00,1,archive_and_working_sources,SOURCE_OR_ARCHIVE,mixed AJSE/v2.2/T2 packages; definition check required
+D:\2026_AJSE_FINAL,directory,,2026-07-30T10:19:20.215606+08:00,1,unclassified,REVIEW,no canonical mapping established
+D:\2026_AJSE_FINAL_QUARANTINE,directory,,2026-07-30T09:36:35.543243+08:00,1,v2.2_point_target_quarantine,A12_ONLY,point target; exposed retrospective period
+D:\2026_PD,directory,,2026-07-17T21:09:15.252491+08:00,1,legacy_PD_future_window_mean,PARTIAL_REUSE,future-window mean; H1/H3/H6 available; single 70/15/15 split
+D:\2026_T2_ENV,directory,,2026-07-14T22:08:27.517250+08:00,1,T2_environment_multimodal,OUT_OF_SCOPE_CONTEXT,environmental/multimodal extension; not canonical AJSE Phase2A experiment
+D:\Another Redis Desktop Manager,directory,,2026-03-06T22:45:55.972430+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Apifox-windows-latest,directory,,2026-03-10T15:56:22.916884+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\CRG_TCN_20260729,directory,,2026-07-30T09:11:33.134409+08:00,1,v2.2_point_target_and_audits,A12_OR_TRACEABILITY_ONLY,mostly point target; not Phase2A primary evidence
+D:\data,directory,,2026-04-15T09:43:25.665807+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\db,directory,,2026-03-06T22:40:44.429125+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\DBeaver Community,directory,,2026-03-06T22:41:42.366614+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\dev,directory,,2026-03-05T22:13:44.707193+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\docker,directory,,2026-03-06T22:10:01.830359+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\DockerData,directory,,2026-03-06T22:23:33.081803+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Documents,directory,,2026-03-05T21:44:02.691567+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Doubao,directory,,2026-02-04T18:55:29.987444+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\GameVideos,directory,,2026-03-06T15:52:12.152145+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\HRAppStoreDownload,directory,,2026-04-03T20:54:17.936785+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\HRSoftstore,directory,,2026-02-04T11:36:40.961703+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\InstallationPackage,directory,,2026-02-05T13:05:52.842762+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\IntelliJ IDEA 2025.1,directory,,2026-03-06T15:24:42.072074+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\java,directory,,2026-05-14T09:56:03.973193+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\JianyingPro,directory,,2026-07-07T13:22:50.434349+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\JianyingPro Drafts,directory,,2026-07-08T20:20:48.918332+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\LocalRepository,directory,,2026-03-22T11:10:21.472203+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Microsoft VS Code,directory,,2026-07-20T20:16:02.540516+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\MobaXterm_Installer_v26.0,directory,,2026-03-14T15:21:44.791195+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\nodejs,directory,,2026-03-10T16:14:10.557736+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Program Files,directory,,2026-06-07T10:01:41.644447+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Program Files (x86),directory,,2026-06-20T11:14:55.459471+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\ProgramData,directory,,2026-06-07T20:25:21.538370+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\PyCharm 2025.3.1,directory,,2026-03-05T20:51:05.043715+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Python,directory,,2026-03-05T19:51:34.663562+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Qingfeng,directory,,2026-06-20T12:17:38.422425+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\SubtitleEdit-Windows-x64,directory,,2026-04-03T22:38:04.290557+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\System Volume Information,directory,,2026-07-29T17:28:06.120950+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\Traffic4cast_Bangkok_Access_Check,directory,,2026-06-08T23:25:41.721099+08:00,1,external_benchmark_access,OUT_OF_SCOPE,Bangkok/Traffic4cast access check
+D:\Users,directory,,2026-02-05T10:42:20.618999+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\WPS,directory,,2026-02-05T10:48:44.085196+08:00,0,unclassified,REVIEW,no canonical mapping established
+D:\ZapBox264,directory,,2026-06-07T10:02:05.526242+08:00,0,unclassified,REVIEW,no canonical mapping established

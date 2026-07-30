@@ -1,0 +1,12 @@
+timezone: Asia/Kuala_Lumpur
+utc_offset: +08:00
+timestamp_rounding: floor_15min
+hour_assignment: floor_1h
+hour_interval: '[hour_start, hour_start+1h)'
+partial_start_hour_policy: exclude_from_confirmatory_panel
+partial_end_hour_policy: exclude_if_incomplete
+coverage_denominator: complete_theoretical_bins_only
+first_raw_timestamp: '2025-12-08 13:15:00'
+first_complete_hour: '2025-12-08 14:00:00'
+last_raw_timestamp: '2026-02-28 23:45:00'
+last_complete_hour: '2026-02-28 23:00:00'

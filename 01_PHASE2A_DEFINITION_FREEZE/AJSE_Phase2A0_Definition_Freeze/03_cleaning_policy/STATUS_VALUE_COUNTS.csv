@@ -1,0 +1,12 @@
+﻿field,value,count,semantic_role
+road_closure,0,244477,available quality/status-like field
+traffic_state,free_flow,209254,traffic state (not provider-quality status)
+traffic_state,congestion,20480,traffic state (not provider-quality status)
+traffic_state,mild_congestion,14743,traffic state (not provider-quality status)
+valid_record,True,244477,available quality/status-like field
+valid_coordinates,True,244477,available quality/status-like field
+valid_speed,True,244477,available quality/status-like field
+valid_travel_time,True,244477,available quality/status-like field
+valid_confidence,True,244477,available quality/status-like field
+valid_time,True,244477,available quality/status-like field
+provider_status,[COLUMN_ABSENT],0,no provider-status field exists in the cleaned input

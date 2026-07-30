@@ -1,0 +1,28 @@
+{
+  "nodes": 51,
+  "hours_per_node": 1978,
+  "theoretical_hourly_node_time_denominator": 100878,
+  "deduplicated_15min_rows": 241601,
+  "duplicate_groups": 1580,
+  "primary_2_of_4_observed": 83439,
+  "primary_2_of_4_missing": 17439,
+  "primary_2_of_4_coverage": 0.8271278177600666,
+  "sensitivity": {
+    "1_of_4": {
+      "observed": 96968,
+      "coverage": 0.9612403100775194
+    },
+    "2_of_4": {
+      "observed": 83439,
+      "coverage": 0.8271278177600666
+    },
+    "3_of_4": {
+      "observed": 45356,
+      "coverage": 0.4496124031007752
+    },
+    "4_of_4": {
+      "observed": 15838,
+      "coverage": 0.1570015265964829
+    }
+  }
+}

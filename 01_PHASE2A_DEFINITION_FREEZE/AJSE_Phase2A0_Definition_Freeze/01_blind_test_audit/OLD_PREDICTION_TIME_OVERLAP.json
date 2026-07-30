@@ -1,0 +1,26 @@
+{
+  "phase13": {
+    "prediction_files": 105,
+    "files_overlapping_candidate_final_week": 105,
+    "repeated_prediction_rows_in_overlap": 876750,
+    "unique_sample_ids_by_horizon": {
+      "1": 8483,
+      "3": 8218,
+      "6": 8349
+    },
+    "timestamp_min": "2026-02-18 20:00:00",
+    "timestamp_max": "2026-02-28 23:00:00"
+  },
+  "phase15": {
+    "prediction_files": 75,
+    "files_overlapping_candidate_final_week": 75,
+    "repeated_prediction_rows_in_overlap": 626250,
+    "unique_sample_ids_by_horizon": {
+      "1": 8483,
+      "3": 8218,
+      "6": 8349
+    },
+    "timestamp_min": "2026-02-18 20:00:00",
+    "timestamp_max": "2026-02-28 23:00:00"
+  }
+}

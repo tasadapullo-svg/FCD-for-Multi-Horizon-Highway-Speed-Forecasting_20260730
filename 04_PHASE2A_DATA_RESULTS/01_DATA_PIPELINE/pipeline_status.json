@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "pass": true,
+  "future_information_violations": 0,
+  "target_recalculation_mismatches": 0,
+  "full_assertions": 20,
+  "full_assertions_passed": 20,
+  "manifests": 18,
+  "raw_sha256": "915e2f50d30752c7fdb666cae83a4e49945d0d81913ea791531043ae84fdf5c3",
+  "nodes_sha256": "e63223e2509f4e1e760e5f112b1b0c78977bf42266d823d7cf96aa0d165e1340",
+  "config_sha256": "b6206a3618ef5af931915223f71ebed567eb17649039c354f94a9261fd1334c1",
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:51) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "panel_summary": {
+    "nodes": 51,
+    "hours_per_node": 1978,
+    "theoretical_hourly_node_time_denominator": 100878,
+    "deduplicated_15min_rows": 241601,
+    "duplicate_groups": 1580,
+    "primary_2_of_4_observed": 83439,
+    "primary_2_of_4_missing": 17439,
+    "primary_2_of_4_coverage": 0.8271278177600666,
+    "sensitivity": {
+      "1_of_4": {
+        "observed": 96968,
+        "coverage": 0.9612403100775194
+      },
+      "2_of_4": {
+        "observed": 83439,
+        "coverage": 0.8271278177600666
+      },
+      "3_of_4": {
+        "observed": 45356,
+        "coverage": 0.4496124031007752
+      },
+      "4_of_4": {
+        "observed": 15838,
+        "coverage": 0.1570015265964829
+      }
+    }
+  }
+}

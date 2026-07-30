@@ -1,0 +1,9 @@
+﻿family,file_count,size_bytes,roles,reuse_statuses
+Phase2A_definition_freeze,44,227127,"{""manifest_or_hash"": 1, ""report_or_documentation"": 19, ""other"": 14, ""configuration"": 8, ""prediction_or_sample_data"": 1, ""archive"": 1}","{""DEFINITION_EVIDENCE"": 44}"
+T2_environment_multimodal,246,609069685,"{""other"": 205, ""manifest_or_hash"": 4, ""prediction_or_sample_data"": 9, ""report_or_documentation"": 14, ""code"": 14}","{""OUT_OF_SCOPE_CONTEXT"": 246}"
+archive_and_working_sources,3560,6368832974,"{""code"": 101, ""archive"": 24, ""report_or_documentation"": 323, ""other"": 1947, ""configuration"": 167, ""manifest_or_hash"": 119, ""prediction_or_sample_data"": 563, ""metric_or_table"": 316}","{""SOURCE_OR_ARCHIVE"": 3560}"
+external_benchmark_access,86,471388,"{""report_or_documentation"": 12, ""configuration"": 6, ""code"": 67, ""metric_or_table"": 1}","{""OUT_OF_SCOPE"": 86}"
+legacy_PD_future_window_mean,18906,7703808764,"{""report_or_documentation"": 736, ""prediction_or_sample_data"": 5150, ""archive"": 25, ""configuration"": 514, ""other"": 2039, ""metric_or_table"": 682, ""code"": 9622, ""manifest_or_hash"": 138}","{""PARTIAL_REUSE"": 18906}"
+unclassified,48,1185893,"{""report_or_documentation"": 7, ""other"": 39, ""manifest_or_hash"": 1, ""code"": 1}","{""REVIEW"": 48}"
+v2.2_point_target_and_audits,14197,1732186784,"{""metric_or_table"": 3934, ""report_or_documentation"": 388, ""configuration"": 1442, ""prediction_or_sample_data"": 1895, ""other"": 5206, ""manifest_or_hash"": 69, ""code"": 1255, ""archive"": 8}","{""A12_OR_TRACEABILITY_ONLY"": 14197}"
+v2.2_point_target_quarantine,26,2368875,"{""archive"": 2, ""other"": 5, ""report_or_documentation"": 4, ""manifest_or_hash"": 4, ""configuration"": 3, ""prediction_or_sample_data"": 2, ""metric_or_table"": 5, ""code"": 1}","{""A12_ONLY"": 26}"
