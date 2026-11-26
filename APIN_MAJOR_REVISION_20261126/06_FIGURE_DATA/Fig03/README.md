@@ -1,3 +1,3 @@
-# Fig3: GATE-FCD protocol
+# Fig03: GATE-FCD protocol
 
-Design/data prepared locally; final figure not drawn. Plot-source CSV/XLSX: PENDING_PERMISSION under inherited license; RESTRICTED_NOT_REMOTE_ACCESSIBLE. No fabricated plot data are supplied.
+Actual protocol nodes, edges and time semantics CSVs are now available. These are author-original method definitions, not commercial observations. Data and implementation validation evidence remain distinct. Inspect Plot_Data.xlsx or the panel CSVs. The old placeholder is superseded.

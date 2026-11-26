@@ -67,3 +67,8 @@ The 2026-07-30 AJSE Phase 2A identity is retained as the original study lineage;
 ## GPT access
 
 Begin at [START_HERE_GPT.md](START_HERE_GPT.md); read indexes in its specified order. Remote reading supports published summaries and code. Full detailed scientific plotting remains conditional on derived-data license approval.
+
+
+## Prompt10 targeted method-data supplement
+
+Actual Fig03 protocol node/edge/time CSVs and workbook, Table02 feature definitions, Table03 target definitions, Table04 historical revision parameters (method-only views), their workbooks/LaTeX, and eight field dictionaries/caption/design documents are added. Numeric metrics, CI/Holm, reliability results and full workbooks remain pending the explicit supplier publication grant documented as missing in the final license matrix. Method-only views do not replace the complete local research results.

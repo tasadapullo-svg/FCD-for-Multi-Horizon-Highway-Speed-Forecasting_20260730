@@ -1,9 +1,9 @@
 figure_id,title,repository_path,data_status,reason
-Fig01,Study area,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig01/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
-Fig02,Data completeness,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig02/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
-Fig03,GATE-FCD protocol,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig03/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
-Fig04,Main model performance,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig04/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
-Fig05,Reliability and spatial error,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig05/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
-Fig06,Statistical inference,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig06/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
-Fig07,Traffic regimes,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig07/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
-Fig08,Sensitivity and fairness,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig08/README.md,RESTRICTED_NOT_REMOTE_ACCESSIBLE,Figure-source distribution approval not documented
+Fig01,Study area,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig01/README.md,PENDING_PERMISSION,Schema/caption public; numeric panels require documented aggregate publication rights
+Fig02,Data completeness,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig02/README.md,PENDING_PERMISSION,Schema/caption public; numeric panels require documented aggregate publication rights
+Fig03,GATE-FCD protocol,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig03/Fig03A_Protocol_Nodes.csv,REMOTE_DATA_AVAILABLE,Author original protocol definition
+Fig04,Main model performance,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig04/README.md,PENDING_PERMISSION,Schema/caption public; numeric panels require documented aggregate publication rights
+Fig05,Reliability and spatial error,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig05/README.md,PENDING_PERMISSION,Schema/caption public; numeric panels require documented aggregate publication rights
+Fig06,Statistical inference,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig06/README.md,PENDING_PERMISSION,Schema/caption public; numeric panels require documented aggregate publication rights
+Fig07,Traffic regimes,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig07/README.md,PENDING_PERMISSION,Schema/caption public; numeric panels require documented aggregate publication rights
+Fig08,Sensitivity and fairness,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig08/README.md,PENDING_PERMISSION,Schema/caption public; numeric panels require documented aggregate publication rights

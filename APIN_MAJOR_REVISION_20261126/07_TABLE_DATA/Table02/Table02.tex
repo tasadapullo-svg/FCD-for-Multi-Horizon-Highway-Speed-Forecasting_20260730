@@ -1,0 +1,19 @@
+\begin{tabular}{lllll}
+feature & kind & input\_scope & unit & causal\_rule \\
+input\_speed\_filled & dynamic & 24-hour causal sequence & km/h & history only; train-fit fallback \\
+hourly\_missing\_mask & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+imputed\_flag & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+hours\_since\_last\_observation & dynamic & 24-hour causal sequence & hours & history only; train-fit fallback \\
+history\_coverage\_ratio & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+history\_imputation\_ratio & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+max\_gap\_24h & dynamic & 24-hour causal sequence & hours & history only; train-fit fallback \\
+volatility\_24h & dynamic & 24-hour causal sequence & km/h & history only; train-fit fallback \\
+hour\_sin & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+hour\_cos & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+dow\_sin & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+dow\_cos & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+weekend\_flag & dynamic & 24-hour causal sequence & ratio/indicator & history only; train-fit fallback \\
+node\_order & static & Ridge/XGBoost and static-GRU condition only & index & known node metadata \\
+latitude & static & Ridge/XGBoost and static-GRU condition only & degrees & known node metadata \\
+longitude & static & Ridge/XGBoost and static-GRU condition only & degrees & known node metadata \\
+\end{tabular}

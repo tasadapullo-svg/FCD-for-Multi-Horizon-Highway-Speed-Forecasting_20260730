@@ -1,0 +1,4 @@
+horizon,history_hours,decision_time,target_interval,required_observed_target_hours,target_imputation,target_must_remain_in_split
+1,24,end of origin hour t,next 1 hours after t,1,NONE,True
+3,24,end of origin hour t,next 3 hours after t,3,NONE,True
+6,24,end of origin hour t,next 6 hours after t,5,NONE,True
