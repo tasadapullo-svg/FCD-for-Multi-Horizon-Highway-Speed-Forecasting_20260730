@@ -72,3 +72,8 @@ Begin at [START_HERE_GPT.md](START_HERE_GPT.md); read indexes in its specified o
 ## Prompt10 targeted method-data supplement
 
 Actual Fig03 protocol node/edge/time CSVs and workbook, Table02 feature definitions, Table03 target definitions, Table04 historical revision parameters (method-only views), their workbooks/LaTeX, and eight field dictionaries/caption/design documents are added. Numeric metrics, CI/Holm, reliability results and full workbooks remain pending the explicit supplier publication grant documented as missing in the final license matrix. Method-only views do not replace the complete local research results.
+
+
+## Final editorial closure
+
+Experiments are FROZEN_WITH_LIMITATIONS. See [APIN_MAJOR_REVISION_20261126/10_SCIENTIFIC_REPORTS/FINAL_EDITORIAL_CLOSURE](APIN_MAJOR_REVISION_20261126/10_SCIENTIFIC_REPORTS/FINAL_EDITORIAL_CLOSURE/Final_Editorial_Closure_PUBLIC_STATUS.md). Persistence–HA: H1/H3 significant, H6 nonsignificant in frozen G1 inference. No tests recomputed. Detailed numbers and manuscript/editorial candidates remain controlled locally; permissions unchanged.
