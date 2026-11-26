@@ -1,0 +1,6 @@
+claim,status
+Seven primary G1 comparisons,HOLM_SIGNIFICANT
+XGBoost versus SeasonalHA all horizons,NONSIGNIFICANT
+Four G2 key contrasts,NONSIGNIFICANT_NOT_EQUIVALENCE
+Independent external validity,NOT_ESTABLISHED
+Historical 130 km corridor,NOT_VERIFIED

@@ -1,0 +1,40 @@
+from pathlib import Path
+import sys,os,json,hashlib,datetime,time,re,platform
+sys.dont_write_bytecode=True
+sys.stdout.reconfigure(encoding='utf-8')
+ROOT=Path(__file__).resolve().parents[2];CTL=ROOT/'00_PROJECT_CONTROL';CODE=Path(__file__).resolve().parent
+# Use the active new-PC Python environment; old bundled binary dependencies are incompatible.
+for key in ['OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS']:os.environ.setdefault(key,'2')
+import numpy as np,pandas as pd,pyarrow.parquet as pq
+V=json.loads((CTL/'verification_evidence.json').read_text(encoding='utf-8'))
+portable_repo=ROOT/'01_ORIGINAL_BASELINE/FROZEN_REPOSITORY'
+repo_path=portable_repo
+BASE=(Path('\\\\?\\'+str(repo_path)) if os.name=='nt' and not str(repo_path).startswith('\\\\?\\') else repo_path)/'04_PHASE2A_DATA_RESULTS'
+portable_raw=ROOT/'01_ORIGINAL_BASELINE/RAW_SOURCE/PanBorneo_TomTom_Cleaned_Experiment_Package.zip'
+RAW_ARCHIVE=portable_raw
+OLD=ROOT/'02_DATA/03_DERIVED_DATA/E01_E03';DER=ROOT/'02_DATA/03_DERIVED_DATA/E04_E07';ART=ROOT/'04_EXPERIMENTS/G2_ARTIFACTS';GATE=ROOT/'04_EXPERIMENTS/SOURCE_GATE';ACCEPT=ROOT/'04_EXPERIMENTS/G2_E04_E07_ACCEPTANCE';LOG=ACCEPT/'logs'
+for p in [DER,ART,GATE,ACCEPT,LOG,ROOT/'04_EXPERIMENTS/E04_SENSITIVITY',ROOT/'04_EXPERIMENTS/E05_ABLATION',ROOT/'04_EXPERIMENTS/E06_MODEL_FAIRNESS',ROOT/'04_EXPERIMENTS/E07_SPATIAL_OPERATIONAL']:p.mkdir(parents=True,exist_ok=True)
+MODELS=['HA','SeasonalHA','Persistence','Ridge','XGBoost','GRU'];SEEDS=[42,2026,3407];HS=[1,3,6];FEATURES=['input_speed_filled','hourly_missing_mask','imputed_flag','hours_since_last_observation','history_coverage_ratio','history_imputation_ratio','max_gap_24h','volatility_24h','hour_sin','hour_cos','dow_sin','dow_cos','weekend_flag']
+FOLDS={};CONFIG=(BASE/'00_DEFINITION_FREEZE/phase2a1_frozen.yaml').read_text(encoding='utf-8')
+for part in re.split(r'  - fold: ',CONFIG)[1:]:
+ f=int(part.splitlines()[0]);FOLDS[f]={}
+ for split in ['train','validation','test']:
+  match=re.search(r"    "+split+r": \['([^']+)', '([^']+)'\]",part);FOLDS[f][split]=tuple(pd.Timestamp(s) for s in match.groups())
+def now():return datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat()
+def norm(p):return str(p).removeprefix('\\\\?\\')
+def sha(p):
+ d=hashlib.sha256()
+ with Path(p).open('rb') as f:
+  for b in iter(lambda:f.read(8*1024**2),b''):d.update(b)
+ return d.hexdigest()
+def dump(p,obj):Path(p).write_text(json.dumps(obj,ensure_ascii=False,indent=2,default=str),encoding='utf-8')
+def load(p):return json.loads(Path(p).read_text(encoding='utf-8'))
+def digest(obj):return hashlib.sha256(json.dumps(obj,sort_keys=True,default=str).encode()).hexdigest()
+def log(msg):
+ s=now()+' '+str(msg);print(s,flush=True)
+ with (LOG/'G2_pipeline.log').open('a',encoding='utf-8') as f:f.write(s+'\n')
+def save(df,p):
+ if Path(p).suffix=='.parquet':df.to_parquet(p,index=False)
+ else:df.to_csv(p,index=False,encoding='utf-8-sig',float_format='%.12g')
+def metrics(y,p):
+ y=np.asarray(y);p=np.asarray(p);e=p-y;return {'n':len(y),'MAE':float(np.abs(e).mean()),'RMSE':float(np.sqrt(np.mean(e**2))),'Bias':float(e.mean()),'sMAPE':float(np.mean(200*np.abs(e)/np.maximum(np.abs(y)+np.abs(p),1e-8)))}

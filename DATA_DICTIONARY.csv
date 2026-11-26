@@ -1,0 +1,6 @@
+field,definition
+PENDING_PERMISSION,No documented public distribution approval
+METHOD_A,Ensemble predictions per sample before metric aggregation
+METHOD_B,Mean metric across seeds
+NONSIGNIFICANT,No rejection; does not prove equivalence
+repository_path,Relative path to an actual published file
