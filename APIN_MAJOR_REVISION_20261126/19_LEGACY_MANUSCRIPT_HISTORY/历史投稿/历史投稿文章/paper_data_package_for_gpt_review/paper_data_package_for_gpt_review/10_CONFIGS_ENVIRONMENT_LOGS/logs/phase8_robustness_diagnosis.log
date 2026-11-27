@@ -1,0 +1,33 @@
+2026-06-24 15:46:23,858 | INFO | Starting Phase 8 robustness diagnosis
+2026-06-24 15:46:23,858 | INFO | PyTorch version: 2.6.0+cu124
+2026-06-24 15:46:34,192 | INFO | Loaded test windows for history=72h horizon=1h samples=10327
+2026-06-24 15:46:35,495 | INFO | base_eval history=72h horizon=1h checkpoint=outputs\checkpoints\phase7_tcn_speed_only_h72_y1.pt samples=10327 MAE=0.917775 RMSE=2.487460 sMAPE=0.012731 elapsed_sec=11.42 device=cuda
+2026-06-24 15:46:35,548 | INFO | noise_eval history=72h horizon=1h level=0.000 MAE=0.917775 RMSE=2.487460 sMAPE=0.012731
+2026-06-24 15:46:35,607 | INFO | noise_eval history=72h horizon=1h level=0.010 MAE=0.953041 RMSE=2.491003 sMAPE=0.013093
+2026-06-24 15:46:35,666 | INFO | noise_eval history=72h horizon=1h level=0.030 MAE=1.060537 RMSE=2.519523 sMAPE=0.014304
+2026-06-24 15:46:35,725 | INFO | noise_eval history=72h horizon=1h level=0.050 MAE=1.174355 RMSE=2.561253 sMAPE=0.015610
+2026-06-24 15:46:35,771 | INFO | missing_eval history=72h horizon=1h level=0.000 MAE=0.917775 RMSE=2.487460 sMAPE=0.012731
+2026-06-24 15:46:36,394 | INFO | missing_eval history=72h horizon=1h level=0.050 MAE=0.927545 RMSE=2.520317 sMAPE=0.012900
+2026-06-24 15:46:37,025 | INFO | missing_eval history=72h horizon=1h level=0.100 MAE=0.933658 RMSE=2.519558 sMAPE=0.012975
+2026-06-24 15:46:37,666 | INFO | missing_eval history=72h horizon=1h level=0.200 MAE=0.991277 RMSE=2.631430 sMAPE=0.013891
+2026-06-24 15:46:48,074 | INFO | Loaded test windows for history=168h horizon=3h samples=6312
+2026-06-24 15:46:48,916 | INFO | base_eval history=168h horizon=3h checkpoint=outputs\checkpoints\phase7_tcn_speed_only_h168_y3.pt samples=6312 MAE=0.924493 RMSE=1.775107 sMAPE=0.012631 elapsed_sec=11.25 device=cuda
+2026-06-24 15:46:48,969 | INFO | noise_eval history=168h horizon=3h level=0.000 MAE=0.924493 RMSE=1.775107 sMAPE=0.012631
+2026-06-24 15:46:49,037 | INFO | noise_eval history=168h horizon=3h level=0.010 MAE=0.932549 RMSE=1.777958 sMAPE=0.012716
+2026-06-24 15:46:49,105 | INFO | noise_eval history=168h horizon=3h level=0.030 MAE=0.973737 RMSE=1.798981 sMAPE=0.013181
+2026-06-24 15:46:49,172 | INFO | noise_eval history=168h horizon=3h level=0.050 MAE=1.038503 RMSE=1.841020 sMAPE=0.013914
+2026-06-24 15:46:49,224 | INFO | missing_eval history=168h horizon=3h level=0.000 MAE=0.924493 RMSE=1.775107 sMAPE=0.012631
+2026-06-24 15:46:50,111 | INFO | missing_eval history=168h horizon=3h level=0.050 MAE=0.936733 RMSE=1.802160 sMAPE=0.012849
+2026-06-24 15:46:51,011 | INFO | missing_eval history=168h horizon=3h level=0.100 MAE=0.952005 RMSE=1.835242 sMAPE=0.013092
+2026-06-24 15:46:51,958 | INFO | missing_eval history=168h horizon=3h level=0.200 MAE=0.981114 RMSE=1.911433 sMAPE=0.013581
+2026-06-24 15:47:02,151 | INFO | Loaded test windows for history=24h horizon=6h samples=12166
+2026-06-24 15:47:03,129 | INFO | base_eval history=24h horizon=6h checkpoint=outputs\checkpoints\phase7_tcn_speed_only_h24_y6.pt samples=12166 MAE=0.813182 RMSE=1.535752 sMAPE=0.011454 elapsed_sec=11.17 device=cuda
+2026-06-24 15:47:03,273 | INFO | noise_eval history=24h horizon=6h level=0.000 MAE=0.813182 RMSE=1.535752 sMAPE=0.011454
+2026-06-24 15:47:03,325 | INFO | noise_eval history=24h horizon=6h level=0.010 MAE=0.839403 RMSE=1.541423 sMAPE=0.011733
+2026-06-24 15:47:03,356 | INFO | noise_eval history=24h horizon=6h level=0.030 MAE=0.935414 RMSE=1.583729 sMAPE=0.012758
+2026-06-24 15:47:03,387 | INFO | noise_eval history=24h horizon=6h level=0.050 MAE=1.061053 RMSE=1.667402 sMAPE=0.014084
+2026-06-24 15:47:03,414 | INFO | missing_eval history=24h horizon=6h level=0.000 MAE=0.813182 RMSE=1.535752 sMAPE=0.011454
+2026-06-24 15:47:03,668 | INFO | missing_eval history=24h horizon=6h level=0.050 MAE=0.820887 RMSE=1.549670 sMAPE=0.011580
+2026-06-24 15:47:03,920 | INFO | missing_eval history=24h horizon=6h level=0.100 MAE=0.838407 RMSE=1.589468 sMAPE=0.011886
+2026-06-24 15:47:04,167 | INFO | missing_eval history=24h horizon=6h level=0.200 MAE=0.884247 RMSE=1.699859 sMAPE=0.012640
+2026-06-24 15:47:04,249 | INFO | Phase 8 robustness diagnosis completed

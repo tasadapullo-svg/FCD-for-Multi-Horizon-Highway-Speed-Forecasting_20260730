@@ -1,0 +1,58 @@
+2026-06-23 18:42:11,398 | INFO | Starting Phase 2 window construction
+2026-06-23 18:42:11,890 | INFO | Loaded primary panel with 100980 rows and 51 points
+2026-06-23 18:42:11,906 | INFO | Available targets: ['speed', 'travel_time', 'congestion_index', 'travel_time_delay']
+2026-06-23 18:42:11,910 | INFO | Chronological split ranges: {'train': (Timestamp('2025-12-08 13:00:00'), Timestamp('2026-02-04 06:00:00')), 'val': (Timestamp('2026-02-04 07:00:00'), Timestamp('2026-02-16 15:00:00')), 'test': (Timestamp('2026-02-16 16:00:00'), Timestamp('2026-03-01 00:00:00'))}
+2026-06-23 18:42:15,132 | INFO | Processed point N001; cumulative window rows=105688
+2026-06-23 18:42:18,460 | INFO | Processed point N002; cumulative window rows=211376
+2026-06-23 18:42:21,650 | INFO | Processed point N003; cumulative window rows=317064
+2026-06-23 18:42:24,991 | INFO | Processed point N004; cumulative window rows=422752
+2026-06-23 18:42:28,574 | INFO | Processed point N005; cumulative window rows=528440
+2026-06-23 18:42:32,006 | INFO | Processed point N006; cumulative window rows=634128
+2026-06-23 18:42:35,398 | INFO | Processed point N007; cumulative window rows=739816
+2026-06-23 18:42:38,965 | INFO | Processed point N008; cumulative window rows=845504
+2026-06-23 18:42:42,190 | INFO | Processed point N009; cumulative window rows=951192
+2026-06-23 18:42:45,464 | INFO | Processed point N010; cumulative window rows=1056880
+2026-06-23 18:42:48,708 | INFO | Processed point N011; cumulative window rows=1162568
+2026-06-23 18:42:52,232 | INFO | Processed point N012; cumulative window rows=1268256
+2026-06-23 18:42:55,460 | INFO | Processed point N013; cumulative window rows=1373944
+2026-06-23 18:42:59,167 | INFO | Processed point N014; cumulative window rows=1479632
+2026-06-23 18:43:02,655 | INFO | Processed point N015; cumulative window rows=1585320
+2026-06-23 18:43:06,050 | INFO | Processed point N016; cumulative window rows=1691008
+2026-06-23 18:43:09,370 | INFO | Processed point N017; cumulative window rows=1796696
+2026-06-23 18:43:12,773 | INFO | Processed point N018; cumulative window rows=1902384
+2026-06-23 18:43:15,915 | INFO | Processed point N019; cumulative window rows=2008072
+2026-06-23 18:43:19,179 | INFO | Processed point N020; cumulative window rows=2113760
+2026-06-23 18:43:22,394 | INFO | Processed point N021; cumulative window rows=2219448
+2026-06-23 18:43:25,607 | INFO | Processed point N022; cumulative window rows=2325136
+2026-06-23 18:43:28,837 | INFO | Processed point N023; cumulative window rows=2430824
+2026-06-23 18:43:32,077 | INFO | Processed point N024; cumulative window rows=2536512
+2026-06-23 18:43:35,260 | INFO | Processed point N025; cumulative window rows=2642200
+2026-06-23 18:43:38,659 | INFO | Processed point N026; cumulative window rows=2747888
+2026-06-23 18:43:41,976 | INFO | Processed point N027; cumulative window rows=2853576
+2026-06-23 18:43:45,615 | INFO | Processed point N028; cumulative window rows=2959264
+2026-06-23 18:43:49,201 | INFO | Processed point N029; cumulative window rows=3064952
+2026-06-23 18:43:53,436 | INFO | Processed point N030; cumulative window rows=3170640
+2026-06-23 18:43:58,314 | INFO | Processed point N031; cumulative window rows=3276328
+2026-06-23 18:44:02,239 | INFO | Processed point N032; cumulative window rows=3382016
+2026-06-23 18:44:05,505 | INFO | Processed point N033; cumulative window rows=3487704
+2026-06-23 18:44:08,862 | INFO | Processed point N034; cumulative window rows=3593392
+2026-06-23 18:44:12,044 | INFO | Processed point N035; cumulative window rows=3699080
+2026-06-23 18:44:15,391 | INFO | Processed point N036; cumulative window rows=3804768
+2026-06-23 18:44:19,222 | INFO | Processed point N037; cumulative window rows=3910456
+2026-06-23 18:44:22,690 | INFO | Processed point N038; cumulative window rows=4016144
+2026-06-23 18:44:26,005 | INFO | Processed point N039; cumulative window rows=4121832
+2026-06-23 18:44:29,361 | INFO | Processed point N040; cumulative window rows=4227520
+2026-06-23 18:44:32,630 | INFO | Processed point N041; cumulative window rows=4333208
+2026-06-23 18:44:35,971 | INFO | Processed point N042; cumulative window rows=4438896
+2026-06-23 18:44:39,261 | INFO | Processed point N043; cumulative window rows=4544584
+2026-06-23 18:44:42,592 | INFO | Processed point N044; cumulative window rows=4650272
+2026-06-23 18:44:45,856 | INFO | Processed point N045; cumulative window rows=4755960
+2026-06-23 18:44:49,180 | INFO | Processed point N046; cumulative window rows=4861648
+2026-06-23 18:44:52,454 | INFO | Processed point N047; cumulative window rows=4967336
+2026-06-23 18:44:55,857 | INFO | Processed point N048; cumulative window rows=5073024
+2026-06-23 18:44:59,124 | INFO | Processed point N049; cumulative window rows=5178712
+2026-06-23 18:45:02,461 | INFO | Processed point N050; cumulative window rows=5284400
+2026-06-23 18:45:05,702 | INFO | Processed point N051; cumulative window rows=5390088
+2026-06-23 18:45:06,237 | INFO | Wrote report to reports\phase2_window_construction_report.md
+2026-06-23 18:45:06,238 | INFO | Wrote 5390088 rows to outputs\tables\window_index_all.csv
+2026-06-23 18:45:06,245 | INFO | Phase 2 window construction completed

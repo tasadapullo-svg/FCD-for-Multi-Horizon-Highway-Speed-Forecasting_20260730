@@ -1,0 +1,30 @@
+2026-06-23 19:50:09,973 | INFO | Starting Phase 4 deep learning smoke test
+2026-06-23 19:50:09,973 | INFO | PyTorch version: 2.6.0+cu124
+2026-06-23 19:50:14,475 | INFO | Loaded smoke windows for horizon=1h: {'train': 20000, 'val': 5000, 'test': 5000}
+2026-06-23 19:50:16,341 | INFO | Built samples for horizon=1h with shape X=(30000, 24, 7) y=(30000,)
+2026-06-23 19:50:24,906 | INFO | model=LSTM horizon=1h history=24h epoch=1/2 train_loss=6218.287355 val_MAE=69.167035 val_RMSE=70.129988 elapsed_sec=1.15
+2026-06-23 19:50:25,832 | INFO | model=LSTM horizon=1h history=24h epoch=2/2 train_loss=3373.645256 val_MAE=49.478912 val_RMSE=50.812115 elapsed_sec=2.08
+2026-06-23 19:50:39,054 | INFO | model=TCN horizon=1h history=24h epoch=1/2 train_loss=255.979833 val_MAE=1.800451 val_RMSE=2.501990 elapsed_sec=13.13
+2026-06-23 19:50:52,093 | INFO | model=TCN horizon=1h history=24h epoch=2/2 train_loss=8.341907 val_MAE=1.278840 val_RMSE=2.287393 elapsed_sec=26.17
+2026-06-23 19:50:58,780 | INFO | Loaded smoke windows for horizon=3h: {'train': 20000, 'val': 5000, 'test': 5000}
+2026-06-23 19:51:00,471 | INFO | Built samples for horizon=3h with shape X=(30000, 24, 7) y=(30000,)
+2026-06-23 19:51:01,645 | INFO | model=LSTM horizon=3h history=24h epoch=1/2 train_loss=5990.834243 val_MAE=66.951244 val_RMSE=67.904842 elapsed_sec=1.17
+2026-06-23 19:51:02,494 | INFO | model=LSTM horizon=3h history=24h epoch=2/2 train_loss=3110.512283 val_MAE=47.104306 val_RMSE=48.292111 elapsed_sec=2.01
+2026-06-23 19:51:15,446 | INFO | model=TCN horizon=3h history=24h epoch=1/2 train_loss=580.340446 val_MAE=2.592586 val_RMSE=2.835165 elapsed_sec=12.87
+2026-06-23 19:51:28,408 | INFO | model=TCN horizon=3h history=24h epoch=2/2 train_loss=11.085920 val_MAE=1.206393 val_RMSE=1.755367 elapsed_sec=25.83
+2026-06-23 19:51:30,581 | INFO | Phase 4 deep learning smoke test completed
+2026-06-23 19:52:18,756 | INFO | Starting Phase 4 deep learning smoke test
+2026-06-23 19:52:18,756 | INFO | PyTorch version: 2.6.0+cu124
+2026-06-23 19:52:23,251 | INFO | Loaded smoke windows for horizon=1h: {'train': 20000, 'val': 5000, 'test': 5000}
+2026-06-23 19:52:25,022 | INFO | Built samples for horizon=1h with shape X=(30000, 24, 7) y=(30000,)
+2026-06-23 19:52:27,084 | INFO | model=LSTM horizon=1h history=24h epoch=1/2 train_loss=6218.287355 val_MAE=69.167035 val_RMSE=70.129988 elapsed_sec=0.91
+2026-06-23 19:52:27,904 | INFO | model=LSTM horizon=1h history=24h epoch=2/2 train_loss=3373.645256 val_MAE=49.478912 val_RMSE=50.812115 elapsed_sec=1.73
+2026-06-23 19:52:41,513 | INFO | model=TCN horizon=1h history=24h epoch=1/2 train_loss=255.979833 val_MAE=1.800451 val_RMSE=2.501990 elapsed_sec=13.53
+2026-06-23 19:52:55,047 | INFO | model=TCN horizon=1h history=24h epoch=2/2 train_loss=8.341907 val_MAE=1.278840 val_RMSE=2.287393 elapsed_sec=27.07
+2026-06-23 19:53:02,035 | INFO | Loaded smoke windows for horizon=3h: {'train': 20000, 'val': 5000, 'test': 5000}
+2026-06-23 19:53:03,782 | INFO | Built samples for horizon=3h with shape X=(30000, 24, 7) y=(30000,)
+2026-06-23 19:53:04,921 | INFO | model=LSTM horizon=3h history=24h epoch=1/2 train_loss=5990.834243 val_MAE=66.951244 val_RMSE=67.904842 elapsed_sec=1.13
+2026-06-23 19:53:05,843 | INFO | model=LSTM horizon=3h history=24h epoch=2/2 train_loss=3110.512283 val_MAE=47.104306 val_RMSE=48.292111 elapsed_sec=2.05
+2026-06-23 19:53:19,503 | INFO | model=TCN horizon=3h history=24h epoch=1/2 train_loss=580.340446 val_MAE=2.592586 val_RMSE=2.835165 elapsed_sec=13.57
+2026-06-23 19:53:33,161 | INFO | model=TCN horizon=3h history=24h epoch=2/2 train_loss=11.085920 val_MAE=1.206393 val_RMSE=1.755367 elapsed_sec=27.23
+2026-06-23 19:53:35,492 | INFO | Phase 4 deep learning smoke test completed

@@ -1,0 +1,16 @@
+2026-06-23 18:36:53,810 | INFO | Starting Phase 1 data audit
+2026-06-23 18:36:53,811 | INFO | Package already extracted at data\raw\package_extracted
+2026-06-23 18:36:54,685 | INFO | Wrote data inventory
+2026-06-23 18:36:55,286 | INFO | Inferred fields: {'point_id': 'node_id', 'timestamp': 'time_bin', 'speed': 'current_speed', 'free_flow_speed': 'free_flow_speed', 'travel_time': 'current_travel_time', 'free_flow_travel_time': 'free_flow_travel_time', 'congestion': 'tti', 'has_observation': 'has_observation', 'missing_mask': 'missing_mask', 'observed_count': 'observed_count'}
+2026-06-23 18:37:08,738 | INFO | Starting Phase 1 data audit
+2026-06-23 18:37:08,738 | INFO | Package already extracted at data\raw\package_extracted
+2026-06-23 18:37:09,551 | INFO | Wrote data inventory
+2026-06-23 18:37:10,046 | INFO | Inferred fields: {'point_id': 'node_id', 'timestamp': 'time_bin', 'speed': 'current_speed', 'free_flow_speed': 'free_flow_speed', 'travel_time': 'current_travel_time', 'free_flow_travel_time': 'free_flow_travel_time', 'congestion': 'tti', 'has_observation': 'has_observation', 'missing_mask': 'missing_mask', 'observed_count': 'observed_count'}
+2026-06-23 18:37:11,322 | INFO | Wrote report to reports\phase1_data_audit_report.md
+2026-06-23 18:37:11,322 | INFO | Phase 1 data audit completed
+2026-06-23 18:37:49,110 | INFO | Starting Phase 1 data audit
+2026-06-23 18:37:49,110 | INFO | Package already extracted at data\raw\package_extracted
+2026-06-23 18:37:49,938 | INFO | Wrote data inventory
+2026-06-23 18:37:50,495 | INFO | Inferred fields: {'point_id': 'node_id', 'timestamp': 'time_bin', 'speed': 'current_speed', 'free_flow_speed': 'free_flow_speed', 'travel_time': 'current_travel_time', 'free_flow_travel_time': 'free_flow_travel_time', 'congestion': 'tti', 'has_observation': 'has_observation', 'missing_mask': 'missing_mask', 'observed_count': 'observed_count'}
+2026-06-23 18:37:51,807 | INFO | Wrote report to reports\phase1_data_audit_report.md
+2026-06-23 18:37:51,807 | INFO | Phase 1 data audit completed

@@ -1,0 +1,31 @@
+2026-06-23 19:33:06,655 | INFO | Starting Phase 3 baseline run
+2026-06-23 19:33:13,542 | INFO | Processed window chunk 1; accumulated feature frames=1
+2026-06-23 19:33:19,989 | INFO | Processed window chunk 2; accumulated feature frames=2
+2026-06-23 19:33:26,512 | INFO | Processed window chunk 3; accumulated feature frames=3
+2026-06-23 19:33:33,151 | INFO | Processed window chunk 4; accumulated feature frames=4
+2026-06-23 19:33:39,958 | INFO | Processed window chunk 5; accumulated feature frames=5
+2026-06-23 19:33:46,591 | INFO | Processed window chunk 6; accumulated feature frames=6
+2026-06-23 19:33:53,035 | INFO | Processed window chunk 7; accumulated feature frames=7
+2026-06-23 19:33:59,515 | INFO | Processed window chunk 8; accumulated feature frames=8
+2026-06-23 19:34:06,117 | INFO | Processed window chunk 9; accumulated feature frames=9
+2026-06-23 19:34:12,878 | INFO | Processed window chunk 10; accumulated feature frames=10
+2026-06-23 19:34:19,700 | INFO | Processed window chunk 11; accumulated feature frames=11
+2026-06-23 19:34:26,431 | INFO | Processed window chunk 12; accumulated feature frames=12
+2026-06-23 19:34:33,296 | INFO | Processed window chunk 13; accumulated feature frames=13
+2026-06-23 19:34:40,122 | INFO | Processed window chunk 14; accumulated feature frames=14
+2026-06-23 19:34:46,960 | INFO | Processed window chunk 15; accumulated feature frames=15
+2026-06-23 19:34:53,761 | INFO | Processed window chunk 16; accumulated feature frames=16
+2026-06-23 19:35:00,561 | INFO | Processed window chunk 17; accumulated feature frames=17
+2026-06-23 19:35:07,241 | INFO | Processed window chunk 18; accumulated feature frames=18
+2026-06-23 19:35:14,247 | INFO | Processed window chunk 19; accumulated feature frames=19
+2026-06-23 19:35:21,069 | INFO | Processed window chunk 20; accumulated feature frames=20
+2026-06-23 19:35:27,935 | INFO | Processed window chunk 21; accumulated feature frames=21
+2026-06-23 19:35:34,587 | INFO | Processed window chunk 22; accumulated feature frames=22
+2026-06-23 19:35:41,259 | INFO | Processed window chunk 23; accumulated feature frames=23
+2026-06-23 19:35:47,721 | INFO | Processed window chunk 24; accumulated feature frames=24
+2026-06-23 19:35:54,118 | INFO | Processed window chunk 25; accumulated feature frames=25
+2026-06-23 19:36:00,594 | INFO | Processed window chunk 26; accumulated feature frames=26
+2026-06-23 19:36:06,849 | INFO | Processed window chunk 27; accumulated feature frames=27
+2026-06-23 19:36:06,904 | INFO | Feature matrix rows: 1235042
+2026-06-23 19:36:08,231 | INFO | Fitting Ridge baseline on 961784 training rows
+2026-06-23 19:36:14,392 | INFO | Phase 3 baseline run completed
