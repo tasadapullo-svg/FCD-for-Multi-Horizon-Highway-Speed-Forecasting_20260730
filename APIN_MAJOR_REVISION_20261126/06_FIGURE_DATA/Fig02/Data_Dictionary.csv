@@ -1,170 +1,177 @@
-figure_id,local_panel_name,field,dtype,values_status
-Fig02,Fig02A_Observation_Eligibility.csv,metric,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,value,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,statistical_level,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,denominator,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,ratio,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,historical_value,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,difference,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,definition,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Observation_Eligibility.csv,version,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,metric,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,value,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,statistical_level,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,denominator,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,ratio,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,historical_value,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,difference,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,definition,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02A_Record_Level_Funnel.csv,version,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,resolution,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,threshold,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,date,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,planned_slots,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,eligible_slots,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,coverage,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,incomplete_start_day,bool,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02B_Daily_Coverage.csv,coverage_percent,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,threshold,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,eligible_hours,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,ineligible_hours,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,planned_hours,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,coverage,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,historical_eligible,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,difference,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,loss_from_previous_threshold,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,nested_in_previous,bool,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02C_Hourly_Threshold_Coverage.csv,coverage_percent,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Missing_Run_Distribution.csv,threshold,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Missing_Run_Distribution.csv,length_hours,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Missing_Run_Distribution.csv,run_count,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Missing_Run_Distribution.csv,nodes,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Missing_Run_Distribution.csv,left_censored_runs,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Missing_Run_Distribution.csv,right_censored_runs,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,node_id,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,hour_of_day,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,date,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,weekend,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,dimension,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,threshold,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,planned,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,observed,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage.csv,coverage,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,node_id,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-08,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-09,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-10,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-11,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-12,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-13,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-14,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-15,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-16,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-17,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-18,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-19,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-20,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-21,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-22,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-23,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-24,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-25,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-26,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-27,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-28,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-29,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-30,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2025-12-31,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-01,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-02,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-03,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-04,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-05,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-06,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-07,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-08,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-09,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-10,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-11,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-12,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-13,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-14,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-15,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-16,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-17,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-18,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-19,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-20,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-21,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-22,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-23,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-24,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-25,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-26,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-27,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-28,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-29,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-30,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-01-31,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-01,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-02,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-03,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-04,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-05,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-06,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-07,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-08,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-09,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-10,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-11,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-12,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-13,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-14,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-15,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-16,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-17,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-18,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-19,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-20,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-21,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-22,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-23,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-24,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-25,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-26,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-27,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Date_Coverage_Wide.csv,2026-02-28,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,node_id,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,hour_of_day,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,date,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,weekend,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,dimension,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,threshold,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,planned,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,observed,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage.csv,coverage,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,node_id,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,0.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,1.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,2.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,3.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,4.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,5.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,6.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,7.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,8.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,9.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,10.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,11.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,12.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,13.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,14.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,15.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,16.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,17.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,18.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,19.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,20.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,21.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,22.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig02,Fig02D_Node_Hour_Coverage_Wide.csv,23.0,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
+filename,column,dtype,rule
+Fig02A_Observation_Eligibility.csv,metric,object,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,value,int64,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,statistical_level,object,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,denominator,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,ratio,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,historical_value,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,difference,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,definition,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Observation_Eligibility.csv,version,object,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,metric,object,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,value,int64,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,statistical_level,object,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,denominator,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,ratio,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,historical_value,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,difference,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,definition,float64,Frozen value or documented formatting only; no new metric
+Fig02A_Record_Level_Funnel.csv,version,object,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,resolution,object,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,threshold,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,date,object,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,planned_slots,int64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,eligible_slots,int64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,coverage,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,incomplete_start_day,bool,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage.csv,coverage_percent,float64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,threshold,int64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,eligible_hours,int64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,ineligible_hours,int64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,planned_hours,int64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,coverage,float64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,historical_eligible,int64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,difference,int64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,loss_from_previous_threshold,int64,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,nested_in_previous,bool,Frozen value or documented formatting only; no new metric
+Fig02C_Hourly_Threshold_Coverage.csv,coverage_percent,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Missing_Run_Distribution.csv,threshold,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Missing_Run_Distribution.csv,length_hours,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Missing_Run_Distribution.csv,run_count,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Missing_Run_Distribution.csv,nodes,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Missing_Run_Distribution.csv,left_censored_runs,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Missing_Run_Distribution.csv,right_censored_runs,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,node_id,object,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,hour_of_day,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,date,object,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,weekend,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,dimension,object,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,threshold,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,planned,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,observed,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage.csv,coverage,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,node_id,object,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-08,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-09,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-10,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-11,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-12,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-13,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-14,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-15,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-16,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-17,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-18,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-19,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-20,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-21,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-22,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-23,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-24,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-25,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-26,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-27,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-28,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-29,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-30,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2025-12-31,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-01,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-02,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-03,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-04,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-05,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-06,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-07,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-08,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-09,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-10,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-11,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-12,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-13,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-14,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-15,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-16,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-17,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-18,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-19,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-20,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-21,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-22,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-23,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-24,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-25,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-26,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-27,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-28,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-29,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-30,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-01-31,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-01,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-02,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-03,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-04,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-05,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-06,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-07,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-08,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-09,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-10,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-11,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-12,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-13,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-14,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-15,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-16,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-17,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-18,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-19,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-20,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-21,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-22,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-23,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-24,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-25,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-26,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-27,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Date_Coverage_Wide.csv,2026-02-28,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,node_id,object,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,hour_of_day,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,date,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,weekend,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,dimension,object,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,threshold,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,planned,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,observed,int64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage.csv,coverage,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,node_id,object,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,0.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,1.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,2.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,3.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,4.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,5.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,6.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,7.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,8.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,9.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,10.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,11.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,12.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,13.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,14.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,15.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,16.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,17.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,18.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,19.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,20.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,21.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,22.0,float64,Frozen value or documented formatting only; no new metric
+Fig02D_Node_Hour_Coverage_Wide.csv,23.0,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage_All_Series_Wide.csv,date,object,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage_All_Series_Wide.csv,15min_ARCHIVED_RETURN,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage_All_Series_Wide.csv,15min_QUALITY_DEDUP,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage_All_Series_Wide.csv,hourly1.0,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage_All_Series_Wide.csv,hourly2.0,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage_All_Series_Wide.csv,hourly3.0,float64,Frozen value or documented formatting only; no new metric
+Fig02B_Daily_Coverage_All_Series_Wide.csv,hourly4.0,float64,Frozen value or documented formatting only; no new metric

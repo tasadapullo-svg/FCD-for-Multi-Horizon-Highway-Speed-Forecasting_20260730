@@ -1,23 +1,15 @@
-figure_id,local_panel_name,field,dtype,values_status
-Fig03,Fig03A_Protocol_Nodes.csv,step_id,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,step_name_en,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,step_name_cn,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,stage,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,input,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,processing_rule,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,output,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,eligibility_condition,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,causal_constraint,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,evidence_source,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03A_Protocol_Nodes.csv,reviewer_mapping,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03B_Protocol_Edges.csv,from_step,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03B_Protocol_Edges.csv,to_step,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03B_Protocol_Edges.csv,edge_type,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03B_Protocol_Edges.csv,condition,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03C_Time_Semantics.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03C_Time_Semantics.csv,history_hours,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03C_Time_Semantics.csv,decision_time,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03C_Time_Semantics.csv,target_interval,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03C_Time_Semantics.csv,required_observed_target_hours,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03C_Time_Semantics.csv,target_imputation,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig03,Fig03C_Time_Semantics.csv,target_must_remain_in_split,bool,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
+filename,column,dtype,rule
+Fig03A_Protocol_Nodes.csv,step_id,object,Frozen value or documented formatting only; no new metric
+Fig03A_Protocol_Nodes.csv,step_name_en,object,Frozen value or documented formatting only; no new metric
+Fig03A_Protocol_Nodes.csv,processing_rule,object,Frozen value or documented formatting only; no new metric
+Fig03A_Protocol_Nodes.csv,method_role,object,Frozen value or documented formatting only; no new metric
+Fig03B_Protocol_Edges.csv,from_step,object,Frozen value or documented formatting only; no new metric
+Fig03B_Protocol_Edges.csv,to_step,object,Frozen value or documented formatting only; no new metric
+Fig03B_Protocol_Edges.csv,edge_role,object,Frozen value or documented formatting only; no new metric
+Fig03C_Time_Semantics.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig03C_Time_Semantics.csv,history_hours,int64,Frozen value or documented formatting only; no new metric
+Fig03C_Time_Semantics.csv,decision_time,object,Frozen value or documented formatting only; no new metric
+Fig03C_Time_Semantics.csv,target_interval,object,Frozen value or documented formatting only; no new metric
+Fig03C_Time_Semantics.csv,required_observed_target_hours,int64,Frozen value or documented formatting only; no new metric
+Fig03C_Time_Semantics.csv,target_imputation,object,Frozen value or documented formatting only; no new metric
+Fig03C_Time_Semantics.csv,target_must_remain_in_split,bool,Frozen value or documented formatting only; no new metric

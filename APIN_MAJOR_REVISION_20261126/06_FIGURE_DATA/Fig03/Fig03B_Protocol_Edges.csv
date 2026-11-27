@@ -1,10 +1,19 @@
-from_step,to_step,edge_type,condition
-1,2,forward,passed eligibility
-2,3,forward,passed eligibility
-3,4,forward,passed eligibility
-4,5,forward,passed eligibility
-5,6,forward,passed eligibility
-6,7,forward,passed eligibility
-7,8,forward,passed eligibility
-8,9,forward,passed eligibility
-9,10,forward,passed eligibility
+from_step,to_step,edge_role
+archive,grid,data
+grid,quality,data
+quality,hourly,data
+hourly,history,history_input
+hourly,target,future_label
+history,split,eligibility
+target,split,eligibility_only
+split,scaler,training_history_only
+scaler,fit,train_features
+split,fit,training_labels_only
+fit,select,validation_only
+select,test,frozen_model
+scaler,test,test_history_transform
+test,ensemble,predictions
+target,common,test_labels_evaluation_only
+ensemble,common,predictions
+common,stats,loss_evidence
+stats,audit,interpretation

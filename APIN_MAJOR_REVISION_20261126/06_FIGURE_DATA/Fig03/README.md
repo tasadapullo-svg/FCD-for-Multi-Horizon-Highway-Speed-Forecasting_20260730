@@ -1,3 +1,3 @@
-# Fig03: GATE-FCD protocol
+# GATE-FCD protocol data — Prompt12
 
-Actual protocol nodes, edges and time semantics CSVs are now available. These are author-original method definitions, not commercial observations. Data and implementation validation evidence remain distinct. Inspect Plot_Data.xlsx or the panel CSVs. The old placeholder is superseded.
+Author-original method DAG now separates past-history inputs from future labels. Scaler fitting uses training history only; validation selects configuration; test targets enter evaluation only. Method A ensembles predictions before loss. The source is archived observations, not proof of a raw API request archive. GATE-FCD is an evaluation protocol. Actual CSV nodes, edges and time semantics plus Plot_Data.xlsx are supplied.

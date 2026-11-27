@@ -1,0 +1,6 @@
+{
+  "HA": "node_target_mean",
+  "HA_historical_status": "UNIQUELY_IDENTIFIED_SIGNATURE",
+  "SeasonalHA": "node_hour_weekday",
+  "SeasonalHA_historical_status": "RECONSTRUCTED_BASELINE_ASSUMPTION"
+}

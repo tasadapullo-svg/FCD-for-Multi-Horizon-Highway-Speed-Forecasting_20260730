@@ -1,79 +1,103 @@
-figure_id,local_panel_name,field,dtype,values_status
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,cov_bin,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,model,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,MAE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,RMSE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,Bias,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,Median_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,P90_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,P95_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,nodes,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,dates,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,support,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,delta_XGBoost_minus_SeasonalHA,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,delta_XGBoost_minus_Persistence,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,conditioning,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,gap_bin,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05A_Coverage_Conditioned_Error.csv,vol_bin,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,group,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,model,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,MAE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,RMSE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,Bias,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,Median_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,P90_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,P95_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,nodes,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,dates,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,support,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,delta_XGBoost_minus_SeasonalHA,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,delta_XGBoost_minus_Persistence,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05B_Gap_Conditioned_Error.csv,conditioning_variable,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,cov_bin,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,model,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,MAE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,RMSE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,Bias,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,Median_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,P90_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,P95_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,nodes,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,dates,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,support,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,delta_XGBoost_minus_SeasonalHA,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,delta_XGBoost_minus_Persistence,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,conditioning,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,gap_bin,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Coverage_Gap_Volatility_Joint.csv,vol_bin,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,cov_bin,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,model,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,MAE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,RMSE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,Bias,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,Median_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,P90_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,P95_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,nodes,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,dates,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,support,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,delta_XGBoost_minus_SeasonalHA,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,delta_XGBoost_minus_Persistence,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,conditioning,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,gap_bin,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05C_Volatility_Conditioned_Error.csv,vol_bin,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,node_id,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,model,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,n_samples,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,MAE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,Bias,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,RMSE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig05,Fig05D_Node_Level_Model_Error.csv,sample_support_status,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
+filename,column,dtype,rule
+Fig05A_Coverage_Conditioned_Error.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,cov_bin,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,model,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,MAE,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,RMSE,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,Bias,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,Median_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,P90_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,P95_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,nodes,int64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,dates,int64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,support,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,delta_XGBoost_minus_SeasonalHA,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,delta_XGBoost_minus_Persistence,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,conditioning,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,gap_bin,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,vol_bin,float64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,seed_aggregation,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,implementation_id,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,n_samples,int64,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,sample_support_status,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,coverage_bin,object,Frozen value or documented formatting only; no new metric
+Fig05A_Coverage_Conditioned_Error.csv,volatility_bin,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,group,object,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,model,object,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,MAE,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,RMSE,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,Bias,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,Median_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,P90_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,P95_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,nodes,int64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,dates,int64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,support,object,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,delta_XGBoost_minus_SeasonalHA,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,delta_XGBoost_minus_Persistence,float64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,conditioning_variable,object,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,seed_aggregation,object,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,implementation_id,object,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,n_samples,int64,Frozen value or documented formatting only; no new metric
+Fig05B_Gap_Conditioned_Error.csv,sample_support_status,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,cov_bin,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,model,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,MAE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,RMSE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,Bias,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,Median_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,P90_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,P95_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,nodes,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,dates,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,support,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,delta_XGBoost_minus_SeasonalHA,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,delta_XGBoost_minus_Persistence,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,conditioning,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,gap_bin,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,vol_bin,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,seed_aggregation,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,implementation_id,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,n_samples,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,sample_support_status,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,coverage_bin,object,Frozen value or documented formatting only; no new metric
+Fig05C_Coverage_Gap_Volatility_Joint.csv,volatility_bin,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,cov_bin,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,model,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,MAE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,RMSE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,Bias,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,Median_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,P90_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,P95_AE,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,nodes,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,dates,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,support,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,delta_XGBoost_minus_SeasonalHA,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,delta_XGBoost_minus_Persistence,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,conditioning,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,gap_bin,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,vol_bin,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,seed_aggregation,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,implementation_id,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,n_samples,int64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,sample_support_status,object,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,coverage_bin,float64,Frozen value or documented formatting only; no new metric
+Fig05C_Volatility_Conditioned_Error.csv,volatility_bin,object,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,node_id,object,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,model,object,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,n_samples,int64,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,MAE,float64,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,Bias,float64,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,RMSE,float64,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,sample_support_status,object,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,seed_aggregation,object,Frozen value or documented formatting only; no new metric
+Fig05D_Node_Level_Model_Error.csv,implementation_id,object,Frozen value or documented formatting only; no new metric

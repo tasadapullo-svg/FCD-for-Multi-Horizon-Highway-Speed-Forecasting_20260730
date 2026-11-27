@@ -1,17 +1,17 @@
-feature,kind,input_scope,unit,causal_rule
-input_speed_filled,dynamic,24-hour causal sequence,km/h,history only; train-fit fallback
-hourly_missing_mask,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-imputed_flag,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-hours_since_last_observation,dynamic,24-hour causal sequence,hours,history only; train-fit fallback
-history_coverage_ratio,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-history_imputation_ratio,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-max_gap_24h,dynamic,24-hour causal sequence,hours,history only; train-fit fallback
-volatility_24h,dynamic,24-hour causal sequence,km/h,history only; train-fit fallback
-hour_sin,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-hour_cos,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-dow_sin,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-dow_cos,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-weekend_flag,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback
-node_order,static,Ridge/XGBoost and static-GRU condition only,index,known node metadata
-latitude,static,Ridge/XGBoost and static-GRU condition only,degrees,known node metadata
-longitude,static,Ridge/XGBoost and static-GRU condition only,degrees,known node metadata
+feature,kind,input_scope,unit,causal_rule,feature_group,mask_note,scaling
+input_speed_filled,dynamic,24-hour causal sequence,km/h,history only; train-fit fallback,noncalendar_dynamic,,fold training data only
+hourly_missing_mask,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback,noncalendar_dynamic,missing mask and imputed flag retain historical duplicate encoding,fold training data only
+imputed_flag,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback,noncalendar_dynamic,missing mask and imputed flag retain historical duplicate encoding,fold training data only
+hours_since_last_observation,dynamic,24-hour causal sequence,hours,history only; train-fit fallback,noncalendar_dynamic,,fold training data only
+history_coverage_ratio,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback,noncalendar_dynamic,,fold training data only
+history_imputation_ratio,dynamic,24-hour causal sequence,ratio/indicator,history only; train-fit fallback,noncalendar_dynamic,,fold training data only
+max_gap_24h,dynamic,24-hour causal sequence,hours,history only; train-fit fallback,noncalendar_dynamic,,fold training data only
+volatility_24h,dynamic,24-hour causal sequence,km/h,history only; train-fit fallback,noncalendar_dynamic,,fold training data only
+hour_sin,dynamic,24-hour causal sequence,dimensionless,history only; train-fit fallback,calendar_dynamic,,fold training data only
+hour_cos,dynamic,24-hour causal sequence,dimensionless,history only; train-fit fallback,calendar_dynamic,,fold training data only
+dow_sin,dynamic,24-hour causal sequence,dimensionless,history only; train-fit fallback,calendar_dynamic,,fold training data only
+dow_cos,dynamic,24-hour causal sequence,dimensionless,history only; train-fit fallback,calendar_dynamic,,fold training data only
+weekend_flag,dynamic,24-hour causal sequence,dimensionless,history only; train-fit fallback,calendar_dynamic,,fold training data only
+node_order,static,Ridge/XGBoost and static-GRU condition only,ordinal index,known node metadata,static,,fold training data only
+latitude,static,Ridge/XGBoost and static-GRU condition only,degrees,known node metadata,static,,fold training data only
+longitude,static,Ridge/XGBoost and static-GRU condition only,degrees,known node metadata,static,,fold training data only

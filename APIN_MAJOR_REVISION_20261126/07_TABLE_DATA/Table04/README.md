@@ -1,3 +1,3 @@
-# Table04 method-only public view
+# Table04: public method view
 
-CSV, XLSX and LaTeX contain actual method definitions/parameters. Mixed result/sample columns are withheld. Table04 is the historical G2 configuration, not proof of original source recovery or replacement of final Ridge SVD metrics.
+Actual feature/target definitions or recorded G2 configuration parameters. Commercial numerical performance and observed sample outcomes are not included. Original G1 frozen configuration is separately indexed; it is not recovered training source. The Table04 role column separates historical Cholesky configurations and final SVD native correction; no SVD common-target result is inferred.

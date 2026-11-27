@@ -1,3 +1,3 @@
-# Fig03 plotting boundary
+# Fig03 DAG design
 
-Use the panel dictionary to identify model, horizon, condition, count or metric columns. Plot true values from authorized result files only. Missing CIs/p values must not be set to zero. Method A and Method B, original and revision implementations, and policy-native/common-reference supports must stay separate. Detailed data status is recorded in FIGURE_DATA_INDEX.csv. No final figure was drawn in this release.
+Use the actual step_id and from_step/to_step fields to render the graph. Separate history_input and future_label branches; target labels never enter the predictor or scaler. Train/validation/test roles follow edge_role. Axis units not applicable. No error bars or significance symbols. Labels in step_name_en. Final layout is author/GPT work.

@@ -1,0 +1,5 @@
+asset,status,reason,impact,required_action
+G1 Method A sMAPE,NOT_AVAILABLE,Neither frozen G1 fold metrics nor seed metrics contain sMAPE,Original Method B sMAPE cannot be relabeled as Method A,Do not invent or recompute; keep explicit limitation
+Future-target histogram counts,NOT_AVAILABLE,Frozen histogram file does not establish target histogram bin counts,"Use actual target quantiles/mean only, no synthetic distribution",Do not invent or recompute; keep explicit limitation
+Ridge SVD special common-reference paired metrics,NOT_AVAILABLE,Frozen SVD paired predictions not saved,Unavailable corrected paired deltas remain blank; historical Cholesky isolated,Do not invent or recompute; keep explicit limitation
+"3/4 H3/H6, 4/4 fitted models, E08, spatial-neighbor",NOT_RUN,These conditions were not executed,No interpolation or zero-filled result,Do not invent or recompute; keep explicit limitation

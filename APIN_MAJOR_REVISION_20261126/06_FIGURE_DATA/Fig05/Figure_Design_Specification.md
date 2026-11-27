@@ -1,3 +1,19 @@
-# Fig05 plotting boundary
+# Fig05_Reliability_and_Spatial_Error design specification
 
-Use the panel dictionary to identify model, horizon, condition, count or metric columns. Plot true values from authorized result files only. Missing CIs/p values must not be set to zero. Method A and Method B, original and revision implementations, and policy-native/common-reference supports must stay separate. Detailed data status is recorded in FIGURE_DATA_INDEX.csv. No final figure was drawn in this release.
+Objective: Reliability-conditioned forecasting errors and spatial variation.
+
+## Fig05A_Coverage_Conditioned_Error.csv
+
+Plot: choose line/bar/point according to variable type; X: horizon; Y: MAE; grouping: model/horizon/condition when present. Axis units, sample annotation, CI/p-value and category order must follow actual columns and source README. No missing CI or p-value should be filled.
+
+## Fig05B_Gap_Conditioned_Error.csv
+
+Plot: choose line/bar/point according to variable type; X: horizon; Y: MAE; grouping: model/horizon/condition when present. Axis units, sample annotation, CI/p-value and category order must follow actual columns and source README. No missing CI or p-value should be filled.
+
+## Fig05C_Coverage_Gap_Volatility_Joint.csv
+
+Plot: choose line/bar/point according to variable type; X: horizon; Y: MAE; grouping: model/horizon/condition when present. Axis units, sample annotation, CI/p-value and category order must follow actual columns and source README. No missing CI or p-value should be filled.
+
+## Fig05C_Volatility_Conditioned_Error.csv
+
+Plot: choose line/bar/point according to variable type; X: horizon; Y: MAE; grouping: model/horizon/condition when present. Axis units, sample annotation, CI/p-value and category order must follow actual columns and source README. No missing CI or p-value should be filled.

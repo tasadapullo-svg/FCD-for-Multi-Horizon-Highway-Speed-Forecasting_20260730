@@ -1,74 +1,98 @@
-figure_id,local_panel_name,field,dtype,values_status
-Fig07,Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,variable,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,level,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,bin_left,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,bin_right,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,level,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,dimension,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,group,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,total_rows,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,valid_ratio_rows,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,invalid_ratio_rows,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,exact_equal_fraction,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,within_1kmh_fraction,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,mean_abs_difference,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,median_abs_difference,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,p95_abs_difference,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_mean,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_median,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_p05,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_p95,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,level,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,dimension,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,group,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_bin,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,fraction,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,current_speed_mean,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,ratio_mean,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_missing_or_invalid,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_mean,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_median,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_sd,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_min,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_max,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_p05,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_p25,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_p75,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07C_Confidence_Distribution.csv,confidence_p95,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,model,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,MAE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,RMSE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,Bias,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,Median_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,P90_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,P95_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,nodes,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,dates,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,support,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,record_type,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,traffic_regime,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,source,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,total_common_samples,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,coverage,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,minimum_return_age_hours,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,median_return_age_hours,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_FreeFlow_Baseline.csv,status,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,horizon,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,traffic_regime,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,model,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,n,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,MAE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,RMSE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,Bias,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,Median_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,P90_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,P95_AE,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,nodes,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,dates,int64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,support,object,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,delta_XGBoost_minus_SeasonalHA,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
-Fig07,Fig07D_Traffic_Regime_Model_Performance.csv,delta_XGBoost_minus_Persistence,float64,METHOD_ONLY_SCHEMA_NO_OBSERVATIONS
+filename,column,dtype,rule
+Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,variable,object,Frozen value or documented formatting only; no new metric
+Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,level,object,Frozen value or documented formatting only; no new metric
+Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,bin_left,float64,Frozen value or documented formatting only; no new metric
+Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,bin_right,float64,Frozen value or documented formatting only; no new metric
+Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,level,object,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,dimension,object,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,group,object,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,total_rows,int64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,valid_ratio_rows,int64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,invalid_ratio_rows,int64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,exact_equal_fraction,float64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,within_1kmh_fraction,float64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,mean_abs_difference,float64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,median_abs_difference,int64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,p95_abs_difference,int64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_mean,float64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_median,float64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_p05,float64,Frozen value or documented formatting only; no new metric
+Fig07B_FreeFlow_Equality_and_Speed_Ratio.csv,ratio_p95,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,level,object,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,dimension,object,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,group,object,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_bin,object,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,fraction,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,current_speed_mean,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,ratio_mean,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_missing_or_invalid,int64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_mean,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_median,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_sd,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_min,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_max,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_p05,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_p25,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_p75,float64,Frozen value or documented formatting only; no new metric
+Fig07C_Confidence_Distribution.csv,confidence_p95,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,model,object,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,MAE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,RMSE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,Bias,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,Median_AE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,P90_AE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,P95_AE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,nodes,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,dates,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,support,object,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,record_type,object,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,traffic_regime,object,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,source,object,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,total_common_samples,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,coverage,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,minimum_return_age_hours,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,median_return_age_hours,float64,Frozen value or documented formatting only; no new metric
+Fig07D_FreeFlow_Baseline.csv,status,object,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,horizon,int64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,traffic_regime,object,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,model,object,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,MAE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,RMSE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,Bias,float64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,Median_AE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,P90_AE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,P95_AE,float64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,nodes,int64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,dates,int64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,support,object,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,delta_XGBoost_minus_SeasonalHA,float64,Frozen value or documented formatting only; no new metric
+Fig07D_Traffic_Regime_Model_Performance.csv,delta_XGBoost_minus_Persistence,float64,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,level,object,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,horizon,float64,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,state,object,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,fraction,float64,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,nodes,int64,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,dates,int64,Frozen value or documented formatting only; no new metric
+Fig07_Traffic_Regime_Sample_Composition.csv,threshold,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,level,object,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,node_id,object,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,variable,object,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,horizon,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,unit,object,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,n,int64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,missing_or_invalid,int64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,mean,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,median,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,sd,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,min,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,max,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,p05,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,p25,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,p75,float64,Frozen value or documented formatting only; no new metric
+Fig07_Target_Distribution_Summary.csv,p95,float64,Frozen value or documented formatting only; no new metric

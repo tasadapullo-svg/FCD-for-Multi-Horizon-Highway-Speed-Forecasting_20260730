@@ -1,3 +1,11 @@
-# Fig01 plotting boundary
+# Fig01_Study_Area_GIS design specification
 
-Use the panel dictionary to identify model, horizon, condition, count or metric columns. Plot true values from authorized result files only. Missing CIs/p values must not be set to zero. Method A and Method B, original and revision implementations, and policy-native/common-reference supports must stay separate. Detailed data status is recorded in FIGURE_DATA_INDEX.csv. No final figure was drawn in this release.
+Objective: Study area and current-OSM spatial audit of FCD observation nodes.
+
+## GIS_Corridor_Length_Reconciliation.csv
+
+Plot: choose line/bar/point according to variable type; X: measure; Y: see actual numeric columns; grouping: model/horizon/condition when present. Axis units, sample annotation, CI/p-value and category order must follow actual columns and source README. No missing CI or p-value should be filled.
+
+## GIS_00_File_and_Layer_Inventory.csv
+
+Plot: choose line/bar/point according to variable type; X: file; Y: see actual numeric columns; grouping: model/horizon/condition when present. Axis units, sample annotation, CI/p-value and category order must follow actual columns and source README. No missing CI or p-value should be filled.
