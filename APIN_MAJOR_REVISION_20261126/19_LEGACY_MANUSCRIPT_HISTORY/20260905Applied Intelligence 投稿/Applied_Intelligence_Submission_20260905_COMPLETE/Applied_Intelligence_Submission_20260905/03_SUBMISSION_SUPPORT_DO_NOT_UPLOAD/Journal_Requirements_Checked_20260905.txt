@@ -1,0 +1,24 @@
+APPLIED INTELLIGENCE - REQUIREMENTS CHECKED ON 5 SEPTEMBER 2026
+Official submission guidelines:
+https://link.springer.com/journal/10489/submission-guidelines
+Editorial board:
+https://link.springer.com/journal/10489/editorial-board
+
+Checked items
+- Journal publishing model: Hybrid.
+- Manuscript text: LaTeX is recommended/required by the journal's current author tools.
+- Submission must include original source files, style files, figures, and a compiled PDF.
+- LaTeX submission should not use subfolders when files are uploaded to Editorial Manager.
+- Abstract: 150-250 words. Current abstract is within this range.
+- Keywords: 4-6. Current manuscript contains 6 keywords.
+- Numeric references in square brackets. Current manuscript uses numbered Springer style.
+- Data Availability Statement is required for original research. Included in manuscript.
+- Competing Interests declaration is required. Included in manuscript.
+- Suggested reviewers should be independent and preferably from different countries/institutions; institutional email addresses are strongly recommended.
+- Current Editor-in-Chief: Professor Hamido Fujita.
+
+Technical package check
+- main.tex compiles successfully with the supplied sn-jnl.cls, sn-basic.bst, references.bib, and Fig1.png-Fig6.png.
+- Full bibliography and cross-references resolve in the compiled submission PDF.
+- Final compiled manuscript: 30 pages.
+- Only a negligible 0.665 pt overfull table cell warning remains; there are no unresolved citations or cross-references.

@@ -1,0 +1,37 @@
+GATE-FCD AJSE 2019 delivery package
+
+PRIMARY MANUSCRIPT
+Humanizer_english_AJSE_2019_FINAL.docx
+
+PREVIEW
+Humanizer_english_AJSE_2019_FINAL_preview.pdf
+
+FIGURES
+figures/Figure1_Study_Corridor_and_FCD_Node_Distribution.png
+figures/Figure2_FCD_Temporal_Availability_and_Spatiotemporal_Characteristics.png
+figures/Figure3_GATE-FCD_Overall_Architecture.png
+figures/Figure4_GATE-FCD_Operational_Implementation.png
+figures/Figure5_Multi-Horizon_Performance_and_Stability.png
+figures/Figure6_Reliability_and_Spatial_Error_Boundaries.png
+figures/Figure7_Statistical_Evidence_Boundaries.png
+
+AUDIT REPORTS
+01_DISCUSSION_RESTRUCTURE_REPORT.md
+02_WORD_COUNT_COMPRESSION_REPORT.md
+03_CN_EN_SEMANTIC_AUDIT_REPORT.md
+04_NUMERICAL_AND_STATISTICAL_AUDIT.md
+05_FULL_TEXT_LANGUAGE_AUDIT.md
+06_REVISION_CHANGELOG.md
+07_FINAL_QA_REPORT.md
+
+MACHINE QA
+build_log.json
+qa_pass1.json
+qa_pass2.json
+qa_pass3.json
+
+Final audited narrative word count: 8,372
+Abstract: 150 words by Microsoft Word; 10 sentences
+Discussion headings: 2
+PDF preview pages: 39
+Final status: PASS

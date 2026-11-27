@@ -1,0 +1,129 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Bikram et~al.(2024)Bikram, Das, and Biswas}]{Bikram2024Imputation}
+Bikram P, Das S, Biswas A (2024) Dynamic attention aggregated missing
+  spatial-temporal data imputation for traffic speed prediction. Neurocomputing
+  607:128441. \doi{10.1016/j.neucom.2024.128441}
+
+\bibitem[{Chan et~al.(2023)Chan, Lim, and
+  Parthiban}]{Chan2023MissingTrafficData}
+Chan RKC, Lim JMY, Parthiban R (2023) Missing traffic data imputation for
+  artificial intelligence in intelligent transportation systems: Review of
+  methods, limitations, and challenges. IEEE Access 11:34080--34093.
+  \doi{10.1109/ACCESS.2023.3264216}
+
+\bibitem[{Chen et~al.(2024)Chen, Li, Wei, and Lu}]{Chen2024TrafficCompletion}
+Chen P, Li F, Wei D, et~al (2024) Spatiotemporal traffic data completion with
+  truncated minimax-concave penalty. Transp Res Part C Emerg Technol
+  164:104657. \doi{10.1016/j.trc.2024.104657}
+
+\bibitem[{Chen and Guestrin(2016)}]{ChenGuestrin2016XGBoost}
+Chen T, Guestrin C (2016) {XGBoost}: A scalable tree boosting system. In:
+  Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge
+  Discovery and Data Mining. Association for Computing Machinery, pp 785--794,
+  \doi{10.1145/2939672.2939785}
+
+\bibitem[{Cho et~al.(2014)Cho, van Merri{\"e}nboer, Gulcehre, Bahdanau,
+  Bougares, Schwenk, and Bengio}]{Cho2014GRU}
+Cho K, van Merri{\"e}nboer B, Gulcehre C, et~al (2014) Learning phrase
+  representations using {RNN} encoder--decoder for statistical machine
+  translation. In: Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing ({EMNLP}). Association for Computational
+  Linguistics, pp 1724--1734, \doi{10.3115/v1/D14-1179}
+
+\bibitem[{Cini and Aydin(2024)}]{Cini2024DeepEnsemble}
+Cini N, Aydin Z (2024) A deep ensemble approach for long-term traffic flow
+  prediction. Arab J Sci Eng 49(9):12377--12392.
+  \doi{10.1007/s13369-023-08672-1}
+
+\bibitem[{Garc{\'i}a-P{\'e}rez(2023)}]{GarciaPerez2023MultipleTesting}
+Garc{\'i}a-P{\'e}rez MA (2023) Use and misuse of corrections for multiple
+  testing. Methods Psychol 8:100120. \doi{10.1016/j.metip.2023.100120}
+
+\bibitem[{Hadry et~al.(2025)Hadry, Bauer, Leppich, Lesch, and
+  Kounev}]{Hadry2025TrafficForecasting}
+Hadry M, Bauer A, Leppich R, et~al (2025) Telling fortunes? evaluation of
+  traffic forecasting models using traffic and context features. Appl Intell
+  55(10):755. \doi{10.1007/s10489-025-06565-4}
+
+\bibitem[{Hewamalage et~al.(2023)Hewamalage, Ackermann, and
+  Bergmeir}]{Hewamalage2023ForecastEvaluation}
+Hewamalage H, Ackermann K, Bergmeir C (2023) Forecast evaluation for data
+  scientists: Common pitfalls and best practices. Data Min Knowl Discov
+  37(2):788--832. \doi{10.1007/s10618-022-00894-5}
+
+\bibitem[{Hoerl and Kennard(1970)}]{HoerlKennard1970Ridge}
+Hoerl AE, Kennard RW (1970) Ridge regression: Biased estimation for
+  nonorthogonal problems. Technometrics 12(1):55--67.
+  \doi{10.1080/00401706.1970.10488634}
+
+\bibitem[{Ipekyuz et~al.(2025)Ipekyuz, Sevinen, and Yaman}]{Ipekyuz2025FCD}
+Ipekyuz B, Sevinen PK, Yaman HT (2025) Performance evaluation of fused floating
+  car data ({FCD}) and {Bluetooth} ({BT}) data speed estimation on urban
+  arterials. Arab J Sci Eng 50(20):17091--17108.
+  \doi{10.1007/s13369-025-10088-y}
+
+\bibitem[{Kam and Samah(2025)}]{Kam2025PanBorneo}
+Kam AJY, Samah S (2025) The {Pan Borneo Highway} ({PBH}): A study on the
+  economic-security nexus. Int J Asia Pac Stud 21(2):27--50.
+  \doi{10.21315/ijaps2025.21.2.2}
+
+\bibitem[{Liu and Zhang(2024)}]{Liu2024SpatialTemporalTransformer}
+Liu A, Zhang Y (2024) An efficient spatial-temporal transformer with temporal
+  aggregation and spatial memory for traffic forecasting. Expert Syst Appl
+  250:123884. \doi{10.1016/j.eswa.2024.123884}
+
+\bibitem[{Mohamed~Azmi et~al.(2025)Mohamed~Azmi, Petrus~Adan, and
+  Johaimi~Ling}]{Azmi2025PanBorneo}
+Mohamed~Azmi AS, Petrus~Adan VS, Johaimi~Ling NLF (2025) A review of land
+  acquisition procedures and compensation practices for the {Pan Borneo
+  Highway} project in {Sarawak}, {Malaysia}. Planning Malaysia 23(36):536--551.
+  \doi{10.21837/pm.v23i36.1737}
+
+\bibitem[{Qu et~al.(2024)Qu, Li, Zhao, and
+  Ou}]{Qu2024TrafficPredictionImputation}
+Qu Y, Li Z, Zhao X, et~al (2024) Towards real-world traffic prediction and data
+  imputation: A multi-task pretraining and fine-tuning approach. Inf Sci
+  657:119972. \doi{10.1016/j.ins.2023.119972}
+
+\bibitem[{Wang et~al.(2024)Wang, Li, Guo, Xiao, and
+  Yang}]{Wang2024RoadNetworkPixelization}
+Wang R, Li M, Guo Q, et~al (2024) Road network pixelization: A traffic flow
+  imputation method based on image restoration techniques. Expert Syst Appl
+  237:121468. \doi{10.1016/j.eswa.2023.121468}
+
+\bibitem[{Xu et~al.(2023)Xu, Di, Ding, Zhu, Chen, and Yang}]{Xu2023AGNP}
+Xu M, Di Y, Ding H, et~al (2023) {AGNP}: Network-wide short-term probabilistic
+  traffic speed prediction and imputation. Commun Transp Res 3:100099.
+  \doi{10.1016/j.commtr.2023.100099}
+
+\bibitem[{Yu et~al.(2024)Yu, Peng, Ge, Yu, Ding, Li, and
+  Ma}]{Yu2024AutoformerFCD}
+Yu S, Peng J, Ge Y, et~al (2024) A traffic state prediction method based on
+  spatial-temporal data mining of floating car data by using {Autoformer}
+  architecture. Comput-Aided Civ Infrastruct Eng 39(18):2774--2787.
+  \doi{10.1111/mice.13179}
+
+\bibitem[{Zeb et~al.(2024)Zeb, Zhang, Wei, and Yu}]{Zeb2024FeatureProjection}
+Zeb A, Zhang S, Wei X, et~al (2024) A generalized feature projection scheme for
+  multi-step traffic forecasting. Expert Syst Appl 244:122962.
+  \doi{10.1016/j.eswa.2023.122962}
+
+\bibitem[{Zhang et~al.(2025)Zhang, Zhou, Zhang, Wang, and Nie}]{Zhang2025FCD}
+Zhang C, Zhou Y, Zhang M, et~al (2025) Review and prospect of floating car data
+  research in transportation. J Traffic Transp Eng (Engl Ed) 12(4):752--771.
+  \doi{10.1016/j.jtte.2024.09.005}
+
+\bibitem[{Zhang et~al.(2024)Zhang, Kong, Zhou, Liu, Fu, and
+  Shen}]{Zhang2024MissingData}
+Zhang Y, Kong X, Zhou W, et~al (2024) A comprehensive survey on traffic missing
+  data imputation. IEEE Trans Intell Transp Syst 25(12):19252--19275.
+  \doi{10.1109/TITS.2024.3478816}
+
+\end{thebibliography}

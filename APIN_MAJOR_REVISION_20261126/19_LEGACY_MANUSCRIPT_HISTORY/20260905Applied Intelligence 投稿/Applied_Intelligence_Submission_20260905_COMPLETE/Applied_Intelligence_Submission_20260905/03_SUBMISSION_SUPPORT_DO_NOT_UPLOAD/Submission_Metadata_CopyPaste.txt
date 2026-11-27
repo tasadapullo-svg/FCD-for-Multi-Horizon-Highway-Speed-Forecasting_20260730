@@ -1,0 +1,75 @@
+APPLIED INTELLIGENCE - SUBMISSION METADATA (COPY/PASTE)
+Date prepared: 5 September 2026
+
+Journal
+Applied Intelligence
+
+Recommended article type
+Original Paper / Original Research Article (select the closest option offered by Editorial Manager)
+
+Title
+Can Sparse Floating Car Data Reliably Forecast Highway Speeds? A Multi-Horizon Evaluation of Forecasting Models
+
+Short title
+Multi-Horizon Highway Speed Forecasting from Sparse FCD
+
+Abstract
+Evaluating highway speed forecasts is challenging where fixed roadside sensing is sparse and commercial floating car data (FCD) are incomplete. When FCD are obtained through an application programming interface (API), planned observations may be omitted rather than returned as explicit missing values, while model comparisons can be biased by unequal evaluation samples or temporally non-causal preprocessing. We address these issues with the Grid-Reconstructed, Auditable, Temporally Causal, and Eligibility-Gated Multi-Horizon FCD Forecasting (GATE-FCD) framework. GATE-FCD reconstructs the planned observation grid, applies explicit eligibility rules, freezes common sample manifests, and restricts preprocessing to information available before each forecast origin. Historical Average, Seasonal Historical Average (SeasonalHA), Persistence, Ridge, XGBoost, and a Gated Recurrent Unit (GRU) are evaluated at 51 virtual nodes using 24-h histories, six retrospective rolling-origin folds, and 1-, 3-, and 6-h future-window targets (H1, H3, and H6). XGBoost achieved the lowest descriptive mean absolute error (MAE) at H1, H3, and H6 (0.949, 0.829, and 0.752 km h-1, respectively), although SeasonalHA remained competitive and fold-level inference did not establish a stable advantage. These findings highlight the importance of auditable sample construction and temporally causal evaluation when benchmarking forecasting models with incomplete commercial FCD.
+
+Keywords
+1. floating car data
+2. traffic speed forecasting
+3. multi-horizon forecasting
+4. model reliability
+5. rolling-origin evaluation
+6. intelligent transportation systems
+
+Authors and affiliations
+1. Wenjie Sun
+   Department of Urban and Regional Planning, Universiti Teknologi Malaysia, Skudai, 81310, Johor, Malaysia
+   Email: sunwenjie@graduate.utm.my
+
+2. Safizahanin binti Mokhtar
+   Department of Urban and Regional Planning, Universiti Teknologi Malaysia, Skudai, 81310, Johor, Malaysia
+   Email: safizahanin@utm.my
+
+3. Gabriel Ling Hoh Teck
+   Department of Urban and Regional Planning, Universiti Teknologi Malaysia, Skudai, 81310, Johor, Malaysia
+   Email: gabriel.ling@utm.my
+
+4. Ruiqing Li
+   Faculty of Computing, Universiti Teknologi Malaysia, Johor Bahru, 81310, Johor, Malaysia
+   Email: liruiqing@graduate.utm.my
+
+5. Lvmin Liu
+   School of Information Engineering, Nanjing Normal University Taizhou College, Taizhou, Jiangsu Province, China
+   Email: llm1194568495@gmail.com
+
+Corresponding-author note
+The manuscript currently marks Wenjie Sun and Safizahanin binti Mokhtar as corresponding authors. Editorial Manager may ask for one system-designated Corresponding Author. Select the author agreed by all co-authors in the submission system; the manuscript source has not been altered on this point.
+
+Funding
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+Competing interests
+The authors declare no competing interests.
+
+Ethics approval and consent to participate
+Not applicable.
+
+Consent for publication
+Not applicable.
+
+Data availability
+The floating car data used in this study were obtained through the TomTom Traffic API. Raw provider data and sample-level records are not publicly redistributed because of provider licensing restrictions. Publicly shareable code, frozen configurations, aggregated results, and audit materials are provided through the project repository.
+
+Code availability
+https://github.com/tasadapullo-svg/FCD-for-Multi-Horizon-Highway-Speed-Forecasting_20260730
+
+Author contributions
+Wenjie Sun: Conceptualization, methodology, software, formal analysis, investigation, data curation, visualization, validation, and writing-original draft.
+Safizahanin binti Mokhtar: Conceptualization, methodology, supervision, project administration, validation, and writing-review and editing.
+Gabriel Ling Hoh Teck: Methodological review, validation, interpretation of results, and writing-review and editing.
+Ruiqing Li: Code and software review, literature review, model-method review, validation, and writing-review and editing.
+Lvmin Liu: Validation, interpretation of results, and writing-review and editing.
+All authors reviewed and approved the manuscript.

@@ -1,0 +1,8 @@
+Final manuscript figure mapping:
+Fig1 = study corridor and node spacing (unchanged)
+Fig2 = availability/missingness characteristics (unchanged)
+Fig3 = GATE-FCD architecture (previously edited: t0-23 history and Bias metric)
+Fig4 = previous Fig5, multi-horizon performance/stability
+Fig5 = previous Fig6, reliability/spatial error boundaries
+Fig6 = previous Fig7, statistical evidence boundaries
+Previous redundant workflow Fig4 is intentionally excluded from the clean final package.

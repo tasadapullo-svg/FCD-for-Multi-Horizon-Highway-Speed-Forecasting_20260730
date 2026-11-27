@@ -1,0 +1,1279 @@
+{
+  "source": "C:\\Users\\DELL\\Desktop\\20260815\\new\\201902\\Humanizer_english_AJSE_201902_FINAL.docx",
+  "reference_count": 21,
+  "numbering": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "numbering_consecutive": true,
+  "first_citation_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "first_citation_order_consecutive": true,
+  "all_references_cited": true,
+  "out_of_range_citations": [],
+  "citation_tokens": [
+    {
+      "token": "[1]",
+      "values": [
+        1
+      ]
+    },
+    {
+      "token": "[2]",
+      "values": [
+        2
+      ]
+    },
+    {
+      "token": "[3, 4]",
+      "values": [
+        3,
+        4
+      ]
+    },
+    {
+      "token": "[2]",
+      "values": [
+        2
+      ]
+    },
+    {
+      "token": "[5]",
+      "values": [
+        5
+      ]
+    },
+    {
+      "token": "[6]",
+      "values": [
+        6
+      ]
+    },
+    {
+      "token": "[7]",
+      "values": [
+        7
+      ]
+    },
+    {
+      "token": "[8]",
+      "values": [
+        8
+      ]
+    },
+    {
+      "token": "[9]",
+      "values": [
+        9
+      ]
+    },
+    {
+      "token": "[10]",
+      "values": [
+        10
+      ]
+    },
+    {
+      "token": "[11]",
+      "values": [
+        11
+      ]
+    },
+    {
+      "token": "[1]",
+      "values": [
+        1
+      ]
+    },
+    {
+      "token": "[2]",
+      "values": [
+        2
+      ]
+    },
+    {
+      "token": "[5]",
+      "values": [
+        5
+      ]
+    },
+    {
+      "token": "[12]",
+      "values": [
+        12
+      ]
+    },
+    {
+      "token": "[6]",
+      "values": [
+        6
+      ]
+    },
+    {
+      "token": "[7]",
+      "values": [
+        7
+      ]
+    },
+    {
+      "token": "[8]",
+      "values": [
+        8
+      ]
+    },
+    {
+      "token": "[5]",
+      "values": [
+        5
+      ]
+    },
+    {
+      "token": "[5, 7]",
+      "values": [
+        5,
+        7
+      ]
+    },
+    {
+      "token": "[13-15]",
+      "values": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "token": "[9]",
+      "values": [
+        9
+      ]
+    },
+    {
+      "token": "[11]",
+      "values": [
+        11
+      ]
+    },
+    {
+      "token": "[10]",
+      "values": [
+        10
+      ]
+    },
+    {
+      "token": "[16]",
+      "values": [
+        16
+      ]
+    },
+    {
+      "token": "[17]",
+      "values": [
+        17
+      ]
+    },
+    {
+      "token": "[18]",
+      "values": [
+        18
+      ]
+    },
+    {
+      "token": "[9-11]",
+      "values": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "token": "[19]",
+      "values": [
+        19
+      ]
+    },
+    {
+      "token": "[1, 2, 5, 12]",
+      "values": [
+        1,
+        2,
+        5,
+        12
+      ]
+    },
+    {
+      "token": "[6-8]",
+      "values": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "token": "[9-11, 16-18]",
+      "values": [
+        9,
+        10,
+        11,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "token": "[19]",
+      "values": [
+        19
+      ]
+    },
+    {
+      "token": "[13-15]",
+      "values": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "token": "[3, 4]",
+      "values": [
+        3,
+        4
+      ]
+    },
+    {
+      "token": "[9, 10, 20]",
+      "values": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "token": "[2, 16, 17, 20]",
+      "values": [
+        2,
+        16,
+        17,
+        20
+      ]
+    },
+    {
+      "token": "[9, 10, 20]",
+      "values": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "token": "[19]",
+      "values": [
+        19
+      ]
+    },
+    {
+      "token": "[18-20]",
+      "values": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "token": "[16, 20]",
+      "values": [
+        16,
+        20
+      ]
+    },
+    {
+      "token": "[5, 7, 13]",
+      "values": [
+        5,
+        7,
+        13
+      ]
+    },
+    {
+      "token": "[19]",
+      "values": [
+        19
+      ]
+    },
+    {
+      "token": "[5, 19]",
+      "values": [
+        5,
+        19
+      ]
+    },
+    {
+      "token": "[13-15]",
+      "values": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "token": "[5, 6, 13-15]",
+      "values": [
+        5,
+        6,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "token": "[5, 19]",
+      "values": [
+        5,
+        19
+      ]
+    },
+    {
+      "token": "[19, 21]",
+      "values": [
+        19,
+        21
+      ]
+    },
+    {
+      "token": "[1]",
+      "values": [
+        1
+      ]
+    },
+    {
+      "token": "[2]",
+      "values": [
+        2
+      ]
+    },
+    {
+      "token": "[12]",
+      "values": [
+        12
+      ]
+    },
+    {
+      "token": "[9]",
+      "values": [
+        9
+      ]
+    },
+    {
+      "token": "[10]",
+      "values": [
+        10
+      ]
+    },
+    {
+      "token": "[11]",
+      "values": [
+        11
+      ]
+    },
+    {
+      "token": "[20]",
+      "values": [
+        20
+      ]
+    },
+    {
+      "token": "[17]",
+      "values": [
+        17
+      ]
+    },
+    {
+      "token": "[18]",
+      "values": [
+        18
+      ]
+    },
+    {
+      "token": "[5]",
+      "values": [
+        5
+      ]
+    },
+    {
+      "token": "[7]",
+      "values": [
+        7
+      ]
+    },
+    {
+      "token": "[6, 8, 12]",
+      "values": [
+        6,
+        8,
+        12
+      ]
+    },
+    {
+      "token": "[19]",
+      "values": [
+        19
+      ]
+    },
+    {
+      "token": "[21]",
+      "values": [
+        21
+      ]
+    },
+    {
+      "token": "[16]",
+      "values": [
+        16
+      ]
+    },
+    {
+      "token": "[18]",
+      "values": [
+        18
+      ]
+    },
+    {
+      "token": "[2]",
+      "values": [
+        2
+      ]
+    }
+  ],
+  "records": [
+    {
+      "number": 1,
+      "manuscript": "[1] Zhang, C., Zhou, Y., Zhang, M., Wang, B., Nie, Y.: Review and prospect of floating car data research in transportation. J. Traffic Transp. Eng. (Engl. Ed.) 12(4), 752–771 (2025). https://doi.org/10.1016/j.jtte.2024.09.005",
+      "doi": "10.1016/j.jtte.2024.09.005",
+      "crossref": {
+        "title": "Review and prospect of floating car data research in transportation",
+        "authors": [
+          {
+            "given": "Chi",
+            "family": "Zhang"
+          },
+          {
+            "given": "Yuming",
+            "family": "Zhou"
+          },
+          {
+            "given": "Min",
+            "family": "Zhang"
+          },
+          {
+            "given": "Bo",
+            "family": "Wang"
+          },
+          {
+            "given": "Yuhan",
+            "family": "Nie"
+          }
+        ],
+        "journal": "Journal of Traffic and Transportation Engineering (English Edition)",
+        "short_journal": "Journal of Traffic and Transportation Engineering (English Edition)",
+        "volume": "12",
+        "issue": "4",
+        "page": "752-771",
+        "article_number": null,
+        "published": 2025,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.jtte.2024.09.005"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 2,
+      "manuscript": "[2] Ipekyuz, B., Sevinen, P.K., Yaman, H.T.: Performance evaluation of fused floating car data (FCD) and Bluetooth (BT) data speed estimation on urban arterials. Arab. J. Sci. Eng. 50(20), 17091–17108 (2025). https://doi.org/10.1007/s13369-025-10088-y",
+      "doi": "10.1007/s13369-025-10088-y",
+      "crossref": {
+        "title": "Performance Evaluation of Fused Floating Car Data (FCD) and Bluetooth (BT) Data Speed Estimation on Urban Arterials",
+        "authors": [
+          {
+            "given": "Beyhan",
+            "family": "Ipekyuz"
+          },
+          {
+            "given": "Pınar Karatas",
+            "family": "Sevinen"
+          },
+          {
+            "given": "Hediye Tuydes",
+            "family": "Yaman"
+          }
+        ],
+        "journal": "Arabian Journal for Science and Engineering",
+        "short_journal": "Arab J Sci Eng",
+        "volume": "50",
+        "issue": "20",
+        "page": "17091-17108",
+        "article_number": null,
+        "published": 2025,
+        "published_online": 2025,
+        "type": "journal-article",
+        "doi": "10.1007/s13369-025-10088-y"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 3,
+      "manuscript": "[3] Kam, A.J.Y., Samah, S.: The Pan Borneo Highway (PBH): A study on the economic-security nexus. Int. J. Asia Pac. Stud. 21(2), 27–50 (2025). https://doi.org/10.21315/ijaps2025.21.2.2",
+      "doi": "10.21315/ijaps2025.21.2.2",
+      "crossref": {
+        "title": "The Pan Borneo Highway (PBH): A Study on the Economic-Security Nexus",
+        "authors": [
+          {
+            "given": null,
+            "family": null
+          },
+          {
+            "given": "Andrew Jia Yi",
+            "family": "Kam"
+          },
+          {
+            "given": "Samhasri",
+            "family": "Samah"
+          },
+          {
+            "given": null,
+            "family": null
+          }
+        ],
+        "journal": "International Journal of Asia Pacific Studies",
+        "short_journal": "IJAPS",
+        "volume": "21",
+        "issue": "2",
+        "page": "27-50",
+        "article_number": null,
+        "published": 2025,
+        "published_online": 2025,
+        "type": "journal-article",
+        "doi": "10.21315/ijaps2025.21.2.2"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 4,
+      "manuscript": "[4] Mohamed Azmi, A.S., Petrus Adan, V.S., Johaimi Ling, N.L.F.: A review of land acquisition procedures and compensation practices for the Pan Borneo Highway project in Sarawak, Malaysia. Planning Malaysia 23(36), 536–551 (2025). https://doi.org/10.21837/pm.v23i36.1737",
+      "doi": "10.21837/pm.v23i36.1737",
+      "crossref": {
+        "title": "A REVIEW OF LAND ACQUISITION PROCEDURES AND COMPENSATION PRACTICES FOR THE PAN BORNEO HIGHWAY PROJECT IN SARAWAK, MALAYSIA",
+        "authors": [
+          {
+            "given": "Ahmad Shazrin",
+            "family": "Mohamed Azmi"
+          },
+          {
+            "given": "Vanissa Saur",
+            "family": "Petrus Adan"
+          },
+          {
+            "given": "Nur Lesya Firsya",
+            "family": "Johaimi Ling"
+          }
+        ],
+        "journal": "PLANNING MALAYSIA",
+        "short_journal": "PM",
+        "volume": "23",
+        "issue": null,
+        "page": null,
+        "article_number": null,
+        "published": 2025,
+        "published_online": 2025,
+        "type": "journal-article",
+        "doi": "10.21837/pm.v23i36.1737"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 5,
+      "manuscript": "[5] Hadry, M., Bauer, A., Leppich, R., Lesch, V., Kounev, S.: Telling fortunes? Evaluation of traffic forecasting models using traffic and context features. Appl. Intell. 55(10), 755 (2025). https://doi.org/10.1007/s10489-025-06565-4",
+      "doi": "10.1007/s10489-025-06565-4",
+      "crossref": {
+        "title": "Telling fortunes? Evaluation of traffic forecasting models using traffic and context features",
+        "authors": [
+          {
+            "given": "Marius",
+            "family": "Hadry"
+          },
+          {
+            "given": "André",
+            "family": "Bauer"
+          },
+          {
+            "given": "Robert",
+            "family": "Leppich"
+          },
+          {
+            "given": "Veronika",
+            "family": "Lesch"
+          },
+          {
+            "given": "Samuel",
+            "family": "Kounev"
+          }
+        ],
+        "journal": "Applied Intelligence",
+        "short_journal": "Appl Intell",
+        "volume": "55",
+        "issue": "10",
+        "page": null,
+        "article_number": "755",
+        "published": 2025,
+        "published_online": 2025,
+        "type": "journal-article",
+        "doi": "10.1007/s10489-025-06565-4"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 6,
+      "manuscript": "[6] Cini, N., Aydin, Z.: A deep ensemble approach for long-term traffic flow prediction. Arab. J. Sci. Eng. 49(9), 12377–12392 (2024). https://doi.org/10.1007/s13369-023-08672-1",
+      "doi": "10.1007/s13369-023-08672-1",
+      "crossref": {
+        "title": "A Deep Ensemble Approach for Long-Term Traffic Flow Prediction",
+        "authors": [
+          {
+            "given": "Nevin",
+            "family": "Cini"
+          },
+          {
+            "given": "Zafer",
+            "family": "Aydin"
+          }
+        ],
+        "journal": "Arabian Journal for Science and Engineering",
+        "short_journal": "Arab J Sci Eng",
+        "volume": "49",
+        "issue": "9",
+        "page": "12377-12392",
+        "article_number": null,
+        "published": 2024,
+        "published_online": 2024,
+        "type": "journal-article",
+        "doi": "10.1007/s13369-023-08672-1"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 7,
+      "manuscript": "[7] Zeb, A., Zhang, S., Wei, X., Yu, J.J.: A generalized feature projection scheme for multi-step traffic forecasting. Expert Syst. Appl. 244, 122962 (2024). https://doi.org/10.1016/j.eswa.2023.122962",
+      "doi": "10.1016/j.eswa.2023.122962",
+      "crossref": {
+        "title": "A generalized feature projection scheme for multi-step traffic forecasting",
+        "authors": [
+          {
+            "given": "Adnan",
+            "family": "Zeb"
+          },
+          {
+            "given": "Shiyao",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xuetao",
+            "family": "Wei"
+          },
+          {
+            "given": "James Jianqiao",
+            "family": "Yu"
+          }
+        ],
+        "journal": "Expert Systems with Applications",
+        "short_journal": "Expert Systems with Applications",
+        "volume": "244",
+        "issue": null,
+        "page": "122962",
+        "article_number": "122962",
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.eswa.2023.122962"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 8,
+      "manuscript": "[8] Liu, A., Zhang, Y.: An efficient spatial-temporal transformer with temporal aggregation and spatial memory for traffic forecasting. Expert Syst. Appl. 250, 123884 (2024). https://doi.org/10.1016/j.eswa.2024.123884",
+      "doi": "10.1016/j.eswa.2024.123884",
+      "crossref": {
+        "title": "An efficient spatial-temporal transformer with temporal aggregation and spatial memory for traffic forecasting",
+        "authors": [
+          {
+            "given": "Aoyu",
+            "family": "Liu"
+          },
+          {
+            "given": "Yaying",
+            "family": "Zhang"
+          }
+        ],
+        "journal": "Expert Systems with Applications",
+        "short_journal": "Expert Systems with Applications",
+        "volume": "250",
+        "issue": null,
+        "page": "123884",
+        "article_number": "123884",
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.eswa.2024.123884"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 9,
+      "manuscript": "[9] Chen, P., Li, F., Wei, D., Lu, C.: Spatiotemporal traffic data completion with truncated minimax-concave penalty. Transp. Res. Part C Emerg. Technol. 164, 104657 (2024). https://doi.org/10.1016/j.trc.2024.104657",
+      "doi": "10.1016/j.trc.2024.104657",
+      "crossref": {
+        "title": "Spatiotemporal traffic data completion with truncated minimax-concave penalty",
+        "authors": [
+          {
+            "given": "Peng",
+            "family": "Chen"
+          },
+          {
+            "given": "Fang",
+            "family": "Li"
+          },
+          {
+            "given": "Deliang",
+            "family": "Wei"
+          },
+          {
+            "given": "Changhong",
+            "family": "Lu"
+          }
+        ],
+        "journal": "Transportation Research Part C: Emerging Technologies",
+        "short_journal": "Transportation Research Part C: Emerging Technologies",
+        "volume": "164",
+        "issue": null,
+        "page": "104657",
+        "article_number": "104657",
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.trc.2024.104657"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 10,
+      "manuscript": "[10] Bikram, P., Das, S., Biswas, A.: Dynamic attention aggregated missing spatial-temporal data imputation for traffic speed prediction. Neurocomputing 607, 128441 (2024). https://doi.org/10.1016/j.neucom.2024.128441",
+      "doi": "10.1016/j.neucom.2024.128441",
+      "crossref": {
+        "title": "Dynamic attention aggregated missing spatial–temporal data imputation for traffic speed prediction",
+        "authors": [
+          {
+            "given": "Pritam",
+            "family": "Bikram"
+          },
+          {
+            "given": "Shubhajyoti",
+            "family": "Das"
+          },
+          {
+            "given": "Arindam",
+            "family": "Biswas"
+          }
+        ],
+        "journal": "Neurocomputing",
+        "short_journal": "Neurocomputing",
+        "volume": "607",
+        "issue": null,
+        "page": "128441",
+        "article_number": "128441",
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.neucom.2024.128441"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 11,
+      "manuscript": "[11] Wang, R., Li, M., Guo, Q., Xiao, Y., Yang, Z.: Road network pixelization: A traffic flow imputation method based on image restoration techniques. Expert Syst. Appl. 237, 121468 (2024). https://doi.org/10.1016/j.eswa.2023.121468",
+      "doi": "10.1016/j.eswa.2023.121468",
+      "crossref": {
+        "title": "Road network pixelization: A traffic flow imputation method based on image restoration techniques",
+        "authors": [
+          {
+            "given": "Rong",
+            "family": "Wang"
+          },
+          {
+            "given": "Miaofei",
+            "family": "Li"
+          },
+          {
+            "given": "Qingwang",
+            "family": "Guo"
+          },
+          {
+            "given": "Yunpeng",
+            "family": "Xiao"
+          },
+          {
+            "given": "Zhenyi",
+            "family": "Yang"
+          }
+        ],
+        "journal": "Expert Systems with Applications",
+        "short_journal": "Expert Systems with Applications",
+        "volume": "237",
+        "issue": null,
+        "page": "121468",
+        "article_number": "121468",
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.eswa.2023.121468"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 12,
+      "manuscript": "[12] Yu, S., Peng, J., Ge, Y., Yu, X., Ding, F., Li, S., Ma, C.: A traffic state prediction method based on spatial-temporal data mining of floating car data by using Autoformer architecture. Comput.-Aided Civ. Infrastruct. Eng. 39(18), 2774–2787 (2024). https://doi.org/10.1111/mice.13179",
+      "doi": "10.1111/mice.13179",
+      "crossref": {
+        "title": "A traffic state prediction method based on spatial–temporal data mining of floating car data by using autoformer architecture",
+        "authors": [
+          {
+            "given": "Shuangzhi",
+            "family": "Yu"
+          },
+          {
+            "given": "Jiankun",
+            "family": "Peng"
+          },
+          {
+            "given": "Yuming",
+            "family": "Ge"
+          },
+          {
+            "given": "Xinlian",
+            "family": "Yu"
+          },
+          {
+            "given": "Fan",
+            "family": "Ding"
+          },
+          {
+            "given": "Shen",
+            "family": "Li"
+          },
+          {
+            "given": "Charlie",
+            "family": "Ma"
+          }
+        ],
+        "journal": "Computer-Aided Civil and Infrastructure Engineering",
+        "short_journal": "Computer-Aided Civil and Infrastructure Engineering",
+        "volume": "39",
+        "issue": "18",
+        "page": "2774-2787",
+        "article_number": null,
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1111/mice.13179"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 13,
+      "manuscript": "[13] Du, K., Guo, X., Li, L., Song, J., Shi, Q., Hu, M., Fang, J.: Traffic prediction in time series, spatialtemporal, and OD data: A systematic survey. J. Traffic Transp. Eng. (Engl. Ed.) 12(3), 666–700 (2025). https://doi.org/10.1016/j.jtte.2025.03.001",
+      "doi": "10.1016/j.jtte.2025.03.001",
+      "crossref": {
+        "title": "Traffic prediction in time series, spatialtemporal, and OD data: A systematic survey",
+        "authors": [
+          {
+            "given": "Kai",
+            "family": "Du"
+          },
+          {
+            "given": "Xingping",
+            "family": "Guo"
+          },
+          {
+            "given": "Letian",
+            "family": "Li"
+          },
+          {
+            "given": "Jingni",
+            "family": "Song"
+          },
+          {
+            "given": "Qingqing",
+            "family": "Shi"
+          },
+          {
+            "given": "Mengyao",
+            "family": "Hu"
+          },
+          {
+            "given": "Jianwu",
+            "family": "Fang"
+          }
+        ],
+        "journal": "Journal of Traffic and Transportation Engineering (English Edition)",
+        "short_journal": "Journal of Traffic and Transportation Engineering (English Edition)",
+        "volume": "12",
+        "issue": "3",
+        "page": "666-700",
+        "article_number": null,
+        "published": 2025,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.jtte.2025.03.001"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 14,
+      "manuscript": "[14] Khatiriolyaee, M., Yang, L., Pazzi, R.W.: A comprehensive review of traffic prediction: From traditional machine learning to AutoML. Neurocomputing 666, 132148 (2026). https://doi.org/10.1016/j.neucom.2025.132148",
+      "doi": "10.1016/j.neucom.2025.132148",
+      "crossref": {
+        "title": "A comprehensive review of traffic prediction: From traditional machine learning to AutoML",
+        "authors": [
+          {
+            "given": "Mahshid",
+            "family": "Khatiriolyaee"
+          },
+          {
+            "given": "Li",
+            "family": "Yang"
+          },
+          {
+            "given": "Richard W.",
+            "family": "Pazzi"
+          }
+        ],
+        "journal": "Neurocomputing",
+        "short_journal": "Neurocomputing",
+        "volume": "666",
+        "issue": null,
+        "page": "132148",
+        "article_number": "132148",
+        "published": 2026,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.neucom.2025.132148"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 15,
+      "manuscript": "[15] Liu, X., Qin, L., Xu, M., Zhou, Y., Wang, B., Yu, W., Xiong, W.: A comprehensive review of traffic flow forecasting based on deep learning. Neurocomputing 668, 132269 (2026). https://doi.org/10.1016/j.neucom.2025.132269",
+      "doi": "10.1016/j.neucom.2025.132269",
+      "crossref": {
+        "title": "A comprehensive review of traffic flow forecasting based on deep learning",
+        "authors": [
+          {
+            "given": "Xin",
+            "family": "Liu"
+          },
+          {
+            "given": "Lanqi",
+            "family": "Qin"
+          },
+          {
+            "given": "Meng",
+            "family": "Xu"
+          },
+          {
+            "given": "Yicheng",
+            "family": "Zhou"
+          },
+          {
+            "given": "Bo",
+            "family": "Wang"
+          },
+          {
+            "given": "Weiren",
+            "family": "Yu"
+          },
+          {
+            "given": "Wenxin",
+            "family": "Xiong"
+          }
+        ],
+        "journal": "Neurocomputing",
+        "short_journal": "Neurocomputing",
+        "volume": "668",
+        "issue": null,
+        "page": "132269",
+        "article_number": "132269",
+        "published": 2026,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.neucom.2025.132269"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 16,
+      "manuscript": "[16] Xu, M., Di, Y., Ding, H., Zhu, Z., Chen, X., Yang, H.: AGNP: Network-wide short-term probabilistic traffic speed prediction and imputation. Commun. Transp. Res. 3, 100099 (2023). https://doi.org/10.1016/j.commtr.2023.100099",
+      "doi": "10.1016/j.commtr.2023.100099",
+      "crossref": {
+        "title": "AGNP: Network-wide short-term probabilistic traffic speed prediction and imputation",
+        "authors": [
+          {
+            "given": "Meng",
+            "family": "Xu"
+          },
+          {
+            "given": "Yining",
+            "family": "Di"
+          },
+          {
+            "given": "Hongxing",
+            "family": "Ding"
+          },
+          {
+            "given": "Zheng",
+            "family": "Zhu"
+          },
+          {
+            "given": "Xiqun",
+            "family": "Chen"
+          },
+          {
+            "given": "Hai",
+            "family": "Yang"
+          }
+        ],
+        "journal": "Communications in Transportation Research",
+        "short_journal": "Communications in Transportation Research",
+        "volume": "3",
+        "issue": null,
+        "page": "100099",
+        "article_number": "100099",
+        "published": 2023,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.commtr.2023.100099"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 17,
+      "manuscript": "[17] Zhang, Y., Kong, X., Zhou, W., Liu, J., Fu, Y., Shen, G.: A comprehensive survey on traffic missing data imputation. IEEE Trans. Intell. Transp. Syst. 25(12), 19252–19275 (2024). https://doi.org/10.1109/TITS.2024.3478816",
+      "doi": "10.1109/TITS.2024.3478816",
+      "crossref": {
+        "title": "A Comprehensive Survey on Traffic Missing Data Imputation",
+        "authors": [
+          {
+            "given": "Yimei",
+            "family": "Zhang"
+          },
+          {
+            "given": "Xiangjie",
+            "family": "Kong"
+          },
+          {
+            "given": "Wenfeng",
+            "family": "Zhou"
+          },
+          {
+            "given": "Jin",
+            "family": "Liu"
+          },
+          {
+            "given": "Yanjie",
+            "family": "Fu"
+          },
+          {
+            "given": "Guojiang",
+            "family": "Shen"
+          }
+        ],
+        "journal": "IEEE Transactions on Intelligent Transportation Systems",
+        "short_journal": "IEEE Trans. Intell. Transport. Syst.",
+        "volume": "25",
+        "issue": "12",
+        "page": "19252-19275",
+        "article_number": null,
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1109/tits.2024.3478816"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 18,
+      "manuscript": "[18] Qu, Y., Li, Z., Zhao, X., Ou, J.: Towards real-world traffic prediction and data imputation: A multi-task pretraining and fine-tuning approach. Inf. Sci. 657, 119972 (2024). https://doi.org/10.1016/j.ins.2023.119972",
+      "doi": "10.1016/j.ins.2023.119972",
+      "crossref": {
+        "title": "Towards real-world traffic prediction and data imputation: A multi-task pretraining and fine-tuning approach",
+        "authors": [
+          {
+            "given": "Yansong",
+            "family": "Qu"
+          },
+          {
+            "given": "Zhenlong",
+            "family": "Li"
+          },
+          {
+            "given": "Xiaohua",
+            "family": "Zhao"
+          },
+          {
+            "given": "Jushang",
+            "family": "Ou"
+          }
+        ],
+        "journal": "Information Sciences",
+        "short_journal": "Information Sciences",
+        "volume": "657",
+        "issue": null,
+        "page": "119972",
+        "article_number": "119972",
+        "published": 2024,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.ins.2023.119972"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 19,
+      "manuscript": "[19] Hewamalage, H., Ackermann, K., Bergmeir, C.: Forecast evaluation for data scientists: Common pitfalls and best practices. Data Min. Knowl. Discov. 37(2), 788–832 (2023). https://doi.org/10.1007/s10618-022-00894-5",
+      "doi": "10.1007/s10618-022-00894-5",
+      "crossref": {
+        "title": "Forecast evaluation for data scientists: common pitfalls and best practices",
+        "authors": [
+          {
+            "given": "Hansika",
+            "family": "Hewamalage"
+          },
+          {
+            "given": "Klaus",
+            "family": "Ackermann"
+          },
+          {
+            "given": "Christoph",
+            "family": "Bergmeir"
+          }
+        ],
+        "journal": "Data Mining and Knowledge Discovery",
+        "short_journal": "Data Min Knowl Disc",
+        "volume": "37",
+        "issue": "2",
+        "page": "788-832",
+        "article_number": null,
+        "published": 2023,
+        "published_online": 2022,
+        "type": "journal-article",
+        "doi": "10.1007/s10618-022-00894-5"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 20,
+      "manuscript": "[20] Chan, R.K.C., Lim, J.M.Y., Parthiban, R.: Missing traffic data imputation for artificial intelligence in intelligent transportation systems: Review of methods, limitations, and challenges. IEEE Access 11, 34080–34093 (2023). https://doi.org/10.1109/ACCESS.2023.3264216",
+      "doi": "10.1109/ACCESS.2023.3264216",
+      "crossref": {
+        "title": "Missing Traffic Data Imputation for Artificial Intelligence in Intelligent Transportation Systems: Review of Methods, Limitations, and Challenges",
+        "authors": [
+          {
+            "given": "Robin Kuok Cheong",
+            "family": "Chan"
+          },
+          {
+            "given": "Joanne Mun-Yee",
+            "family": "Lim"
+          },
+          {
+            "given": "Rajendran",
+            "family": "Parthiban"
+          }
+        ],
+        "journal": "IEEE Access",
+        "short_journal": "IEEE Access",
+        "volume": "11",
+        "issue": null,
+        "page": "34080-34093",
+        "article_number": null,
+        "published": 2023,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1109/access.2023.3264216"
+      },
+      "crossref_status": "OK"
+    },
+    {
+      "number": 21,
+      "manuscript": "[21] García-Pérez, M.A.: Use and misuse of corrections for multiple testing. Methods Psychol. 8, 100120 (2023). https://doi.org/10.1016/j.metip.2023.100120",
+      "doi": "10.1016/j.metip.2023.100120",
+      "crossref": {
+        "title": "Use and misuse of corrections for multiple testing",
+        "authors": [
+          {
+            "given": "Miguel A.",
+            "family": "García-Pérez"
+          }
+        ],
+        "journal": "Methods in Psychology",
+        "short_journal": "Methods in Psychology",
+        "volume": "8",
+        "issue": null,
+        "page": "100120",
+        "article_number": "100120",
+        "published": 2023,
+        "published_online": null,
+        "type": "journal-article",
+        "doi": "10.1016/j.metip.2023.100120"
+      },
+      "crossref_status": "OK"
+    }
+  ]
+}

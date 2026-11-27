@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "abstract": {
+    "unchanged": true,
+    "word_count_word_com": 150,
+    "sentences": 10,
+    "keywords": 6
+  },
+  "logic_and_evidence": {
+    "research_question_labels": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "discussion_headings": [
+      "6.1 Evidence Relative to Previous Studies and Engineering Implications",
+      "6.2 Limitations and Transferability"
+    ],
+    "locked_evidence": {
+      "FCD-reported speed": true,
+      "51 fixed virtual observation nodes": true,
+      "six-fold retrospective rolling-origin evaluation": true,
+      "180/180 formal runs": true,
+      "20/20 full-sample leakage assertions passed": true,
+      "0/15": true,
+      "−0.0117": true,
+      "−0.0235": true,
+      "−0.0222": true,
+      "0.5625": true,
+      "0.8438": true,
+      "1.000": true
+    },
+    "protected_sections_unchanged_except_citation_renumbering": {
+      "3 Study Area and FCD": true,
+      "4 GATE-FCD Methodology": true,
+      "5 Results": true,
+      "6.2 Limitations and Transferability": true,
+      "7 Conclusions": true,
+      "Data and Code Availability": true
+    }
+  },
+  "language": {
+    "narrative_words": 8300,
+    "section_words": {
+      "1 Introduction": 864,
+      "2 Literature Review and Research Gap": 948,
+      "3 Study Area and FCD": 431,
+      "4 GATE-FCD Methodology": 2547,
+      "5 Results": 1362,
+      "6 Discussion": 1666,
+      "7 Conclusions": 436,
+      "Data and Code Availability": 46
+    },
+    "sentences_over_30_words": [],
+    "ai_template_phrase_hits": [],
+    "cjk_character_types": [],
+    "em_dash_count": 0
+  },
+  "references": {
+    "count": 21,
+    "numbering": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "first_citation_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visible_unique_dois": 21,
+    "active_unique_doi_links": 21,
+    "reference_format_ok": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "10": true,
+      "11": true,
+      "12": true,
+      "13": true,
+      "14": true,
+      "15": true,
+      "16": true,
+      "17": true,
+      "18": true,
+      "19": true,
+      "20": true,
+      "21": true
+    },
+    "italic_journal_ok": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "10": true,
+      "11": true,
+      "12": true,
+      "13": true,
+      "14": true,
+      "15": true,
+      "16": true,
+      "17": true,
+      "18": true,
+      "19": true,
+      "20": true,
+      "21": true
+    }
+  },
+  "figures_and_tables": {
+    "table_text_unchanged": true,
+    "embedded_media_unchanged": true,
+    "inline_shape_counts": [
+      17,
+      17
+    ],
+    "figure_caption_count": 7,
+    "table_caption_count": 5,
+    "figures_cited": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true
+    },
+    "tables_cited": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "links": {
+    "github_active": true
+  }
+}

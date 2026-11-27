@@ -1,0 +1,34 @@
+GATE-FCD AJSE 201902 delivery package
+Date: 2026-08-15
+
+PRIMARY FILES
+- Humanizer_english_AJSE_201902_FINAL.docx
+- Humanizer_english_AJSE_201902_FINAL_preview.pdf
+
+REVIEW REPORTS
+- 01_AJSE_REFERENCE_AND_CITATION_AUDIT.md
+- 02_REFERENCE_RENUMBERING_MAP.md
+- 03_LOGIC_METHOD_RESULTS_REVIEW.md
+- 04_FIGURE_TABLE_AND_VISUAL_QA.md
+- 05_AJSE_SUBMISSION_FIT_AND_AUTHOR_ACTIONS.md
+- 06_THREE_PASS_FINAL_QA.md
+- 07_REVISION_CHANGELOG.md
+
+MACHINE-READABLE QA
+- build_201902_log.json
+- crossref_reference_audit.json
+- qa_pass_1_semantic_and_reference.json
+- qa_pass_2_language_and_format.json
+- qa_pass_3_final.json
+- qa_pass_3_visual.json
+- style_lint_pass_2.json
+- style_lint_pass_3_final.json
+
+FIGURES
+- figures/Figure1_Study_Corridor_and_FCD_Node_Distribution.png
+- figures/Figure2_FCD_Temporal_Availability_and_Spatiotemporal_Characteristics.png
+- figures/Figure3_GATE-FCD_Overall_Architecture.png
+- figures/Figure4_GATE-FCD_Operational_Implementation.png
+- figures/Figure5_Multi-Horizon_Performance_and_Stability.png
+- figures/Figure6_Reliability_and_Spatial_Error_Boundaries.png
+- figures/Figure7_Statistical_Evidence_Boundaries.png

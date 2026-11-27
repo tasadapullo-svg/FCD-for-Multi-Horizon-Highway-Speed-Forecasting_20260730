@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "narrative_words": 8372,
+  "section_words": {
+    "1 Introduction": 874,
+    "2 Literature Review and Research Gap": 941,
+    "3 Study Area and FCD": 434,
+    "4 GATE-FCD Methodology": 2530,
+    "5 Results": 1362,
+    "6 Discussion": 1749,
+    "7 Conclusions": 436,
+    "Data and Code Availability": 46
+  },
+  "discussion_headings": [
+    "6.1 Evidence Relative to Previous Studies and Engineering Implications",
+    "6.2 Limitations and Transferability"
+  ],
+  "abstract_words_regex": 148,
+  "abstract_words_word_com": 150,
+  "abstract_sentences": 10,
+  "abstract_unchanged": true,
+  "keywords_unchanged": true,
+  "protected_sections_unchanged": {
+    "3 Study Area and FCD": true,
+    "4 GATE-FCD Methodology": true,
+    "5 Results": true,
+    "7 Conclusions": true
+  },
+  "limitations_unchanged": true,
+  "data_statement_expected_link_change_only": true,
+  "references_unchanged": true,
+  "tables_unchanged": true,
+  "embedded_media_unchanged": true,
+  "inline_shapes_source_final": [
+    17,
+    17
+  ],
+  "citation_tokens_preserved": true,
+  "sentences_over_30_words": [],
+  "cjk_character_types": [],
+  "ai_template_phrase_hits": [],
+  "locked_phrases": {
+    "FCD-reported speed": true,
+    "51 fixed virtual observation nodes": true,
+    "six-fold retrospective rolling-origin evaluation": true,
+    "0/15": true,
+    "−0.0117": true,
+    "−0.0235": true,
+    "−0.0222": true,
+    "0.5625": true,
+    "0.8438": true,
+    "1.000": true,
+    "180 formal runs": true,
+    "20/20 full-sample leakage assertions passed": true
+  },
+  "github_link_active": true
+}

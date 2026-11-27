@@ -1,0 +1,25 @@
+AUTHOR CONFIRMATION BEFORE FINAL SUBMIT
+
+This package is technically prepared for submission, but the following items require author confirmation in Editorial Manager because they cannot be decided safely from the manuscript files alone.
+
+1. SYSTEM-DESIGNATED CORRESPONDING AUTHOR
+   The manuscript marks Wenjie Sun and Safizahanin binti Mokhtar with corresponding-author symbols.
+   Springer Nature's Applied Intelligence guidance describes one author as the system Corresponding Author.
+   Confirm which author should be designated in Editorial Manager before final submission.
+
+2. ORCID
+   Add each author's 16-digit ORCID in Editorial Manager if available. No ORCID has been guessed or inserted into the manuscript.
+
+3. SUGGESTED REVIEWER CONFLICT CHECK
+   Suggested_Reviewers.xlsx contains independent-looking candidates with institutional emails and verification sources.
+   Before entering any reviewer, all authors must confirm there is no recent co-authorship, shared grant, supervision relationship, same-institution relationship, or other conflict.
+
+4. AI/LLM DISCLOSURE
+   Applied Intelligence states that substantive LLM use should be documented in the Methods section or a suitable alternative section; AI-assisted copy editing alone does not need to be declared.
+   The authors must decide which category accurately describes their actual use and add a disclosure if required. No disclosure has been inserted automatically.
+
+5. THIRD-PARTY PERMISSIONS
+   Confirm that all figures, maps, basemaps, and graphical elements are original or are used under permissions/licences compatible with publication. The submission package contains no separate permissions file because none was supplied.
+
+6. AUTHOR APPROVAL
+   Confirm that all five authors approve the final author order, affiliations, manuscript, declarations, and submission to Applied Intelligence.

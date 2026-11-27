@@ -1,0 +1,35 @@
+{
+  "source": "C:\\Users\\DELL\\Desktop\\20260815\\new\\Humanizer_english_AJSE_FINAL.docx",
+  "output": "C:\\Users\\DELL\\Desktop\\20260815\\new\\2019\\Humanizer_english_AJSE_2019_FINAL.docx",
+  "narrative_words": 8372,
+  "section_narrative_words": {
+    "1 Introduction": 874,
+    "2 Literature Review and Research Gap": 941,
+    "3 Study Area and FCD": 434,
+    "4 GATE-FCD Methodology": 2530,
+    "5 Results": 1362,
+    "6 Discussion": 1749,
+    "7 Conclusions": 436,
+    "Data and Code Availability": 46
+  },
+  "discussion_headings": [
+    "6.1 Evidence Relative to Previous Studies and Engineering Implications",
+    "6.2 Limitations and Transferability"
+  ],
+  "introduction_before_after": [
+    1075,
+    874
+  ],
+  "literature_before_after": [
+    1163,
+    941
+  ],
+  "discussion_before_after": [
+    1914,
+    1749
+  ],
+  "long_sentences_over_30": 0,
+  "tables_unchanged": true,
+  "media_unchanged": true,
+  "references_unchanged": true
+}
