@@ -1,0 +1,6 @@
+﻿gate,result,evidence
+target_asset,FAIL,"E output root two projects; four E top-level ZIP member lists; C:/Users/DELL Desktop, Downloads, Documents, OneDrive, WPS Cloud Files, WPSDrive; D:/Desktop exact historical path unavailable"
+true_observation_provenance,NOT_ASSESSABLE,No CSV or source logs
+sampling_frequency,NOT_ASSESSABLE,No raw timestamps
+research_permission,AUTHOR_CONFIRMATION_REQUIRED,No applicable historical contract
+model_training,0,No E08 entry run

@@ -1,0 +1,15 @@
+{
+  "phase": "G1_E01_E03",
+  "status": "CONDITIONAL_PASS",
+  "zip_path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\APIN_G1_E01_E03_Results_20261125.zip",
+  "zip_sha256": "8772f72578f72d83defc91a40524a126708c840721f7374fca16cca3e391d0b1",
+  "zip_size_bytes": 1526746,
+  "zip_members": 95,
+  "crc": "PASS",
+  "core_files": 7,
+  "workbook_sheets_checked": 21,
+  "diagnostics": 6,
+  "restricted_record_files_in_zip": 0,
+  "source_models_trained": 0,
+  "completed_at": "2026-11-25T19:29:17.987037+08:00"
+}

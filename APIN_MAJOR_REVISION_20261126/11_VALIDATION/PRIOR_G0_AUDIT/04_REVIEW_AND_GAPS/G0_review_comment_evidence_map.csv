@@ -1,0 +1,32 @@
+﻿reviewer,comment_id,review_comment_excerpt,paper_location,existing_data_ref,existing_result_ref,alignment_status,evidence_gap,requires_G1_decision
+R1,R1-01,6折Wilcoxon经5项Holm后根本无法显著,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-02,H6 5/6混合目标与H3 3/3混杂,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-03,59.87%、82.71%、97.30%混淆；缺失非随机,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-04,无真实地面速度；“reliable”无独立操作定义,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-05,51节点为何选取；测试窗边界剔除数量缺,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-06,无时空模型、缺调参、GRU欠公平,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-07,GATE-FCD缺反事实消融,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-08,最终评估被看过；去Fold6变赢家,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-09,H1 XGB与Persistence近似打平，H1/H6不可直比,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R1,R1-10,特征、文风、图表、文献瑕疵,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R2,R2-01,单走廊/短时段外部有效性,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R2,R2-02,1/4–4/4规则影响有效样本且可能选择拥堵较少的时刻,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R2,R2-03,两篇Kolmogorov复杂度文献,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R2,R2-04,6折统计弱；bootstrap符号反转；效用,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-01,长缺失导致forward fill假稳定,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-02,24h历史长度未经检验,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-03,共同样本门槛筛掉难例,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-04,XGB微弱优势的实际价值,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-05,DMS经济收益文献,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-06,GRU参数与训练公平性,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-07,窗口均速不能代替特定未来时点,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-08,统计检验功效,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-09,车辆识别和环岛文章,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-10,coverage、gap、volatility联合作用,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-11,节点级误差空间解释不足,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R3,R3-12,供应商速度不等于真值,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R6,R6-A,GATE只是常规做法组合；未操作化可靠性,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R6,R6-B,n=6检验功效必然不足,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R6,R6-C,自由流主导；缺分布、confidence、拥堵和free-flow基线,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R6,R6-D,HA/SeasonalHA定义、GRU特征公平性、邻节点缺失,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True
+R6,R6-E,Fold5春节、斋月、Fold6赢家改变,待与原始审稿信核对,01_DATA_LINEAGE/,03_CODE_AND_RESULTS/,NOT_VERIFIED,当前引用为历史审稿摘要，不是原始审稿原文；各意见所需证据见缺口表,True

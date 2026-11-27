@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19042-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "pyarrow": "26.0.1",
+    "scipy": "NOT_INSTALLED_OR_METADATA_UNAVAILABLE",
+    "openpyxl": "3.1.5",
+    "matplotlib": "NOT_INSTALLED_OR_METADATA_UNAVAILABLE"
+  },
+  "protocol_sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+  "receipt_recovered_at": "2026-11-25T19:11:36.072026+08:00"
+}

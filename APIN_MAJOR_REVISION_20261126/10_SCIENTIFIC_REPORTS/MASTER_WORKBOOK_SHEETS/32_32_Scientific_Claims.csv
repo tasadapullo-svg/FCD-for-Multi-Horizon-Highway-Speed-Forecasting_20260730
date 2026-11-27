@@ -1,0 +1,12 @@
+claim_id,proposed_claim,support_status,scope_or_limitation,evidence_file
+C01,XGBoost vs Ridge obtains significant day-macro evidence at H1 and H3,STATISTICALLY_SUPPORTED,G1 3-day Holm; H6 is not included,E03_08_Holm_Adjusted_Comparisons.csv
+C02,"GRU vs Ridge obtains significant day-macro evidence at H1, H3 and H6",STATISTICALLY_SUPPORTED,Same corridor; retrospective 41 test dates,E03_08_Holm_Adjusted_Comparisons.csv
+C03,XGBoost is stably superior to SeasonalHA across all horizons,NOT_SUPPORTED,All three G1 primary confidence intervals span zero,E03_08_Holm_Adjusted_Comparisons.csv
+C04,GATE-FCD supports transparent data auditing and a common evaluation contract,DESCRIPTIVELY_SUPPORTED,Protocol and denominators audited; not an accuracy superiority claim,G1_06_Acceptance_Report_CN.md
+C05,GATE-FCD guarantees lower forecasting MAE,NOT_SUPPORTED,G2 ablations and key tests do not establish a universal improvement,G2_Key_Comparisons_Actual.csv
+C06,Stricter sample eligibility always improves forecasting,NOT_SUPPORTED,3/4 and strict H6 comparisons do not show universal improvement; 4/4 lacks validation support,G2_Actual_Common_Origin_Contrasts.csv
+C07,Current outcomes validate true road-speed accuracy,NOT_SUPPORTED,Target is provider-returned speed without synchronous independent truth,G1_06_Acceptance_Report_CN.md
+C08,Current outcomes establish generalisation to another corridor,NOT_SUPPORTED,Single commercial FCD corridor; E08 not run,G2_07_Acceptance_Report_CN.md
+C09,Current outcomes establish reliable live production availability,NOT_SUPPORTED,Original API arrival latency unavailable,G2_01_Source_and_Implementation_Report_CN.md
+C10,4/4 completeness yields a six-fold model comparison at H6,NOT_ESTIMABLE,All H6 validation folds empty,E04_Threshold4_Sample_Support.csv
+C11,G2 key paired changes are significant after four-test Holm correction,NOT_SUPPORTED,All four G2 adjusted p values exceed 0.05,G2_Key_Comparisons_Actual.csv

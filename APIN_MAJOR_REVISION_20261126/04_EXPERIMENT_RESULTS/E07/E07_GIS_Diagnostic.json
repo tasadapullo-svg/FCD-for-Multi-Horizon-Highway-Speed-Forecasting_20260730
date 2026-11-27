@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-25T23:59:15.420742+08:00",
+  "source": "local OSM current snapshot; not historical road proof",
+  "osm_vertices": 15677,
+  "road_ways": 1598,
+  "road_segments": 16189,
+  "graph_components": 3,
+  "nodes_matched": 51,
+  "max_lateral_offset_m": 86.40312696649845,
+  "median_lateral_offset_m": 3.5910724864913566,
+  "adjacent_pairs_connected": 50,
+  "adjacent_pairs_total": 50,
+  "direction_validated": false,
+  "status": "DIAGNOSTIC_ONLY_REQUIRES_MANUAL_ROAD_REVIEW"
+}

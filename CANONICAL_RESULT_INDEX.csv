@@ -1,4 +1,6 @@
-result_id,current_repository_path,implementation_id,seed_aggregation,publication_status,limitation,source_version,prompt12_source_status
-G1_PRIMARY,RESEARCH_RESULTS_SUMMARY_EN.md,ORIGINAL_FROZEN,METHOD_A,SUMMARY_PUBLIC_DETAILED_TABLE_PENDING,Method B supplementary,PROMPT10_CONTENT_CLASSIFIED,Local corrected figure/table views take priority over Prompt06 workbooks for Fig03/Fig05 labels/Fig08 history24; numerical data remain permission pending
-G2,RESEARCH_RESULTS_SUMMARY_EN.md,REVISION_INDEPENDENT_IMPLEMENTATION_v1,SEE_CODE,SUMMARY_PUBLIC_DETAILED_TABLE_PENDING,Not original-code recovery,PROMPT10_CONTENT_CLASSIFIED,Local corrected figure/table views take priority over Prompt06 workbooks for Fig03/Fig05 labels/Fig08 history24; numerical data remain permission pending
-RIDGE_SVD,RESEARCH_RESULTS_SUMMARY_EN.md,REVISION_SVD,SEE_FROZEN,SUMMARY_PUBLIC_DETAILED_TABLE_PENDING,Special paired targets NOT_AVAILABLE,PROMPT10_CONTENT_CLASSIFIED,Local corrected figure/table views take priority over Prompt06 workbooks for Fig03/Fig05 labels/Fig08 history24; numerical data remain permission pending
+result_id,repository_path,interpretation
+G1_PRIMARY_METHOD_A,APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E03/E03_03_Original_vs_Recomputed_Table7.csv,"Original historical predictions; Method A primary, Method B supplementary"
+G1_INFERENCE,APIN_MAJOR_REVISION_20261126/09_SUPPLEMENTARY_MATERIALS/S04_Additional/Final_Statistical_Inference.csv,Frozen final values; no recomputation
+G2_RIDGE_SVD,APIN_MAJOR_REVISION_20261126/09_SUPPLEMENTARY_MATERIALS/S05_Additional/Ridge_Corrected_Experiment_Metrics.csv,"Final native corrected metrics, not special common-target paired substitutes"
+TABLE7_PRIMARY,APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table07/Table07.csv,Original G1 Method A primary MAE
+FIG8_MATCHED_REFERENCE,APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig08/Fig08_Matched_Common_Origin_Contrasts.csv,Historical Cholesky columns separated; final SVD special paired metrics NOT_AVAILABLE

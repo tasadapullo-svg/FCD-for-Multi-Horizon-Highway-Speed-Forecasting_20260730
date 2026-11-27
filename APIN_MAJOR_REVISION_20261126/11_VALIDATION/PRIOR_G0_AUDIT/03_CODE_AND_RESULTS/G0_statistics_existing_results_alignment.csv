@@ -1,0 +1,16 @@
+﻿comparison,horizon,raw_p,saved_adjusted_p,recalculated_holm,fold_difference,block_difference,status,reason
+XGBoost_vs_GRU,1,0.03125,0.15625,0.15625,-0.2012588191471522,-0.2165533563740059,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_Ridge,1,0.03125,0.15625,0.15625,-0.2758289928666221,-0.2625505062724203,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+Persistence_vs_HA,1,0.03125,0.15625,0.15625,-0.8742802136172102,-1.0931002937139125,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+GRU_vs_Ridge,1,0.09375,0.1875,0.1875,-0.0745701737194699,-0.0459971498984143,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_SeasonalHA,1,0.5625,0.5625,0.5625,-0.0117079915637981,0.0684244852751401,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_GRU,3,0.03125,0.15625,0.15625,-0.2136857998288566,-0.2964466754812432,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_Ridge,3,0.03125,0.15625,0.15625,-0.3021405244510267,-0.3912177152920465,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+Persistence_vs_HA,3,0.03125,0.15625,0.15625,-0.5340992202432591,-0.6298077785985181,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+GRU_vs_Ridge,3,0.15625,0.3125,0.3125,-0.08845472462217,-0.0947710398108033,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_SeasonalHA,3,0.84375,0.84375,0.84375,-0.0235072780030109,0.0251850349076826,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_GRU,6,0.03125,0.15625,0.15625,-0.2067487805518632,-0.3863571936333909,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_Ridge,6,0.03125,0.15625,0.15625,-0.3346360001632959,-0.4537170387183774,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+GRU_vs_Ridge,6,0.0625,0.1875,0.1875,-0.1278872196114326,-0.0673598450849864,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+XGBoost_vs_SeasonalHA,6,0.5625,1.0,1.0,-0.0222141905754674,0.0225896739809555,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap
+Persistence_vs_HA,6,0.5625,1.0,1.0,-0.0350710773285175,-0.0345655065105381,PASS_RECALCULATED,原始p值沿用既存统计；只复核Holm算术，未执行新检验/bootstrap

@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-11-26T05:02:42.740614+08:00",
+  "project_root": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改",
+  "output_root": "E:\\20261125_论文修改_Applied Intelligence",
+  "manuscript_id": "APIN-D-26-12623",
+  "migration_status": "MIGRATION_PASS_1052_OF_1052_BEFORE_G2_CODE_CHANGES",
+  "g0_status": "CONDITIONAL_PASS_REUSED",
+  "g1_status": "CONDITIONAL_PASS_REUSED",
+  "source_gate_status": "PASS_NEW_IMPLEMENTATION",
+  "source_gate_protocol_sha256": "ae4c72d2be48441da473ae3b1d25b04ac8aa53f3df2a838134d826b23fc51022",
+  "g2_protocol_sha256": "a5f4e2a27d86897d0e53dcf384bf2c1bd82e249ac855a3d0f52667e5f1edfb2a",
+  "key_comparison_protocol_sha256": "caf724df863cf4b850457fd567a643341f38b1b22f17a793ed41af89c1de885b",
+  "acceptance_status": "CONDITIONAL_PASS",
+  "unique_run_ids": 651,
+  "completed_runs": 642,
+  "validation_only_runs": 9,
+  "failed_runs": 0,
+  "incomplete_runs": 0,
+  "stage_status": {
+    "E04": "CONDITIONAL_PASS; applicable runs complete; 4/4 not estimable",
+    "E05": "PASS; returned-only and scaling diagnostics complete",
+    "E06": "CONDITIONAL_PASS; core and static GRU complete; spatial neighbor conditional deferred",
+    "E07": "CONDITIONAL_PASS; current OSM, official calendar and actual CPU efficiency complete; historical topology and API latency unverified"
+  },
+  "environment_record": "00_PROJECT_CONTROL/NEW_PC_G2_ENVIRONMENT_CN.md",
+  "execution_commands": [
+    "python run_e04_core.py matched_baselines threshold1 threshold3_h1 strict6 seasonal_impute history",
+    "python run_e05_core.py returned_only leaky_scaling",
+    "python run_e06_core.py",
+    "python build_g2_summaries.py",
+    "python analyze_e06_config.py",
+    "python analyze_key_comparisons.py",
+    "python benchmark_e07_inference.py",
+    "python build_reviewer_matrix.py",
+    "python prepare_payload.py",
+    "node build_workbooks.mjs PROJECT_ROOT"
+  ],
+  "data_dependencies": [
+    "transfer_file_manifest.json verified 1052/1052",
+    "frozen Fold1/H1 feature and key evidence",
+    "G0/G1 frozen results reused",
+    "E01-E03 derived causal data",
+    "E07 local OSM and official calendar evidence"
+  ],
+  "restricted_sources": [
+    "01_ORIGINAL_BASELINE/RAW_SOURCE",
+    "01_ORIGINAL_BASELINE/FROZEN_REPOSITORY",
+    "02_DATA/03_DERIVED_DATA",
+    "04_EXPERIMENTS/G2_ARTIFACTS"
+  ],
+  "package_policy": "Only core aggregate deliverables, code, protocol, safe aggregate evidence; no raw FCD, per-sample predictions, matrices, weights or secrets",
+  "code_sha256": {
+    "data_engine.py": "79ca025bf096359435b801766787559245a4975fa6cb564f876ec7b244dcf580",
+    "models.py": "a2e3f6fc7834d154f7b2f8b751a81c8b2376587ef04f52350b40c44c384af08a",
+    "g2_common.py": "c16cea3a25de8ecf5334b88cc553b1d0b24871a52ef718a97ac62f65c492c7a0",
+    "run_e04_core.py": "11bca6bea65e5c3578c206fbe2fc9ef6413e8eec1b1d311762e513a4215fedd5",
+    "run_e05_core.py": "e0396326d60da59980388be94e43c8762d40add8778e65e1b88e5be8e20a5f8a",
+    "run_e06_core.py": "6a10ed0b528857b094f0cb449946eaff2c1bb10e8c0910528dc5d5c08ce881b4",
+    "build_g2_summaries.py": "dbc2850f0dfdce19a252d36e2c9d754814f159a650cfaa297aef4f885b880f40",
+    "analyze_e06_config.py": "e120c11dd3fc47772c10701b3d9bb937c01e3b0279be343e211ceb2835c966e0",
+    "analyze_key_comparisons.py": "d6bb5974452d528fd4aeda7505cd736ba45776f7a556ccf30dff13a8b17666fb",
+    "analyze_gis_local.py": "4cc4088e967da68f622d4fac8337421f2db8084ac07ff81c10db1fd6c67e9b4f",
+    "benchmark_e07_inference.py": "5ffa962da2727e5ed235ab23308763a91b8bb5990d931cbcf6ee9d28b5ac1d04",
+    "build_reviewer_matrix.py": "5cf9bc5ec7cb6789653792883cfd0794ebc46325209d564cfe39f2397f93bc31",
+    "package_g2.py": "8cb677bc626ce375dbbee6f65e8818fcfbe83340e164d4d7697c72153961f1f3"
+  },
+  "input_versions": {
+    "00_PROJECT_CONTROL/MIGRATION/transfer_file_manifest.json": "8e7493df2084489dc51fb9869f91ac8b008c65316bc055b0a83be1522bc2cd66",
+    "04_EXPERIMENTS/G0_DATA_READINESS/G0_06_Execution_Manifest.json": "17b61c1864724d9779bc3e407826d00ca4a737671631ba4471b66cf70144d492",
+    "04_EXPERIMENTS/G1_E01_E03_ACCEPTANCE/G1_07_Execution_Manifest.json": "9b52513099b8f9ae8e3c7c37a171394326bf6405cb1230df5d8a0a7ebe6c43dc",
+    "04_EXPERIMENTS/SOURCE_GATE/status.json": "2bfeb92401759492a6a6d00225722750d3343b8625f6d5a7a7199d992f296b8a",
+    "04_EXPERIMENTS/E07_SPATIAL_OPERATIONAL/E07_GIS_Diagnostic.json": "5ca71e63f0cf74360066203195b7257e1cdb58eaf98fb0e43277454ff8559474"
+  }
+}

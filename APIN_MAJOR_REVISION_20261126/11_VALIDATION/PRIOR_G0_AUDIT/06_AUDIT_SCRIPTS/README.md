@@ -1,0 +1,1 @@
+运行：用config.json指定输入和独立输出。python -X utf8 audit.py → core.py → data.py → extended.py → finish.py → supplement.py → version_check.py → finalizer.py。均只读输入；不执行项目源码、不加载模型、不发采集请求。报告列明未完成项。不要直接重跑已冻结目录，复制脚本到新审计输出目录更新config。schema_probe.py/qa.py为只读诊断。

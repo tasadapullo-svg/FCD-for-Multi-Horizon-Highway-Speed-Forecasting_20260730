@@ -1,4 +1,4 @@
-step_id,step_name_en,processing_rule,method_role
+﻿step_id,step_name_en,processing_rule,method_role
 archive,Archived FCD observations,"Historical returned observations, not asserted raw API request archive",EVALUATION_PROTOCOL
 grid,Complete scheduled grid,Retain absent returned slots,EVALUATION_PROTOCOL
 quality,Quality eligibility,Provider speed/confidence/travel-time/closure rules,EVALUATION_PROTOCOL

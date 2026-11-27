@@ -1,0 +1,22 @@
+{
+  "core_budget_cap": 624,
+  "conditional_budget_cap": 78,
+  "reviewer_progress_counts": {
+    "PARTIAL_EVIDENCE; TRAINING_OR_EDITORIAL_WORK_PENDING": 12,
+    "ANALYSIS_EVIDENCE_SUFFICIENT_FOR_ISSUE; MANUSCRIPT_PENDING": 7,
+    "PARTIAL_EVIDENCE; GIS_CALENDAR_OR_OPERATIONAL_EXPLANATION_PENDING": 5,
+    "PARTIAL_EVIDENCE; EXTERNAL_VALIDATION_OR_LIMITATION_RESPONSE": 4,
+    "LITERATURE_RELEVANCE_PENDING": 3
+  },
+  "validation_status": "CONDITIONAL_PASS",
+  "outputs": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_01_E01_E03_Result_Registry.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_02_Integrated_Results.xlsx",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_03_Reviewer_Response_Progress.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_04_Manuscript_Consistency_Matrix.xlsx",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_06_Acceptance_Report_CN.md",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_07_Execution_Manifest.json"
+  ],
+  "report_ready_at": "2026-11-25T19:23:55.604192+08:00"
+}

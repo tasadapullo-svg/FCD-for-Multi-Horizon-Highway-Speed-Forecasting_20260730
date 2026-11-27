@@ -1,0 +1,18 @@
+{
+  "ridge_original_run_ids": 93,
+  "diagnostic_svd_fits": 93,
+  "test_result_runs": 90,
+  "warning_run_ids": 78,
+  "prediction_tolerance_fail_runs": 89,
+  "mae_tolerance_fail_runs": 87,
+  "test_mae_round3_changed_runs": 18,
+  "max_test_prediction_difference_kmh": 0.69317626953125,
+  "max_abs_test_mae_difference_kmh": 0.0014619876879307,
+  "selection_changed_horizons": 0,
+  "xgboost_ridge_fold_winner_changed_count": 0,
+  "ranking_pairs_checked": 90,
+  "g1_unchanged": true,
+  "g2_key_tests_unchanged": true,
+  "frozen_g2_package_unchanged": true,
+  "final_use": "SVD corrected Ridge aggregate metrics overlay; original G2 registry and package retained as provenance"
+}

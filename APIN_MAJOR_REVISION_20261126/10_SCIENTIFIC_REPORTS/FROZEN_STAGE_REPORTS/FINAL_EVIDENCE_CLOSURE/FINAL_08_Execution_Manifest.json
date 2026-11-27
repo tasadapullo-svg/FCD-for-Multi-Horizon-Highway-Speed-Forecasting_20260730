@@ -1,0 +1,102 @@
+{
+  "manuscript_id": "APIN-D-26-12623",
+  "completed_at_Asia_Shanghai": "2026-11-26T07:55:44.491657+08:00",
+  "output_root": "E:\\20261125_论文修改_Applied Intelligence",
+  "project_root": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改",
+  "final_state": "INTERNAL_EXPERIMENTS_FROZEN_WITH_LIMITATIONS",
+  "inherited_status": {
+    "G0": "CONDITIONAL_PASS",
+    "G1": "CONDITIONAL_PASS",
+    "G2": "CONDITIONAL_PASS",
+    "SOURCE_GATE": "PASS_NEW_IMPLEMENTATION"
+  },
+  "original_source_recovered": false,
+  "G2_unique_runs": 651,
+  "G2_model_fits": 489,
+  "G2_deterministic_executions": 162,
+  "G2_test_runs": 642,
+  "G2_validation_only_runs": 9,
+  "G2_failed_runs": 0,
+  "new_model_fits": {
+    "Ridge_SVD_diagnostic": 93,
+    "spatial_neighbor": 0,
+    "E08_external": 0
+  },
+  "statistics": {
+    "g1_primary_significant": 7,
+    "g1_7d_sensitivity_significant": 7,
+    "g1_primary_significant_7d_preserved": true,
+    "g2_primary_significant": 0,
+    "sources": [
+      "E03_08_Holm_Adjusted_Comparisons.csv",
+      "E03_07_Block_Length_Sensitivity.csv",
+      "G2_Key_Comparisons_Actual.csv"
+    ]
+  },
+  "ridge": {
+    "ridge_original_run_ids": 93,
+    "diagnostic_svd_fits": 93,
+    "test_result_runs": 90,
+    "warning_run_ids": 78,
+    "prediction_tolerance_fail_runs": 89,
+    "mae_tolerance_fail_runs": 87,
+    "test_mae_round3_changed_runs": 18,
+    "max_test_prediction_difference_kmh": 0.69317626953125,
+    "max_abs_test_mae_difference_kmh": 0.0014619876879307,
+    "selection_changed_horizons": 0,
+    "xgboost_ridge_fold_winner_changed_count": 0,
+    "ranking_pairs_checked": 90,
+    "g1_unchanged": true,
+    "g2_key_tests_unchanged": true,
+    "frozen_g2_package_unchanged": true,
+    "final_use": "SVD corrected Ridge aggregate metrics overlay; original G2 registry and package retained as provenance"
+  },
+  "GIS": {
+    "source_at": "2026-11-25T19:49:13.322820+08:00",
+    "nodes": 51,
+    "offset_median_m": 3.5910724864844203,
+    "offset_max_m": 86.40312696649059,
+    "nodes_manual_review": 15,
+    "pairs_connected": 50,
+    "pairs_flagged_detour": 2,
+    "straight_km": 137.39491969762582,
+    "current_osm_graph_km": 156.27410417962102,
+    "unique_graph_edge_km": 112.26391226597295,
+    "repeated_edge_km": 44.01019191364808,
+    "max_edge_reuse": 5,
+    "historical_corridor_length_status": "HISTORICAL_CORRIDOR_LENGTH_NOT_VERIFIED",
+    "gpkg_local_only": "04_EXPERIMENTS/FINAL_TARGETED_CHECKS/GIS_Final_Plot_Data_Local_Only.gpkg"
+  },
+  "E08_status": "NOT_FEASIBLE_WITH_CURRENT_DATA",
+  "commercial_data_public_rights": "AUTHOR_CONFIRMATION_REQUIRED",
+  "inputs": {
+    "01_ORIGINAL_BASELINE/PRIOR_G0_AUDIT/05_REPORTS/G0_EXECUTIVE_VERDICT.md": "e54e947989769d9f8a553ad77b8df4a1fa8f43a3c1c1f8ff461fb5bd348c348b",
+    "04_EXPERIMENTS/G1_E01_E03_ACCEPTANCE/G1_06_Acceptance_Report_CN.md": "1141f71b06f72dbf90ef8e03fba75ce256c6a66ec67349a11abfb5417c3f2dce",
+    "04_EXPERIMENTS/G2_E04_E07_ACCEPTANCE/G2_07_Acceptance_Report_CN.md": "776026dd00015ba718ec171e14a4c3222ac070768d7f668769ac124fb9ef36bc",
+    "04_EXPERIMENTS/G2_E04_E07_ACCEPTANCE/G2_02_Experiment_Run_Registry.csv": "70062a8799597d1ee8f5d2b68f5289451770e262dde2655398a8e4618dbb892f",
+    "04_EXPERIMENTS/G2_E04_E07_ACCEPTANCE/G2_Key_Comparisons_Actual.csv": "32983635c890277fff994cbdcc677ac052d62875038bd47b8bde268ad283ece8",
+    "00_PROJECT_CONTROL/G1_Analysis_Protocol.yaml": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+    "00_PROJECT_CONTROL/G2_Training_Protocol.yaml": "a5f4e2a27d86897d0e53dcf384bf2c1bd82e249ac855a3d0f52667e5f1edfb2a"
+  },
+  "core_outputs_01_to_07": {
+    "05_FINAL_RESULTS/FINAL_EVIDENCE_CLOSURE/FINAL_01_Statistical_and_Scientific_Claims.xlsx": "985d4a31e37cd2c6d304cda8addabcc938a8719c3c80e7372f33dc66c2544866",
+    "05_FINAL_RESULTS/FINAL_EVIDENCE_CLOSURE/FINAL_02_Targeted_Closure_Report_CN.md": "09ccfb97f0f17f4d165b92448074db6ecbd37ad63fdbbce84457a927806ea714",
+    "05_FINAL_RESULTS/FINAL_EVIDENCE_CLOSURE/FINAL_03_E08_External_Validation_Decision.xlsx": "23c622b1d6a204a3bbaa64eb89e9fe80bbefccc264a2f2d2e7a06b5bfb3e6b8c",
+    "05_FINAL_RESULTS/FINAL_EVIDENCE_CLOSURE/FINAL_04_Reviewer_Evidence_Matrix.xlsx": "a60b1a99e75e6fb732d6a8ed5366c636ea21616b0baf284274f387594bfb1603",
+    "05_FINAL_RESULTS/FINAL_EVIDENCE_CLOSURE/FINAL_05_Manuscript_Consistency_Matrix.xlsx": "21448d68ea218c2046a1a916fd4bc059c199cfc0a852f7b31a065f0b86701873",
+    "05_FINAL_RESULTS/FINAL_EVIDENCE_CLOSURE/FINAL_06_Figure_Table_and_Reference_Plan.xlsx": "9a66e679074a8c6a99cb16c400af8afe7e9e17315f6d88dc0d7162f84e03aff6",
+    "05_FINAL_RESULTS/FINAL_EVIDENCE_CLOSURE/FINAL_07_Experiment_Freeze_Report_CN.md": "ecc4eb7ae790c0580bf03d80b02870af3694e85058e8d19b76394986b755792f"
+  },
+  "G2_frozen_zip": {
+    "path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_G2_E04_E07_Results_20261126.zip",
+    "sha256": "fe32d0a192773a3fbf83b8445c31fd96e47a310290b9ece792efd0bcf2afd3f8"
+  },
+  "limitations": [
+    "historical_test_exposure",
+    "no_independent_period_or_cross_corridor_validation",
+    "no_independent_colocated_speed_ground_truth",
+    "historical_corridor_length_unverified",
+    "historical_directional_topology_unverified",
+    "commercial_data_rights_unverified"
+  ]
+}

@@ -1,0 +1,17 @@
+metric,value,statistical_level,denominator,ratio,historical_value,difference,definition,version
+planned_15min_slots,403512,node-quarter,,,403512.0,0.0,,REVISION_E01_E03
+planned_hourly_slots,100878,node-hour,,,100878.0,0.0,,REVISION_E01_E03
+returned_parsed_rows_all_span,244477,return-row,,,244477.0,0.0,,REVISION_E01_E03
+quality_pass_rows_all_span,243307,return-row,,,243307.0,0.0,,REVISION_E01_E03
+quality_fail_rows_all_span,1170,return-row,,,1170.0,0.0,,REVISION_E01_E03
+quality_dedup_all_span,241727,node-quarter,,,241727.0,0.0,,REVISION_E01_E03
+quality_dedup_in_grid,241601,node-quarter,403512.0,0.598745514384,241601.0,0.0,,REVISION_E01_E03
+returned_rows_in_grid,244351,return-row,,,,,,REVISION_E01_E03
+returned_rows_outside_grid,126,return-row,,,,,,REVISION_E01_E03
+quality_dedup_outside_grid,126,node-quarter,,,126.0,0.0,,REVISION_E01_E03
+unique_returned_slots,242757,node-quarter,403512.0,0.60161036103,,,,REVISION_E01_E03
+has_quality_slots,241601,node-quarter,403512.0,0.598745514384,,,,REVISION_E01_E03
+only_ineligible_slots,1156,node-quarter,403512.0,0.00286484664644,,,,REVISION_E01_E03
+no_archived_return_slots,160755,node-quarter,403512.0,0.39838963897,,,,REVISION_E01_E03
+duplicate_return_rows_in_grid,1594,return-row,,,,,,REVISION_E01_E03
+duplicate_quality_rows_in_grid,1580,return-row,,,,,,REVISION_E01_E03

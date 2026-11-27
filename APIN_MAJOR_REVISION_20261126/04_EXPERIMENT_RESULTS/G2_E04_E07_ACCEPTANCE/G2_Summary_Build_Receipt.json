@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-11-26T04:57:21.958835+08:00",
+  "run_json_count": 651,
+  "completed_count": 642,
+  "failed_count": 0,
+  "reuse_event_count": 414,
+  "conditions": {
+    "history12": 24,
+    "threshold1": 108,
+    "base": 288,
+    "returned_only": 24,
+    "threshold3": 36,
+    "strict6": 36,
+    "seasonal_impute": 54,
+    "leaky_scaling": 24,
+    "history24_matched": 24,
+    "history48": 24
+  },
+  "method_A_B_rows": 54,
+  "common_origin_contrast_rows": 330
+}

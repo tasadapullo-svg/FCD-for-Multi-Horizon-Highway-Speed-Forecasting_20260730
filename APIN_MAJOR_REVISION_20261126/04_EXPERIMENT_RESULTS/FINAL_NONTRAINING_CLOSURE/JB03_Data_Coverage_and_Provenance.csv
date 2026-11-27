@@ -1,0 +1,10 @@
+﻿metric,historical_reference,actual_verified_value,counting_rule
+theoretical_grid_slots,348 x 1296 = 451008 (arithmetic only),NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+hourly_panel_rows,451008 claimed,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+actual_returned_records,unknown,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+true_valid_speed_observations,unknown,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+no_return_slots,unknown,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+missing_speed_slots,unknown,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+imputed_slots,unknown,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+duplicate_node_time_keys,unknown,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count
+unknown_provenance_rows,unknown,NOT_VERIFIED_TARGET_NOT_FOUND,must read target file and source records before using as observation count

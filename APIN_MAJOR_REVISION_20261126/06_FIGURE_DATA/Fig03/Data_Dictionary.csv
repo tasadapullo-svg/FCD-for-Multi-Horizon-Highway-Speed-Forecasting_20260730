@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig03A_Protocol_Nodes.csv,step_id,object,Frozen value or documented formatting only; no new metric
 Fig03A_Protocol_Nodes.csv,step_name_en,object,Frozen value or documented formatting only; no new metric
 Fig03A_Protocol_Nodes.csv,processing_rule,object,Frozen value or documented formatting only; no new metric

@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig02A_Observation_Eligibility.csv,metric,object,Frozen value or documented formatting only; no new metric
 Fig02A_Observation_Eligibility.csv,value,int64,Frozen value or documented formatting only; no new metric
 Fig02A_Observation_Eligibility.csv,statistical_level,object,Frozen value or documented formatting only; no new metric

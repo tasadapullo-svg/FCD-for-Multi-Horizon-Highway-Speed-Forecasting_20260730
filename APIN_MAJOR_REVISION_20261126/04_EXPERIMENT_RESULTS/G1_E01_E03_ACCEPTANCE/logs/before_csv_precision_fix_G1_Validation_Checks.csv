@@ -1,0 +1,21 @@
+﻿check_id,status,detail
+PROTOCOL_UNCHANGED,PASS,e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4
+SLOT_PARTITION,PASS,403512=241601+1156+160755
+RECORD_PARTITION,PASS,row-level distinct from slot-level
+THRESHOLDS,PASS,four counts independently recomputed from input and nested
+54_ATTRITION_COMBINATIONS,PASS,mutually exclusive reconstruction matches all original manifests
+ATTRITION_IDENTITIES,PASS,exclusive reason totals equal theoretical
+TEST_COUNTS,PASS,test total92147
+ALIGNED_6_MODELS_18_TASKS,PASS,all six models x18 common tasks; raw180 runs three seeds explicitly checked
+FEATURE_UNITS,PASS,"restored original scaler units, causal ddof0 volatility maxdiff 2.26041519088e-06"
+SEED_JENSEN,PASS,ensemble MAE <= mean seed-level MAE
+TABLE7_DISCREPANCY_RECORDED,CONDITIONAL_PASS,Table7 six stochastic cells match B not Equation12 A
+15_PRESPECIFIED_TESTS,PASS,all horizon families retained
+DAILY_EFFECT_ESTIMAND,PASS,each bootstrap point estimate equals mean daily paired loss
+HOLM_ALGORITHM,PASS,independent sorted family calculation verified
+BOOTSTRAP_P_FINITE,BLOCKED,centered bootstrap test plus finite correction; CI ordinary percentile
+LOFO_FULL,PASS,A/B x3 horizons x6models xall+6 exclusions
+HISTORICAL_BLOCK_B,PASS,205 old day-block point estimates exactly reconstructed; old CI resampling remains partial
+FREEFLOW_NO_FUTURE,CONDITIONAL_PASS,conservative >=1hour historical return plus parsed known timestamps; ingestion logs unavailable
+TARGET_NO_IMPUTATION,PASS,all1053618 manifest targets rebuilt solely from observed source hours
+CLOSURE_NONESTIMABILITY,NOT_ESTIMABLE,"no observed closure events, no synthetic effects"

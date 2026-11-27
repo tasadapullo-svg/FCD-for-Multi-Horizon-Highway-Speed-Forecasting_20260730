@@ -1,0 +1,43 @@
+{
+  "experiment_state": "FROZEN_WITH_LIMITATIONS",
+  "new_fits": 0,
+  "new_traffic_data": 0,
+  "new_statistical_tests": 0,
+  "claims": 14,
+  "reference_records": 13,
+  "reviewer_items": 31,
+  "prior_GPT_paragraphs": "ORIGINAL_TEXT_PENDING",
+  "local_commit": "ded730d00c567e59d2476e0bee44dd3daf48855d",
+  "github_push": "MAIN_FAST_FORWARD_SUCCESS_REMOTE_READBACK_VERIFIED",
+  "files": [
+    {
+      "name": "Final_Reference_Adoption_and_Verification.csv",
+      "bytes": 10344,
+      "sha256": "c246a3a1b3f9ceb44ea94a546f65437f6632d3277926452452d0d5f2f17cd232"
+    },
+    {
+      "name": "Final_Data_Permission_and_Manuscript_Statements.md",
+      "bytes": 5039,
+      "sha256": "744010a3bf76a01b938bf13432c524002965546478ac5740f84b659d31ff93ef"
+    },
+    {
+      "name": "Final_Scientific_Claims_Registry_v2.csv",
+      "bytes": 3921,
+      "sha256": "405ca1b66f2cd8ca959826b53df4a937e55072d786ff9369cbb5c98cfe7af759"
+    },
+    {
+      "name": "Final_Editorial_Closure_Report_CN.md",
+      "bytes": 2840,
+      "sha256": "e7fb07de01ee75eaea33b7d05972e432fcec97f5d2f3d1459c7bd3e073aa79bc"
+    }
+  ],
+  "previous_remote_main": "c7edf22b802baf359221bb63a420e145f3df425c",
+  "verified_date": "2026-11-27",
+  "remote_main": "ded730d00c567e59d2476e0bee44dd3daf48855d",
+  "next_stage_order": [
+    "figures",
+    "tables",
+    "manuscript",
+    "reviewer_response"
+  ]
+}

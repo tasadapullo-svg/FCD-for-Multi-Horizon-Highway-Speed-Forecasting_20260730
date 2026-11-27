@@ -1,0 +1,94 @@
+{
+  "status": "PASS_NEW_IMPLEMENTATION",
+  "at": "2026-11-25T21:22:51.449469+08:00",
+  "protocol_sha256": "ae4c72d2be48441da473ae3b1d25b04ac8aa53f3df2a838134d826b23fc51022",
+  "checks": {
+    "sample_n": 50269,
+    "key_sets_equal": true,
+    "y_true_maxdiff": 0.0,
+    "feature_maxdiff": 9.5367431640625e-07,
+    "static_maxdiff": 0.0,
+    "latest_history_interval_end_not_after_decision": true,
+    "target_starts_at_decision_and_ends_H_hours_later": true,
+    "temporal_leakage": "NO_PROVEN_INTERVAL_LEAKAGE_UNDER_EXPLICIT_END_OF_HOUR_DECISION; original live latency unverified"
+  },
+  "model_results": [
+    {
+      "model": "HA",
+      "run_id": "93bd2e9e4ed164c0140e37cd",
+      "status": "COMPLETED",
+      "validation_MAE": 1.7131213083340802,
+      "test_MAE": 1.940306732901332,
+      "max_prediction_diff_original": 7.175021707439555e-06,
+      "whole_prediction_match_original": true,
+      "training_seconds": 0.010844199976418167,
+      "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+      "historical_reproduction_claim": false
+    },
+    {
+      "model": "SeasonalHA",
+      "run_id": "fcfd53c9071e44d753a8aad3",
+      "status": "COMPLETED",
+      "validation_MAE": 0.9178587927133953,
+      "test_MAE": 1.0705610386230997,
+      "max_prediction_diff_original": 7.120768231061447e-06,
+      "whole_prediction_match_original": true,
+      "training_seconds": 0.01766970002790913,
+      "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+      "historical_reproduction_claim": false
+    },
+    {
+      "model": "Persistence",
+      "run_id": "afc836d4dff4c1eb08c58599",
+      "status": "COMPLETED",
+      "validation_MAE": 0.8329865045630431,
+      "test_MAE": 1.0903312144529944,
+      "max_prediction_diff_original": 3.302857450648844e-06,
+      "whole_prediction_match_original": true,
+      "training_seconds": 0.00672800000756979,
+      "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+      "historical_reproduction_claim": false
+    },
+    {
+      "model": "Ridge",
+      "run_id": "a7a7125c2a44784f7acfb007",
+      "status": "COMPLETED",
+      "validation_MAE": 1.0905224084854126,
+      "test_MAE": 1.3621341334785708,
+      "max_prediction_diff_original": 0.117706298828125,
+      "whole_prediction_match_original": false,
+      "training_seconds": 0.11037140002008528,
+      "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+      "historical_reproduction_claim": false
+    },
+    {
+      "model": "XGBoost",
+      "run_id": "f7f5ebd6d0b5509436d35554",
+      "status": "COMPLETED",
+      "validation_MAE": 0.9577623009681702,
+      "test_MAE": 1.1443537521404845,
+      "max_prediction_diff_original": 4.858009338378906,
+      "whole_prediction_match_original": false,
+      "training_seconds": 11.341950500034727,
+      "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+      "historical_reproduction_claim": false
+    },
+    {
+      "model": "GRU",
+      "run_id": "af4b26c59e39c1e4629d236d",
+      "status": "COMPLETED",
+      "validation_MAE": 1.1842846870422363,
+      "test_MAE": 1.3448184272763561,
+      "max_prediction_diff_original": 3.7728538513183594,
+      "whole_prediction_match_original": false,
+      "training_seconds": 33.816633100039326,
+      "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+      "historical_reproduction_claim": false
+    }
+  ],
+  "original_source_recovered": false,
+  "historical_reuse": "Only data/evidence reused. Single-factor comparisons use same independent implementation matched baselines; gate6 deducted from108 baseline cap.",
+  "assumptions": "AdamW/MSE/shuffle/init choice is revision assumption; LayerNorm and target scaling confirmed by checkpoint.",
+  "training_code_sha256": "a2e3f6fc7834d154f7b2f8b751a81c8b2376587ef04f52350b40c44c384af08a",
+  "data_engine_sha256": "e2c6c92206d1f59dbffecd2d28e32c8a22dbcb71ab63cfde3d4415aa80c498a7"
+}

@@ -1,0 +1,168 @@
+2026-11-26T00:17:37.541562+08:00 FIT E05_RETURNED_ONLY Ridge F1 H1 S42 1.0 n=35410/4640/4193
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 4.8700155019787417e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:17:37.783673+08:00 DONE 211d5f14 Ridge fit=0.16s valMAE=1.371379
+2026-11-26T00:17:37.792010+08:00 FIT E05_RETURNED_ONLY XGBoost F1 H1 S42 8 n=35410/4640/4193
+2026-11-26T00:17:53.894936+08:00 DONE 6827e584 XGBoost fit=15.99s valMAE=1.024821
+2026-11-26T00:17:53.899889+08:00 E05 CONDITION_DONE returned_only F1 H1
+2026-11-26T00:17:55.517952+08:00 FIT E05_RETURNED_ONLY Ridge F2 H1 S42 1.0 n=40091/4193/5013
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 4.2790830434569216e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:17:55.769712+08:00 DONE 470f30ae Ridge fit=0.17s valMAE=1.419878
+2026-11-26T00:17:55.781435+08:00 FIT E05_RETURNED_ONLY XGBoost F2 H1 S42 8 n=40091/4193/5013
+2026-11-26T00:18:12.414656+08:00 DONE 78eedde3 XGBoost fit=16.49s valMAE=1.012638
+2026-11-26T00:18:12.427238+08:00 E05 CONDITION_DONE returned_only F2 H1
+2026-11-26T00:18:14.200491+08:00 FIT E05_RETURNED_ONLY Ridge F3 H1 S42 1.0 n=44311/5013/6048
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 3.88358820657686e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:18:14.460781+08:00 DONE 278d46c4 Ridge fit=0.17s valMAE=1.123066
+2026-11-26T00:18:14.473491+08:00 FIT E05_RETURNED_ONLY XGBoost F3 H1 S42 8 n=44311/5013/6048
+2026-11-26T00:18:32.767719+08:00 DONE 7141897e XGBoost fit=18.13s valMAE=0.724507
+2026-11-26T00:18:32.774701+08:00 E05 CONDITION_DONE returned_only F3 H1
+2026-11-26T00:18:34.601862+08:00 FIT E05_RETURNED_ONLY Ridge F4 H1 S42 1.0 n=49345/6048/5155
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 3.480881005657466e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:18:34.893867+08:00 DONE ef5c1d17 Ridge fit=0.20s valMAE=0.919040
+2026-11-26T00:18:34.909297+08:00 FIT E05_RETURNED_ONLY XGBoost F4 H1 S42 8 n=49345/6048/5155
+2026-11-26T00:18:54.454158+08:00 DONE 3c62a3b0 XGBoost fit=19.39s valMAE=0.662134
+2026-11-26T00:18:54.464362+08:00 E05 CONDITION_DONE returned_only F4 H1
+2026-11-26T00:18:56.205785+08:00 FIT E05_RETURNED_ONLY Ridge F5 H1 S42 1.0 n=55440/5155/4264
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 3.1028449143377657e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:18:56.494163+08:00 DONE 72172d03 Ridge fit=0.21s valMAE=1.353064
+2026-11-26T00:18:56.506970+08:00 FIT E05_RETURNED_ONLY XGBoost F5 H1 S42 8 n=55440/5155/4264
+2026-11-26T00:19:15.629960+08:00 DONE b80e860e XGBoost fit=18.98s valMAE=0.962168
+2026-11-26T00:19:15.642477+08:00 E05 CONDITION_DONE returned_only F5 H1
+2026-11-26T00:19:17.568890+08:00 FIT E05_RETURNED_ONLY Ridge F6 H1 S42 1.0 n=60639/4264/6094
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 2.8472594948425467e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:19:17.905062+08:00 DONE 45bdf767 Ridge fit=0.25s valMAE=1.154757
+2026-11-26T00:19:17.923328+08:00 FIT E05_RETURNED_ONLY XGBoost F6 H1 S42 8 n=60639/4264/6094
+2026-11-26T00:19:39.602404+08:00 DONE 2cc4930e XGBoost fit=21.51s valMAE=0.787245
+2026-11-26T00:19:39.608101+08:00 E05 CONDITION_DONE returned_only F6 H1
+2026-11-26T00:19:39.741191+08:00 FIT E05_RETURNED_ONLY Ridge F1 H6 S42 1.0 n=34418/3121/2460
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 4.980004320032094e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:19:39.938884+08:00 DONE 7bd58b10 Ridge fit=0.14s valMAE=1.708960
+2026-11-26T00:19:39.946189+08:00 FIT E05_RETURNED_ONLY XGBoost F1 H6 S42 8 n=34418/3121/2460
+2026-11-26T00:19:56.642722+08:00 DONE 0103d3e7 XGBoost fit=16.58s valMAE=0.957238
+2026-11-26T00:19:56.646190+08:00 E05 CONDITION_DONE returned_only F1 H6
+2026-11-26T00:19:58.269350+08:00 FIT E05_RETURNED_ONLY Ridge F2 H6 S42 1.0 n=37771/2460/3754
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 4.520828511545005e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:19:58.475464+08:00 DONE 56ffb874 Ridge fit=0.14s valMAE=1.729051
+2026-11-26T00:19:58.482522+08:00 FIT E05_RETURNED_ONLY XGBoost F2 H6 S42 8 n=37771/2460/3754
+2026-11-26T00:20:15.993412+08:00 DONE 653ad8c8 XGBoost fit=17.37s valMAE=0.823413
+2026-11-26T00:20:15.997837+08:00 E05 CONDITION_DONE returned_only F2 H6
+2026-11-26T00:20:17.633175+08:00 FIT E05_RETURNED_ONLY Ridge F3 H6 S42 1.0 n=40314/3754/5236
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 4.221125138315074e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:20:17.858519+08:00 DONE 1d0409ca Ridge fit=0.15s valMAE=1.392020
+2026-11-26T00:20:17.865241+08:00 FIT E05_RETURNED_ONLY XGBoost F3 H6 S42 8 n=40314/3754/5236
+2026-11-26T00:20:35.843705+08:00 DONE eb880737 XGBoost fit=17.87s valMAE=0.684588
+2026-11-26T00:20:35.848567+08:00 E05 CONDITION_DONE returned_only F3 H6
+2026-11-26T00:20:37.591520+08:00 FIT E05_RETURNED_ONLY Ridge F4 H6 S42 1.0 n=44139/5236/3969
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 3.8410849612091624e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:20:37.836436+08:00 DONE 6164e71d Ridge fit=0.17s valMAE=1.027553
+2026-11-26T00:20:37.843976+08:00 FIT E05_RETURNED_ONLY XGBoost F4 H6 S42 8 n=44139/5236/3969
+2026-11-26T00:20:56.453590+08:00 DONE dfde626a XGBoost fit=18.47s valMAE=0.588364
+2026-11-26T00:20:56.458978+08:00 E05 CONDITION_DONE returned_only F4 H6
+2026-11-26T00:20:58.229081+08:00 FIT E05_RETURNED_ONLY Ridge F5 H6 S42 1.0 n=49556/3969/2959
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 3.428220907153445e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:20:58.474215+08:00 DONE 87716f83 Ridge fit=0.18s valMAE=1.650780
+2026-11-26T00:20:58.482402+08:00 FIT E05_RETURNED_ONLY XGBoost F5 H6 S42 8 n=49556/3969/2959
+2026-11-26T00:21:19.331433+08:00 DONE b174b8da XGBoost fit=20.72s valMAE=0.970950
+2026-11-26T00:21:19.335921+08:00 E05 CONDITION_DONE returned_only F5 H6
+2026-11-26T00:21:21.129566+08:00 FIT E05_RETURNED_ONLY Ridge F6 H6 S42 1.0 n=53783/2959/5659
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 3.160524997269931e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:21:21.402243+08:00 DONE 1263790c Ridge fit=0.19s valMAE=1.337651
+2026-11-26T00:21:21.412914+08:00 FIT E05_RETURNED_ONLY XGBoost F6 H6 S42 8 n=53783/2959/5659
+2026-11-26T00:21:42.232621+08:00 DONE affb949a XGBoost fit=20.65s valMAE=0.710337
+2026-11-26T00:21:42.237559+08:00 E05 CONDITION_DONE returned_only F6 H6
+2026-11-26T00:21:42.327456+08:00 FIT E05_LEAKY_SCALING Ridge F1 H1 S42 1.0 n=38044/6247/5978
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.500846202873163e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:21:42.552469+08:00 DONE 49744137 Ridge fit=0.15s valMAE=1.090008
+2026-11-26T00:21:42.560082+08:00 FIT E05_LEAKY_SCALING XGBoost F1 H1 S42 8 n=38044/6247/5978
+2026-11-26T00:22:00.402380+08:00 DONE 0a7e4f04 XGBoost fit=17.69s valMAE=0.961134
+2026-11-26T00:22:00.405952+08:00 E05 CONDITION_DONE leaky_scaling F1 H1
+2026-11-26T00:22:00.504576+08:00 FIT E05_LEAKY_SCALING Ridge F2 H1 S42 1.0 n=44340/5978/6540
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3112140706539321e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:22:00.758169+08:00 DONE 7a8af257 Ridge fit=0.17s valMAE=1.238654
+2026-11-26T00:22:00.765426+08:00 FIT E05_LEAKY_SCALING XGBoost F2 H1 S42 8 n=44340/5978/6540
+2026-11-26T00:22:20.087308+08:00 DONE a0668664 XGBoost fit=19.16s valMAE=0.999090
+2026-11-26T00:22:20.092535+08:00 E05 CONDITION_DONE leaky_scaling F2 H1
+2026-11-26T00:22:20.190885+08:00 FIT E05_LEAKY_SCALING Ridge F3 H1 S42 1.0 n=50352/6540/7164
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.1248567410859778e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:22:20.486051+08:00 DONE 8e19b696 Ridge fit=0.20s valMAE=0.997488
+2026-11-26T00:22:20.497358+08:00 FIT E05_LEAKY_SCALING XGBoost F3 H1 S42 8 n=50352/6540/7164
+2026-11-26T00:22:41.167738+08:00 DONE 68e626c1 XGBoost fit=20.51s valMAE=0.684386
+2026-11-26T00:22:41.173786+08:00 E05 CONDITION_DONE leaky_scaling F3 H1
+2026-11-26T00:22:41.282651+08:00 FIT E05_LEAKY_SCALING Ridge F4 H1 S42 1.0 n=56920/7164/6357
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 9.069329287569872e-09.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:22:41.600017+08:00 DONE 1df2802c Ridge fit=0.22s valMAE=0.885302
+2026-11-26T00:22:41.610877+08:00 FIT E05_LEAKY_SCALING XGBoost F4 H1 S42 8 n=56920/7164/6357
+2026-11-26T00:23:04.560030+08:00 DONE 1e8b7385 XGBoost fit=22.78s valMAE=0.612135
+2026-11-26T00:23:04.565359+08:00 E05 CONDITION_DONE leaky_scaling F4 H1
+2026-11-26T00:23:04.682790+08:00 FIT E05_LEAKY_SCALING Ridge F5 H1 S42 1.0 n=64132/6357/5526
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 8.938685347459341e-09.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:23:05.039236+08:00 DONE 51cffe77 Ridge fit=0.25s valMAE=1.252560
+2026-11-26T00:23:05.053215+08:00 FIT E05_LEAKY_SCALING XGBoost F5 H1 S42 8 n=64132/6357/5526
+2026-11-26T00:23:29.322143+08:00 DONE 827cc210 XGBoost fit=24.09s valMAE=1.095297
+2026-11-26T00:23:29.328529+08:00 E05 CONDITION_DONE leaky_scaling F5 H1
+2026-11-26T00:23:29.454428+08:00 FIT E05_LEAKY_SCALING Ridge F6 H1 S42 1.0 n=70536/5526/6636
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 7.289741699167962e-09.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:23:29.830450+08:00 DONE 0fbdb844 Ridge fit=0.27s valMAE=1.600723
+2026-11-26T00:23:29.842004+08:00 FIT E05_LEAKY_SCALING XGBoost F6 H1 S42 8 n=70536/5526/6636
+2026-11-26T00:23:55.541175+08:00 DONE 68b52667 XGBoost fit=25.53s valMAE=2.061551
+2026-11-26T00:23:55.547191+08:00 E05 CONDITION_DONE leaky_scaling F6 H1
+2026-11-26T00:23:55.637928+08:00 FIT E05_LEAKY_SCALING Ridge F1 H6 S42 1.0 n=36718/4107/3511
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.527721060767817e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:23:55.837236+08:00 DONE b4cbe361 Ridge fit=0.13s valMAE=0.918195
+2026-11-26T00:23:55.845999+08:00 FIT E05_LEAKY_SCALING XGBoost F1 H6 S42 8 n=36718/4107/3511
+2026-11-26T00:24:15.773783+08:00 DONE 3bf3ff99 XGBoost fit=19.80s valMAE=0.832128
+2026-11-26T00:24:15.777535+08:00 E05 CONDITION_DONE leaky_scaling F1 H6
+2026-11-26T00:24:15.852203+08:00 FIT E05_LEAKY_SCALING Ridge F2 H6 S42 1.0 n=41089/3511/4824
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3462165604494203e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:24:16.088213+08:00 DONE 5c3e51e9 Ridge fit=0.16s valMAE=1.007117
+2026-11-26T00:24:16.097940+08:00 FIT E05_LEAKY_SCALING XGBoost F2 H6 S42 8 n=41089/3511/4824
+2026-11-26T00:24:36.922755+08:00 DONE 4ce21f97 XGBoost fit=20.67s valMAE=0.730613
+2026-11-26T00:24:36.926907+08:00 E05 CONDITION_DONE leaky_scaling F2 H6
+2026-11-26T00:24:37.008294+08:00 FIT E05_LEAKY_SCALING Ridge F3 H6 S42 1.0 n=44719/4824/6233
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.2317675768258596e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:24:37.259799+08:00 DONE 71a77be1 Ridge fit=0.16s valMAE=0.877484
+2026-11-26T00:24:37.268535+08:00 FIT E05_LEAKY_SCALING XGBoost F3 H6 S42 8 n=44719/4824/6233
+2026-11-26T00:24:58.958085+08:00 DONE 47af6f04 XGBoost fit=21.54s valMAE=0.625372
+2026-11-26T00:24:58.963848+08:00 E05 CONDITION_DONE leaky_scaling F3 H6
+2026-11-26T00:24:59.058504+08:00 FIT E05_LEAKY_SCALING Ridge F4 H6 S42 1.0 n=49650/6233/4770
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.1430262070177832e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:24:59.335267+08:00 DONE a5131d46 Ridge fit=0.19s valMAE=0.740943
+2026-11-26T00:24:59.344652+08:00 FIT E05_LEAKY_SCALING XGBoost F4 H6 S42 8 n=49650/6233/4770
+2026-11-26T00:25:22.436700+08:00 DONE f79afc7d XGBoost fit=22.95s valMAE=0.546086
+2026-11-26T00:25:22.441048+08:00 E05 CONDITION_DONE leaky_scaling F4 H6
+2026-11-26T00:25:22.541289+08:00 FIT E05_LEAKY_SCALING Ridge F5 H6 S42 1.0 n=56114/4770/3689
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 9.445524362661217e-09.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:25:22.818409+08:00 DONE 05fecc11 Ridge fit=0.20s valMAE=1.218686
+2026-11-26T00:25:22.828141+08:00 FIT E05_LEAKY_SCALING XGBoost F5 H6 S42 8 n=56114/4770/3689
+2026-11-26T00:25:47.676595+08:00 DONE dc7c5325 XGBoost fit=24.71s valMAE=0.957453
+2026-11-26T00:25:47.681273+08:00 E05 CONDITION_DONE leaky_scaling F5 H6
+2026-11-26T00:25:47.793830+08:00 FIT E05_LEAKY_SCALING Ridge F6 H6 S42 1.0 n=61162/3689/6114
+C:\Users\DELL\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_ridge.py:227: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 8.538717288786302e-09.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-11-26T00:25:48.092559+08:00 DONE 2729b7ed Ridge fit=0.22s valMAE=1.416502
+2026-11-26T00:25:48.104151+08:00 FIT E05_LEAKY_SCALING XGBoost F6 H6 S42 8 n=61162/3689/6114
+2026-11-26T00:26:13.584113+08:00 DONE cb5aac0f XGBoost fit=25.33s valMAE=0.986352
+2026-11-26T00:26:13.593545+08:00 E05 CONDITION_DONE leaky_scaling F6 H6

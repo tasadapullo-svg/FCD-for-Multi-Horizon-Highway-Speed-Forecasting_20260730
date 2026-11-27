@@ -1,0 +1,69 @@
+from g2_common import *
+PANEL=pd.read_parquet(OLD/'hourly_analysis.parquet').sort_values('panel_row_id').reset_index(drop=True)
+T=len(PANEL)//51
+def longest_missing(a):
+ run=best=0
+ for val in a:run=0 if val else run+1;best=max(best,run)
+ return best
+def prepare(condition,fold,H):
+ """Independent revision data contract; cache one set per condition/fold/horizon."""
+ key=digest({'condition':condition,'fold':fold,'H':H,'engine':'revision_data_v1'})[:20];folder=DER/key
+ if (folder/'ready.json').exists():return Data(folder)
+ folder.mkdir(parents=True,exist_ok=True);beg=time.perf_counter();threshold=1 if condition=='threshold1' else 3 if condition=='threshold3' else 4 if condition=='threshold4' else 2;L=12 if condition=='history12' else 48 if condition=='history48' else 24;required=6 if H==6 and condition=='strict6' else {1:1,3:3,6:5}[H]
+ p=PANEL.copy();obs=p[f'speed_{threshold}_of_4'];train_start,train_end=FOLDS[fold]['train'];trainhour=p.hour.ge(train_start)&p.hour.lt(train_end);med=obs[trainhour].groupby(p.loc[trainhour,'node_id']).median();corr=obs[trainhour].median()
+ if condition=='seasonal_impute':
+  # Predeclared node x hour-of-day seasonal reference, minimum5 valid train-hour observations.
+  ref=pd.DataFrame({'node_id':p.node_id,'hod':p.hour.dt.hour,'speed':obs});stats=ref[trainhour].groupby(['node_id','hod']).speed.agg(['median','count']);mapped=stats.reindex(pd.MultiIndex.from_arrays([p.node_id,p.hour.dt.hour]));fallback=np.where(mapped['count'].to_numpy()>=5,mapped['median'].to_numpy(),np.nan);filled=obs.fillna(pd.Series(fallback,index=p.index)).fillna(p.node_id.map(med)).fillna(corr)
+ else:filled=obs.groupby(p.node_id,sort=False).ffill().fillna(p.node_id.map(med)).fillna(corr)
+ observed=obs.notna();age=np.zeros(len(p),dtype=np.float32)
+ for _,idx in p.groupby('node_id',sort=False).groups.items():
+  current=168
+  for i in idx:current=0 if observed.iloc[i] else min(168,current+1);age[i]=current
+ cov=observed.groupby(p.node_id,sort=False).transform(lambda s:s.rolling(24,min_periods=1).mean()).to_numpy();gap=observed.groupby(p.node_id,sort=False).transform(lambda s:s.rolling(24,min_periods=1).apply(longest_missing,raw=True)).to_numpy();vol=filled.groupby(p.node_id,sort=False).transform(lambda s:s.rolling(24,min_periods=1).std(ddof=0).fillna(0)).to_numpy();hod=p.hour.dt.hour.to_numpy();dow=p.hour.dt.dayofweek.to_numpy()
+ raw=np.column_stack([filled,~observed,~observed,age,cov,1-cov,gap,vol,np.sin(2*np.pi*hod/24),np.cos(2*np.pi*hod/24),np.sin(2*np.pi*dow/7),np.cos(2*np.pi*dow/7),dow>=5]).astype('float32')
+ if condition=='returned_only':
+  # Raw returned-event sequence: actual last24 valid hours, never relabeled as24 wall-clock hours.
+  raw[:,1:3]=0;raw[:,3]=0;raw[:,4]=1;raw[:,5:7]=0
+  for _,idx in p.groupby('node_id',sort=False).groups.items():
+   ix=np.asarray(idx)[observed.iloc[idx].to_numpy()];raw[ix,7]=obs.iloc[ix].rolling(24,min_periods=1).std(ddof=0).fillna(0)
+ fitmask=trainhour.to_numpy()
+ if condition=='leaky_scaling':fitmask=np.ones(len(p),dtype=bool)
+ if condition=='returned_only':fitmask&=observed.to_numpy()
+ mu=raw[fitmask].mean(axis=0,dtype=np.float64).astype('float32');scale=raw[fitmask].std(axis=0,dtype=np.float64).astype('float32');scale[scale==0]=1;scaled=((raw-mu)/scale).astype('float32')
+ # Source-compatible scaler rounding tolerance checked in SOURCE_GATE; no target fitting outside train.
+ static=p[['node_order','latitude','longitude']].to_numpy(dtype='float32');staticmu=static[trainhour].mean(axis=0);staticsd=static[trainhour].std(axis=0);staticsd[staticsd==0]=1
+ a=obs.to_numpy().reshape(51,T);valid=np.isfinite(a);count=np.zeros_like(a,dtype=int);total=np.zeros_like(a)
+ for step in range(1,H+1):count[:,:-step]+=valid[:,step:];total[:,:-step]+=np.nan_to_num(a[:,step:],nan=0)
+ target=np.divide(total,count,out=np.full_like(total,np.nan),where=count>0).ravel();count=count.ravel()
+ hist_idx=[];origin_idx=[]
+ for _,idx in p.groupby('node_id',sort=False).groups.items():
+  ix=np.asarray(idx)
+  if condition=='returned_only':
+   ix=ix[observed.iloc[ix].to_numpy()]
+   for end in range(L-1,len(ix)):origin_idx.append(ix[end]);hist_idx.append(ix[end-L+1:end+1])
+  else:
+   for end in range(max(L,48 if condition.startswith('history') else L)-1,len(ix)):origin_idx.append(ix[end]);hist_idx.append(ix[end-L+1:end+1])
+ origin_idx=np.asarray(origin_idx);hist_idx=np.asarray(hist_idx,dtype=np.int32);df=p.iloc[origin_idx][['node_id','hour','node_order','latitude','longitude']].copy().rename(columns={'hour':'forecast_origin'}).reset_index(drop=True);df['origin_row_id']=origin_idx;df['y_true']=target[origin_idx];df['target_observed_count']=count[origin_idx];df['horizon']=H;df['fold']=fold;df['split']='';
+ for split,(lo,hi) in FOLDS[fold].items():
+  ok=df.forecast_origin.ge(lo)&((df.forecast_origin+pd.Timedelta(hours=H))<hi)&((df.forecast_origin+pd.Timedelta(hours=H))<=p.hour.max());df.loc[ok,'split']=split
+ good=df.split.ne('')&df.target_observed_count.ge(required)&np.isfinite(df.y_true)
+ df=df.loc[good].reset_index(drop=True);hist_idx=hist_idx[good];df['sample_id']=df.node_id+'_'+df.forecast_origin.dt.strftime('%Y%m%d%H')+'_H'+str(H);df['forecast_decision_time']=df.forecast_origin+pd.Timedelta(hours=1);df['target_interval_start']=df.forecast_decision_time;df['target_interval_end']=df.forecast_decision_time+pd.Timedelta(hours=H);df['history_span_hours']=(p.hour.to_numpy()[hist_idx[:,-1]]-p.hour.to_numpy()[hist_idx[:,0]])/np.timedelta64(1,'h')+1
+ for col,j in [('history_coverage_ratio',4),('max_gap_24h',6),('volatility_24h',7)]:df[col]=raw[df.origin_row_id,j]
+ shared=DER/'hour_features'/f'{condition}_F{fold}';shared.mkdir(parents=True,exist_ok=True)
+ if not (shared/'scaled.npy').exists():
+  np.save(shared/'scaled.npy',scaled);np.save(shared/'raw.npy',raw);np.save(shared/'static_raw.npy',static);np.save(shared/'static_scaled.npy',((static-staticmu)/staticsd));np.save(shared/'filled.npy',filled.to_numpy())
+ np.save(folder/'history_indices.npy',hist_idx);save(df,folder/'manifest.parquet')
+ schema={'features':FEATURES,'history_length':L,'reliability_window':24,'threshold':threshold,'target_required':required,'hour_label':'start','decision_offset_hours':1,'fit_scope':'all_period_invalid_diagnostic' if condition=='leaky_scaling' else 'fold_train_hours_only','mu':mu.tolist(),'scale':scale.tolist(),'static_mean':staticmu.tolist(),'static_scale':staticsd.tolist(),'imputation':'train_node_hour_median_min5_then_node_then_corridor' if condition=='seasonal_impute' else 'node_ffill_then_train_node_median_then_corridor','condition':condition,'fold':fold,'horizon':H}
+ dump(folder/'schema.json',schema);ready={'folder':str(folder),'shared_features':str(shared),'condition':condition,'fold':fold,'horizon':H,'manifest_sha256':sha(folder/'manifest.parquet'),'schema_sha256':digest(schema),'preprocess_seconds':time.perf_counter()-beg,'split_hashes':{},'support':{}}
+ for split in ['train','validation','test']:
+  sub=df[df.split==split];ready['split_hashes'][split]=digest(sub[['node_id','forecast_origin','y_true']].astype(str).to_dict('list'));ready['support'][split]={'n':len(sub),'nodes':sub.node_id.nunique(),'dates':sub.forecast_origin.dt.normalize().nunique()}
+ dump(folder/'ready.json',ready);return Data(folder)
+class Data:
+ def __init__(self,folder):
+  self.folder=Path(folder);self.meta=load(self.folder/'ready.json');self.manifest=pd.read_parquet(self.folder/'manifest.parquet');self.feature_folder=Path(self.meta['shared_features']);self.histidx=np.load(self.folder/'history_indices.npy',mmap_mode='r');self._X=None;self.schema=load(self.folder/'schema.json');origin=self.manifest.origin_row_id.to_numpy();self.static_raw=np.load(self.feature_folder/'static_raw.npy',mmap_mode='r')[origin];self.static_scaled=np.load(self.feature_folder/'static_scaled.npy',mmap_mode='r')[origin];self.filled=np.load(self.feature_folder/'filled.npy',mmap_mode='r')[origin]
+ @property
+ def X(self):
+  if self._X is None:self._X=np.load(self.feature_folder/'scaled.npy',mmap_mode='r')[self.histidx]
+  return self._X
+ def split(self,name):return np.where(self.manifest.split.to_numpy()==name)[0]
+ def tabular(self):return np.concatenate([self.X.reshape(len(self.X),-1),self.static_raw],axis=1)

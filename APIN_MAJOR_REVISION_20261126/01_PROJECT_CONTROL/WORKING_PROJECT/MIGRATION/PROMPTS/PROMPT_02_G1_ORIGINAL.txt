@@ -1,0 +1,1707 @@
+# Applied Intelligence Major Revision — Prompt 02
+
+## E01–E03正式计算、统计口径冻结与G1结果验收
+
+## 1. 工程背景与本阶段任务
+
+你现在是一名具有SCI论文返修、交通工程、商业FCD数据分析、机器学习、时间序列预测、统计推断及科研可复现性审计经验的高级科研工程师。
+
+继续执行以下论文的大修工程：
+
+- Journal: Applied Intelligence
+- Manuscript ID: APIN-D-26-12623
+- Manuscript Title: Can Sparse Floating Car Data Reliably Forecast Highway Speeds? A Multi-Horizon Evaluation of Forecasting Models
+- Revision Type: Major Revision
+- Reviewers: Reviewer #1、#2、#3、#6
+- Reviewer Comments: 31 items
+- Previous Stage: G0 CONDITIONAL_PASS
+- Current Stage: E01–E03正式计算及G1验收
+
+作者已经接受G0有条件通过的验收结论。
+
+本阶段正式授权执行：
+
+- E01：数据完整性与预测目标分析。
+- E02：交通状态、数据缺失及可靠性分析。
+- E03：统计推断重建与模型稳定性分析。
+- G1：本阶段全部结果的一次性统一验收。
+
+本阶段必须实际读取数据、编写计算程序、运行分析、生成结果表和可复现证据。
+
+禁止仅生成分析计划、空白模板、模拟结果或尚未执行的实验报告。
+
+---
+
+# 2. 本地路径及数据来源
+
+## 2.1 唯一工作目录与输出根目录
+
+D:\Desktop\大修_Applied Intelligence_2026112_论文修改
+
+所有新增代码、统计结果、分析数据、运行日志、诊断图、报告及最终ZIP文件必须保存在上述根目录或其子目录中。
+
+严格保留目录名称中的2026112，不得自行修改。
+
+## 2.2 原始论文及实验数据目录
+
+D:\Desktop\论文\2027年投稿期刊\论文项目\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\20260905Applied Intelligence 投稿
+
+该目录及G0已经定位的历史实验归档作为只读数据源。
+
+允许直接读取G0已经登记的历史归档成员，不需要再次全面搜索桌面或其他工程。
+
+禁止覆盖、删除、移动和修改原始数据及历史实验结果。
+
+## 2.3 GitHub仓库
+
+https://github.com/tasadapullo-svg/FCD-for-Multi-Horizon-Highway-Speed-Forecasting_20260730
+
+G0已记录公开仓库main commit：
+
+0a4d2e00ac509d4f4e64f950df5a7d35238d6e4c
+
+优先使用已经确认的本地冻结资产及G0数据路径索引。
+
+不重新下载整个GitHub仓库，不自动更新数据版本，不将main直接当作原投稿训练版本。
+
+不得上传商业FCD、逐样本预测、特征矩阵、权重或其他许可未确认的资料。
+
+禁止自动Git commit及push。
+
+---
+
+# 3. 首先继承G0结果
+
+直接读取以下目录：
+
+D:\Desktop\大修_Applied Intelligence_2026112_论文修改\04_EXPERIMENTS\G0_DATA_READINESS
+
+必须读取六份核心交付：
+
+1. G0_01_Data_Asset_Registry.csv
+2. G0_02_Reviewer_Experiment_Matrix.csv
+3. G0_03_Frozen_Experiment_Scope.md
+4. G0_04_Missing_Data_and_Download_List.xlsx
+5. G0_05_Acceptance_Report_CN.md
+6. G0_06_Execution_Manifest.json
+
+同时复用：
+
+D:\Desktop\大修_Applied Intelligence_2026112_论文修改\00_PROJECT_CONTROL
+
+重点读取：
+
+- gap_closure_evidence.json
+- verification_evidence.json
+- prior_assets_located.json
+- submission_text_evidence.json
+- PROJECT_RULES.md
+
+读取原论文PDF、Overleaf正文和31条原始审稿意见。
+
+重点核查原稿§3.1–3.4、§4.1–4.3、§5.1–5.7、Equation (7)、Equation (12)、Equation (14)、Table 1–7及Appendices。
+
+## 3.1 继承已经通过的G0证据
+
+已知G0结论：
+
+- 544项数据及结果相关文件哈希与历史记录一致。
+- 502项资产已登记。
+- 180份原始预测已通过历史验收。
+- 18份fold–horizon manifests已通过历史验收。
+- 原始筛选前解析CSV已找到。
+- Cleaned数据已找到。
+- 15分钟面板和小时面板已找到。
+- Current speed、free-flow speed、confidence等字段已确认。
+- 51节点坐标已找到。
+- E01–E03共28项计算任务具备受限执行条件。
+- 本阶段没有必须下载的外部数据。
+
+对未发生变化的已验收项目标记REUSED_PASS。
+
+不要重新执行全部G0审计，不重新计算全部历史文件的SHA256，不重新运行180次原始模型。
+
+只对本阶段实际计算所涉及的输入，进行必要的主键、字段、单位、行数及版本关联检查。
+
+---
+
+# 4. 冻结本阶段执行范围及作者决策
+
+以下决定已经明确：
+
+## 4.1 97.30%指标
+
+原稿97.30%每日availability指标无法证明其原始生成口径。
+
+G0已经完成有边界追溯。
+
+本阶段不再查找该指标的历史生成程序，不使用两个历史候选Excel替换正式数据。
+
+直接使用现有数据重新计算可追溯的数据覆盖率指标。
+
+将97.30%标记为：
+
+DEFINITION_UNRESOLVED — REMOVE_OR_REPLACE_IN_REVISION
+
+保留历史原文记录，后续正文和Fig. 2统一修订。
+
+本阶段不修改正文和原图。
+
+## 4.2 正式训练源码缺失
+
+以下三个正式入口仍未定位：
+
+- src/build_phase2a1_data.py
+- src/run_phase2a1_campaign.py
+- src/finalize_phase2a1.py
+
+本阶段不重新搜索全部历史源码，不重建完整训练工程。
+
+允许编写专门用于E01–E03分析的新代码。
+
+不得将新分析代码称为原始Phase2A1源码。
+
+## 4.3 研究边界
+
+保持原论文研究对象：
+
+- Pan Borneo Highway。
+- 51个虚拟观测节点。
+- 商业FCD供应商报告速度。
+- H1、H3、H6未来窗口平均速度。
+- 六个回顾性rolling-origin folds。
+- 原六模型预测结果。
+
+不验证独立真实道路速度，不推断探针车辆数量或渗透率，不将历史测试集称为独立盲测。
+
+## 4.4 本阶段禁止事项
+
+- 不重新训练模型。
+- 不开展超参数搜索。
+- 不运行E04–E06。
+- 不启动外部数据验证。
+- 不下载METR-LA、PEMS-BAY或其他交通数据集。
+- 不下载或重新采集商业TomTom数据。
+- 不执行正式QGIS绘图。
+- 不修改原始论文正文。
+- 不撰写声称实验已经完成的正式审稿回复。
+- 不扩大实验范围。
+- 不为获得有利模型排名或显著性而改变统计方案。
+
+---
+
+# 5. 原始研究基准与计算口径
+
+原始历史记录：
+
+| 项目 | 原始记录 |
+|---|---|
+| 节点数量 | 51 |
+| 原始节点ID | N001–N051 |
+| 论文展示ID | N01–N51 |
+| 原始采集起始 | 2025-12-08 13:15 |
+| 原始采集结束 | 2026-02-28 23:45 |
+| 正式完整网格起始 | 2025-12-08 14:00 |
+| 时区 | Asia/Kuala_Lumpur，UTC+08:00 |
+| 原始采样间隔 | 15分钟 |
+| 正式小时分辨率 | 1小时 |
+| 计划15分钟槽位 | 403,512 |
+| 计划小时槽位 | 100,878 |
+| 筛选前解析CSV记录 | 244,477 |
+| 质量筛选不合格记录 | 1,170 |
+| 质量合格记录 | 243,307 |
+| 全跨度质量合格去重记录 | 241,727 |
+| 完整小时网格内合格去重记录 | 241,601 |
+| 边界记录差 | 126 |
+| 原始历史窗口 | 24小时 |
+| 原始模型 | HA、SeasonalHA、Persistence、Ridge、XGBoost、GRU |
+| 随机种子 | 42、2026、3407 |
+| 原始正式运行 | 180 |
+| Fold–horizon manifests | 18 |
+| H1测试样本 | 38,201 |
+| H3测试样本 | 24,805 |
+| H6测试样本 | 29,141 |
+| 测试样本总计 | 92,147 |
+
+以上数字属于历史对照记录。
+
+本阶段涉及的必要数字必须通过实际计算验证，而不是将历史数字直接复制到新结果文件。
+
+保留以下两套数据标签：
+
+- ORIGINAL_FROZEN_BASELINE：历史原投稿结果。
+- REVISION_E01_E03：本次新计算结果。
+
+发现差异时不得静默覆盖历史结果。
+
+必须记录原值、新值、差值、计算口径和原因。
+
+---
+
+# 6. G1-A：计算协议预先冻结
+
+在读取新的误差统计结果之前，先创建：
+
+00_PROJECT_CONTROL\G1_Analysis_Protocol.yaml
+
+协议至少包括：
+
+- 实际使用的数据版本。
+- 正式分析时间边界。
+- 时区。
+- 观测资格规则。
+- 节点ID映射。
+- 共同样本主键。
+- 目标完整度定义。
+- 交通状态阈值。
+- 连续缺失长度定义。
+- Coverage定义。
+- Volatility定义。
+- 随机种子聚合方式。
+- 主要统计估计量。
+- 补充统计估计量。
+- Bootstrap重采样单位及块长度。
+- 多重比较检验家族。
+- 随机种子。
+- 样本支持不足处理规则。
+- 输出指标及验收条件。
+
+同时记录协议生成时间及SHA256。
+
+协议冻结后，不得依据模型排名、p值或误差表现改变主要分析口径。
+
+因程序错误需要修正时，保留旧版本及明确的变更说明。
+
+---
+
+# 7. E01：数据完整性与预测目标分析
+
+E01不得重新训练模型。
+
+其目的为解决数据覆盖率、缺失结构、H6目标定义以及样本资格选择问题。
+
+## E01-01：完整网格与数据覆盖率
+
+实际读取：
+
+- G0定位的筛选前83份CSV归档。
+- G0定位的244,477行cleaned数据。
+- deduplicated_15min_observations.parquet。
+- hourly_panel_all_thresholds.parquet。
+- 冻结节点表。
+
+使用正式完整小时网格重新计算：
+
+- 计划15分钟槽位。
+- 计划小时槽位。
+- 唯一返回槽位。
+- 存在至少一条质量合格记录的槽位。
+- 仅存在质量不合格返回的槽位。
+- 归档中无返回记录的槽位。
+- 重复返回行。
+- 正式网格之外的边界记录。
+
+必须明确区分行级统计与槽位级统计。
+
+同一个槽位可能包含合格和不合格记录，不能直接将行级数量相减作为互斥槽位漏斗。
+
+对于正式计划网格，若节点及时刻映射能够建立，则检查：
+
+计划槽位 = 有合格记录槽位 + 仅不合格记录槽位 + 归档无返回槽位。
+
+不得将归档无返回直接解释为网络故障、API失败、无车辆探针或供应商无数据。
+
+由于缺少完整请求失败日志，必须保留上述原因不可区分的限制。
+
+计算并报告：
+
+- 原始归档返回槽位比例。
+- 质量合格去重槽位比例。
+- 质量筛选造成的记录损失。
+- 完整网格覆盖率。
+
+对无法验证的上游日期修复或node_id映射问题，单独说明，不得虚构原始数据生成链。
+
+## E01-02：四种小时资格阈值
+
+分别重新计算：
+
+| Threshold | Historical eligible hours | Historical coverage |
+|---|---:|---:|
+| 1/4 | 96,968 | 96.12% |
+| 2/4 | 83,439 | 82.71% |
+| 3/4 | 45,356 | 44.96% |
+| 4/4 | 15,838 | 15.70% |
+
+输出：
+
+- 每种阈值下有效小时数。
+- 无效小时数。
+- 覆盖率。
+- 各节点覆盖率。
+- 各日期覆盖率。
+- 各小时段覆盖率。
+- 阈值提高造成的样本损失。
+- 每小时0、1、2、3、4条合格15分钟观测的频数。
+
+检查阈值间资格集合是否满足嵌套关系。
+
+本阶段只计算数据覆盖及样本支持，不执行四种阈值下的模型训练。
+
+## E01-03：每日、逐小时和逐节点数据缺失
+
+生成：
+
+- Daily coverage。
+- Hour-of-day coverage。
+- Node-level coverage。
+- Node × hour-of-day coverage。
+- Node × date coverage。
+- Weekday/weekend coverage。
+- Continuous missing-run length distribution。
+
+不完整起始日必须使用实际计划网格分母，不得默认每个日期都有51×24个小时槽位。
+
+分别报告：
+
+- 按槽位加权的整期覆盖率。
+- 等日期权重的日均覆盖率。
+
+二者必须采用明确分母及统计定义。
+
+为后续Fig. 2重绘生成真实数据表。
+
+不要使用97.30%作为预期结果。
+
+## E01-04：H6目标完整性分析
+
+使用冻结小时面板、manifest及target_row_ids。
+
+严格核查：
+
+- H1要求1/1有效未来小时。
+- H3要求3/3有效未来小时。
+- H6要求至少5/6有效未来小时。
+
+对H6逐样本区分：
+
+- COMPLETE_6_OF_6。
+- PARTIAL_5_OF_6。
+- INVALID_TARGET。
+
+分别按fold、split及全部有效测试样本统计：
+
+- 样本数。
+- 比例。
+- 缺失小时位置。
+- 目标均速分布。
+- 六模型MAE。
+- 六模型RMSE。
+- Bias。
+- 误差分位数。
+
+H6缺失位置必须按forecast origin后的第1至第6小时统计。
+
+不得对缺失目标速度进行插补。
+
+使用冻结预测筛选6/6样本只能称为完整目标子集评价，不得声称完成了严格6/6重新训练实验。
+
+## E01-05：H3与H6共同origin及目标平滑效应
+
+计算：
+
+- H3和H6的共同预测origin数量。
+- 仅H3有效数量。
+- 仅H6有效数量。
+- 两者均无效数量。
+- H6允许缺失一个小时对样本支持的影响。
+
+在共同origin上比较目标分布、目标方差及窗口平均平滑程度。
+
+明确H3与H6属于不同未来窗口目标。
+
+不使用跨时域MAE大小直接证明某一预测时域更容易或更可靠。
+
+## E01-06：Fold边界剔除与样本资格漏斗
+
+依据原文Table 5、冻结配置及实际manifest重建各fold的候选origin。
+
+分别统计每个fold × horizon × split：
+
+1. 理论候选origin。
+2. 目标跨越split边界的候选。
+3. 历史窗口不满足条件的候选。
+4. 目标观测完整度不足的候选。
+5. 其他可验证资格不满足的候选。
+6. 最终有效样本。
+
+在计算前冻结互斥剔除原因的优先顺序。
+
+同时保留非互斥原因统计，明确二者区别。
+
+区分：
+
+- 原始manifest实际样本。
+- 根据冻结规则重建的候选及剔除数量。
+- 无法追溯的差异。
+
+不得通过任意修改资格规则强行使结果匹配历史数量。
+
+## E01-07：后续E04样本可行性预计算
+
+在不训练模型的前提下，评估：
+
+- 1/4小时规则。
+- 2/4小时规则。
+- 3/4小时规则。
+- 4/4小时规则。
+- H6严格6/6目标。
+
+输出每个候选规则下各fold、horizon及split的潜在样本支持。
+
+依据实际可恢复的历史资格规则计算。
+
+如无法完整恢复manifest生成逻辑，必须标记ESTIMATED_SUPPORT，而不是正式训练样本数。
+
+重点判断4/4小时规则是否可能造成空训练集、空验证集、空测试集或极度稀疏目标。
+
+本项结果用于后续确定最小训练规模，不提前启动E04。
+
+## E01输出文件
+
+保存于：
+
+04_EXPERIMENTS\E01_DATA_COMPLETENESS
+
+至少输出：
+
+- E01_01_Data_Lineage_and_Coverage.csv
+- E01_02_Hourly_Threshold_Coverage.csv
+- E01_03_Daily_Coverage.csv
+- E01_04_Node_Hour_Coverage.csv
+- E01_05_Missing_Run_Distribution.csv
+- E01_06_H6_Target_Completeness.csv
+- E01_07_H6_Missing_Position.csv
+- E01_08_H6_Stratified_Model_Performance.csv
+- E01_09_H3_H6_Common_Origins.csv
+- E01_10_Fold_Sample_Attrition.csv
+- E01_11_E04_Sample_Feasibility.csv
+- E01_Summary_CN.md
+
+---
+
+# 8. E02：交通状态、数据缺失及可靠性分析
+
+E02主要复用原始FCD、小时面板、可靠性特征和冻结预测。
+
+不得重新训练模型。
+
+## E02-01：速度及目标分布
+
+分别计算筛选前、质量合格及正式小时面板中的：
+
+- Current speed。
+- Free-flow speed。
+- 预测目标H1、H3、H6。
+- Mean。
+- Median。
+- Standard deviation。
+- Minimum。
+- Maximum。
+- P5、P25、P75、P95。
+- 样本数。
+
+报告各节点及整体分布。
+
+区分返回行级、去重15分钟级、小时级和预测目标级统计。
+
+不得混用统计层级。
+
+## E02-02：自由流速度一致性分析
+
+计算current speed与free-flow speed：
+
+- 完全相等的比例。
+- 绝对差值分布。
+- 相差不超过1 km/h的比例。
+- Current speed/free-flow speed比例分布。
+- 不同节点的自由流一致性。
+- 不同confidence水平下的自由流一致性。
+
+仅在free-flow speed为有限正数时计算比值。
+
+单独登记异常及无法计算的记录。
+
+不得直接将接近自由流解释为真实道路没有拥堵。
+
+不得仅凭速度相等比例推断TomTom一定使用了历史速度回填。
+
+## E02-03：Confidence分布
+
+报告：
+
+- 筛选前confidence分布。
+- confidence低于0.80的记录。
+- 质量合格记录的confidence分布。
+- confidence与速度比值的关联。
+- 不同时段和节点的confidence差异。
+
+建议冻结分组：
+
+- confidence < 0.80。
+- 0.80 ≤ confidence < 0.90。
+- 0.90 ≤ confidence < 1.00。
+- confidence = 1.00。
+
+区分缺失、无效和范围外数值。
+
+不得把供应商confidence等同于经过独立验证的统计置信概率。
+
+## E02-04：交通状态划分
+
+采用供应商报告速度与自由流速度的比例：
+
+r = current_speed / free_flow_speed
+
+候选工程分类固定为：
+
+- r < 0.70：Congested proxy。
+- 0.70 ≤ r < 0.90：Intermediate traffic state。
+- r ≥ 0.90：Near/free-flow proxy。
+
+这些阈值属于本研究预设的操作化诊断定义，不宣称是普遍适用的交通工程标准。
+
+增加一次有限阈值敏感性检查，例如拥堵阈值0.60、0.70、0.80。
+
+其他规则保持不变。
+
+不进行大量阈值搜索，不依据模型结果选择最有利的阈值。
+
+预测样本的未来窗口交通状态应当由与目标对应的有效小时速度及free-flow speed计算。
+
+优先采用目标窗口有效小时平均速度除以相同有效小时平均自由流速度。
+
+明确H6 5/6规则下只使用对应目标的有效小时。
+
+未来窗口交通状态仅用于事后误差诊断，不得作为预测origin时刻可用的模型特征。
+
+## E02-05：自由流与拥堵状态模型性能
+
+使用六模型相同预测样本，分别计算H1、H3、H6在各交通状态下的：
+
+- Sample count。
+- MAE。
+- RMSE。
+- Bias。
+- Median absolute error。
+- P90 absolute error。
+- XGBoost相对SeasonalHA的误差差值。
+- H1 XGBoost相对Persistence的误差差值。
+
+每个分组报告样本量、覆盖节点数量及日期数量。
+
+不对没有真实可观察目标的记录计算误差。
+
+不对样本严重不足的分组强行作稳定性或显著性判断。
+
+建议预设低支持标记：少于30个样本、少于3个日期或少于3个节点时标记LOW_SUPPORT，仅作描述性报告。
+
+## E02-06：连续缺失与误差分析
+
+使用预测origin之前的24小时历史。
+
+分别分析：
+
+- Hours since last observation。
+- Longest missing run。
+- Observed coverage。
+- Imputation ratio。
+
+注意：最长缺失长度与距最近一次观测的时间不是同一指标。
+
+建议固定历史最大缺失长度分组：
+
+- 0小时。
+- 1–2小时。
+- 3–6小时。
+- 7–12小时。
+- 13–24小时。
+
+对距最近一次观测时间，根据冻结定义保留大于24小时的类别及原有168小时上限。
+
+分别报告样本支持、六模型MAE及配对误差。
+
+不重新进行插补算法训练。
+
+## E02-07：Coverage、Gap与Volatility联合分析
+
+优先从冻结manifest和原特征中恢复：
+
+- history_coverage_ratio。
+- max_gap_24h。
+- hours_since_last_observation。
+- volatility_24h。
+
+根据实际字段映射确认名称及语义。
+
+原稿volatility定义为因果填充速度在历史窗口中的总体标准差，ddof=0。
+
+不得使用标准化后的特征值直接作为原始km/h波动率。
+
+若从原面板恢复volatility，必须保持相应fold的因果填充及训练期统计量定义。
+
+无法恢复时，使用明确命名的观测速度波动代理，不得冒充原特征。
+
+采用有限联合分析：
+
+1. Coverage单变量分层。
+2. Gap单变量分层。
+3. Volatility单变量分层。
+4. Coverage × Gap联合分层。
+5. 在具有足够样本支持的主要组合内，分析低、中、高Volatility条件下的模型误差。
+
+Coverage优先固定为：
+
+- 0–50%。
+- 50%–75%。
+- 75%–不足100%。
+- 100%。
+
+明确区间端点归属，避免重叠。
+
+Volatility分组阈值优先使用各fold训练样本分位数，不得根据测试误差选择。
+
+若数据导致分位点重复，不得随机拆分相同值，应合并相应类别并说明。
+
+不开展大量高维交叉组合，不新增预测模型。
+
+主要解释XGBoost、SeasonalHA及Persistence在不同可靠性条件下的变化。
+
+其他模型结果保留于完整结果表。
+
+## E02-08：样本选择与可观测偏差
+
+基于E01重建的候选origin及资格信息，比较：
+
+- 有效样本。
+- 被排除样本。
+- 具有部分可观测目标但不满足完整度规则的样本。
+
+比较共同可观测信息：
+
+- 节点。
+- 日期及时段。
+- 历史coverage。
+- 历史gap。
+- 可观测历史速度。
+- 可观测confidence。
+- 可观测速度比值。
+- 其他能够可靠关联的原有字段。
+
+输出样本支持、分布差异及必要的标准化差异指标。
+
+对于完全无返回记录：
+
+- 真实速度未知。
+- 真实拥堵状态未知。
+- 不能计算其预测误差。
+- 不能据此证明缺失是MCAR、MAR或MNAR。
+
+只讨论可观测选择机制及可能影响。
+
+## E02-09：Road closure与质量筛选影响
+
+G0确认筛选前返回CSV的road_closure只有0。
+
+正式统计该字段的取值分布。
+
+如果仍然没有封闭事件样本，标记：
+
+NOT_ESTIMABLE — NO OBSERVED CLOSURE EVENTS
+
+不得生成虚假的道路封闭误差结果。
+
+可以分析低confidence过滤前后的速度及可观测交通状态分布。
+
+不得将未被API返回的道路封闭事件视为已观测事实。
+
+## E02-10：Free-flow baseline
+
+将Reviewer #6明确要求的free-flow baseline提前纳入本阶段，原因是G0已确认相关字段存在，且该基准不需要训练复杂模型。
+
+该任务属于原E07低成本分析的提前执行，不增加新的研究方向。
+
+使用预测origin时已经可获得的free-flow speed：
+
+预测未来窗口平均速度 = origin时可获得的节点自由流速度。
+
+若origin没有有效自由流速度，可使用可证明在预测时点前已获得的最近有效记录，或相应fold训练期节点自由流统计量。
+
+提前冻结回退顺序和覆盖情况。
+
+注意小时标签语义：只有在能够证明相应观测时段已经结束、数据在forecast origin的信息边界内可得时，才可使用该小时的数据。
+
+不得读取未来目标窗口的free-flow speed作为预测值。
+
+若时间可得性无法证明，应采用可验证的历史滞后值，或将该任务标为受限并保留至E07。
+
+在与原六模型一致的测试样本上报告：
+
+- 预测覆盖率。
+- MAE。
+- RMSE。
+- Bias。
+- 各horizon表现。
+- 自由流与拥堵状态下表现。
+
+如不能覆盖所有共同样本，必须同时报告原六模型在相同交集上的结果，避免样本选择造成不公平比较。
+
+不得将新增Free-flow baseline混入原始六模型冻结排名。
+
+## E02输出文件
+
+保存于：
+
+04_EXPERIMENTS\E02_TRAFFIC_RELIABILITY
+
+至少输出：
+
+- E02_01_Speed_and_Target_Distribution.csv
+- E02_02_FreeFlow_Equality.csv
+- E02_03_Confidence_Distribution.csv
+- E02_04_Traffic_Regime_Distribution.csv
+- E02_05_Regime_Model_Performance.csv
+- E02_06_Gap_Conditioned_Performance.csv
+- E02_07_Coverage_Gap_Volatility.csv
+- E02_08_Sample_Selection_Diagnostics.csv
+- E02_09_Closure_and_Quality_Filter.csv
+- E02_10_FreeFlow_Baseline.csv
+- E02_Summary_CN.md
+
+---
+
+# 9. E03：统计推断重建与模型稳定性分析
+
+这是本次大修最重要的方法学修复之一。
+
+使用原180份冻结预测，不重新训练模型。
+
+## E03-01：随机种子聚合口径专项核验
+
+原论文Equation (12)说明：
+
+先对XGBoost和GRU的三个随机种子预测进行逐样本平均，再计算MAE。
+
+但G0工作簿的E03准备度记录提出，原主结果可能采用先计算逐seed指标、再平均指标的方式。
+
+这两种方法数学上并不等价。
+
+必须对XGBoost与GRU分别计算：
+
+方法A：Ensemble prediction MAE。
+
+先按共同样本主键平均三个预测值，再计算MAE。
+
+方法B：Mean seed-level MAE。
+
+先计算每个seed的MAE，再平均三个MAE。
+
+分别按6个fold和H1、H3、H6输出结果。
+
+计算完整的六模型 × 三horizon × 六fold结果及相应fold-macro汇总。
+
+与原稿Table 7、原始指标注册表及历史审计记录对照。
+
+输出：
+
+- manuscript_reported_value。
+- method_A_value。
+- method_B_value。
+- difference_A_vs_reported。
+- difference_B_vs_reported。
+- best_supported_original_definition。
+- discrepancy_status。
+- explanation。
+
+原稿Table 7使用三位小数时，应考虑正常四舍五入容差；优先与未舍入的历史指标对照。
+
+不得单凭四舍五入后某一数值相近就确认全部原始实现。
+
+如果A和B均无法完全对应历史指标，保留差异，不继续无边界搜索。
+
+本阶段新的主要模型比较口径预设为方法A，即Equation (12)所定义的逐样本ensemble预测。
+
+方法B作为种子层面的补充结果。
+
+如果原表实际采用方法B，必须报告论文描述与计算实现不一致，并登记后续正文和结果修正事项。
+
+不得根据哪种方法更有利于XGBoost而改变主要口径。
+
+## E03-02：共同样本及逐样本配对损失
+
+实际读取180份预测，利用历史验收证据及本阶段必要关联检查建立统一配对损失表。
+
+主键至少包括：
+
+- fold。
+- horizon。
+- sample_id。
+- node_id。
+- forecast_origin。
+
+核对：
+
+- 模型间样本主键一致。
+- 目标值一致。
+- 预测值为有限数值。
+- 三个seed均存在。
+- seed顺序及身份正确。
+- 不存在多对多连接。
+
+统一计算：
+
+- Absolute error。
+- Squared error。
+- Signed error。
+- Paired absolute-loss difference。
+
+模型A减模型B的损失差：
+
+d = absolute_error_A − absolute_error_B
+
+负值表示模型A误差较低。
+
+正值表示模型B误差较低。
+
+配对明细仅保存在受控本地目录，不纳入对外审查ZIP。
+
+## E03-03：原始基准与统计权重分解
+
+同时输出以下估计量：
+
+### Estimand 1：Fold-macro
+
+每个fold内部计算MAE，再对六个fold等权平均。
+
+用于原投稿结果对照。
+
+### Estimand 2：Sample-weighted
+
+对所有共同预测样本等权汇总。
+
+用于说明每条有效预测记录的平均误差。
+
+### Estimand 3：Day-macro
+
+先计算每个当地日期内全部共同样本的平均误差，再对具有有效共同样本的日期等权平均。
+
+作为本阶段主要配对效应估计量，解释为典型有效测试日期的平均损失差。
+
+日期按照Asia/Kuala_Lumpur时区的forecast origin确定。
+
+### Estimand 4：Historical day × spatial-block
+
+根据历史统计记录及实际可恢复的空间块定义，解释原补充bootstrap估计量。
+
+如果无法完整恢复历史空间分块或原重采样规则，明确标记PARTIALLY_RECONSTRUCTED。
+
+不自行构造新的空间块后声称完全复现旧统计结果。
+
+每种估计量都必须报告：
+
+- 模型MAE。
+- 配对差值。
+- 实际样本数。
+- 日期数。
+- Fold数。
+- 空间节点数。
+- 权重定义。
+
+重点解释XGBoost与SeasonalHA在原fold-macro及day×spatial-block统计中出现方向反转的原因。
+
+分别分析种子聚合变化、样本权重及聚合单位造成的影响。
+
+不得把所有反转原因直接归结为统计权重，必须实际核验。
+
+## E03-04：依赖感知的统计不确定性
+
+原六fold精确双侧Wilcoxon的统计设计存在已知功效限制：
+
+最小未校正p值 = 2/2^6 = 0.03125。
+
+每个horizon进行5项Holm比较时，最小可达到的首项校正值为0.15625。
+
+因此原检验不能作为“模型没有差异”或“模型等效”的证据。
+
+保留原统计结果用于说明历史方法限制，不再将其作为主要推断方法。
+
+### 主要统计方案
+
+使用每日配对损失差序列。
+
+优先采用Moving Block Bootstrap：
+
+- 重采样单位：连续当地日期组成的时间块。
+- 同一日期内部所有共同样本和节点整体保留。
+- 主要块长度：3个连续日期。
+- 敏感性块长度：7个连续日期。
+- 重采样次数：10,000。
+- 固定随机种子：20261125。
+- 置信区间：双侧95% percentile interval。
+
+上述块长度为本阶段预先规定的有限分析方案，不宣称已经证明是最优块长度。
+
+首先检查真实日期支持、缺失日期及fold边界。
+
+不能将不存在的日期当作有效日期，也不能将跨越真实观测中断的日期拼接成连续时间块。
+
+在协议中明确连续测试日期跨fold边界的处理及日期有效性定义。
+
+若某horizon不能形成足够的连续日期块，应标记INFERENCE_LIMITED，保留描述性效应，不强行生成看似可靠的显著性结论。
+
+主要Bootstrap估计对象为Day-macro配对损失差。
+
+需要明确：
+
+- 日与日之间仍可能相关。
+- 不同fold对应不同训练后的模型。
+- 仅有约41个测试日期，独立有效信息仍然有限。
+- 保留空间节点整体的日期块只能缓解部分依赖问题，不能解决所有依赖。
+
+### 补充统计方案
+
+如每日损失差序列支持，可进行有限HAC/Diebold-Mariano类型敏感性分析。
+
+必须先确认：
+
+- 每日损失差定义。
+- 日期连续性。
+- 有效样本数量。
+- 方差估计条件。
+- 时间相关性处理。
+
+若执行HAC，预先固定候选lag，例如3个日期，不根据p值选择。
+
+不要求必须获得显著结果。
+
+如果相关假设无法合理支持，输出NOT_APPLICABLE及原因。
+
+## E03-05：多重比较校正
+
+保持原始每个horizon的五项预设配对比较：
+
+1. XGBoost vs GRU。
+2. XGBoost vs Ridge。
+3. XGBoost vs SeasonalHA。
+4. Persistence vs HA。
+5. GRU vs Ridge。
+
+共15项。
+
+主要推断使用与时间块Bootstrap相一致的零假设中心化损失差重采样检验，明确双侧p值计算方式，并使用有限重采样修正。
+
+不要将未经中心化的Bootstrap抽样中正负比例直接当成正式检验p值。
+
+每个horizon作为一个预设检验家族，使用Holm校正。
+
+输出：
+
+- Effect estimate。
+- Unadjusted 95% CI。
+- Raw p-value。
+- Holm-adjusted p-value。
+- Number of valid dates。
+- Bootstrap block length。
+- Resample count。
+- Inference limitations。
+
+明确普通95%区间不是同时置信区间。
+
+对无法有效计算p值的比较标记NOT_ESTIMABLE，不得填入伪造值。
+
+检验家族的处理规则必须预先固定，不得为了获得显著性选择性减少比较数量。
+
+## E03-06：H1实际竞争关系
+
+针对原稿中XGBoost、Persistence及SeasonalHA表现接近的问题，补充：
+
+- XGBoost vs Persistence。
+- XGBoost vs SeasonalHA。
+- Persistence vs SeasonalHA。
+
+报告：
+
+- MAE绝对差值。
+- 相对误差改善百分比。
+- Fold胜负次数。
+- 日期胜负次数。
+- 配对效应及描述性区间。
+- 实际改善幅度。
+
+将不属于原五项预设比较的分析明确标记EXPLORATORY。
+
+不得混入原预设检验家族后选择性报告显著性。
+
+不设未经验证的业务阈值来宣称某个模型具有实际部署价值。
+
+## E03-07：Leave-one-fold-out稳定性
+
+分别计算：
+
+- All 6 folds。
+- Exclude Fold 1。
+- Exclude Fold 2。
+- Exclude Fold 3。
+- Exclude Fold 4。
+- Exclude Fold 5。
+- Exclude Fold 6。
+
+对每个horizon输出：
+
+- 六模型MAE。
+- 模型描述性排名。
+- XGBoost与SeasonalHA差值。
+- XGBoost与Persistence差值。
+- 排名是否发生反转。
+
+必须完整报告全部六种单fold排除结果。
+
+不得仅报告有利于某一模型的子集。
+
+LOFO属于对既有预测结果的稳定性诊断，不是重新训练的交叉验证，也不能消除历史测试集暴露。
+
+## E03-08：随机种子稳定性
+
+对XGBoost和GRU分别统计：
+
+- 每seed MAE。
+- 三seed均值。
+- 三seed标准差。
+- 三seed最大最小范围。
+- Ensemble MAE。
+- Ensemble与mean seed-level MAE差值。
+
+分别讨论：
+
+- 同一fold内随机种子变化。
+- 不同fold间性能变化。
+
+仅针对原有三个seed进行描述，不将三个seed当作独立道路实验。
+
+## E03-09：Fold 5及Fold 6异常结果诊断
+
+利用现有数据分析：
+
+- 每fold目标速度分布。
+- 每fold交通状态比例。
+- 每fold历史coverage。
+- 每fold缺失情况。
+- 每fold误差分布。
+- XGBoost和SeasonalHA排名变化。
+
+对Fold 5日期异常、春节及斋月相关意见，本阶段只提供数据分布与误差证据。
+
+不下载新的官方日历，不提前宣称春节或斋月造成模型性能下降。
+
+正式日历核验与应用解释保留至E07。
+
+## E03输出文件
+
+保存于：
+
+04_EXPERIMENTS\E03_STATISTICAL_INFERENCE
+
+至少输出：
+
+- E03_01_Seed_Aggregation_Reconciliation.csv
+- E03_02_Fold_Model_Metrics.csv
+- E03_03_Original_vs_Recomputed_Table7.csv
+- E03_04_Weighting_Estimands.csv
+- E03_05_Daily_Paired_Loss.csv
+- E03_06_Block_Bootstrap_Results.csv
+- E03_07_Block_Length_Sensitivity.csv
+- E03_08_Holm_Adjusted_Comparisons.csv
+- E03_09_H1_Practical_Differences.csv
+- E03_10_LOFO_Stability.csv
+- E03_11_Seed_Stability.csv
+- E03_12_Fold_Regime_Diagnostics.csv
+- E03_13_Estimand_Reversal_Explanation.md
+- E03_Summary_CN.md
+
+若实施补充HAC或DM分析，增加对应结果表；否则在E03报告中说明不执行的依据。
+
+---
+
+# 10. E01–E03共享计算原则
+
+不要为每个分析任务独立复制全部数据。
+
+建立一套统一的中间层：
+
+1. Observation-level analysis panel。
+2. Hourly analysis panel。
+3. Forecast-origin eligibility panel。
+4. Target-completeness table。
+5. Aligned prediction table。
+6. Paired-loss table。
+7. Reliability-conditioned analysis table。
+
+保存于：
+
+02_DATA\03_DERIVED_DATA\E01_E03
+
+该中间层仅限本地受控使用。
+
+三个实验包共享上述结果，避免重复解析83份CSV、重复连接180份预测或重复生成同一可靠性特征。
+
+统一使用实际主键、时区、速度单位和节点ID映射。
+
+如果发现输入文件存在差异，只重新处理受影响的数据及任务，不重新执行整个G0或E01–E03。
+
+---
+
+# 11. 计算代码及可复现性要求
+
+所有新增分析代码保存于：
+
+03_CODE\E01_E03
+
+建议建立：
+
+- run_e01.py
+- run_e02.py
+- run_e03.py
+- validate_g1.py
+- run_e01_e03_pipeline.py
+
+可以依据现有工程结构调整，不要求为了符合文件名而重写已有有效代码。
+
+必须保存：
+
+- 实际Python版本。
+- 实际软件包版本。
+- 运行参数。
+- Random seed。
+- 分析协议路径。
+- 输入文件路径。
+- 输入版本信息。
+- 输出文件SHA256。
+- 运行开始及结束时间。
+- 运行日志。
+- 异常及处理记录。
+
+新增程序应当具有可重复运行能力。
+
+已生成且输入及协议没有变化的有效结果可以复用。
+
+不得通过静默覆盖方式删除历史基准或失败记录。
+
+---
+
+# 12. 诊断图件及SCI论文证据准备
+
+本阶段允许生成有限的研究诊断图，用于检查分析结果。
+
+不制作最终SCI排版图，不修改原始论文Fig. 1–6。
+
+建议生成六类诊断图：
+
+1. 数据覆盖率及完整度规则对比。
+2. Current speed、free-flow speed及confidence分布。
+3. 自由流与拥堵状态下的模型误差。
+4. Coverage、Gap、Volatility条件下的模型误差。
+5. 不同统计权重及配对效应区间。
+6. Leave-one-fold-out模型稳定性。
+
+所有诊断图必须有可追溯的CSV来源。
+
+图表标明：
+
+- 样本统计层级。
+- 速度单位。
+- 样本数量。
+- H1/H3/H6任务。
+- 主要及补充估计量。
+- 是否为描述性或推断性结果。
+
+诊断图保存于：
+
+07_FIGURES_TABLES\G1_DIAGNOSTICS
+
+避免大量重复图片。
+
+---
+
+# 13. G1：一次性统一验收
+
+全部可执行的E01–E03任务完成后，进行一次统一结果验收。
+
+不得将G1变成重复的全面数据审计。
+
+## G1-A：E01验收标准
+
+- 数据分母、分子及统计层级明确。
+- 正式网格时间范围正确。
+- 原始返回行与唯一槽位不混淆。
+- 行级和槽位级漏斗计算可追溯。
+- 四种小时资格规则计数正确或差异有解释。
+- H6完整与不完整目标样本可追溯。
+- 缺失位置统计完整。
+- 各fold样本剔除及保留数量明确。
+- 没有对无观测目标进行虚构插补。
+- 97.30%问题明确登记后续修正方案。
+
+## G1-B：E02验收标准
+
+- Current speed、free-flow speed及confidence字段正确。
+- 自由流比例及交通状态计算有真实数据支持。
+- 所有误差评价使用对应有效目标。
+- 样本选择偏差仅基于可观测证据。
+- Coverage、Gap及Volatility定义与原研究对应。
+- 所有分层结果报告样本支持。
+- Road closure不可估计的情况被如实记录。
+- Free-flow baseline满足预测时点的信息可得性约束，或明确标记受限。
+- 不将供应商速度称为独立真实速度。
+
+## G1-C：E03验收标准
+
+- 两种seed聚合口径均已计算。
+- 原Table 7差异得到定位或明确记录。
+- 共同样本主键和真值一致。
+- 新统计估计量定义清晰。
+- 时间及空间依赖处理有明确限制说明。
+- Bootstrap协议提前冻结。
+- 原15项比较完整保留。
+- Holm校正正确或无法推断情况已登记。
+- LOFO完整报告六种排除情况。
+- 不以获得统计显著性作为验收通过条件。
+- 不将回顾性结果称为独立盲测。
+
+## G1-D：验收状态
+
+每个子任务使用：
+
+- PASS。
+- CONDITIONAL_PASS。
+- NOT_ESTIMABLE。
+- BLOCKED。
+
+其中：
+
+NOT_ESTIMABLE表示数据结构或观测条件确实无法回答该科学问题，并不表示必须追加新的数据。
+
+例如，没有观测到道路封闭事件，不能估计封闭效应。
+
+总体G1采用：
+
+- PASS。
+- CONDITIONAL_PASS。
+- BLOCKED。
+
+必须依据实际结果判定。
+
+不要为了获得PASS而隐瞒差异、数据缺失、不显著结果或模型排名反转。
+
+---
+
+# 14. 31条审稿意见进度更新
+
+基于G0_02_Reviewer_Experiment_Matrix.csv，生成新的阶段进度表。
+
+不得覆盖G0原始对应表。
+
+至少包含：
+
+- reviewer_id。
+- comment_id。
+- original_comment。
+- G0_status。
+- E01_evidence。
+- E02_evidence。
+- E03_evidence。
+- evidence_file。
+- key_result。
+- remaining_experiment。
+- remaining_data。
+- planned_manuscript_section。
+- response_readiness。
+- limitation。
+
+每条意见区分：
+
+- 已获得充分数据分析证据。
+- 部分获得证据，仍需训练。
+- 需要GIS或官方日历。
+- 需要外部独立验证。
+- 可通过方法说明或局限回应。
+- 文献相关性待核实。
+
+本阶段不撰写正式回复信，不提前填写尚未取得的实验结果。
+
+31条意见必须完整保留。
+
+---
+
+# 15. 评估下一阶段最小训练规模
+
+本阶段完成后，根据E01–E03真实结果，对E04–E08提出有限的执行建议。
+
+该步骤只生成决策依据，不实际训练模型。
+
+重点评估：
+
+## E04敏感性实验
+
+- 1/4、3/4、4/4规则下各fold样本是否足够。
+- 4/4规则是否存在不可评价的horizon。
+- H6严格6/6是否需要完整重新训练。
+- 长缺失结果是否支持一种替代因果插补对照。
+- 12/24/48小时输入窗口敏感性所需样本支持。
+
+## E05框架消融
+
+- 哪些问题已经由E01数据审计回答。
+- 哪些仍需真实预测对照。
+- 哪些组件可以通过少量代表性模型完成。
+- 是否存在无法形成公平反事实的情况。
+
+不能用E01覆盖率统计完全替代Reviewer #1要求的框架预测对照。
+
+## E06模型公平性
+
+保留：
+
+- Ridge有限验证集调参。
+- XGBoost有限验证集调参。
+- GRU有限验证集调参。
+- GRU节点静态特征公平性。
+- 一个代表性轻量时空模型的候选方案。
+
+不增加大量深度学习架构。
+
+原训练入口若仍无法取得，明确后续需要作者批准独立新实现及最小基准验证。
+
+## E07空间与运营
+
+- 已完成的Free-flow baseline直接复用。
+- GIS道路中心线及累计里程是否仍需要获取。
+- 节假日日历核查。
+- 计算效率测量计划。
+
+## E08外部验证
+
+保持条件性。
+
+不因为内部模型结果不理想而临时扩大外部数据范围。
+
+分别说明：
+
+- 独立时间段验证能够解决什么问题。
+- 外部走廊验证能够解决什么问题。
+- 哪些问题不能由公开检测器数据替代解决。
+- 是否确实需要作者额外下载数据。
+
+E01–E03的结果只能用于识别科学证据缺口和样本可行性，不能用于从已见测试结果中选择更有利的模型参数或实验条件。
+
+输出下一阶段建议实验矩阵：
+
+- experiment_id。
+- scientific_question。
+- reviewer_mapping。
+- existing_evidence。
+- unresolved_issue。
+- required_inputs。
+- sample_support。
+- source_code_dependency。
+- proposed_models。
+- proposed_horizons。
+- proposed_folds。
+- maximum_run_budget。
+- reuse_possible。
+- necessity。
+- author_approval_required。
+
+运行预算必须说明计算依据。
+
+本阶段不实际执行该矩阵中的训练任务。
+
+---
+
+# 16. 最终交付文件
+
+在以下目录创建或复用：
+
+04_EXPERIMENTS\G1_E01_E03_ACCEPTANCE
+
+统一交付七份核心文件。
+
+## Output 01
+
+G1_01_E01_E03_Result_Registry.csv
+
+登记全部正式输出及：
+
+- 实验编号。
+- 结果表。
+- 数据来源。
+- 计算口径。
+- 关键数值。
+- 样本数。
+- 文件SHA256。
+- 验收状态。
+- 论文修改用途。
+
+## Output 02
+
+G1_02_Integrated_Results.xlsx
+
+生成一个统一Excel结果工作簿，建议包含：
+
+- 00_Executive_Summary
+- 01_Data_Coverage
+- 02_Threshold_Comparison
+- 03_Sample_Attrition
+- 04_H6_Completeness
+- 05_Traffic_Distribution
+- 06_Traffic_Regime_MAE
+- 07_Missingness_Reliability
+- 08_Selection_Diagnostics
+- 09_FreeFlow_Baseline
+- 10_Seed_Aggregation
+- 11_Table7_Reconciliation
+- 12_Statistical_Estimands
+- 13_Bootstrap_Holm
+- 14_LOFO_Stability
+- 15_Next_Experiment_Scope
+- 16_Limitations
+
+工作簿只包含必要的聚合结果及索引，不重复嵌入大型商业数据明细。
+
+## Output 03
+
+G1_03_Reviewer_Response_Progress.csv
+
+31条审稿意见阶段性证据及剩余工作。
+
+## Output 04
+
+G1_04_Manuscript_Consistency_Matrix.xlsx
+
+至少记录：
+
+- 原稿章节。
+- 原稿公式编号。
+- 原稿图表编号。
+- 原稿数字或结论。
+- 新计算数字或证据。
+- 是否存在差异。
+- 建议后续修改内容。
+- 对应审稿意见。
+- 实际证据文件。
+
+重点核对97.30%、H6完整度、Equation (12)、Table 7、Fig. 2、Fig. 4、Fig. 5及Fig. 6。
+
+只建立修订依据，不直接修改原文。
+
+## Output 05
+
+G1_05_Minimum_Remaining_Experiment_Plan.xlsx
+
+基于真实计算结果确定下一阶段必要训练任务及数据需求。
+
+必须区分：
+
+- MUST_RUN。
+- CONDITIONAL_RUN。
+- REUSE_EXISTING。
+- EXPLANATION_ONLY。
+- NOT_REQUIRED。
+
+不得因为E01–E03完成而自动扩大E04–E08范围。
+
+## Output 06
+
+G1_06_Acceptance_Report_CN.md
+
+中文最终验收报告，内容包括：
+
+1. G0继承结果。
+2. 本阶段真实执行情况。
+3. E01主要计算发现。
+4. E02主要计算发现。
+5. E03主要计算发现。
+6. 两种seed聚合口径对比。
+7. 原稿数字与新结果差异。
+8. 统计推断及模型排名变化。
+9. 31条审稿意见阶段覆盖情况。
+10. 已解决科学问题。
+11. 尚未解决科学问题。
+12. 不可估计及证据限制。
+13. 下一阶段必要训练规模。
+14. 是否需要作者额外提供数据。
+15. G1最终验收结论。
+
+## Output 07
+
+G1_07_Execution_Manifest.json
+
+保存：
+
+- 输入文件版本及路径。
+- G0继承证据。
+- 分析协议及版本。
+- 实际执行命令。
+- 软件环境。
+- 随机种子。
+- 实际输出。
+- 文件哈希。
+- 已完成及未完成任务。
+- 验收状态。
+
+另生成独立的交付文件哈希清单，避免manifest自引用哈希问题。
+
+---
+
+# 17. 最终ZIP打包
+
+将七份核心文件、E01–E03聚合统计结果、必要分析代码、分析协议、诊断图及验收日志统一打包。
+
+ZIP名称：
+
+APIN_G1_E01_E03_Results_20261125.zip
+
+最终保存位置：
+
+D:\Desktop\大修_Applied Intelligence_2026112_论文修改\APIN_G1_E01_E03_Results_20261125.zip
+
+如果实际执行日期不同，允许文件名采用真实完成日期，并在manifest中记录。
+
+ZIP不得包含：
+
+- 商业原始FCD。
+- 逐记录派生速度。
+- 逐样本预测明细。
+- 特征张量。
+- 模型权重。
+- API密钥。
+- 未确认公开许可的图源或数据。
+
+诊断图及聚合结果也应经过数据许可边界检查。
+
+若文件存在许可不确定性，只交付安全的聚合摘要及本地索引。
+
+打包后检查：
+
+- ZIP成员数量。
+- CRC完整性。
+- 七份核心文件齐全。
+- 结果表和引用路径对应。
+- 无空白冒充正式结果。
+- 无重复大型数据文件。
+- 无许可未确认的受限数据明细。
+
+所有正式输出继续保存在指定唯一根目录。
+
+---
+
+# 18. 最终终端汇报格式
+
+完成后，用中文给出以下结构化汇报：
+
+APPLIED INTELLIGENCE MAJOR REVISION
+
+G1 E01–E03 FINAL ACCEPTANCE
+
+Overall Status:
+PASS / CONDITIONAL_PASS / BLOCKED
+
+G0 Evidence Reused:
+
+E01 Status:
+- Data coverage:
+- Hourly threshold comparison:
+- H6 target completeness:
+- Sample attrition:
+- E04 sample feasibility:
+
+E02 Status:
+- Speed distribution:
+- Free-flow equality:
+- Confidence distribution:
+- Congested-regime sample support:
+- Reliability-conditioned performance:
+- Sample-selection diagnostics:
+- Free-flow baseline:
+
+E03 Status:
+- Original Table 7 reconciliation:
+- Seed aggregation definition:
+- Fold-macro results:
+- Sample-weighted results:
+- Day-macro results:
+- Block-bootstrap uncertainty:
+- Holm-adjusted comparisons:
+- LOFO stability:
+
+Original Manuscript Discrepancies:
+
+Reviewer Evidence Coverage:
+
+Remaining Scientific Issues:
+
+Mandatory Remaining Experiments:
+
+Conditional Remaining Experiments:
+
+Missing Data:
+
+Source Code Dependencies:
+
+Author Decisions Required:
+
+Generated Deliverables:
+
+Final ZIP Absolute Path:
+
+Recommended Next Action:
+
+必须汇报真实结果和数值，不能仅输出PASS或完成百分比。
+
+区分审稿意见已建立回应方案、已获得部分证据、已完成充分证据三种状态。
+
+不得把审稿意见覆盖率等同于实际审稿人满意度或论文录用概率。
+
+---
+
+# 19. 停止条件
+
+完成E01、E02、E03全部可执行分析及G1一次性验收后，立即停止本阶段。
+
+不要自动进入E04。
+
+不要重新启动G0。
+
+不要继续新增实验。
+
+不要修改论文正文。
+
+不要重新下载数据。
+
+不要开展新模型训练。
+
+等待作者检查本阶段成果，并确认下一阶段最小充分实验规模。
+
+如果某个局部任务受限：
+
+- 记录原因。
+- 完成其他可以执行的任务。
+- 给出该任务的最低必要解决方案。
+- 不无限制重复搜索或重新审核。
+
+本次任务的核心目标：
+
+利用已确认的原有FCD数据和冻结预测结果，完成真实、可复现、科学合理且具有明确边界的E01–E03正式分析，解决原论文数据完整性、交通状态解释、可靠性分析和统计推断中的主要审稿问题，并为下一阶段必要模型实验提供准确的决策依据。
+
+现在开始实际执行。
+
+先读取并继承G0结果，冻结计算协议，依次完成E01、E02、E03，最后统一进行G1验收及成果打包。

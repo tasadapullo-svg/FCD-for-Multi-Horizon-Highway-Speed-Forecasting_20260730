@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig04A_H1_Model_Performance.csv,fold,int64,Frozen value or documented formatting only; no new metric
 Fig04A_H1_Model_Performance.csv,horizon,int64,Frozen value or documented formatting only; no new metric
 Fig04A_H1_Model_Performance.csv,model,object,Frozen value or documented formatting only; no new metric

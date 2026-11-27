@@ -1,0 +1,7 @@
+﻿fold,theoretical_origin_universe,both_valid,H3_only,H6_only,neither_valid,H3_common_target_mean,H6_common_target_mean,H3_common_target_variance,H6_common_target_variance,H6_partial5_test,interpretation
+1,8568,2270,649,1241,4408,88.9922173275,88.8871231033,251.2084434,252.65824367,2505,"different targets, no cross-horizon MAE superiority claim"
+2,8568,3313,523,1511,3221,89.1663480565,89.0976271925,261.376065193,260.941470648,3027,"different targets, no cross-horizon MAE superiority claim"
+3,8568,4562,465,1671,1870,89.0680683423,89.0533166496,266.076897875,264.760768634,3300,"different targets, no cross-horizon MAE superiority claim"
+4,8568,3624,547,1146,3251,88.3130365465,88.1347452171,287.98635706,291.460983966,2288,"different targets, no cross-horizon MAE superiority claim"
+5,8568,2772,514,917,4365,89.4778138528,89.4312520042,256.559741951,259.532875748,1910,"different targets, no cross-horizon MAE superiority claim"
+6,7344,5282,284,832,946,89.3093945896,89.3043012958,247.80860737,245.732714162,1590,"different targets, no cross-horizon MAE superiority claim"

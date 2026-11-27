@@ -1,0 +1,20 @@
+{
+  "id": "APIN_FINAL_CLOSURE_20261126_v1",
+  "scope": "Targeted checks only; reuse G0/G1/G2 frozen runs and statistics",
+  "ridge_solver_comparison": {
+    "reference_solver": "cholesky",
+    "alternate_solver": "svd",
+    "maximum_absolute_prediction_difference_kmh": 0.0001,
+    "maximum_absolute_mae_difference_kmh": 0.00001,
+    "diagnostic_sampling": "All distinct logged warning Run IDs are audited; use representative runs first, expand only if tolerance fails",
+    "fixed_fields": ["manifest", "split", "features", "target", "alpha", "fit_intercept"]
+  },
+  "statistics": {
+    "g1_primary": "3-day block, five comparisons per horizon, Holm, alpha 0.05",
+    "g1_sensitivity": "7-day block raw p from accepted CSV; same five-comparison Holm, no new bootstrap",
+    "g2_primary": "Four predeclared comparisons, 3-day Holm; 7-day descriptive sensitivity"
+  },
+  "spatial_conditional_limit": 18,
+  "spatial_model_launch": "Only if all eight scientific eligibility conditions in Prompt 04 are evidenced",
+  "external_validation": "Feasibility and decision only; no E08 download or model training"
+}

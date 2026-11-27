@@ -1,0 +1,19 @@
+{
+  "zip_path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_G2_E04_E07_Results_20261126.zip",
+  "size_bytes": 275124,
+  "sha256": "fe32d0a192773a3fbf83b8445c31fd96e47a310290b9ece792efd0bcf2afd3f8",
+  "entries": 44,
+  "crc": "PASS",
+  "core_files": [
+    "G2_01_Source_and_Implementation_Report_CN.md",
+    "G2_02_Experiment_Run_Registry.csv",
+    "G2_03_Integrated_Experiment_Results.xlsx",
+    "G2_04_Reviewer_Evidence_Matrix.csv",
+    "G2_05_Manuscript_Consistency_Matrix.xlsx",
+    "G2_06_External_Data_and_Remaining_Decisions.xlsx",
+    "G2_07_Acceptance_Report_CN.md",
+    "G2_08_Execution_Manifest.json"
+  ],
+  "restricted_data_included": false,
+  "at": "2026-11-26T05:02:42.959723+08:00"
+}

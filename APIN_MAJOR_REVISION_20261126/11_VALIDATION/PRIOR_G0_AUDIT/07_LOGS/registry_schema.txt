@@ -1,0 +1,2 @@
+['model', 'fold', 'horizon', 'seed', 'run_name', 'status', 'started_at', 'pid', 'completed_at', 'elapsed_seconds', 'test_samples', 'prediction_file', 'prediction_sha256', 'sample_manifest', 'sample_manifest_sha256', 'best_epoch', 'best_validation_mae', 'epochs_ran']
+['run_name', 'model', 'seed', 'fold', 'horizon', 'n', 'MAE', 'RMSE', 'sMAPE', 'bias']

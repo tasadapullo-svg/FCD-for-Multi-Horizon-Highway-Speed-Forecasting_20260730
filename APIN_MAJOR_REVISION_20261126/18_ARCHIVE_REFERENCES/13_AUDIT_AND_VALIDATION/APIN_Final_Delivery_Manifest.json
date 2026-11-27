@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-26",
+  "project_root": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改",
+  "gpt_files": 236,
+  "local_files": 361,
+  "qgis_files": 39,
+  "research_categories": 10,
+  "aggregate_files": 53,
+  "master_sheets": 37,
+  "figure_count": 8,
+  "main_tables": 9,
+  "supplement_groups": 8,
+  "gis_original_nodes": 51,
+  "gis_routes": 50,
+  "gis_road_features": 1598,
+  "gis_review_candidates": 15,
+  "qgis_project_status": "QGIS_PROJECT_NOT_RUNTIME_VERIFIED",
+  "historical_corridor_length": "NOT_VERIFIED",
+  "reviewer_comments": 31,
+  "new_model_fits": 0,
+  "new_traffic_datasets": 0,
+  "archives": [
+    {
+      "path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_GPT_REVIEW_AND_SCI_PLOTTING_20261126.zip",
+      "bytes": 2450701,
+      "sha256": "a73c5af37b7b2f0f6cbe4fa1f43942b2b0640b33d6ffabbc8e290616670b04c0",
+      "entries": 236
+    },
+    {
+      "path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_QGIS_DRAWING_AND_VALIDATION_LOCAL_20261126.zip",
+      "bytes": 1218963,
+      "sha256": "6ad84e8082e1bd202ee8ed755f1237c6ae04164759a1fbaa76640f9a54e91568",
+      "entries": 39
+    },
+    {
+      "path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_FINAL_RESEARCH_RESULTS_LOCAL_20261126.zip",
+      "bytes": 5305761,
+      "sha256": "bbeed820e049c5fc0fc4a8fd482a8c4033d95d2ac4f471f80e62e3693f9e817d",
+      "entries": 361
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+[
+  {
+    "doi": "10.1016/j.asoc.2024.112116",
+    "title": [
+      "Separating the predictable part of returns with CNN-GRU-attention from inputs to predict stock returns"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3527-7248",
+        "authenticated-orcid": false,
+        "given": "Jiahao",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6967-1732",
+        "authenticated-orcid": false,
+        "given": "Ming",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ran",
+        "family": "Fang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0224-3551",
+        "authenticated-orcid": false,
+        "given": "Wenkai",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Applied Soft Computing"
+    ],
+    "volume": "165",
+    "issue": null,
+    "page": "112116",
+    "article_number": "112116",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          11
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.1016/j.physa.2025.130442",
+    "title": [
+      "Enhancing stock ranking forecasting by modeling returns with heteroscedastic Gaussian Distribution"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3527-7248",
+        "authenticated-orcid": false,
+        "given": "Jiahao",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ran",
+        "family": "Fang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ming",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0224-3551",
+        "authenticated-orcid": false,
+        "given": "Wenkai",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Physica A: Statistical Mechanics and its Applications"
+    ],
+    "volume": "664",
+    "issue": null,
+    "page": "130442",
+    "article_number": "130442",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          4
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.1016/j.engappai.2024.108320",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1007/s10462-019-09750-3",
+    "title": [
+      "Feature selection in image analysis: a survey"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0524-6427",
+        "authenticated-orcid": false,
+        "given": "Verónica",
+        "family": "Bolón-Canedo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9265-253X",
+        "authenticated-orcid": false,
+        "given": "Beatriz",
+        "family": "Remeseiro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Artificial Intelligence Review"
+    ],
+    "volume": "53",
+    "issue": "4",
+    "page": "2905-2931",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          8,
+          9
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.1038/s41598-023-28763-1",
+    "title": [
+      "Machine learning enabled orthogonal camera goniometry for accurate and robust contact angle measurements"
+    ],
+    "authors": [
+      {
+        "given": "Hossein",
+        "family": "Kabir",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nishant",
+        "family": "Garg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Scientific Reports"
+    ],
+    "volume": "13",
+    "issue": "1",
+    "page": null,
+    "article_number": "1497",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          27
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.28991/CEJ-2025-011-07-023",
+    "title": [
+      "Driving Economic Value: Assessing the Financial Impact of Dynamic Message Signs on Freeways"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0009-6933-183X",
+        "authenticated-orcid": false,
+        "given": "Mousa Ahmad",
+        "family": "Abushattal",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6876-4945",
+        "authenticated-orcid": false,
+        "given": "Fadi",
+        "family": "Alhomaidat",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2993-4902",
+        "authenticated-orcid": false,
+        "given": "Husam",
+        "family": "Alsanat",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5427-6235",
+        "authenticated-orcid": false,
+        "given": "Valerian",
+        "family": "Kwigizile",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sia",
+        "family": "Isaria Mwende",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Civil Engineering Journal"
+    ],
+    "volume": "11",
+    "issue": "7",
+    "page": "3039-3054",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          1
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.28991/ESJ-2025-09-02-023",
+    "title": [
+      "Real-Time Vehicle Type Detection and Counting for Emission Pollution Monitoring and Traffic Violation Identification"
+    ],
+    "authors": [
+      {
+        "given": "Md Mizanur",
+        "family": "Rahman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad Asifur",
+        "family": "Rahim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Umme",
+        "family": "Ayman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amir",
+        "family": "Sohel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Md Ali",
+        "family": "Hossain",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad Ali",
+        "family": "Moni",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ahmed",
+        "family": "Moustafa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Emerging Science Journal"
+    ],
+    "volume": "9",
+    "issue": "2",
+    "page": "959-976",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          1
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.28991/CEJ-2025-011-02-013",
+    "title": [
+      "Smart Roundabout Coordination Systems for Sustainable Urban Mobility"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5721-8903",
+        "authenticated-orcid": false,
+        "given": "Ahmed T. M.",
+        "family": "Halawani",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Civil Engineering Journal"
+    ],
+    "volume": "11",
+    "issue": "2",
+    "page": "623-634",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          1
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.1214/aos/1176347265",
+    "title": [
+      "The Jackknife and the Bootstrap for General Stationary Observations"
+    ],
+    "authors": [
+      {
+        "given": "Hans R.",
+        "family": "Kunsch",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "The Annals of Statistics"
+    ],
+    "volume": "17",
+    "issue": "3",
+    "page": "1217-1241",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          1989,
+          9,
+          1
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  },
+  {
+    "doi": "10.1145/2939672.2939785",
+    "title": [
+      "XGBoost"
+    ],
+    "authors": [
+      {
+        "given": "Tianqi",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "Guestrin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "785-794",
+    "article_number": null,
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ]
+    },
+    "update_to": [],
+    "status": "CROSSREF_METADATA_ONLY_NOT_FULL_TEXT"
+  }
+]

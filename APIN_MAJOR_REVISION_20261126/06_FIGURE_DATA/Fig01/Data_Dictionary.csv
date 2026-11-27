@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig01_Inter_Node_Distance_Diagnostic.csv,from_node,object,Frozen value or documented formatting only; no new metric
 Fig01_Inter_Node_Distance_Diagnostic.csv,to_node,object,Frozen value or documented formatting only; no new metric
 Fig01_Inter_Node_Distance_Diagnostic.csv,order_from,int64,Frozen value or documented formatting only; no new metric

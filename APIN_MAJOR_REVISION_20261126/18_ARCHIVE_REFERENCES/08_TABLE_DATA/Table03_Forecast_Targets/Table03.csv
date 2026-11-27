@@ -1,0 +1,4 @@
+﻿horizon,history_hours,target_window_hours,required_observed_hours,target_imputation,test_samples
+1,24,1,1,NONE,38201
+3,24,3,3,NONE,24805
+6,24,6,5,NONE,29141

@@ -1,0 +1,9 @@
+criterion_id,scientific_condition,evidence,status,decision
+1,Historically representative corridor adjacency,Current OSM snapshot only; no dated 2025-12 to 2026-02 road proof,NOT_VERIFIED,FAIL_GATE
+2,Actual road-linked observation nodes,51 coordinates match current road lines but 15 nodes need review and directed topology unknown,PARTIAL_CURRENT_SNAPSHOT,FAIL_GATE
+3,Neighbor historical speed fields exist,Original hourly panel has 51 node speed histories,AVAILABLE_INPUT,NECESSARY_NOT_SUFFICIENT
+4,Causal neighbor availability at decision time,Original API arrival latency and neighbor feature assembly not independently verified,NOT_VERIFIED,FAIL_GATE
+5,No future traffic leakage,No neighbor model input tensor has been built and audited,NOT_VERIFIED,FAIL_GATE
+6,Matched trained GRU baseline available,Existing GRU_WITH_STATIC seed42 folds and horizons complete,VERIFIED,AVAILABLE
+7,Common train validation test samples preserved,Would require new neighbor feature join and manifest equivalence proof,NOT_IMPLEMENTED,FAIL_GATE
+8,No large new data needed,Existing hourly panel and local OSM are available,LIKELY_FEASIBLE,NECESSARY_NOT_SUFFICIENT

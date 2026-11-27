@@ -1,0 +1,28 @@
+\begin{table}[!htbp]
+\centering
+\caption{Primary six-model fold-macro MAE under Method A.}
+\begin{tabular}{lllll}
+\hline
+model & horizon & method\_A\_value & method\_A\_fold\_sd & sample\_weighted\_MAE \\ 
+\hline
+GRU & 1 & 1.047 & 0.1898 & 1.034 \\
+GRU & 3 & 0.9476 & 0.1646 & 0.9249 \\
+GRU & 6 & 0.8689 & 0.1648 & 0.8438 \\
+HA & 1 & 1.825 & 0.1192 & 1.82 \\
+HA & 3 & 1.704 & 0.1363 & 1.69 \\
+HA & 6 & 1.505 & 0.1199 & 1.492 \\
+Persistence & 1 & 0.9504 & 0.1547 & 0.9427 \\
+Persistence & 3 & 1.17 & 0.1362 & 1.162 \\
+Persistence & 6 & 1.47 & 0.1824 & 1.458 \\
+Ridge & 1 & 1.225 & 0.2668 & 1.206 \\
+Ridge & 3 & 1.131 & 0.2128 & 1.111 \\
+Ridge & 6 & 1.086 & 0.2774 & 1.051 \\
+SeasonalHA & 1 & 0.961 & 0.1154 & 0.9575 \\
+SeasonalHA & 3 & 0.8529 & 0.1055 & 0.8534 \\
+SeasonalHA & 6 & 0.7738 & 0.1023 & 0.7691 \\
+XGBoost & 1 & 0.9353 & 0.257 & 0.9166 \\
+XGBoost & 3 & 0.8194 & 0.1678 & 0.8001 \\
+XGBoost & 6 & 0.7444 & 0.1416 & 0.7249 \\
+\hline
+\end{tabular}
+\end{table}

@@ -38,3 +38,4 @@ def save(df,p):
  else:df.to_csv(p,index=False,encoding='utf-8-sig',float_format='%.12g')
 def metrics(y,p):
  y=np.asarray(y);p=np.asarray(p);e=p-y;return {'n':len(y),'MAE':float(np.abs(e).mean()),'RMSE':float(np.sqrt(np.mean(e**2))),'Bias':float(e.mean()),'sMAPE':float(np.mean(200*np.abs(e)/np.maximum(np.abs(y)+np.abs(p),1e-8)))}
+

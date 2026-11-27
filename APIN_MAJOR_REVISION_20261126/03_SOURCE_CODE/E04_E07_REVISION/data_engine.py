@@ -67,3 +67,5 @@ class Data:
   return self._X
  def split(self,name):return np.where(self.manifest.split.to_numpy()==name)[0]
  def tabular(self):return np.concatenate([self.X.reshape(len(self.X),-1),self.static_raw],axis=1)
+
+

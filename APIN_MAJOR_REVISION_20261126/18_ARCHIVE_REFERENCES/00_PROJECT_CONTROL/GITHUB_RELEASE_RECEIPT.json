@@ -1,0 +1,33 @@
+{
+  "repository_url": "https://github.com/tasadapullo-svg/FCD-for-Multi-Horizon-Highway-Speed-Forecasting_20260730",
+  "default_branch": "main",
+  "published_branch": "main",
+  "previous_remote_head": "0a4d2e00ac509d4f4e64f950df5a7d35238d6e4c",
+  "new_remote_head": "d52d274d3f4917a3851ed83138c3a7235450e99d",
+  "release_commit_sha": "d52d274d3f4917a3851ed83138c3a7235450e99d",
+  "release_date": "2026-11-26",
+  "added_files": 77,
+  "modified_files": 1,
+  "preserved_historical_files": 726,
+  "published_bytes": 174886,
+  "readme_path": "README.md",
+  "result_index_path": "CANONICAL_RESULT_INDEX.csv",
+  "figure_index_path": "FIGURE_DATA_INDEX.csv",
+  "table_index_path": "TABLE_DATA_INDEX.csv",
+  "retrieval_validation_status": {
+    "passed": 11,
+    "restricted": 6,
+    "failed": 0
+  },
+  "main_updated": true,
+  "main_update_error": "RESOLVED: HTTP/1.1 normal fast-forward push succeeded",
+  "new_model_fits": 0,
+  "new_traffic_datasets": 0,
+  "remaining_limitations": [
+    "Detailed derived data license unresolved",
+    "345 historical public binary assets require author review",
+    "No external E08 validation",
+    "Historical corridor and 15 GIS candidates unverified"
+  ],
+  "revision_branch": "revision/apin-evidence-20261126"
+}

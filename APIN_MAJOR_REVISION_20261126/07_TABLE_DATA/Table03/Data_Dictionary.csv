@@ -1,0 +1,9 @@
+﻿column,type,meaning
+horizon,int64,see frozen source/column names; full precision retained; blank is not zero
+history_hours,int64,see frozen source/column names; full precision retained; blank is not zero
+target_window_hours,int64,see frozen source/column names; full precision retained; blank is not zero
+required_observed_hours,int64,see frozen source/column names; full precision retained; blank is not zero
+target_imputation,object,see frozen source/column names; full precision retained; blank is not zero
+test_samples,int64,see frozen source/column names; full precision retained; blank is not zero
+target_must_remain_in_split,bool,see frozen source/column names; full precision retained; blank is not zero
+h6_support_file,object,see frozen source/column names; full precision retained; blank is not zero

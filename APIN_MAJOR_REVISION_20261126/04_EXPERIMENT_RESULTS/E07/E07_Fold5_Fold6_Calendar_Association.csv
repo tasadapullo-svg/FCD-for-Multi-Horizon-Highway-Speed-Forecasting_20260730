@@ -1,0 +1,11 @@
+﻿calendar_date,event_name,fold,split,category,interpretation
+2025-12-25,Christmas Day,5,train,public_holiday,date association only; no causal effect
+2025-12-25,Christmas Day,6,train,public_holiday,date association only; no causal effect
+2026-01-01,New Year Day,5,train,public_holiday,date association only; no causal effect
+2026-01-01,New Year Day,6,train,public_holiday,date association only; no causal effect
+2026-02-17,Chinese New Year,5,test,public_holiday,date association only; no causal effect
+2026-02-17,Chinese New Year,6,validation,public_holiday,date association only; no causal effect
+2026-02-18,Chinese New Year second day,5,test,public_holiday,date association only; no causal effect
+2026-02-18,Chinese New Year second day,6,validation,public_holiday,date association only; no causal effect
+2026-02-19,Awal Ramadan or start of fasting,5,test,religious_period_start_not_sarawak_public_holiday,date association only; no causal effect
+2026-02-19,Awal Ramadan or start of fasting,6,validation,religious_period_start_not_sarawak_public_holiday,date association only; no causal effect

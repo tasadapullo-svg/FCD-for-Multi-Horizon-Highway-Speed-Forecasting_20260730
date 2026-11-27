@@ -1,0 +1,34 @@
+{
+  "stage": "run_e03",
+  "completed_at": "2026-11-25T19:16:26.606437+08:00",
+  "protocol_sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+  "code_sha256": "d055a1e99ef2ebcffd0e092a6f0c58ddf514f089efca6f1bb40052a98f052af4",
+  "inputs": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\aligned_predictions.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\paired_loss.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\seed_metrics.csv"
+  ],
+  "outputs": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_01_Seed_Aggregation_Reconciliation.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_02_Fold_Model_Metrics.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_03_Original_vs_Recomputed_Table7.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_04b_Historical_Cluster_Reconstruction.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_04_Weighting_Estimands.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_05_Daily_Paired_Loss.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_06_Block_Bootstrap_Results.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_07_Block_Length_Sensitivity.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_08_Holm_Adjusted_Comparisons.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_09_H1_Practical_Differences.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_10_LOFO_Stability.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_11_Seed_Stability.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_12_Fold_Regime_Diagnostics.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_13_Estimand_Reversal_Explanation.md",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_Summary_CN.md"
+  ],
+  "extra": {
+    "prespecified_comparisons": 15,
+    "table7_A_matches": 12,
+    "table7_B_matches": 18,
+    "holm_significant_count": 7
+  }
+}

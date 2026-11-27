@@ -1,0 +1,5 @@
+threshold,eligible_hours,ineligible_hours,planned_hours,coverage,historical_eligible,difference,loss_from_previous_threshold,nested_in_previous
+1,96968,3910,100878,0.961240310078,96968,0,0,True
+2,83439,17439,100878,0.82712781776,83439,0,13529,True
+3,45356,55522,100878,0.449612403101,45356,0,38083,True
+4,15838,85040,100878,0.157001526596,15838,0,29518,True

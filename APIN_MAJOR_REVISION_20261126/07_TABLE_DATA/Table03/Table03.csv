@@ -1,4 +1,4 @@
-horizon,history_hours,target_window_hours,required_observed_hours,target_imputation,target_must_remain_in_split
-1,24,1,1,NONE,True
-3,24,3,3,NONE,True
-6,24,6,5,NONE,True
+﻿horizon,history_hours,target_window_hours,required_observed_hours,target_imputation,test_samples,target_must_remain_in_split,h6_support_file
+1,24,1,1,NONE,38201,True,H6_Completeness.csv (5/6 and 6/6 separate)
+3,24,3,3,NONE,24805,True,H6_Completeness.csv (5/6 and 6/6 separate)
+6,24,6,5,NONE,29141,True,H6_Completeness.csv (5/6 and 6/6 separate)

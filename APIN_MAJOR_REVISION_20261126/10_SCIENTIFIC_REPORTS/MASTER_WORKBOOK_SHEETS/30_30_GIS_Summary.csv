@@ -1,0 +1,7 @@
+measure,km,status,basis
+Original manuscript approximate corridor length,130.0,UNVERIFIED_APPROXIMATE_CLAIM,"Original manuscript; no dated centreline, endpoints or GIS measurement recovered"
+Sum of adjacent-node WGS84 straight geodesics,137.39491969762582,VERIFIED_FROM_51_COORDINATES,Original node coordinate sequence; not road mileage
+Sum of adjacent-node current OSM graph shortest paths,156.27410417962102,CURRENT_OSM_ANCHOR_PROXY_ONLY,"Undirected graph, each node anchored to nearest segment endpoint; can detour or repeat edges"
+Unique current OSM graph edge length in selected paths,112.26391226597296,CURRENT_OSM_PROXY_ONLY,Deduplicated selected path edges; not necessarily original research mainline
+Repeated selected graph edge length,44.01019191364808,DIAGNOSTIC_ONLY,Maximum per-edge path reuse 5 times
+Historically verified mainline corridor length,,HISTORICAL_CORRIDOR_LENGTH_NOT_VERIFIED,No dated matched mainline/endpoint record or directed topology evidence

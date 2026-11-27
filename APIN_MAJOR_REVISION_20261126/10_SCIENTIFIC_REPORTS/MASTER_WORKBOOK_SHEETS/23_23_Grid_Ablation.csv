@@ -1,0 +1,13 @@
+fold,horizon,ridge_native_n,xgboost_native_n,common_n,symmetric_difference_n,basis,decision
+1,1,50269,50269,50269,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+2,1,56858,56858,56858,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+3,1,64056,64056,64056,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+4,1,70441,70441,70441,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+5,1,76015,76015,76015,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+6,1,82698,82698,82698,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+1,6,44336,44336,44336,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+2,6,49424,49424,49424,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+3,6,55776,55776,55776,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+4,6,60653,60653,60653,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+5,6,64573,64573,64573,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED
+6,6,70965,70965,70965,0,Both use the same verified base Data.tabular() manifest and no model-specific eligibility gate,NO_ADDITIONAL_TRAINING_REQUIRED

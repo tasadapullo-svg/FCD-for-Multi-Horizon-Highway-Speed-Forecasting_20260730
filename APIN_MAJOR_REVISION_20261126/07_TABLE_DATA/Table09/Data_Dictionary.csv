@@ -1,0 +1,21 @@
+﻿column,type,meaning
+model,object,see frozen source/column names; full precision retained; blank is not zero
+horizon,int64,see frozen source/column names; full precision retained; blank is not zero
+status,object,see frozen source/column names; full precision retained; blank is not zero
+execution,object,see frozen source/column names; full precision retained; blank is not zero
+device,object,see frozen source/column names; full precision retained; blank is not zero
+torch_threads,float64,see frozen source/column names; full precision retained; blank is not zero
+fold,int64,see frozen source/column names; full precision retained; blank is not zero
+batch_samples,int64,see frozen source/column names; full precision retained; blank is not zero
+warmup_batches,float64,see frozen source/column names; full precision retained; blank is not zero
+measured_batches,float64,see frozen source/column names; full precision retained; blank is not zero
+reference_or_input_preparation_seconds,float64,see frozen source/column names; full precision retained; blank is not zero
+model_loading_seconds,float64,see frozen source/column names; full precision retained; blank is not zero
+mean_batch_seconds,float64,see frozen source/column names; full precision retained; blank is not zero
+median_batch_seconds,float64,see frozen source/column names; full precision retained; blank is not zero
+p95_batch_seconds,float64,see frozen source/column names; full precision retained; blank is not zero
+mean_seconds_per_sample,float64,see frozen source/column names; full precision retained; blank is not zero
+storage_bytes,float64,see frozen source/column names; full precision retained; blank is not zero
+run_ids,object,see frozen source/column names; full precision retained; blank is not zero
+timing_boundary,object,see frozen source/column names; full precision retained; blank is not zero
+reason,object,see frozen source/column names; full precision retained; blank is not zero

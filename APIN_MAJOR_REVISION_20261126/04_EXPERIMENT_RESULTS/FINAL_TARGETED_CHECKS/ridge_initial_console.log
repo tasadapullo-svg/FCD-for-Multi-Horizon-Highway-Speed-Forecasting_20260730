@@ -1,0 +1,16 @@
+a3e992ef38bb6d7550ba71c6 base F 1 H 1 a 0.1 max 6.103515625e-05 pass True True
+a7a7125c2a44784f7acfb007 base F 1 H 1 a 1.0 max 0.11419677734375 pass False False
+ea581688aa619e4a230e6312 base F 1 H 1 a 10.0 max 0.11199951171875 pass False False
+00d510299e6ebb43b46780e6 base F 1 H 3 a 1.0 max 0.098785400390625 pass False False
+03dcca368fb5c4d16ed439cb base F 1 H 3 a 10.0 max 0.093414306640625 pass False False
+fd54c41bf3ba08009c10b52c base F 1 H 3 a 0.1 max 6.103515625e-05 pass True True
+601295f493fdc5388ef2dbbb base F 6 H 3 a 1.0 max 0.031005859375 pass False False
+8e3a2aadddcf120026cde667 base F 1 H 6 a 10.0 max 0.03253173828125 pass False False
+9808a32234e35954cf649582 base F 1 H 6 a 0.1 max 6.103515625e-05 pass True True
+edbc73d4f6ef44e37c731818 base F 1 H 6 a 1.0 max 0.0340576171875 pass False False
+0fbdb84485246ab7c23e2655 leaky_scaling F 6 H 1 a 1.0 max 0.23828125 pass False False
+45bdf7675313a2c6f2ecc16c returned_only F 6 H 1 a 1.0 max 0.035003662109375 pass False False
+af66f3eca95726cc0c281c80 strict6 F 6 H 6 a 1.0 max 0.059539794921875 pass False False
+e2541ac7dee9795bd4945a97 threshold1 F 4 H 1 a 1.0 max 0.12591552734375 pass False False
+60341e45a58d4ead7332e3ad threshold3 F 6 H 1 a 1.0 max 0.11944580078125 pass False False
+TOTAL_CHECKED 15 MODE initial NEW_ELAPSED_S 16.39369989995612

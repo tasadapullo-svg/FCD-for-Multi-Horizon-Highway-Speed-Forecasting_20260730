@@ -1,0 +1,6 @@
+﻿family,horizon,comparison,effect,CI_low,CI_high,raw_p,holm_adjusted_p,dates,block_days,role,significant_holm_0_05,source_file,effect_direction,CI_type
+G1_5_PER_HORIZON,6,GRU_vs_Ridge,-0.206912578973,-0.330351565024,-0.104098186293,0.001699830017,0.00849915008499,41,3,PRIMARY,True,E03_08_Holm_Adjusted_Comparisons.csv,negative favors first model,"pointwise 95%, not Holm simultaneous"
+G1_5_PER_HORIZON,6,Persistence_vs_HA,-0.0300425489594,-0.108395221795,0.054662865887,0.47595240476,0.951904809519,41,3,PRIMARY,False,E03_08_Holm_Adjusted_Comparisons.csv,negative favors first model,"pointwise 95%, not Holm simultaneous"
+G1_5_PER_HORIZON,6,XGBoost_vs_GRU,-0.258504075903,-0.586625263193,-0.0644574165015,0.0652934706529,0.195880411959,41,3,PRIMARY,False,E03_08_Holm_Adjusted_Comparisons.csv,negative favors first model,"pointwise 95%, not Holm simultaneous"
+G1_5_PER_HORIZON,6,XGBoost_vs_Ridge,-0.465416654876,-0.880901953994,-0.207880584763,0.015198480152,0.0607939206079,41,3,PRIMARY,False,E03_08_Holm_Adjusted_Comparisons.csv,negative favors first model,"pointwise 95%, not Holm simultaneous"
+G1_5_PER_HORIZON,6,XGBoost_vs_SeasonalHA,-0.0120497505449,-0.0870325052894,0.0858939275783,0.787421257874,0.951904809519,41,3,PRIMARY,False,E03_08_Holm_Adjusted_Comparisons.csv,negative favors first model,"pointwise 95%, not Holm simultaneous"

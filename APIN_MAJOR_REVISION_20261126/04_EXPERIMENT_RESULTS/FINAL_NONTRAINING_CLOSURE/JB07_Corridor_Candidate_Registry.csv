@@ -1,0 +1,2 @@
+﻿corridor_name,road_group,nodes,road_type,coordinates_available,observed_speed_count,planned_slots,valid_coverage,source_provider,sampling_interval,license,eligibility_decision,rejection_reason
+NONE_SELECTED,UNKNOWN,UNKNOWN,UNKNOWN,NOT_VERIFIED,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,AUTHOR_CONFIRMATION_REQUIRED,NOT_EVALUABLE_TARGET_NOT_FOUND,Target asset absent; no error-based selection performed

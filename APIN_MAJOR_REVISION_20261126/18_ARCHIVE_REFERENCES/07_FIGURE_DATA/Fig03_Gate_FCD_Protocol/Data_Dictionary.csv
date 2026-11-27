@@ -1,0 +1,23 @@
+﻿file,column,dtype,sample_values
+Fig03A_Protocol_Nodes.csv,step_id,int64,1
+Fig03A_Protocol_Nodes.csv,step_name_en,object,Raw FCD retrieval
+Fig03A_Protocol_Nodes.csv,step_name_cn,object,见协议原文
+Fig03A_Protocol_Nodes.csv,stage,int64,1
+Fig03A_Protocol_Nodes.csv,input,object,frozen source
+Fig03A_Protocol_Nodes.csv,processing_rule,object,Historical 15-minute source records
+Fig03A_Protocol_Nodes.csv,output,object,Scheduled observation grid
+Fig03A_Protocol_Nodes.csv,eligibility_condition,object,see G1 protocol
+Fig03A_Protocol_Nodes.csv,causal_constraint,object,no future information; target never imputed
+Fig03A_Protocol_Nodes.csv,evidence_source,object,00_PROJECT_CONTROL/G1_Analysis_Protocol.yaml
+Fig03A_Protocol_Nodes.csv,reviewer_mapping,object,R1-01;R1-03;R1-07;R6-01
+Fig03B_Protocol_Edges.csv,from_step,int64,1
+Fig03B_Protocol_Edges.csv,to_step,int64,2
+Fig03B_Protocol_Edges.csv,edge_type,object,forward
+Fig03B_Protocol_Edges.csv,condition,object,passed eligibility
+Fig03C_Time_Semantics.csv,horizon,int64,1
+Fig03C_Time_Semantics.csv,history_hours,int64,24
+Fig03C_Time_Semantics.csv,decision_time,object,end of origin hour t
+Fig03C_Time_Semantics.csv,target_interval,object,next 1 hours after t
+Fig03C_Time_Semantics.csv,required_observed_target_hours,int64,1
+Fig03C_Time_Semantics.csv,target_imputation,object,NONE
+Fig03C_Time_Semantics.csv,target_must_remain_in_split,bool,True

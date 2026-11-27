@@ -1,0 +1,4 @@
+﻿asset,path,distribution,content,status
+GIS_Final_Plot_Data_Local_Only.gpkg,E:\20261125_论文修改_Applied Intelligence\大修_Applied Intelligence_2026112_论文修改\04_EXPERIMENTS\FINAL_TARGETED_CHECKS\GIS_Final_Plot_Data_Local_Only.gpkg,LOCAL_ONLY_NOT_IN_ZIP,"51 original nodes, current OSM matches, road lines, undirected selected paths",AUTHOR_GIS_REVIEW_REQUIRED
+GIS_Final_Node_Matching.csv,E:\20261125_论文修改_Applied Intelligence\大修_Applied Intelligence_2026112_论文修改\04_EXPERIMENTS\FINAL_TARGETED_CHECKS\GIS_Final_Node_Matching.csv,LOCAL_ONLY_NOT_IN_ZIP,original/matched coordinates and way attributes,15 manual review candidates
+GIS_Corridor_Length_Reconciliation.csv,E:\20261125_论文修改_Applied Intelligence\大修_Applied Intelligence_2026112_论文修改\04_EXPERIMENTS\FINAL_TARGETED_CHECKS\GIS_Corridor_Length_Reconciliation.csv,AGGREGATE_ZIP_ALLOWED,137.395 straight; 156.274 current OSM path; 112.264 unique graph edge,HISTORICAL_CORRIDOR_LENGTH_NOT_VERIFIED

@@ -1,0 +1,5 @@
+    comparison_id  paired_samples  test_days  day_mean_MAE_delta_alt_minus_ref  block3_p_two_sided  holm_adjusted_p
+     K1_T1_XGB_H1           38201         41                         -0.040915            0.352065         1.000000
+K2_STRICT6_XGB_H6           14521         41                          0.037815            0.034097         0.136386
+ K3_IMPUTE_XGB_H1           38201         41                         -0.010692            0.677832         1.000000
+ K4_STATIC_GRU_H1           38201         41                         -0.013916            0.703830         1.000000

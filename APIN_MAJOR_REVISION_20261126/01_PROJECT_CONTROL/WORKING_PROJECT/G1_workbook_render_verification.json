@@ -1,0 +1,170 @@
+[
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "00_Executive_Summary",
+    "rows": 10,
+    "columns": 3,
+    "rendered_range": "A1:C4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__00_Executive_Summary.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "01_Data_Coverage",
+    "rows": 16,
+    "columns": 9,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__01_Data_Coverage.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "02_Threshold_Comparison",
+    "rows": 4,
+    "columns": 9,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__02_Threshold_Comparison.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "03_Sample_Attrition",
+    "rows": 54,
+    "columns": 15,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__03_Sample_Attrition.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "04_H6_Completeness",
+    "rows": 38,
+    "columns": 10,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__04_H6_Completeness.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "05_Traffic_Distribution",
+    "rows": 11,
+    "columns": 16,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__05_Traffic_Distribution.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "06_Traffic_Regime_MAE",
+    "rows": 54,
+    "columns": 15,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__06_Traffic_Regime_MAE.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "07_Missingness_Reliability",
+    "rows": 918,
+    "columns": 18,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__07_Missingness_Reliability.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "08_Selection_Diagnostics",
+    "rows": 288,
+    "columns": 14,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__08_Selection_Diagnostics.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "09_FreeFlow_Baseline",
+    "rows": 87,
+    "columns": 20,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__09_FreeFlow_Baseline.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "10_Seed_Aggregation",
+    "rows": 108,
+    "columns": 24,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__10_Seed_Aggregation.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "11_Table7_Reconciliation",
+    "rows": 18,
+    "columns": 18,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__11_Table7_Reconciliation.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "12_Statistical_Estimands",
+    "rows": 144,
+    "columns": 13,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__12_Statistical_Estimands.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "13_Bootstrap_Holm",
+    "rows": 15,
+    "columns": 20,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__13_Bootstrap_Holm.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "14_LOFO_Stability",
+    "rows": 252,
+    "columns": 12,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__14_LOFO_Stability.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "15_Next_Experiment_Scope",
+    "rows": 15,
+    "columns": 19,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__15_Next_Experiment_Scope.png"
+  },
+  {
+    "workbook": "G1_02_Integrated_Results.xlsx",
+    "sheet": "16_Limitations",
+    "rows": 8,
+    "columns": 4,
+    "rendered_range": "A1:D4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_02_Integrated_Results__16_Limitations.png"
+  },
+  {
+    "workbook": "G1_04_Manuscript_Consistency_Matrix.xlsx",
+    "sheet": "Consistency",
+    "rows": 9,
+    "columns": 9,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_04_Manuscript_Consistency_Matrix__Consistency.png"
+  },
+  {
+    "workbook": "G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "sheet": "Minimum_Scope",
+    "rows": 15,
+    "columns": 19,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_05_Minimum_Remaining_Experiment_Plan__Minimum_Scope.png"
+  },
+  {
+    "workbook": "G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "sheet": "Sample_Feasibility",
+    "rows": 432,
+    "columns": 10,
+    "rendered_range": "A1:E4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_05_Minimum_Remaining_Experiment_Plan__Sample_Feasibility.png"
+  },
+  {
+    "workbook": "G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "sheet": "Stage_Gates",
+    "rows": 4,
+    "columns": 2,
+    "rendered_range": "A1:B4",
+    "preview": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_workbook_previews\\G1_05_Minimum_Remaining_Experiment_Plan__Stage_Gates.png"
+  }
+]

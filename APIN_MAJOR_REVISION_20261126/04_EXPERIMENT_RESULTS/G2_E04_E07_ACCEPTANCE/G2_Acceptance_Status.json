@@ -1,0 +1,18 @@
+{
+  "status": "CONDITIONAL_PASS",
+  "at": "2026-11-26T05:01:21+08:00",
+  "stage_status": {
+    "E04": "CONDITIONAL_PASS; applicable runs complete; 4/4 not estimable",
+    "E05": "PASS; returned-only and scaling diagnostics complete",
+    "E06": "CONDITIONAL_PASS; core and static GRU complete; spatial neighbor conditional deferred",
+    "E07": "CONDITIONAL_PASS; current OSM, official calendar and actual CPU efficiency complete; historical topology and API latency unverified"
+  },
+  "source_gate": "PASS_NEW_IMPLEMENTATION",
+  "e08": "DEFERRED_AUTHOR_DECISION_NOT_EXECUTED",
+  "manuscript_revision": "EVIDENCE_READY_FOR_TARGETED_DRAFT_WITH_LIMITATIONS; NOT_MODIFIED_IN_G2",
+  "run_registry": "G2_02_Experiment_Run_Registry.csv",
+  "completed_test_runs": 642,
+  "validation_only_runs": 9,
+  "failed_runs": 0,
+  "incomplete_runs": 0
+}

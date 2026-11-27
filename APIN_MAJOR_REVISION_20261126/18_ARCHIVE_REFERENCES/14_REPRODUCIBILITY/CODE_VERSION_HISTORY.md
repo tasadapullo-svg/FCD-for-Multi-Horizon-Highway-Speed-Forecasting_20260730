@@ -1,0 +1,3 @@
+# Reproducibility and publication boundary
+
+Original formal training source was not fully recovered. G2 is an independent revision implementation. Data access requires the author's lawful local commercial FCD license. Six retrospective rolling-origin folds, H1/H3/H6 future-window means, three-seed Method A original aggregation, and separate G2 implementation are documented in archived code and results. This file does not claim exact original-code reproduction. No external E08 validation was run. Historical 130 km corridor length and 15 GIS candidates require author review. The current OSM graph is not the historical mainline.

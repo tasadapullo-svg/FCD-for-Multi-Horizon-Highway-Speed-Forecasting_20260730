@@ -1,0 +1,9 @@
+﻿column,type,meaning
+model,object,see frozen source/column names; full precision retained; blank is not zero
+horizon,int64,see frozen source/column names; full precision retained; blank is not zero
+condition,object,see frozen source/column names; full precision retained; blank is not zero
+configuration_json,object,see frozen source/column names; full precision retained; blank is not zero
+implementation,object,see frozen source/column names; full precision retained; blank is not zero
+seed,int64,see frozen source/column names; full precision retained; blank is not zero
+config_id,object,see frozen source/column names; full precision retained; blank is not zero
+configuration_role,object,see frozen source/column names; full precision retained; blank is not zero

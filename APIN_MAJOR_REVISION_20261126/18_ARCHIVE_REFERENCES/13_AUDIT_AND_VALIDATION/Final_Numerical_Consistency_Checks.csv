@@ -1,0 +1,9 @@
+﻿check,observed,expected,status
+8 planned figures,8,8,PASS
+9 main tables,9,9,PASS
+8 supplement groups,8,8,PASS
+31 reviewer comments,31,31,PASS
+51 original GIS nodes,51,51,PASS
+15 GIS review candidates,15,15,PASS
+QGIS project (.qgz),0,QGIS unavailable; GPKG plus loading instructions,DOCUMENTED_UNAVAILABLE
+E08 external training,0,target asset not found,DOCUMENTED_NOT_RUN

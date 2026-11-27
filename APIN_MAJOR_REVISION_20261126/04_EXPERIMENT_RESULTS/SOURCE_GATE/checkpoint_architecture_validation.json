@@ -1,0 +1,8 @@
+{
+  "weights_only_load": true,
+  "max_prediction_difference": 1.1444091796875e-05,
+  "y_mean": 88.8558120727539,
+  "y_std": 16.199983596801758,
+  "architecture": "GRU->LayerNorm->Linear",
+  "original_loss_optimizer": "UNVERIFIED"
+}

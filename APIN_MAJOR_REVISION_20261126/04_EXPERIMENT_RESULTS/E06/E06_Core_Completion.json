@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETED",
+  "at": "2026-11-26T04:55:57.762980+08:00",
+  "selected": {
+    "Ridge_H1": {
+      "value": 10.0,
+      "validation_MAE": 1.081405520439148,
+      "run_id": "ea581688aa619e4a230e6312"
+    },
+    "XGBoost_H1": {
+      "value": 4,
+      "validation_MAE": 0.8987224698066711,
+      "run_id": "16e9b61f4fe336ee7e718cb9"
+    },
+    "GRU_H1": {
+      "value": 128,
+      "validation_MAE": 1.1655024290084839,
+      "run_id": "b91a90cb4fbe986bd59a030f"
+    },
+    "Ridge_H3": {
+      "value": 10.0,
+      "validation_MAE": 0.969916582107544,
+      "run_id": "03dcca368fb5c4d16ed439cb"
+    },
+    "XGBoost_H3": {
+      "value": 4,
+      "validation_MAE": 0.8163891434669495,
+      "run_id": "1b1aa2edb752b36629764eb1"
+    },
+    "GRU_H3": {
+      "value": 128,
+      "validation_MAE": 1.0444055795669556,
+      "run_id": "4859345f3636d989c55c268c"
+    },
+    "Ridge_H6": {
+      "value": 10.0,
+      "validation_MAE": 0.9106692671775818,
+      "run_id": "8e3a2aadddcf120026cde667"
+    },
+    "XGBoost_H6": {
+      "value": 4,
+      "validation_MAE": 0.7982580065727234,
+      "run_id": "b05a9b2ac897bcd6cacce8be"
+    },
+    "GRU_H6": {
+      "value": 128,
+      "validation_MAE": 1.0158731937408447,
+      "run_id": "c331ec7ead853cdb0846cab0"
+    }
+  },
+  "elapsed_seconds": 641.5468722000369,
+  "candidates": 27
+}

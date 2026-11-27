@@ -1,0 +1,7 @@
+﻿material_or_action,observed_evidence,permission_status,public_package,local_restricted,required_document
+商业API获取及作者本机受控研究,已有历史采集与研究成果；适用合同未见,AUTHOR_CONFIRMATION_REQUIRED,NO until rights confirmed,YES,historical subscription/contract/API terms and author decision
+商业原始FCD公开分发,无授予证据,AUTHOR_CONFIRMATION_REQUIRED,NO until rights confirmed,YES,historical subscription/contract/API terms and author decision
+派生矩阵与逐样本预测公开分发,无授予证据,AUTHOR_CONFIRMATION_REQUIRED,NO until rights confirmed,YES,historical subscription/contract/API terms and author decision
+聚合统计与匿名图表公开发表,无明确合同条款；期刊发表实践不能代替许可,AUTHOR_CONFIRMATION_REQUIRED,NO until rights confirmed,YES,historical subscription/contract/API terms and author decision
+分析和新训练代码公开,作者新实现可评估公开；仍需排除密钥和受限数据,AUTHOR_CONFIRMATION_REQUIRED,Code only after author review,YES,historical subscription/contract/API terms and author decision
+训练权重公开,可能泄露商业训练数据特征；无授予证据,AUTHOR_CONFIRMATION_REQUIRED,NO until rights confirmed,YES,historical subscription/contract/API terms and author decision

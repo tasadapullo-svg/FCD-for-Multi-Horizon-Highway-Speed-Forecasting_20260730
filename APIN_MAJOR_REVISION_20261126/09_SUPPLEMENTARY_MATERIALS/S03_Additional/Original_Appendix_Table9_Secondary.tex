@@ -1,0 +1,48 @@
+% Historical original manuscript table, not Method-A corrected final result
+\begin{table}[!htbp]
+\centering
+\caption{Secondary fold-macro performance metrics. RMSE is in km~h$^{-1}$; sMAPE is in percent; Bias is in km~h$^{-1}$.}
+\label{tab:secondary_metrics}
+\footnotesize
+\begin{tabular}{|l|l|r|r|r|}
+\hline
+\textbf{Horizon} & \textbf{Model} & \textbf{RMSE} & \textbf{sMAPE} & \textbf{Bias} \\
+\hline
+H1 & XGBoost     & 2.138 & 1.305 & -0.175 \\ 
+\hline
+H1 & SeasonalHA  & 2.399 & 1.379 & -0.026 \\ 
+\hline
+H1 & Persistence & 3.007 & 1.450 &  0.004 \\ 
+\hline
+H1 & GRU         & 2.333 & 1.577 &  0.124 \\ 
+\hline
+H1 & Ridge       & 2.455 & 1.672 & -0.141 \\ 
+\hline
+H1 & HA          & 3.738 & 2.818 & -0.039 \\
+\hline
+H3 & XGBoost     & 1.787 & 1.172 & -0.005 \\ 
+\hline
+H3 & SeasonalHA  & 1.793 & 1.209 & -0.002 \\ 
+\hline
+H3 & Persistence & 3.143 & 1.810 &  0.106 \\ 
+\hline
+H3 & GRU         & 1.852 & 1.417 &  0.089 \\ 
+\hline
+H3 & Ridge       & 2.021 & 1.551 & -0.046 \\ 
+\hline
+H3 & HA          & 3.300 & 2.644 &  0.003 \\
+\hline
+H6 & XGBoost     & 1.396 & 1.046 & -0.027 \\ 
+\hline
+H6 & SeasonalHA  & 1.467 & 1.089 & -0.004 \\ 
+\hline
+H6 & Persistence & 3.664 & 2.296 &  0.194 \\ 
+\hline
+H6 & GRU         & 1.641 & 1.307 &  0.067 \\ 
+\hline
+H6 & Ridge       & 1.821 & 1.476 & -0.091 \\ 
+\hline
+H6 & HA          & 2.874 & 2.341 &  0.009 \\
+\hline
+\end{tabular}
+\end{table}

@@ -27,3 +27,4 @@ for stage in requested:
      run_one(data,model,seed=42,experiment='E04_'+stage.upper(),test=True)
     log(f'E04 CONDITION_DONE {condition} F{fold} H{H}')
  dump(OUT/f'E04_{stage}_completion.json',{'status':'COMPLETED','at':now(),'elapsed_seconds_since_command_start':time.perf_counter()-start})
+

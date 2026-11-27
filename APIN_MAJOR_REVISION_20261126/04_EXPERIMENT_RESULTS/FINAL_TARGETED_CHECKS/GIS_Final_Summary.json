@@ -1,0 +1,16 @@
+{
+  "source_at": "2026-11-25T19:49:13.322820+08:00",
+  "nodes": 51,
+  "offset_median_m": 3.5910724864844203,
+  "offset_max_m": 86.40312696649059,
+  "nodes_manual_review": 15,
+  "pairs_connected": 50,
+  "pairs_flagged_detour": 2,
+  "straight_km": 137.39491969762582,
+  "current_osm_graph_km": 156.27410417962102,
+  "unique_graph_edge_km": 112.26391226597295,
+  "repeated_edge_km": 44.01019191364808,
+  "max_edge_reuse": 5,
+  "historical_corridor_length_status": "HISTORICAL_CORRIDOR_LENGTH_NOT_VERIFIED",
+  "gpkg_local_only": "04_EXPERIMENTS/FINAL_TARGETED_CHECKS/GIS_Final_Plot_Data_Local_Only.gpkg"
+}

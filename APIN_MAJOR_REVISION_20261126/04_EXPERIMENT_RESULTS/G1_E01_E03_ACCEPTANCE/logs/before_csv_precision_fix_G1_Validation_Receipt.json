@@ -1,0 +1,108 @@
+{
+  "overall_status": "BLOCKED",
+  "created_at": "2026-11-25T19:19:36.217019+08:00",
+  "protocol_sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+  "checks": [
+    {
+      "check_id": "PROTOCOL_UNCHANGED",
+      "status": "PASS",
+      "detail": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4"
+    },
+    {
+      "check_id": "SLOT_PARTITION",
+      "status": "PASS",
+      "detail": "403512=241601+1156+160755"
+    },
+    {
+      "check_id": "RECORD_PARTITION",
+      "status": "PASS",
+      "detail": "row-level distinct from slot-level"
+    },
+    {
+      "check_id": "THRESHOLDS",
+      "status": "PASS",
+      "detail": "four counts independently recomputed from input and nested"
+    },
+    {
+      "check_id": "54_ATTRITION_COMBINATIONS",
+      "status": "PASS",
+      "detail": "mutually exclusive reconstruction matches all original manifests"
+    },
+    {
+      "check_id": "ATTRITION_IDENTITIES",
+      "status": "PASS",
+      "detail": "exclusive reason totals equal theoretical"
+    },
+    {
+      "check_id": "TEST_COUNTS",
+      "status": "PASS",
+      "detail": "test total92147"
+    },
+    {
+      "check_id": "ALIGNED_6_MODELS_18_TASKS",
+      "status": "PASS",
+      "detail": "all six models x18 common tasks; raw180 runs three seeds explicitly checked"
+    },
+    {
+      "check_id": "FEATURE_UNITS",
+      "status": "PASS",
+      "detail": "restored original scaler units, causal ddof0 volatility maxdiff 2.26041519088e-06"
+    },
+    {
+      "check_id": "SEED_JENSEN",
+      "status": "PASS",
+      "detail": "ensemble MAE <= mean seed-level MAE"
+    },
+    {
+      "check_id": "TABLE7_DISCREPANCY_RECORDED",
+      "status": "CONDITIONAL_PASS",
+      "detail": "Table7 six stochastic cells match B not Equation12 A"
+    },
+    {
+      "check_id": "15_PRESPECIFIED_TESTS",
+      "status": "PASS",
+      "detail": "all horizon families retained"
+    },
+    {
+      "check_id": "DAILY_EFFECT_ESTIMAND",
+      "status": "PASS",
+      "detail": "each bootstrap point estimate equals mean daily paired loss"
+    },
+    {
+      "check_id": "HOLM_ALGORITHM",
+      "status": "PASS",
+      "detail": "independent sorted family calculation verified"
+    },
+    {
+      "check_id": "BOOTSTRAP_P_FINITE",
+      "status": "BLOCKED",
+      "detail": "centered bootstrap test plus finite correction; CI ordinary percentile"
+    },
+    {
+      "check_id": "LOFO_FULL",
+      "status": "PASS",
+      "detail": "A/B x3 horizons x6models xall+6 exclusions"
+    },
+    {
+      "check_id": "HISTORICAL_BLOCK_B",
+      "status": "PASS",
+      "detail": "205 old day-block point estimates exactly reconstructed; old CI resampling remains partial"
+    },
+    {
+      "check_id": "FREEFLOW_NO_FUTURE",
+      "status": "CONDITIONAL_PASS",
+      "detail": "conservative >=1hour historical return plus parsed known timestamps; ingestion logs unavailable"
+    },
+    {
+      "check_id": "TARGET_NO_IMPUTATION",
+      "status": "PASS",
+      "detail": "all1053618 manifest targets rebuilt solely from observed source hours"
+    },
+    {
+      "check_id": "CLOSURE_NONESTIMABILITY",
+      "status": "NOT_ESTIMABLE",
+      "detail": "no observed closure events, no synthetic effects"
+    }
+  ],
+  "policy": "accepted outputs immutable; only concrete scientific/code issue reopens affected tasks; no whole E01-E03 repeat"
+}

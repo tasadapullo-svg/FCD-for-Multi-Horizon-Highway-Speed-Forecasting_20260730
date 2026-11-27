@@ -1,4 +1,4 @@
-from_step,to_step,edge_role
+﻿from_step,to_step,edge_role
 archive,grid,data
 grid,quality,data
 quality,hourly,data

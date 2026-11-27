@@ -1,0 +1,14 @@
+﻿feature,max_abs_scaled_diff
+input_speed_filled,4.76837158203e-07
+hourly_missing_mask,2.98023223877e-08
+imputed_flag,2.98023223877e-08
+hours_since_last_observation,203.490524292
+history_coverage_ratio,9.53674316406e-07
+history_imputation_ratio,0
+max_gap_24h,0
+volatility_24h,1.78813934326e-07
+hour_sin,8.75021111124e-10
+hour_cos,8.75021166635e-10
+dow_sin,8.30488344761e-10
+dow_cos,2.98023223877e-08
+weekend_flag,2.38418579102e-07

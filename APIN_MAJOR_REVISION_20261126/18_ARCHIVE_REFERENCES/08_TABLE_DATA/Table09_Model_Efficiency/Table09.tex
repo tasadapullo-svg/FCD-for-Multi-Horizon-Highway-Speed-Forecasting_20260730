@@ -1,0 +1,26 @@
+\begin{table}[!htbp]
+\centering
+\caption{Prepared-input CPU batch inference time for 1024 samples.}
+\begin{tabular}{llllll}
+\hline
+model & horizon & execution & status & mean\_batch\_seconds & p95\_batch\_seconds \\ 
+\hline
+HA & 1 & single\_deterministic & MEASURED & 7.04e-07 & 9e-07 \\
+SeasonalHA & 1 & single\_deterministic & MEASURED & 0.0001267 & 0.0001561 \\
+Persistence & 1 & single\_deterministic & MEASURED & 1.309e-06 & 1.6e-06 \\
+Ridge & 1 & N/A & NOT\_TIMED\_SVD\_WEIGHT\_NOT\_SAVED & N/A & N/A \\
+XGBoost & 1 & single\_seed & MEASURED & 0.002871 & 0.003261 \\
+XGBoost & 1 & three\_seed\_ensemble & MEASURED & 0.008668 & 0.009772 \\
+GRU & 1 & single\_seed & MEASURED & 0.02651 & 0.03211 \\
+GRU & 1 & three\_seed\_ensemble & MEASURED & 0.08071 & 0.08924 \\
+HA & 6 & single\_deterministic & MEASURED & 7.18e-07 & 7e-07 \\
+SeasonalHA & 6 & single\_deterministic & MEASURED & 0.000128 & 0.0001573 \\
+Persistence & 6 & single\_deterministic & MEASURED & 1.299e-06 & 1.4e-06 \\
+Ridge & 6 & N/A & NOT\_TIMED\_SVD\_WEIGHT\_NOT\_SAVED & N/A & N/A \\
+XGBoost & 6 & single\_seed & MEASURED & 0.002767 & 0.003106 \\
+XGBoost & 6 & three\_seed\_ensemble & MEASURED & 0.008972 & 0.012 \\
+GRU & 6 & single\_seed & MEASURED & 0.02762 & 0.03717 \\
+GRU & 6 & three\_seed\_ensemble & MEASURED & 0.08149 & 0.09507 \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,7 @@
+shapefile,field,full_field
+Fig01_Observation_Nodes.shp,node_id,node_id_original
+Fig01_Observation_Nodes.shp,display_id,node_id_display
+Fig01_Observation_Nodes.shp,node_order,node_order
+Fig01_Road_Centreline.shp,way_id,osm_way_id
+Fig01_Road_Centreline.shp,road_name,road_name
+Fig01_Road_Centreline.shp,road_class,highway_class

@@ -1,0 +1,9 @@
+﻿column,type,meaning
+feature,object,see frozen source/column names; full precision retained; blank is not zero
+kind,object,see frozen source/column names; full precision retained; blank is not zero
+input_scope,object,see frozen source/column names; full precision retained; blank is not zero
+unit,object,see frozen source/column names; full precision retained; blank is not zero
+causal_rule,object,see frozen source/column names; full precision retained; blank is not zero
+feature_group,object,see frozen source/column names; full precision retained; blank is not zero
+mask_note,object,see frozen source/column names; full precision retained; blank is not zero
+scaling,object,see frozen source/column names; full precision retained; blank is not zero

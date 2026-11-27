@@ -1,0 +1,22 @@
+﻿column,type,meaning
+condition,object,see frozen source/column names; full precision retained; blank is not zero
+reference_condition,object,see frozen source/column names; full precision retained; blank is not zero
+model,object,see frozen source/column names; full precision retained; blank is not zero
+fold,int64,see frozen source/column names; full precision retained; blank is not zero
+horizon,int64,see frozen source/column names; full precision retained; blank is not zero
+seed,int64,see frozen source/column names; full precision retained; blank is not zero
+common_n,int64,see frozen source/column names; full precision retained; blank is not zero
+reference_MAE_on_common_origin,float64,see frozen source/column names; full precision retained; blank is not zero
+alternative_MAE_on_reference_target,float64,see frozen source/column names; full precision retained; blank is not zero
+paired_MAE_delta_alt_minus_ref,float64,see frozen source/column names; full precision retained; blank is not zero
+alternative_own_target_MAE,float64,see frozen source/column names; full precision retained; blank is not zero
+target_values_equal_on_common_origin,bool,see frozen source/column names; full precision retained; blank is not zero
+interpretation,object,see frozen source/column names; full precision retained; blank is not zero
+reference_run_id,object,see frozen source/column names; full precision retained; blank is not zero
+alternative_run_id,object,see frozen source/column names; full precision retained; blank is not zero
+final_paired_status,object,see frozen source/column names; full precision retained; blank is not zero
+evaluation_population,object,see frozen source/column names; full precision retained; blank is not zero
+historical_Cholesky_reference_MAE_on_common_origin,float64,see frozen source/column names; full precision retained; blank is not zero
+historical_Cholesky_alternative_MAE_on_reference_target,float64,see frozen source/column names; full precision retained; blank is not zero
+historical_Cholesky_paired_MAE_delta_alt_minus_ref,float64,see frozen source/column names; full precision retained; blank is not zero
+historical_Cholesky_alternative_own_target_MAE,float64,see frozen source/column names; full precision retained; blank is not zero

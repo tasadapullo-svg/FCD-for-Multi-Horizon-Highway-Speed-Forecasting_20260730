@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "matplotlib": "3.11.2",
+  "output_count": 6,
+  "output_paths": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D01_Coverage.png",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D02_Return_Distributions.png",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D03_Regime_MAE.png",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D04_Gap_MAE.png",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D05_Weighting_Effects.png",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D06_LOFO.png"
+  ]
+}

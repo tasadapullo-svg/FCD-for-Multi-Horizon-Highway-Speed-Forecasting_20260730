@@ -1,0 +1,10 @@
+Collecting pyarrow
+  Downloading pyarrow-26.0.1-cp312-cp312-win_amd64.whl.metadata (3.0 kB)
+Collecting pyyaml
+  Downloading pyyaml-6.0.4-cp312-cp312-win_amd64.whl.metadata (2.4 kB)
+Downloading pyarrow-26.0.1-cp312-cp312-win_amd64.whl (29.1 MB)
+   ---------------------------------------- 29.1/29.1 MB 5.5 MB/s  0:00:05
+Downloading pyyaml-6.0.4-cp312-cp312-win_amd64.whl (154 kB)
+Installing collected packages: pyyaml, pyarrow
+
+Successfully installed pyarrow-26.0.1 pyyaml-6.0.4

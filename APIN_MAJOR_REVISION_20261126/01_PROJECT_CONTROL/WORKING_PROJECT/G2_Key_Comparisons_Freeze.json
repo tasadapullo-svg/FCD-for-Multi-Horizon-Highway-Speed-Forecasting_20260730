@@ -1,0 +1,16 @@
+{
+  "frozen_at": "2026-11-26T00:19:25.1337350+08:00",
+  "status": "PREDECLARED_BEFORE_TEST_EFFECT_INSPECTION",
+  "metric": "daily mean paired absolute-error difference, alternative minus reference",
+  "unit": "calendar test day; six disjoint weekly test folds",
+  "primary_bootstrap": "moving 3-day blocks, 10000 resamples, seed 20261125, 95% percentile CI",
+  "sensitivity_bootstrap": "moving 7-day blocks, 10000 resamples, seed 20261125, 95% percentile CI",
+  "multiple_comparisons": "Holm across the four primary comparisons; sensitivity intervals descriptive",
+  "comparisons": [
+    {"id":"K1_T1_XGB_H1","reference":"base fixed XGBoost depth8 seed42","alternative":"threshold1 fixed XGBoost depth8 seed42","horizon":1,"target":"base 2/4 reference target on common origins","scope":"all six folds"},
+    {"id":"K2_STRICT6_XGB_H6","reference":"base fixed XGBoost depth8 seed42","alternative":"strict6 fixed XGBoost depth8 seed42","horizon":6,"target":"base 2/4 6/6 observed-target subset on common origins","scope":"all six folds"},
+    {"id":"K3_IMPUTE_XGB_H1","reference":"base fixed XGBoost depth8 seed42","alternative":"seasonal_impute fixed XGBoost depth8 seed42","horizon":1,"target":"same target on common origins","scope":"all six folds"},
+    {"id":"K4_STATIC_GRU_H1","reference":"selected dynamic GRU three-seed prediction average","alternative":"GRU_WITH_STATIC same selected hidden size three-seed prediction average","horizon":1,"target":"same target on common origins","scope":"all six folds"}
+  ]
+}
+

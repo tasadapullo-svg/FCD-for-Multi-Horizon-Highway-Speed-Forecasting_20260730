@@ -1,0 +1,7 @@
+﻿item,status,reason,author_action
+QGZ project,NOT_GENERATED,QGIS/PyQGIS unavailable; validated GPKG and loading instructions provided,Open GPKG in QGIS and save project locally
+Historical 130 km highway mainline,UNVERIFIED,Current OSM path and straight-line length are distinct estimands,Review 15 nodes and verify historical corridor before numeric distance claim
+E08 JB external validation,NOT_RUN_TARGET_ASSET_NOT_FOUND,"Approved 451,008-row historical panel not available in registered path",Do not claim external validation
+Ridge SVD paired common-origin contrasts,NOT_RECOMPUTED,SVD corrected native metrics available; old Cholesky paired contrasts are not transferable,Avoid corrected Ridge paired superiority claim
+Original baseline training source/configuration,NOT_RECOVERED,Frozen predictions and accepted original outcomes available; implementation details limited,State reproducibility limitation
+GIS and aggregate data distribution rights,AUTHOR_CONFIRMATION_REQUIRED,Commercial FCD license not supplied,"Keep author-local ZIP local; review ZIP contains only aggregates, still check license before external sharing"

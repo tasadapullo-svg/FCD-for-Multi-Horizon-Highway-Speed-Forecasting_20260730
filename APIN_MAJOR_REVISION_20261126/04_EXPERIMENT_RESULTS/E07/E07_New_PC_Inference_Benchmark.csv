@@ -1,0 +1,11 @@
+﻿model,fold,horizon,execution,device,batch_samples,warmup_batches,measured_batches,median_batch_seconds,mean_batch_seconds,mean_seconds_per_sample,run_ids,total_model_bytes,source
+Ridge,1,1,single_seed,CPU,1024,20,100,0.000173400010681,0.000176482999814,1.72346679506e-07,ea581688aa619e4a230e6312,1800,"actual new-PC inference, pretrained current-revision models"
+XGBoost,1,1,single_seed,CPU,1024,20,100,0.00254575000145,0.00282272899873,2.75657128782e-06,16e9b61f4fe336ee7e718cb9,840120,"actual new-PC inference, pretrained current-revision models"
+XGBoost,1,1,three_seed_ensemble,CPU,1024,20,100,0.00770119999652,0.00816078700358,7.96951855818e-06,16e9b61f4fe336ee7e718cb9|bbcbda2e6091cea3f36b0277|3e52129a3ecde9ce90005f0c,2527364,"actual new-PC inference, pretrained current-revision models"
+GRU,1,1,single_seed,CPU,1024,20,100,0.0236545499938,0.0246229029988,2.40458037098e-05,b91a90cb4fbe986bd59a030f,224717,"actual new-PC inference, pretrained current-revision models"
+GRU,1,1,three_seed_ensemble,CPU,1024,20,100,0.0722942500142,0.0733878799994,7.16678515619e-05,b91a90cb4fbe986bd59a030f|2e6ee045a796615e27dda7ba|10fa69e181018c0deacde47c,674151,"actual new-PC inference, pretrained current-revision models"
+Ridge,1,6,single_seed,CPU,1024,20,100,0.000162899988936,0.000167590998462,1.63663084436e-07,8e3a2aadddcf120026cde667,1800,"actual new-PC inference, pretrained current-revision models"
+XGBoost,1,6,single_seed,CPU,1024,20,100,0.00243329998921,0.00265350199945,2.59131054634e-06,b05a9b2ac897bcd6cacce8be,848620,"actual new-PC inference, pretrained current-revision models"
+XGBoost,1,6,three_seed_ensemble,CPU,1024,20,100,0.0076001000125,0.0081268429989,7.93637011611e-06,b05a9b2ac897bcd6cacce8be|641b06cca7eb158c12440ac4|ae400fb351b368668da6fdd5,2544772,"actual new-PC inference, pretrained current-revision models"
+GRU,1,6,single_seed,CPU,1024,20,100,0.023957450001,0.0244154749991,2.38432373038e-05,c331ec7ead853cdb0846cab0,224717,"actual new-PC inference, pretrained current-revision models"
+GRU,1,6,three_seed_ensemble,CPU,1024,20,100,0.0718811499828,0.0739331010007,7.2200293946e-05,c331ec7ead853cdb0846cab0|a56e660e3305895d4b7dca03|9c2608f1fc73766ec8fa32e2,674151,"actual new-PC inference, pretrained current-revision models"

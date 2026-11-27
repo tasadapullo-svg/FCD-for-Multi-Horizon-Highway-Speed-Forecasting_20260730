@@ -80,3 +80,4 @@ def materialize_test(data,folder):
  else:
   z=torch.load(folder/'weights.pt',map_location='cpu',weights_only=True);net=GRUNet(cfg['hidden_size'],z['input_size'],cfg['static']);net.load_state_dict(z['state_dict']);p=predict_net(net,data.X[te],data.static_scaled[te],z['y_mean'],z['y_std'])
  assert len(p)==len(te) and np.isfinite(p).all();save_predictions(data,te,p,model,meta['seed'],cfg,meta['run_id'],folder/'predictions_test.parquet');meta.update(status='COMPLETED',inference_seconds=time.perf_counter()-begin,test_metrics=metrics(data.manifest.y_true.to_numpy()[te],p),prediction_path=str(folder/'predictions_test.parquet'),prediction_sha256=sha(folder/'predictions_test.parquet'));dump(folder/'run.json',meta)
+

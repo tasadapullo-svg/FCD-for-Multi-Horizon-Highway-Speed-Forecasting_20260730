@@ -1,0 +1,6 @@
+﻿metric,value,statistical_level,denominator,ratio,historical_value,difference,definition,version
+returned_parsed_rows_all_span,244477,return-row,,,244477.0,0.0,,REVISION_E01_E03
+quality_pass_rows_all_span,243307,return-row,,,243307.0,0.0,,REVISION_E01_E03
+quality_fail_rows_all_span,1170,return-row,,,1170.0,0.0,,REVISION_E01_E03
+returned_rows_in_grid,244351,return-row,,,,,,REVISION_E01_E03
+duplicate_return_rows_in_grid,1594,return-row,,,,,,REVISION_E01_E03

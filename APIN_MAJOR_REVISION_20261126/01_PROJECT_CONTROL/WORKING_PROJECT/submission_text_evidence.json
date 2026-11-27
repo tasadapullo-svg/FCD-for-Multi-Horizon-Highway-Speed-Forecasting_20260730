@@ -1,0 +1,18 @@
+{
+  "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\APIN-D-26-12623.pdf",
+  "sha256": "80307e21d0bcd013fa826de8de32466dbc9003cee48aa65f1a598546a858e1db",
+  "pages": 61,
+  "scope": "text extraction of first 32 pages; not full visual/word-for-word audit",
+  "hits": [
+    {
+      "page": 10,
+      "term": "97.30",
+      "excerpt": "mean of 97.30%, a minimum of 94.21%, and a maximum of 99.03%. Missing returns\nwere not distributed uniformly across days. Some days contained only 1–3 missing\nnode–hour records, whereas more affected days contained more than 40, with a max-\nimum of approximately 44. For a complete 24-h day, the descriptive reference count\nis 1,224 node–hour combinations (51 nodes×24 h), and the observed count was usu-\nally close to this value, although several days decreased to approximately 1,179–1,190\nrecords.\nFig. 2FCD availability, missingness, and speed variation during the study period. Panels (a)–(c)\nshow descriptive return availability, missing returns, and o"
+    },
+    {
+      "page": 29,
+      "term": "Data availability",
+      "excerpt": ", model-method review, validation,\nand writing–review and editing. Lvmin Liu: Validation, interpretation of results, and\nwriting–review and editing. All authors reviewed and approved the manuscript.\nEthics approval and consent to participate.\nNot applicable.\nConsent for publication.\nNot applicable.\nData availability .\nThe floating car data used in this study were obtained through the TomTom Traf-\nfic API. Raw provider data and sample-level records are not publicly redistributed\nbecause of provider licensing restrictions. Publicly shareable code, frozen configu-\nrations, aggregated results, and audit materials are provided through the project\nrepository.\nCode availability .\nPublic code, frozen configurations, aggregated results, and audit materials are\navailable at https://github.com/tasadapullo-svg/FCD-for-Multi-Horizon-Highway-S\npeed-Forecasting 20260730.\nReferences\n[1] Bikram P, Das S, Biswas A (2024) Dynamic attention aggregated miss"
+    }
+  ]
+}

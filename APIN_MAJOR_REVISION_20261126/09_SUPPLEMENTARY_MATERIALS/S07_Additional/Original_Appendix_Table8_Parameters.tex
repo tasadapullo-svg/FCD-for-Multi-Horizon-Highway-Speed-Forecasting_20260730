@@ -1,0 +1,34 @@
+% Historical original manuscript table, not Method-A corrected final result
+\begin{table}[!htbp]
+\centering
+\caption{Frozen model and training settings used in the formal experiment.}
+\label{tab:appendix_hyperparameters}
+\footnotesize
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.16\textwidth}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Component} & \textbf{Frozen setting} \\
+\hline
+HA & Mean of eligible fold--horizon training targets. \\ 
+\hline
+SeasonalHA & Mean of the frozen seasonally matched training reference set. \\ 
+\hline
+Persistence & Causally filled speed at forecast origin $t_0$. \\ 
+\hline
+Ridge & 315-dimensional tabular input; L2 penalty $\alpha=1.0$; deterministic. \\ 
+\hline
+XGBoost & 315-dimensional tabular input; 500 trees; maximum depth 8; learning rate 0.05; subsample 0.8; column subsample 0.8; objective \texttt{reg:squarederror}; \texttt{tree\_method=hist}; 10 CPU jobs; seeds 42, 2026, 3407. \\ 
+\hline
+GRU & $24\times13$ input; one GRU layer; hidden size 64; dropout 0.0; batch 256; learning rate $10^{-3}$; weight decay $10^{-4}$; maximum 30 epochs; patience 5; \texttt{minimum\_delta=0.0}; gradient clipping norm 1.0; seeds 42, 2026, 3407. \\ 
+\hline
+Stochastic aggregation & Average the three seed-level predictions for each sample before calculation of the primary metrics. \\ 
+\hline
+Input filling & Node-wise causal forward fill; if unavailable, fold-training node median, then fold-training corridor median. \\ 
+\hline
+Feature scaling & Each of the 13 sequence features standardized using the fold-training mean and population SD; validation and test use frozen training parameters. \\ 
+\hline
+Sequence input & 24 hourly rows $\times$ 13 standardized features. \\ 
+\hline
+Tabular input & Flattened 312 sequence values plus node order, latitude, and longitude = 315 dimensions. \\
+\hline
+\end{tabularx}
+\end{table}

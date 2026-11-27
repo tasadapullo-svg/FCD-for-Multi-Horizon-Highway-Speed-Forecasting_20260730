@@ -1,0 +1,19 @@
+﻿stage_id,rows_out,expected,status,evidence
+cleaned_input,244477,244477.0,PASS_RECALCULATED,D:\Desktop\论文\2027年投稿期刊\论文项目\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\历史投稿\历史投稿文章\20260623\PanBorneo_TomTom_Cleaned_Experiment_Package.zip!02_cleaned_records/tomtom_cleaned_records.csv.gz
+nodes,51,51.0,PASS_RECALCULATED,D:\Desktop\论文\2027年投稿期刊\论文项目\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\历史投稿\历史投稿文章\20260623\PanBorneo_TomTom_Cleaned_Experiment_Package.zip!03_nodes/nodes.csv
+quality_pass,243307,243307.0,PASS_RECALCULATED,02_cleaned_records/tomtom_cleaned_records.csv.gz
+confidence_fail,1170,1170.0,PASS_RECALCULATED,02_cleaned_records/tomtom_cleaned_records.csv.gz
+deduplicated_all_raw_span,241727,,PASS_RECALCULATED,02_cleaned_records/tomtom_cleaned_records.csv.gz
+duplicates_removed,1580,,PASS_RECALCULATED,02_cleaned_records/tomtom_cleaned_records.csv.gz
+duplicate_groups,1580,,PASS_RECALCULATED,02_cleaned_records/tomtom_cleaned_records.csv.gz
+min_time,2025-12-08 13:15:00,,PASS_RECALCULATED,02_cleaned_records/tomtom_cleaned_records.csv.gz
+max_time,2026-02-28 23:45:00,,PASS_RECALCULATED,02_cleaned_records/tomtom_cleaned_records.csv.gz
+planned_slots_all_raw_span,403665,,PASS_RECALCULATED,date_range inclusive × nodes
+15min_return_percent,59.88307135867613,,PASS_RECALCULATED,deduplicated/planned
+1_of_4_hours,96968,,PASS_RECALCULATED,原始CSV质量过滤后15min去重，再floor hour分组
+2_of_4_hours,83439,,PASS_RECALCULATED,原始CSV质量过滤后15min去重，再floor hour分组
+3_of_4_hours,45356,,PASS_RECALCULATED,原始CSV质量过滤后15min去重，再floor hour分组
+4_of_4_hours,15838,,PASS_RECALCULATED,原始CSV质量过滤后15min去重，再floor hour分组
+frozen_deduplicated_panel,241601,241601.0,PASS_RECALCULATED,D:\Desktop\论文\2027年投稿期刊\论文项目\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\历史投稿\20260730_AJSE_FINAL_GitHub\04_PHASE2A_DATA_RESULTS\01_DATA_PIPELINE\panels\deduplicated_15min_observations.parquet
+frozen_planned_slots,403512,403512.0,PASS_RECALCULATED,complete-hour grid 2025-12-08 14:00 through 2026-02-28 23:45
+excluded_first_partial_hour_dedup,126,nan,PASS_RECALCULATED,all raw-span dedup minus frozen panel

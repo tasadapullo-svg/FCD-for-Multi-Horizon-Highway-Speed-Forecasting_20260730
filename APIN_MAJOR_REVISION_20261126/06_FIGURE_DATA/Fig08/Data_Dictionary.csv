@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig08A_Threshold_Sensitivity.csv,run_id,object,Frozen value or documented formatting only; no new metric
 Fig08A_Threshold_Sensitivity.csv,status,object,Frozen value or documented formatting only; no new metric
 Fig08A_Threshold_Sensitivity.csv,experiment_first_use,object,Frozen value or documented formatting only; no new metric

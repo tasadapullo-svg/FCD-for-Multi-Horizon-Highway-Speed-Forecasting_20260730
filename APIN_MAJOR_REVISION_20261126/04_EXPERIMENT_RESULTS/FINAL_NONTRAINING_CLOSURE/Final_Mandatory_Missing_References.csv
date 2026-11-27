@@ -1,0 +1,3 @@
+﻿reference,doi,official_entry,remaining_check,status
+"Künsch HR (1989), The Jackknife and the Bootstrap for General Stationary Observations",10.1214/aos/1176347265,https://doi.org/10.1214/aos/1176347265,Confirm full original text and exact method-to-implementation wording before citing as direct protocol description,FULLTEXT_METHOD_CHECK_PENDING
+"Li et al. (2018), Diffusion Convolutional Recurrent Neural Network",not confirmed in frozen registry,https://openreview.net/forum?id=SJiHXGWAZ,Read original full paper before specific architectural comparison; publisher/conference metadata already registered,FULLTEXT_METHOD_CHECK_PENDING

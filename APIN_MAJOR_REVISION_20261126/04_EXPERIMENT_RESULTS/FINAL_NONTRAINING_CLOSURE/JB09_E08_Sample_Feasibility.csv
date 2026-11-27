@@ -1,0 +1,5 @@
+﻿horizon,train_candidate_origins,validation_candidate_origins,test_candidate_origins,history_24h_eligible,target_eligible,reason
+H1,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,No target asset; 451008 grid arithmetic is not true observation support
+H3,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,No target asset; 451008 grid arithmetic is not true observation support
+H6_5of6,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,No target asset; 451008 grid arithmetic is not true observation support
+H6_6of6,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,NOT_COMPUTABLE,No target asset; 451008 grid arithmetic is not true observation support

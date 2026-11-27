@@ -1,0 +1,6 @@
+﻿issue_id,severity,claim_or_file,expected,actual,unit,exact_evidence,root_cause_confirmed_or_hypothesis,minimal_fix,owner_action,blocks_G1,status
+G2,MAJOR,全部论文数字逐项语义核验,完整可追溯,正文、附录、公式、图内标注,,G0_code_inventory.csv / G0_figure_alignment.csv / G0_paper_numeric_alignment.csv,缺失或本轮未完成核验，禁止推断不存在,完成数字索引人工语义分类及源表逐单元格关联,恢复现有证据或继续只读核验,False,NOT_VERIFIED
+G4,MAJOR,API响应至cleaned CSV,完整可追溯,API ZIP候选存在；解析与清洗链尚未逐条桥接,,G0_code_inventory.csv / G0_figure_alignment.csv / G0_paper_numeric_alignment.csv,缺失或本轮未完成核验，禁止推断不存在,现有API源文件与source_file字段映射及原清洗入口,恢复现有证据或继续只读核验,False,NOT_VERIFIED
+G5,MAJOR,Fig1 GIS里程与图源,完整可追溯,nodes/geojson候选已登记，真实roadline及里程生成链未证,,G0_code_inventory.csv / G0_figure_alignment.csv / G0_paper_numeric_alignment.csv,缺失或本轮未完成核验，禁止推断不存在,原roadline GIS和图像生成脚本、CRS/距离计算方法,恢复现有证据或继续只读核验,False,NOT_VERIFIED
+G7,MAJOR,环境锁与硬件,完整可追溯,requirements与记录候选存在；未证正式运行完整锁,,G0_code_inventory.csv / G0_figure_alignment.csv / G0_paper_numeric_alignment.csv,缺失或本轮未完成核验，禁止推断不存在,正式运行pip/conda lock、硬件与运行命令日志,恢复现有证据或继续只读核验,False,NOT_VERIFIED
+G9,MAJOR,所有图源与原PNG的生成关系,完整可追溯,Fig1–6候选均已索引，尚未证明每个PNG的唯一来源,,G0_code_inventory.csv / G0_figure_alignment.csv / G0_paper_numeric_alignment.csv,缺失或本轮未完成核验，禁止推断不存在,原绘图脚本、输入哈希、输出图SHA记录,恢复现有证据或继续只读核验,False,NOT_VERIFIED

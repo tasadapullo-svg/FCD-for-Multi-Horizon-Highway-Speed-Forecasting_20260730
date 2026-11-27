@@ -1,0 +1,35 @@
+{
+  "zip": [
+    {
+      "kind": "local",
+      "absolute_path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_FINAL_FIGURE_TABLE_PLOT_DATA_LOCAL_20261126.zip",
+      "size_bytes": 2942485,
+      "sha256": "811ffbada42fa88dcca2bf98f2fd87416a0d8f0a29fe4a3a982283a3fad8c8e3",
+      "entries": 196
+    },
+    {
+      "kind": "gis",
+      "absolute_path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_FIG01_QGIS_DRAWING_DATA_LOCAL_20261126.zip",
+      "size_bytes": 1072925,
+      "sha256": "ee61df68d7dd2dfc460a90172c0c1b63b833824723881491f4019442a8091c80",
+      "entries": 29
+    },
+    {
+      "kind": "review",
+      "absolute_path": "E:\\20261125_论文修改_Applied Intelligence\\APIN_FINAL_FIGURE_TABLE_DATA_REVIEW_20261126.zip",
+      "size_bytes": 1359450,
+      "sha256": "68490902c0f6b4419a5c5608bf6864281d2fbc669fd656920b22a237cfe5cc87",
+      "entries": 152
+    }
+  ],
+  "figures": 8,
+  "panel_csv": 52,
+  "tables": 9,
+  "supplements": 8,
+  "workbooks": 30,
+  "reviewer_comments": 31,
+  "gis_layers": 9,
+  "gis_standalone_extract_test": "PASS",
+  "new_model_fits": 0,
+  "new_traffic_datasets": 0
+}

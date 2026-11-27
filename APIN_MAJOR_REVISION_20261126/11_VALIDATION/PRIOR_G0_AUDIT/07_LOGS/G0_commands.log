@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "D:\Desktop\����\2027��Ͷ���ڿ�\������Ŀ\����ɴ���_20260905-�ͳɱ�ϡ�踡�������ݲɼ���ɿ��Ը�֪Ԥ���ܣ���������ϡȱ��������_Applied Intelligence\20260905Applied Intelligence Ͷ��\APIN_R1_G0_AUDIT_20261121\06_AUDIT_SCRIPTS\audit.py", line 3, in <module>
+    C=json.loads(Path(__file__).with_name('config.json').read_text()); O=Path(C['out']); R=Path(C['root']); H=Path(C['hist']); repo=H/'20260730_AJSE_FINAL_GitHub'; P=repo/'04_PHASE2A_DATA_RESULTS'
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\17279\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x8a in position 45: illegal multibyte sequence
+inventory 0 2888
+inventory 200 2888
+inventory 400 2888
+inventory 600 2888
+inventory 800 2888
+inventory 1000 2888
+inventory 1200 2888
+inventory 1400 2888
+inventory 1600 2888
+inventory 1800 2888
+inventory 2000 2888
+inventory 2200 2888
+inventory 2400 2888
+inventory 2600 2888
+inventory 2800 2888
+INVENTORY DONE 2888 2483
+registry (180, 18) metric cols ['run_name', 'model', 'seed', 'fold', 'horizon', 'n', 'MAE', 'RMSE', 'sMAPE', 'bias']
+CORE METADATA DONE
+RAW (244477, 34) ['node_id', 'node_order', 'event_time', 'pd_create_time', 'capture_time', 'flow_create_time', 'pd_uuid', 'point_uuid', 'flow_uuid', 'key_number', 'source_file', 'pd_latitude', 'pd_longitude', 'current_speed', 'free_flow_speed', 'current_travel_time', 'free_flow_travel_time', 'confidence', 'road_closure', 'tti', 'speed_ratio', 'speed_drop', 'travel_time_delay', 'speed_deficit_ratio', 'traffic_state', 'valid_record', 'valid_coordinates', 'valid_speed', 'valid_travel_time', 'valid_confidence', 'valid_time', 'pd_create_time_raw', 'capture_time_raw', 'flow_create_time_raw']
+NODES (51, 11) ['node_id', 'order_index', 'latitude', 'longitude', 'lat_round', 'lon_round', 'raw_records', 'unique_point_uuid', 'unique_key_number', 'first_time', 'last_time']
+RAW DONE
+MANIFEST_SCHEMA ['sample_id', 'fold', 'split', 'node_id', 'node_order', 'latitude', 'longitude', 'spatial_block', 'forecast_origin', 'horizon', 'history_start', 'history_end', 'history_row_ids', 'history_observed_count', 'history_coverage_ratio', 'history_imputation_ratio', 'max_gap_24h', 'target_start', 'target_end', 'target_row_ids', 'target_observed_count', 'target_required_count', 'target', 'hourly_aggregation', 'target_definition', 'config_key']
+PREDICTIONS DONE 180 180
+PANEL_SCHEMA ['node_id', 'quarter_hour', 'speed_15min', 'travel_time_15min', 'confidence_15min', 'duplicate_count', 'hour'] 241601
+EXTENDED DONE {'PASS_RECALCULATED': 180} {'PASS_RECALCULATED': 180}
+Traceback (most recent call last):
+  File "D:\Desktop\论文\2027年投稿期刊\论文项目\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\20260905Applied Intelligence 投稿\APIN_R1_G0_AUDIT_20261121\06_AUDIT_SCRIPTS\finish.py", line 19, in <module>
+    hi=json.loads(row.history_row_ids) if isinstance(row.history_row_ids,str) else list(row.history_row_ids);bad_hist+=len(hi)!=24
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\17279\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\17279\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\json\decoder.py", line 341, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+TARGET DONE
+Traceback (most recent call last):
+  File "D:\Desktop\论文\2027年投稿期刊\论文项目\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\20260905Applied Intelligence 投稿\APIN_R1_G0_AUDIT_20261121\06_AUDIT_SCRIPTS\finish.py", line 63, in <module>
+    2. 仓库：实际读取公开main树 {tree['sha']}；通过本地文件Git blob SHA1与远端对象比较（不是远端SHA256下载比较）。状态{comparison.status.value_counts().to_dict()}。本地是导出目录，不能据此声称本地git clean；历史freeze json中的clean仅为历史记录。
+                                 ^^^^
+NameError: name 'tree' is not defined. Did you mean: 'True'?
+TARGET DONE
+REPORT DONE
+SUPPLEMENT DONE

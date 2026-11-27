@@ -1,0 +1,72 @@
+﻿file,column,dtype,sample_values
+Fig06A_H1_Paired_Effects.csv,family,object,G1_5_PER_HORIZON
+Fig06A_H1_Paired_Effects.csv,horizon,int64,1
+Fig06A_H1_Paired_Effects.csv,comparison,object,GRU_vs_Ridge
+Fig06A_H1_Paired_Effects.csv,effect,float64,-0.151789925323
+Fig06A_H1_Paired_Effects.csv,CI_low,float64,-0.229197300376
+Fig06A_H1_Paired_Effects.csv,CI_high,float64,-0.0915891384529
+Fig06A_H1_Paired_Effects.csv,raw_p,float64,0.000299970003
+Fig06A_H1_Paired_Effects.csv,holm_adjusted_p,float64,0.000899910008999
+Fig06A_H1_Paired_Effects.csv,dates,int64,41
+Fig06A_H1_Paired_Effects.csv,block_days,int64,3
+Fig06A_H1_Paired_Effects.csv,role,object,PRIMARY
+Fig06A_H1_Paired_Effects.csv,significant_holm_0_05,bool,True
+Fig06A_H1_Paired_Effects.csv,source_file,object,E03_08_Holm_Adjusted_Comparisons.csv
+Fig06A_H1_Paired_Effects.csv,effect_direction,object,negative favors first model
+Fig06A_H1_Paired_Effects.csv,CI_type,object,"pointwise 95%, not Holm simultaneous"
+Fig06B_H3_Paired_Effects.csv,family,object,G1_5_PER_HORIZON
+Fig06B_H3_Paired_Effects.csv,horizon,int64,3
+Fig06B_H3_Paired_Effects.csv,comparison,object,GRU_vs_Ridge
+Fig06B_H3_Paired_Effects.csv,effect,float64,-0.170506832426
+Fig06B_H3_Paired_Effects.csv,CI_low,float64,-0.253136134709
+Fig06B_H3_Paired_Effects.csv,CI_high,float64,-0.0895338028057
+Fig06B_H3_Paired_Effects.csv,raw_p,float64,9.99900009999e-05
+Fig06B_H3_Paired_Effects.csv,holm_adjusted_p,float64,0.000499950005
+Fig06B_H3_Paired_Effects.csv,dates,int64,41
+Fig06B_H3_Paired_Effects.csv,block_days,int64,3
+Fig06B_H3_Paired_Effects.csv,role,object,PRIMARY
+Fig06B_H3_Paired_Effects.csv,significant_holm_0_05,bool,True
+Fig06B_H3_Paired_Effects.csv,source_file,object,E03_08_Holm_Adjusted_Comparisons.csv
+Fig06B_H3_Paired_Effects.csv,effect_direction,object,negative favors first model
+Fig06B_H3_Paired_Effects.csv,CI_type,object,"pointwise 95%, not Holm simultaneous"
+Fig06C_H6_Paired_Effects.csv,family,object,G1_5_PER_HORIZON
+Fig06C_H6_Paired_Effects.csv,horizon,int64,6
+Fig06C_H6_Paired_Effects.csv,comparison,object,GRU_vs_Ridge
+Fig06C_H6_Paired_Effects.csv,effect,float64,-0.206912578973
+Fig06C_H6_Paired_Effects.csv,CI_low,float64,-0.330351565024
+Fig06C_H6_Paired_Effects.csv,CI_high,float64,-0.104098186293
+Fig06C_H6_Paired_Effects.csv,raw_p,float64,0.001699830017
+Fig06C_H6_Paired_Effects.csv,holm_adjusted_p,float64,0.00849915008499
+Fig06C_H6_Paired_Effects.csv,dates,int64,41
+Fig06C_H6_Paired_Effects.csv,block_days,int64,3
+Fig06C_H6_Paired_Effects.csv,role,object,PRIMARY
+Fig06C_H6_Paired_Effects.csv,significant_holm_0_05,bool,True
+Fig06C_H6_Paired_Effects.csv,source_file,object,E03_08_Holm_Adjusted_Comparisons.csv
+Fig06C_H6_Paired_Effects.csv,effect_direction,object,negative favors first model
+Fig06C_H6_Paired_Effects.csv,CI_type,object,"pointwise 95%, not Holm simultaneous"
+Fig06D_Three_vs_Seven_Day_Blocks.csv,family,object,G1_5_PER_HORIZON
+Fig06D_Three_vs_Seven_Day_Blocks.csv,horizon,int64,1
+Fig06D_Three_vs_Seven_Day_Blocks.csv,comparison,object,GRU_vs_Ridge
+Fig06D_Three_vs_Seven_Day_Blocks.csv,effect,float64,-0.151789925323
+Fig06D_Three_vs_Seven_Day_Blocks.csv,CI_low,float64,-0.229197300376
+Fig06D_Three_vs_Seven_Day_Blocks.csv,CI_high,float64,-0.0915891384529
+Fig06D_Three_vs_Seven_Day_Blocks.csv,raw_p,float64,0.000299970003
+Fig06D_Three_vs_Seven_Day_Blocks.csv,holm_adjusted_p,float64,0.000899910008999
+Fig06D_Three_vs_Seven_Day_Blocks.csv,dates,int64,41
+Fig06D_Three_vs_Seven_Day_Blocks.csv,block_days,int64,3
+Fig06D_Three_vs_Seven_Day_Blocks.csv,role,object,PRIMARY
+Fig06D_Three_vs_Seven_Day_Blocks.csv,significant_holm_0_05,float64,1.0
+Fig06D_Three_vs_Seven_Day_Blocks.csv,source_file,object,E03_08_Holm_Adjusted_Comparisons.csv
+Fig06D_Alternative_Weighting_Estimands.csv,method,object,A_ENSEMBLE_PREDICTION
+Fig06D_Alternative_Weighting_Estimands.csv,estimand,object,Fold-macro
+Fig06D_Alternative_Weighting_Estimands.csv,horizon,int64,1
+Fig06D_Alternative_Weighting_Estimands.csv,model,object,HA
+Fig06D_Alternative_Weighting_Estimands.csv,MAE,float64,1.82468890952
+Fig06D_Alternative_Weighting_Estimands.csv,n,int64,38201
+Fig06D_Alternative_Weighting_Estimands.csv,dates,int64,41
+Fig06D_Alternative_Weighting_Estimands.csv,folds,int64,6
+Fig06D_Alternative_Weighting_Estimands.csv,nodes,int64,51
+Fig06D_Alternative_Weighting_Estimands.csv,spatial_cells,int64,205
+Fig06D_Alternative_Weighting_Estimands.csv,weight_definition,object,equal fold means
+Fig06D_Alternative_Weighting_Estimands.csv,delta_XGBoost_minus_SeasonalHA,float64,-0.0257492154707
+Fig06D_Alternative_Weighting_Estimands.csv,delta_XGBoost_minus_Persistence,float64,-0.0151419402938

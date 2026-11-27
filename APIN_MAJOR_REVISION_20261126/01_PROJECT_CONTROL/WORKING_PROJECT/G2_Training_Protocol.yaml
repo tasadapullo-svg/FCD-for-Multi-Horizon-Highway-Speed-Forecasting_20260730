@@ -1,0 +1,52 @@
+{
+  "protocol_id": "G2_NEW_PC_FROZEN_v1",
+  "frozen_at": "2026-11-25T21:23:46.0865848+08:00",
+  "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+  "source_gate_status": "PASS_NEW_IMPLEMENTATION",
+  "source_gate_protocol_sha256": "ae4c72d2be48441da473ae3b1d25b04ac8aa53f3df2a838134d826b23fc51022",
+  "data_engine_version": "revision_data_v2",
+  "output_root": "E:\\20261125_论文修改_Applied Intelligence",
+  "project_root": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改",
+  "core_execution_limit": 534,
+  "conditional_total_limit": 648,
+  "matched_baseline_extra_limit": 108,
+  "historical_window_matched_extra_limit": 24,
+  "selection": "Fold1 validation MAE only; exact ties choose simpler configuration",
+  "time_semantics": "hour end decision; future H-hour observed mean",
+  "e06_candidates": {
+    "XGBoost": [
+      4,
+      8,
+      12
+    ],
+    "GRU": [
+      32,
+      64,
+      128
+    ],
+    "Ridge": [
+      0.1,
+      1,
+      10
+    ]
+  },
+  "seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "horizons": [
+    1,
+    3,
+    6
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "notes": "No test-based selection; conditional experiments require support and scientific validity."
+}

@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,variable,object,Frozen value or documented formatting only; no new metric
 Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,level,object,Frozen value or documented formatting only; no new metric
 Fig07A_Current_and_FreeFlow_Speed_Distribution.csv,bin_left,float64,Frozen value or documented formatting only; no new metric

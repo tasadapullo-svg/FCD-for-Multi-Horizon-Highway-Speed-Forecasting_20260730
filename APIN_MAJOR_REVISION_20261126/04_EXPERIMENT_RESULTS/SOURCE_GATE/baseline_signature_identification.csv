@@ -1,0 +1,6 @@
+﻿model,candidate,max_prediction_abs_diff,match_full_signature,identification_not_selected_by_test_MAE
+HA,global_target_mean,50.2749379192,False,True
+HA,node_target_mean,7.17502170744e-06,True,True
+SeasonalHA,node_hour_weekday,7.12076823106e-06,True,True
+SeasonalHA,node_hour,11.6365581225,False,True
+SeasonalHA,node_target_hour_weekday,7.12076823106e-06,True,True

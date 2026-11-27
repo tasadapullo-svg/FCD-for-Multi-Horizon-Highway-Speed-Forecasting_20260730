@@ -1,0 +1,3 @@
+﻿result,canonical,superseded,reason
+G1 Method A,E03_03_Original_vs_Recomputed_Table7.csv,Original manuscript Method B display,Seed aggregation definition
+G2 Ridge native metric,Ridge_Corrected_Aggregates.csv,Cholesky Ridge native metric,SVD numerical stability correction

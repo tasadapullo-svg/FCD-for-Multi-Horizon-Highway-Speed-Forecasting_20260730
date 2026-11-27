@@ -1,0 +1,10 @@
+{
+  "sample_n": 50269,
+  "key_sets_equal": true,
+  "y_true_maxdiff": 0.0,
+  "feature_maxdiff": 9.5367431640625e-07,
+  "static_maxdiff": 0.0,
+  "latest_history_interval_end_not_after_decision": true,
+  "target_starts_at_decision_and_ends_H_hours_later": true,
+  "temporal_leakage": "NO_PROVEN_INTERVAL_LEAKAGE_UNDER_EXPLICIT_END_OF_HOUR_DECISION; original live latency unverified"
+}

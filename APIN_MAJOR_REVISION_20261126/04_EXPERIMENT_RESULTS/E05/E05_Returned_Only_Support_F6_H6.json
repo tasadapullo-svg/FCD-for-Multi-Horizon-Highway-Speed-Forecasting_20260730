@@ -1,0 +1,8 @@
+{
+  "common_origin_count": 62401,
+  "base_count": 70965,
+  "returned_count": 62401,
+  "median_returned_history_span_hours": 26.0,
+  "same_wallclock_targets_on_common_samples": true,
+  "interpretation": "returned-event history is not a 24-hour history"
+}

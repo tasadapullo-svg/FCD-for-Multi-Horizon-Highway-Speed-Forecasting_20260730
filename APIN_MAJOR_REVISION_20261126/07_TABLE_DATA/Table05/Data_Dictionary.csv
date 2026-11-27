@@ -1,0 +1,16 @@
+﻿column,type,meaning
+fold,int64,see frozen source/column names; full precision retained; blank is not zero
+horizon,int64,see frozen source/column names; full precision retained; blank is not zero
+split,object,see frozen source/column names; full precision retained; blank is not zero
+theoretical_candidates,int64,see frozen source/column names; full precision retained; blank is not zero
+exclusive_target_boundary,int64,see frozen source/column names; full precision retained; blank is not zero
+exclusive_history_short,int64,see frozen source/column names; full precision retained; blank is not zero
+exclusive_target_incomplete,int64,see frozen source/column names; full precision retained; blank is not zero
+other_verified,int64,see frozen source/column names; full precision retained; blank is not zero
+eligible_rebuilt,int64,see frozen source/column names; full precision retained; blank is not zero
+actual_manifest,int64,see frozen source/column names; full precision retained; blank is not zero
+key_mismatches,int64,see frozen source/column names; full precision retained; blank is not zero
+nonexclusive_target_boundary,int64,see frozen source/column names; full precision retained; blank is not zero
+nonexclusive_history_short,int64,see frozen source/column names; full precision retained; blank is not zero
+nonexclusive_target_incomplete,int64,see frozen source/column names; full precision retained; blank is not zero
+status,object,see frozen source/column names; full precision retained; blank is not zero

@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig05A_Coverage_Conditioned_Error.csv,horizon,int64,Frozen value or documented formatting only; no new metric
 Fig05A_Coverage_Conditioned_Error.csv,cov_bin,object,Frozen value or documented formatting only; no new metric
 Fig05A_Coverage_Conditioned_Error.csv,model,object,Frozen value or documented formatting only; no new metric

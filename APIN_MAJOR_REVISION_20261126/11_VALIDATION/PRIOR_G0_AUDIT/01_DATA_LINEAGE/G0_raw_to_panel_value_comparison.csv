@@ -1,0 +1,2 @@
+﻿raw_grid_dedup_rows,saved_panel_rows,joined_rows,max_abs_speed_delta,mismatches_over_1e_12,status,precision_policy
+241601,241601,241601,0.0,0,PASS_RECALCULATED,float mean numerical error 1e-12; exact delta retained

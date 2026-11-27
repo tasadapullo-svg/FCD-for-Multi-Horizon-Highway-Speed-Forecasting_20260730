@@ -1,4 +1,4 @@
-model,horizon,condition,configuration_json,implementation,seed,config_id,configuration_role
+﻿model,horizon,condition,configuration_json,implementation,seed,config_id,configuration_role
 XGBoost,1,history12,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 8, ""n_estimators"": 500, ""n_jobs"": 10, ""objective"": ""reg:squarederror"", ""subsample"": 0.8, ""tree_method"": ""hist""}",REVISION_INDEPENDENT_IMPLEMENTATION_v1,42,fef89c17aaa3f1f0c2131c1ce7573df448a2e4f87a1926485b002048c4a66dbd,G2_ACTUAL_RUN_CONFIGURATION
 Persistence,3,threshold1,"{""rule"": ""last_causally_filled_speed""}",REVISION_INDEPENDENT_IMPLEMENTATION_v1,42,f10607a0440170cc21c819f2449a5009d8e6e9f5ed49e664d2d7c83180b09880,G2_ACTUAL_RUN_CONFIGURATION
 Ridge,3,base,"{""alpha"": 1.0, ""fit_intercept"": true, ""solver"": ""cholesky""}",REVISION_INDEPENDENT_IMPLEMENTATION_v1,42,9add179cd20fca2c75911ba7fba3ead773ec0fdb322dceb3cd1ffa17fa9e26d7,G2_ACTUAL_RUN_CONFIGURATION

@@ -1,0 +1,43 @@
+{
+  "stage": "prepare_shared",
+  "completed_at": "2026-11-25T19:11:36.073023+08:00",
+  "protocol_sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+  "code_sha256": "7f3c812523b1df006a108dc5b47181add7171303b6887085a0f9b74d03811b9c",
+  "inputs": [
+    "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS"
+  ],
+  "outputs": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\observation_analysis.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\returned_slot_index.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\quality_deduplicated_15min.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\hourly_analysis.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\target_completeness_and_reliability.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\aligned_predictions.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\paired_loss.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\reliability_conditioned_predictions.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\feature_recovery_audit.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\seed_metrics.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\prediction_alignment_checks.csv"
+  ],
+  "extra": {
+    "resume": "all data outputs were saved before environment metadata lookup error; no computation repeated",
+    "audit": {
+      "raw_csv_count": 83,
+      "raw_original_rows": 244477,
+      "cleaned_rows": 244477,
+      "raw_cleaned_identifier_match": {
+        "both": 244477,
+        "left_only": 0,
+        "right_only": 0
+      },
+      "raw_cleaned_missing_mapping": 0,
+      "upstream_caveat": "mapped original IDs/values to cleaned corrected event_time one-to-one; date correction program and request failure logs not recovered",
+      "dedup_15_comparison": {
+        "both": 241601,
+        "unmatched": 0,
+        "max_abs_speed_diff": 0.0
+      },
+      "hour_speed_diff": 0.0
+    }
+  }
+}

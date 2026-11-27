@@ -1,0 +1,7 @@
+decision_id,topic,current_evidence,status,required_next_action,scope_note
+GIS_HISTORY,Historical road topology,Current OSM snapshot and 51 node coordinate matches,UNVERIFIED_HISTORICAL_REPRESENTATIVENESS,Obtain dated road evidence or state limitation,Do not claim 2025-12 to 2026-02 road state from 2026-11 snapshot
+GIS_DIRECTION,Neighbor direction and membership,50 adjacent node-index pairs connected in undirected current OSM graph; direction unverified,DEFERRED_SPATIAL_DEPENDENCY,Manual review road direction and node-road association before neighbor model,Do not infer upstream or downstream from node IDs
+GIS_MATCH,Node-to-road map,51 nodes snapped; max lateral offset 86.4 m; median 3.6 m,DIAGNOSTIC_ONLY,Review outliers and major junction candidate classifications,Graph anchor routes are approximations
+CALENDAR,Official events,Malaysia/Sarawak official holiday schedule and JAKIM Ramadan table,PARTIAL_PASS,Verify official Ramadan announcement timing if used as forecast-known covariate,No holiday causality or Ramadan public holiday claim for Sarawak
+API_LATENCY,Operational information availability,No original API arrival timestamps,UNVERIFIED,Keep end-of-hour retrospective convention and limitation,No real-time production claim
+E08_EXTERNAL,External generalization,No external corridor data downloaded in G2,DEFERRED_AUTHOR_DECISION,Decide after actual G2 acceptance and evidence gaps,Do not treat G2 corridor results as external validation

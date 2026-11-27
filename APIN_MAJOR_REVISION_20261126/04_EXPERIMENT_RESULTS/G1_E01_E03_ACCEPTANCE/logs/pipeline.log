@@ -1,0 +1,41 @@
+2026-11-25T19:06:52.224899+08:00 schema probe after protocol freeze
+2026-11-25T19:08:51.808562+08:00 prepare_shared START; original assets read-only; new protocol e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4
+2026-11-25T19:09:15.370833+08:00 prepare_shared START; original assets read-only; new protocol e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4
+2026-11-25T19:09:23.128880+08:00 observations mapped; hourly panel reconstructed; now read manifests and recover original feature units
+2026-11-25T19:09:27.396000+08:00 fold 1 manifests/features/causal freeflow prepared
+2026-11-25T19:09:31.714826+08:00 fold 2 manifests/features/causal freeflow prepared
+2026-11-25T19:09:36.134723+08:00 fold 3 manifests/features/causal freeflow prepared
+2026-11-25T19:09:41.328805+08:00 fold 4 manifests/features/causal freeflow prepared
+2026-11-25T19:09:48.796340+08:00 fold 5 manifests/features/causal freeflow prepared
+2026-11-25T19:09:54.856891+08:00 fold 6 manifests/features/causal freeflow prepared
+2026-11-25T19:09:57.674580+08:00 fold 1 predictions aligned, seeds explicitly identified
+2026-11-25T19:09:58.305735+08:00 fold 2 predictions aligned, seeds explicitly identified
+2026-11-25T19:09:58.915331+08:00 fold 3 predictions aligned, seeds explicitly identified
+2026-11-25T19:09:59.553800+08:00 fold 4 predictions aligned, seeds explicitly identified
+2026-11-25T19:10:00.128755+08:00 fold 5 predictions aligned, seeds explicitly identified
+2026-11-25T19:10:00.743402+08:00 fold 6 predictions aligned, seeds explicitly identified
+2026-11-25T19:11:36.076013+08:00 prepare_shared receipt recovered without recalculation
+2026-11-25T19:11:36.904048+08:00 E01 START
+2026-11-25T19:13:12.881856+08:00 E02 START
+2026-11-25T19:13:44.137499+08:00 E01 DONE report recovered; key mismatches=0
+2026-11-25T19:13:44.933682+08:00 E02 START
+2026-11-25T19:13:58.317947+08:00 E02 DONE {'unfiltered_exact_freeflow': 0.8548861447089092, 'traffic_support': [{'horizon': 1.0, 'state': 'congested_proxy', 'n': 952}, {'horizon': 1.0, 'state': 'intermediate', 'n': 4072}, {'horizon': 1.0, 'state': 'near_free_flow_proxy', 'n': 33177}, {'horizon': 3.0, 'state': 'congested_proxy', 'n': 614}, {'horizon': 3.0, 'state': 'intermediate', 'n': 2344}, {'horizon': 3.0, 'state': 'near_free_flow_proxy', 'n': 21847}, {'horizon': 6.0, 'state': 'congested_proxy', 'n': 700}, {'horizon': 6.0, 'state': 'intermediate', 'n': 2697}, {'horizon': 6.0, 'state': 'near_free_flow_proxy', 'n': 25744}]}
+2026-11-25T19:16:22.484502+08:00 E03 START
+2026-11-25T19:16:24.375491+08:00 targeted B-loss extraction saved once for seed/weight attribution
+2026-11-25T19:16:25.198594+08:00 E03 bootstrap H1, L=3, dates=41, admissible blocks=39
+2026-11-25T19:16:25.240452+08:00 E03 bootstrap H1, L=7, dates=41, admissible blocks=35
+2026-11-25T19:16:25.280318+08:00 E03 bootstrap H3, L=3, dates=41, admissible blocks=39
+2026-11-25T19:16:25.319712+08:00 E03 bootstrap H3, L=7, dates=41, admissible blocks=35
+2026-11-25T19:16:25.367837+08:00 E03 bootstrap H6, L=3, dates=41, admissible blocks=39
+2026-11-25T19:16:25.403753+08:00 E03 bootstrap H6, L=7, dates=41, admissible blocks=35
+2026-11-25T19:16:26.607433+08:00 E03 DONE {'A_table7_matches': 12, 'B_table7_matches': 18, 'Holm_significant': 7}
+2026-11-25T19:17:49.125431+08:00 targeted historical cluster comparison corrected; no E01/E02 or bootstrap rerun
+2026-11-25T19:19:35.766077+08:00 G1 one-time scientific acceptance validation START
+2026-11-25T19:19:36.218009+08:00 G1 validation BLOCKED
+2026-11-25T19:19:58.416411+08:00 targeted CSV precision acceptance fix; G1 CONDITIONAL_PASS
+2026-11-25T19:23:55.334007+08:00 G1 core deliverable assembly START from completed aggregate results only
+2026-11-25T19:23:55.605188+08:00 G1 report/scopes assembled; core cap624; conditional cap78; all training pending author/source gate
+2026-11-25T19:25:04.492508+08:00 six aggregate diagnostic figures generated
+2026-11-25T19:26:45.973756+08:00 added actual daily support limitation; primary stats unchanged
+2026-11-25T19:29:17.065671+08:00 final output packaging integrity check START; not repeating scientific validation
+2026-11-25T19:29:17.988034+08:00 G1 packaged {"phase": "G1_E01_E03", "status": "CONDITIONAL_PASS", "zip_path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\APIN_G1_E01_E03_Results_20261125.zip", "zip_sha256": "8772f72578f72d83defc91a40524a126708c840721f7374fca16cca3e391d0b1", "zip_size_bytes": 1526746, "zip_members": 95, "crc": "PASS", "core_files": 7, "workbook_sheets_checked": 21, "diagnostics": 6, "restricted_record_files_in_zip": 0, "source_models_trained": 0, "completed_at": "2026-11-25T19:29:17.987037+08:00"}

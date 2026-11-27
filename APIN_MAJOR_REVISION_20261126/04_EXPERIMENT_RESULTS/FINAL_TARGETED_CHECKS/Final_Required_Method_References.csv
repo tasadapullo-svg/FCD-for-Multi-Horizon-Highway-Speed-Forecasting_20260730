@@ -1,0 +1,5 @@
+﻿topic,reference,doi,official_or_original_url,decision,use
+Holm familywise correction,Holm S. A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics 6:65–70 (1979).,none confirmed,https://www.ime.usp.br/~abe/lista/pdf4R8xPVzCnX.pdf,INCLUDE,G1 five comparisons per horizon and 7-day sensitivity
+Dependent-observation block bootstrap,Künsch HR. The Jackknife and the Bootstrap for General Stationary Observations. Annals of Statistics 17 (1989).,10.1214/aos/1176347265,https://doi.org/10.1214/aos/1176347265,INCLUDE,background for temporal block dependence; exact implemented resampling defined by G1 protocol
+XGBoost,Chen T; Guestrin C. XGBoost: A Scalable Tree Boosting System. KDD (2016).,10.1145/2939672.2939785,https://doi.org/10.1145/2939672.2939785,INCLUDE,model method
+Spatial temporal benchmark,Li Y; Yu R; Shahabi C; Liu Y. Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting. ICLR (2018).,none confirmed,https://openreview.net/forum?id=SJiHXGWAZ,INCLUDE_AS_CONTEXT,explain spatial graph models and why current topology limits experiment

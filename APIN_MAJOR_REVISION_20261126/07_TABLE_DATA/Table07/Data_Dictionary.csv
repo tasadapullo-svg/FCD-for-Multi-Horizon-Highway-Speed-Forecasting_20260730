@@ -1,0 +1,6 @@
+﻿column,type,meaning
+model,object,see frozen source/column names; full precision retained; blank is not zero
+horizon,int64,see frozen source/column names; full precision retained; blank is not zero
+method_A_value,float64,see frozen source/column names; full precision retained; blank is not zero
+method_A_fold_sd,float64,see frozen source/column names; full precision retained; blank is not zero
+sample_weighted_MAE,float64,see frozen source/column names; full precision retained; blank is not zero

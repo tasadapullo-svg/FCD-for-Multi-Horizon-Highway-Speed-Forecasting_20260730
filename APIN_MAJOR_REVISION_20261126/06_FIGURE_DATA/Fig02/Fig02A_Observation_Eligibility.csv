@@ -1,0 +1,6 @@
+﻿metric,value,statistical_level,denominator,ratio,historical_value,difference,definition,version
+planned_15min_slots,403512,node-quarter,,,403512.0,0.0,,REVISION_E01_E03
+unique_returned_slots,242757,node-quarter,403512.0,0.60161036103,,,,REVISION_E01_E03
+has_quality_slots,241601,node-quarter,403512.0,0.598745514384,,,,REVISION_E01_E03
+only_ineligible_slots,1156,node-quarter,403512.0,0.00286484664644,,,,REVISION_E01_E03
+no_archived_return_slots,160755,node-quarter,403512.0,0.39838963897,,,,REVISION_E01_E03

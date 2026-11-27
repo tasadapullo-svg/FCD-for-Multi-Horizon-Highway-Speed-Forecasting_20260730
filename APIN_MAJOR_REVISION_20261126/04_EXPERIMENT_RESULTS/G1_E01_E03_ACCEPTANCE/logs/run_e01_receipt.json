@@ -1,0 +1,30 @@
+{
+  "stage": "run_e01",
+  "completed_at": "2026-11-25T19:13:44.135507+08:00",
+  "protocol_sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+  "code_sha256": "8f1b259429bcdc6a5612d99c624106188d12b3e2d76b70ba29289a3df35ca032",
+  "inputs": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\hourly_analysis.parquet",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03\\target_completeness_and_reliability.parquet"
+  ],
+  "outputs": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_01_Data_Lineage_and_Coverage.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_02b_Quarter_Count_Frequency.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_02_Hourly_Threshold_Coverage.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_03b_Coverage_Weighting.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_03_Daily_Coverage.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_04_Node_Hour_Coverage.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_05_Missing_Run_Distribution.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_06_H6_Target_Completeness.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_07_H6_Missing_Position.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_08_H6_Stratified_Model_Performance.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_09_H3_H6_Common_Origins.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_10_Fold_Sample_Attrition.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_11_E04_Sample_Feasibility.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_Summary_CN.md"
+  ],
+  "extra": {
+    "attrition_key_mismatches": 0,
+    "resume": "report only"
+  }
+}

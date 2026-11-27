@@ -1,0 +1,60 @@
+{
+  "manuscript_id": "APIN-D-26-12623",
+  "completed_at_Asia_Shanghai": "2026-11-26T08:14:16.405361+08:00",
+  "output_root": "E:\\20261125_论文修改_Applied Intelligence",
+  "project_root": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改",
+  "target_asset": "jb_fcd_panel_hourly_v1.csv",
+  "target_status": "TARGET_ASSET_NOT_FOUND",
+  "target_actual_path": null,
+  "target_sha256": null,
+  "target_rows_verified": null,
+  "true_observation_count": null,
+  "imputed_count": null,
+  "sampling_frequency": null,
+  "source_provider": null,
+  "selected_corridor": null,
+  "E08_sample_support": null,
+  "data_license": "AUTHOR_CONFIRMATION_REQUIRED",
+  "search_scope": "two E projects, four E ZIP members, limited C user folders; old D historical location unavailable",
+  "inherited_prompt04_zip_sha256": "77a1c43bffe6c786cc7a61304d6735cc348491dfdbdb36a3784e10d39d5a179b",
+  "new_model_fits": 0,
+  "E08_training_runs": 0,
+  "ridge_refits": 0,
+  "unified_inference_measured_rows": 14,
+  "svd_ridge_not_timed_reason": "final SVD weights not saved; no refit authorized",
+  "ridge_svd_test_runs_reused": 90,
+  "GIS_manual_review_nodes": 15,
+  "reviewer_comments": 31,
+  "status": "NONTRAINING_CLOSURE_TARGET_ASSET_NOT_FOUND_MANUSCRIPT_DRAFT_READY_WITH_LIMITATIONS",
+  "inputs": {
+    "E:\\20261125_论文修改_Applied Intelligence\\APIN_FINAL_EVIDENCE_FREEZE_20261126.zip": "77a1c43bffe6c786cc7a61304d6735cc348491dfdbdb36a3784e10d39d5a179b",
+    "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\FINAL_TARGETED_CHECKS\\Ridge_Corrected_Experiment_Metrics.csv": "53989d7df4693a5bbc3ed2623c85e640841191a4b10cb1baeb8bc01169ac9cc1",
+    "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\FINAL_TARGETED_CHECKS\\Ridge_Corrected_Aggregates.csv": "ef40eea684602752ed76a618a00f8cd7dd3761343ed579cea2e31602c91336d0",
+    "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\FINAL_TARGETED_CHECKS\\FINAL_04_Reviewer_Evidence_Matrix.csv": "d8a20bd46d821e152f0158841ab7bccd6c7cff183bf9b92e1e249ce5afe70d32",
+    "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\FINAL_TARGETED_CHECKS\\GIS_Final_Node_Matching.csv": "f5ab871a261a9c1ed6312bd0b373d6583d09fbcfd894a2c01c4258ab9ab7b458",
+    "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\FINAL_NONTRAINING_CLOSURE\\Final_Unified_Inference_Benchmark.csv": "2b4346bad2db05d9fcccd1a25951c61f37dac011d2f0ac71c07bee3f31e16240"
+  },
+  "outputs_01_to_06": {
+    "05_FINAL_RESULTS/FINAL_NONTRAINING_CLOSURE/E08_01_JB_Data_Asset_and_Compatibility.xlsx": "9d337779ae812d6370a8311abdb12bfa2b9e18521b29392ffcfd24afd3640fdc",
+    "05_FINAL_RESULTS/FINAL_NONTRAINING_CLOSURE/E08_02_JB_Corridor_and_Sample_Feasibility.xlsx": "73472505691536ad3042b236902119dfc124f08f2bb575dd87c93fda9c138793",
+    "05_FINAL_RESULTS/FINAL_NONTRAINING_CLOSURE/E08_03_Minimum_Experiment_and_Decision_CN.md": "4c3021439e65a477f7d8922c2e52ed3ae44ee38270b5d20a1c05c585024fcba9",
+    "05_FINAL_RESULTS/FINAL_NONTRAINING_CLOSURE/FINAL_04_Nontraining_Closure_Results.xlsx": "d3cb4e65e9373316c352a19141be29e937467ab167da99df8884af919a74a857",
+    "05_FINAL_RESULTS/FINAL_NONTRAINING_CLOSURE/FINAL_05_Reviewer_and_Manuscript_Consistency.xlsx": "fd839a146c3ecc266baa447e33f26e90836cea20bd631f2cf790b87e66c0f327",
+    "05_FINAL_RESULTS/FINAL_NONTRAINING_CLOSURE/FINAL_06_Nontraining_Closure_Report_CN.md": "79543d9eb7a4c3f61a54bb3b57f270136378423f9a7f56c0cb73c1be132ffbde"
+  },
+  "executed_commands": [
+    "bounded rg --files exact filename/index searches in named E and C folders",
+    "zipfile member-name inspection of four E root ZIPs",
+    "g2_venv python unified_inference.py (read-only inference; no fit)",
+    "python build_nontraining_evidence.py",
+    "node artifact-tool build_nontraining_workbooks.mjs",
+    "python finalize_nontraining.py"
+  ],
+  "prohibited_actions_not_done": [
+    "no E08 training",
+    "no new FCD download",
+    "no G0/G1/G2 rerun",
+    "no Ridge refit",
+    "no GitHub push"
+  ]
+}

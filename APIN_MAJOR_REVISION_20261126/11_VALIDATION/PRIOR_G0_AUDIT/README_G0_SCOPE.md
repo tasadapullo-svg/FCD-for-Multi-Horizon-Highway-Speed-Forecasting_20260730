@@ -1,0 +1,1 @@
+仅G0只读审计；当前未达到全量验收，见05_REPORTS。全部原始文件只读。审计运行顺序：python -X utf8 06_AUDIT_SCRIPTS/audit.py；core.py；data.py；extended.py；finish.py。配置在config.json。依赖仅安装于审计输出目录deps。派生CSV不含逐样本商业记录，PDF提取仅本机。重跑脚本会覆盖本轮派生审计表，须先另建新输出目录并更新config。

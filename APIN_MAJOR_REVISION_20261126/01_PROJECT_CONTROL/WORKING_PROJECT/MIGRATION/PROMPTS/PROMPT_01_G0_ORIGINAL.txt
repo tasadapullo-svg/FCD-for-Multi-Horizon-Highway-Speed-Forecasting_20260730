@@ -1,0 +1,507 @@
+你现在是一名具有SCI期刊论文返修、交通工程、机器学习、时间序列预测、统计推断、GIS及科研数据审计经验的高级科研工程师。
+协助完成以下 Applied Intelligence 大修论文的实验与数据准备工作：
+- Journal: Applied Intelligence
+- Manuscript ID: APIN-D-26-12623
+- Manuscript Title: Can Sparse Floating Car Data Reliably Forecast Highway Speeds? A Multi-Horizon Evaluation of Forecasting Models
+- Revision Type: Major Revision
+- Reviewers: Reviewer #1、#2、#3、#6
+- Reviewer Comments: 31 items
+- Revision Project Date: 2026-11-25
+作者已与导师讨论并确认以下修改原则：
+1. 保持论文原始研究主线。
+2. 仅开展能够强化论文科学性、有效性及核心结论的必要实验。
+3. 不冗余添加实验、模型和数据。
+4. 多位审稿人提出的重复问题应共享同一套实验结果。
+5. 对无法采纳或超出研究范围的建议，保留证据，并在后续审稿回复中进行科学合理的解释。
+6. 保证原始数据、新增实验、论文正文、公式、图表、参考文献及审稿回复的一致性。
+7. 不重复审核已经通过验收且未发生变化的数据与实验。
+8. 首先完成数据和实验工作，最后统一修改论文正文。
+本阶段仅执行G0。不得提前启动E04–E08模型训练，不得提前修改论文正文。
+```text
+D:\Desktop\大修_Applied Intelligence_2026112_论文修改
+```
+该目录作为本次大修工程唯一主要读写目录。
+全部新生成的代码、数据清单、分析结果、报告和后续论文修改文件均保存在此处。
+注意：严格按照上述实际目录名称访问，不得自行将2026112改成20261121或其他日期。
+```text
+D:\Desktop\论文\2027年投稿期刊\论文项目\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\20260905Applied Intelligence 投稿
+```
+该目录作为原始投稿、历史实验、原始数据、代码、图表和技术报告的主要来源。
+严格执行只读原则：
+- 不覆盖原始文件。
+- 不删除原始文件。
+- 不移动原始文件。
+- 不改变原始实验结果。
+- 必要时在大修工作目录建立索引或复制必要文件。
+- 不重复复制数GB的实验数据。
+```text
+https://github.com/tasadapullo-svg/FCD-for-Multi-Horizon-Highway-Speed-Forecasting_20260730
+```
+GitHub作为原始实验资产的补充来源，重点查找：
+- 冻结配置文件。
+- 数据处理程序。
+- 模型训练程序。
+- 15分钟观测数据。
+- 全阈值小时面板。
+- Fold–horizon manifests。
+- 原始预测文件。
+- 模型权重。
+- 评价指标。
+- 统计检验结果。
+- 实验审计报告。
+- 数据许可说明。
+- 历史Git commit及发布版本。
+优先使用本地已有数据及已有Git仓库副本。
+只有本地确实缺少必要文件时，才允许从指定GitHub仓库定向获取。
+记录实际使用的commit SHA、分支、文件路径和获取日期。
+不得默认最新commit就是原始投稿冻结版本。
+不得自动推送、修改、删除或提交GitHub仓库内容。
+未经授权不得将商业FCD原始数据、逐样本派生数据或其他受许可限制的材料上传至GitHub或外部服务。
+在指定两个本地目录中查找并读取以下文件及相关版本。
+```text
+APIN-D-26-12623.pdf
+
+Applied_Intelligence_20260905.zip
+
+APIN_D_26_12623_Reviewer_Comments20261122.docx
+
+APIN_D_26_12623_审稿意见_数据充分性与定向补实验审计_20261121(1).md
+```
+同时查找：
+- 此前G0数据完整性审计报告。
+- 180次正式预测结果复算报告。
+- 原始投稿PDF与Overleaf一致性报告。
+- 31条审稿意见及历史修改方案。
+- 原始实验配置和数据许可说明。
+允许识别文件名存在轻微差异的实际对应版本。
+必须记录所使用文件的实际绝对路径。
+如果某个文件不存在，不得虚构内容，标记MISSING并继续执行其他可完成任务。
+优先复用已有审计结果，不得重新执行没有必要的全量历史审计。
+以下为原投稿记录中的历史基准值。
+这些数值用于核验和识别数据版本，不能预先认定所有数值均已经独立复算通过。
+原始模型MAE基准，单位km/h：
+保留原始180次模型运行及预测结果。
+禁止使用后续新增实验覆盖历史基准。
+如果发现明确的数据或计算错误，保留原始记录，单独建立差异说明及修正计划，不得静默修改。
+本次执行采取有限、一次性的缺口关闭机制。
+对于此前已经通过审计且文件版本、哈希及生成规则没有变化的项目：
+- 引用原有验收证据。
+- 检查证据是否对应当前文件版本。
+- 标记REUSED_PASS。
+- 不再次执行相同的全量审计。
+对于此前尚未通过或缺少证据的项目：
+- 定向查找必要文件。
+- 检查实际文件内容。
+- 核验关键字段及生成关系。
+- 记录真实缺口。
+- 必要时执行最小规模的读取或计算验证。
+只有发现以下问题时，才重新打开已经通过的审计项目：
+1. 文件损坏。
+2. 哈希或版本不一致。
+3. 样本主键不匹配。
+4. 原始数据与实验结果存在实质性差异。
+5. 发现影响科学结论的代码错误。
+6. 发现信息泄漏或数据许可问题。
+不得将整个大修工程变成循环审核过程。
+按照下表逐项定位实际文件。
+重点检查GitHub历史审计中已识别的目录：
+```text
+04_PHASE2A_DATA_RESULTS/
+    01_DATA_PIPELINE/
+    03_FORMAL_PREDICTIONS/
+    04_METRICS/
+    05_STATISTICS/
+    08_FINAL_AUDIT/
+```
+以及：
+```text
+01_PHASE2A_DEFINITION_FREEZE/
+```
+上述目录为历史记录中的候选路径，必须依据实际仓库结构确认。
+建立统一Data Registry，至少包含：
+```text
+asset_id
+asset_name
+actual_file_path
+source_type
+source_commit
+file_size_bytes
+file_sha256
+file_format
+row_count
+column_count
+required_fields
+available_fields
+date_start
+date_end
+node_count
+prior_audit_status
+current_status
+license_status
+supported_experiments
+missing_items
+recommended_action
+```
+字段不适用于某类文件时填写NA，不得编造记录。
+核实是否存在未经过质量筛选的原始TomTom数据。
+重点检查以下字段或其实际对应字段：
+```text
+node_id
+timestamp
+latitude
+longitude
+current_speed
+free_flow_speed
+current_travel_time
+free_flow_travel_time
+confidence
+road_closure
+```
+如有API请求日志、失败记录、返回状态、原始segment geometry或采集计划文件，一并登记。
+不得假设字段名称完全一致，应建立真实字段映射。
+区分：
+- API返回行。
+- 唯一返回槽位。
+- 重复返回记录。
+- 质量不合格记录。
+- 合格去重观测。
+- 完全无返回的计划槽位。
+- 正式分析网格之外的边界记录。
+不得将241,601条合格去重观测直接等同于未经过筛选的原始API返回槽位。
+如果缺少原始未过滤数据，应说明哪些分析仍可通过派生数据完成，哪些分析无法完成。
+定向查找原始Fig. 2生成代码、输入数据及相关历史报告。
+核实：
+- 97.30%的分子。
+- 97.30%的分母。
+- 是否为每日平均值。
+- 是否基于小时或15分钟观测。
+- 是否经过质量筛选。
+- 是否包含不完整的起始日。
+- 与59.87%、82.71%之间的关系。
+必须给出以下结论之一：
+```text
+VERIFIED
+RECOMPUTABLE
+DEFINITION_UNRESOLVED
+NOT_REPRODUCIBLE
+```
+如果无法确认97.30%的真实统计来源，停止继续搜索无关历史工程。
+提出后续删除该指标、使用可复算指标替代并重绘Fig. 2的处理方案。
+不要为了保留原始数字而编造计算逻辑。
+定位以下模型和处理程序的实际训练入口：
+```text
+HA
+SeasonalHA
+Persistence
+Ridge
+XGBoost
+GRU
+```
+同时定位：
+- 数据预处理。
+- 完整时间网格重构。
+- 因果插补。
+- 特征生成。
+- Fold划分。
+- 目标生成。
+- Manifest构建。
+- 模型训练。
+- 模型预测。
+- 指标计算。
+- 随机种子管理。
+重点确认HA与SeasonalHA的真实定义、节点匹配方式、季节匹配规则及回退规则。
+不得仅根据论文公式推测程序实现。
+对于源码缺失的模型，分别标记：
+```text
+SOURCE_AVAILABLE
+SOURCE_PARTIAL
+SOURCE_MISSING
+REIMPLEMENTATION_REQUIRED
+```
+本阶段允许进行最小规模的脚本读取、导入检查和数据读取测试。
+不执行完整模型训练，不提前启动超参数搜索。
+复用此前180次模型预测审计结果。
+检查当前文件与此前验收记录是否对应相同版本。
+重点确认能否获得以下关联字段：
+```text
+fold
+horizon
+model
+seed
+sample_id
+node_id
+forecast_origin
+y_true
+y_pred
+```
+确认XGBoost与GRU的三个随机种子预测能够按照原始规则进行逐样本平均。
+如果历史审计已完成180个文件哈希和指标复算，并且当前文件与验收记录一致，不得再次对全部180次实验进行完整复算。
+只有缺少证据、文件发生变化或发现主键不一致时，才进行定向重新核验。
+查找并核实：
+- 51个节点真实坐标。
+- N01–N51编号及对应关系。
+- 节点实际排序。
+- 原始道路中心线。
+- 原始相邻节点间距。
+- 是否存在已验证道路累计里程。
+- 是否存在QGIS或其他GIS工程文件。
+区分直线距离和道路沿线距离。
+禁止根据原始论文图片反推虚构坐标。
+如果没有现成道路数据，只登记缺口及建议获取范围。
+本阶段不开始正式QGIS制图。
+核查TomTom相关许可文件、项目数据声明及GitHub公开文件类型。
+重点关注：
+- 原始商业FCD是否允许公开。
+- 逐样本派生速度是否允许公开。
+- 特征矩阵和预测数据是否允许公开。
+- 模型权重是否存在许可限制。
+- 论文Data Availability与实际仓库内容是否一致。
+记录许可状态和待作者确认事项。
+不得自行认定某项商业数据已经获得公开授权。
+不得自动删除、修改或公开历史仓库数据。
+根据原始31条审稿意见、论文正文及此前审计方案，冻结以下实验范围。
+以上是实验问题范围，不代表每一项都需要完整重新训练。
+不进行完整度、插补方法、历史窗口、模型及超参数的全因子交叉实验。
+优先复用原始预测文件及既有数据。
+对条件性实验记录是否执行的判定依据，未经作者确认不得扩大范围。
+先检查本地及指定GitHub仓库中是否已经存在以下数据。
+必须生成以下字段：
+```text
+external_data_id
+data_name
+required_for
+necessity_level
+already_available_locally
+already_available_on_github
+recommended_source
+official_download_url
+license
+required_spatial_extent
+required_temporal_extent
+required_fields
+expected_file_format
+estimated_size
+download_difficulty
+manual_or_codex
+alternative_source
+scientific_value
+decision_if_unavailable
+author_approval_required
+```
+无法确认的下载地址及数据大小填写UNVERIFIED，不得虚构。
+本阶段允许查找官方来源和下载入口，但不自动批量下载外部交通数据集。
+不得使用付费TomTom API重新采集。
+不得主动增加天气、人口、事故、车辆类型、经济效益或其他无关数据。
+外部数据下载必须由作者根据最终清单决定：
+```text
+REUSE_EXISTING
+DOWNLOAD_BY_CODEX
+DOWNLOAD_BY_AUTHOR
+CONDITIONAL
+NOT_REQUIRED
+```
+为每个分析任务建立输入数据依赖关系。
+必须评估以下计算是否可执行：
+- 15分钟观测覆盖率。
+- 原始返回与质量合格槽位的区分。
+- 1/4–4/4小时覆盖率。
+- 每日、每节点及每小时缺失情况。
+- H6完整6/6与不完整5/6目标数量。
+- H6缺失小时位置。
+- 每fold边界剔除数量。
+- 最终样本资格漏斗。
+必须评估以下计算是否可执行：
+- Current speed分布。
+- Free-flow speed分布。
+- Current speed等于free-flow speed比例。
+- Confidence分布。
+- 自由流与拥堵状态分析。
+- 各模型在不同交通状态下的预测误差。
+- 连续缺失长度。
+- Coverage-gap-volatility联合分析。
+- 有效及被排除样本的可观测特征差异。
+- 道路封闭及质量筛选影响。
+不得将未返回数据的真实速度当成已知观测。
+必须评估以下计算是否可执行：
+- 逐样本配对误差。
+- XGBoost及GRU三随机种子预测聚合。
+- 等fold、等样本及等日期统计权重。
+- 日聚合损失差。
+- 时间块bootstrap及空间依赖处理。
+- 效应量及95%置信区间。
+- 多重比较校正。
+- Leave-one-fold-out分析。
+- H1 XGBoost与Persistence差值。
+- 原fold-macro与day×spatial-block方向反转解释。
+不得将92,147条测试记录或205个day×spatial-block直接当成相互独立的统计样本。
+本阶段仅验证数据准备程度，不提前完成正式E01–E03计算，也不根据测试结果选择统计方法。
+每个子任务输出：
+```text
+READY
+READY_WITH_LIMITATIONS
+BLOCKED
+```
+同时明确具体缺失文件、缺失字段和解决方案。
+在大修主工作目录创建或复用：
+```text
+00_PROJECT_CONTROL
+04_EXPERIMENTS\G0_DATA_READINESS
+```
+本阶段集中交付以下六份核心文件，不额外生成大量重复审计报告。
+```text
+G0_01_Data_Asset_Registry.csv
+```
+完整数据资产登记表。
+```text
+G0_02_Reviewer_Experiment_Matrix.csv
+```
+逐条登记31条审稿意见：
+```text
+reviewer_id
+comment_id
+original_comment
+scientific_issue
+decision
+required_experiment
+required_data
+existing_evidence
+required_manuscript_section
+response_strategy
+completion_status
+```
+区分审稿人原始要求与作者拟采取的有限补充方案。
+```text
+G0_03_Frozen_Experiment_Scope.md
+```
+最终实验范围、研究边界、执行顺序及禁止事项。
+```text
+G0_04_Missing_Data_and_Download_List.xlsx
+```
+至少包含以下工作表：
+```text
+01_Existing_Assets
+02_Missing_Local_Data
+03_Missing_Source_Code
+04_External_Data_Required
+05_External_Data_Conditional
+06_Author_Decisions
+07_E01_E03_Readiness
+```
+清楚注明哪些文件：
+- 已经存在，无需下载。
+- 可以由Codex定向获取。
+- 需要作者从本地其他目录提供。
+- 需要作者手动下载。
+- 暂时不需要获取。
+```text
+G0_05_Acceptance_Report_CN.md
+```
+中文最终验收报告。
+内容包括：
+1. 本地路径访问结果。
+2. GitHub实际访问及版本结果。
+3. 已有数据资产。
+4. 已复用的历史验收结果。
+5. 本次新增核验结果。
+6. 未解决问题。
+7. 缺失源码。
+8. 数据许可风险。
+9. 97.30%指标核验结果。
+10. E01–E03准备程度。
+11. E04–E08限定范围。
+12. 必须由作者决策的事项。
+13. 下一阶段是否可以启动。
+```text
+G0_06_Execution_Manifest.json
+```
+记录：
+- 实际输入路径。
+- Git commit。
+- 已读取文件。
+- 关键文件SHA256。
+- 实际执行命令。
+- 已生成输出。
+- 本次未执行事项。
+- 验收状态。
+总体验收分为：
+```text
+PASS
+CONDITIONAL_PASS
+BLOCKED
+```
+PASS：
+- 原始预测和关键数据可以使用。
+- 现有基准版本与历史审计证据一致。
+- E01–E03所需关键字段可获得。
+- 实验范围已明确冻结。
+- 后续数据获取需求已明确。
+- 不存在影响下一阶段的实质性阻断问题。
+CONDITIONAL_PASS：
+- 存在个别历史源码、GIS、原始指标或许可问题。
+- 但仍然可以安全、有效地执行部分或全部E01–E03。
+- 所有未解决问题均已记录。
+- 受影响的分析任务被准确标记。
+BLOCKED：
+- 缺少关键预测或目标数据。
+- 样本主键无法匹配。
+- 存在影响相应分析有效性的重大数据错误。
+- 无法确认关键实验数据版本。
+- 存在未解决的实质性信息泄漏问题。
+注意：
+正式训练源码缺失不必自动阻断基于冻结预测的E03。
+GIS数据缺失不必自动阻断数据覆盖率和统计分析。
+97.30%无法复算不必自动阻断其他可复算指标。
+必须采用任务级依赖判定，不能因为一个局部问题导致所有可执行任务停止。
+1. 不重新采集全部原始TomTom数据。
+2. 不重新运行全部180次原始模型。
+3. 不重复核验已经通过且版本一致的全部历史资产。
+4. 不混用Phase13、P6–P8及正式Phase2A1结果。
+5. 不根据模型表现选择性排除样本。
+6. 不编造缺失数据、代码、统计结果或数据来源。
+7. 不修改原始投稿文件。
+8. 不提前修改LaTeX正文。
+9. 不自动新增模型。
+10. 不自动启动外部数据验证。
+11. 不自动下载大规模公开交通数据集。
+12. 不自动使用付费API。
+13. 不上传受许可限制的数据。
+14. 不自动提交或推送GitHub。
+15. 不为获得PASS而降低验收标准。
+16. 不因局部缺失无限制搜索其他无关研究目录。
+完成本阶段后，在Codex终端使用中文汇报：
+```text
+APPLIED INTELLIGENCE REVISION
+G0 FINAL ACCEPTANCE
+
+Overall Status:
+PASS / CONDITIONAL_PASS / BLOCKED
+
+Original Baseline Status:
+Existing Audit Reused:
+Local Data Available:
+GitHub Data Available:
+Training Source Code Status:
+Raw FCD Status:
+Prediction Files Status:
+97.30% Verification Status:
+GIS Data Status:
+Data Licensing Status:
+
+E01 Readiness:
+E02 Readiness:
+E03 Readiness:
+
+Mandatory Missing Data:
+Conditional External Data:
+Author Decisions Required:
+
+Frozen Experiment Scope:
+Generated Deliverables:
+Recommended Next Action:
+```
+必须明确区分已完成、已复用、尚未完成和无法完成的工作。
+本阶段结束后停止。
+等待作者检查G0输出文件并决定外部数据获取方式，再进入Prompt 02：E01–E03正式计算。
+不得自动进入后续模型训练或论文修改阶段。
+现在开始执行G0，直接检查指定本地目录与GitHub仓库，完成实际文件定位、必要的数据读取验证、缺口关闭、实验范围冻结和最终交付文件生成。
+不要只输出计划或建议，必须在授权范围内实际执行，并提供可核验的结果。

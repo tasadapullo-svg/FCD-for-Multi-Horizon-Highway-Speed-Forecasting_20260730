@@ -1,0 +1,443 @@
+{
+  "registry_count": 502,
+  "matrix_count": 31,
+  "readiness": [
+    {
+      "experiment": "E01",
+      "task": "15分钟观测覆盖率",
+      "required_inputs": "15min/hourly panel|manifest target_row_ids|frozen split intervals",
+      "status": "READY",
+      "missing_fields_or_limitations": "只表示可计算，本阶段未计算",
+      "solution": "Prompt02依据已冻结规则计算"
+    },
+    {
+      "experiment": "E01",
+      "task": "1/4–4/4小时覆盖率",
+      "required_inputs": "15min/hourly panel|manifest target_row_ids|frozen split intervals",
+      "status": "READY",
+      "missing_fields_or_limitations": "只表示可计算，本阶段未计算",
+      "solution": "Prompt02依据已冻结规则计算"
+    },
+    {
+      "experiment": "E01",
+      "task": "每日/每节点/每小时缺失情况",
+      "required_inputs": "15min/hourly panel|manifest target_row_ids|frozen split intervals",
+      "status": "READY",
+      "missing_fields_or_limitations": "只表示可计算，本阶段未计算",
+      "solution": "Prompt02依据已冻结规则计算"
+    },
+    {
+      "experiment": "E01",
+      "task": "H6 6/6与5/6目标数量",
+      "required_inputs": "15min/hourly panel|manifest target_row_ids|frozen split intervals",
+      "status": "READY",
+      "missing_fields_or_limitations": "只表示可计算，本阶段未计算",
+      "solution": "Prompt02依据已冻结规则计算"
+    },
+    {
+      "experiment": "E01",
+      "task": "H6缺失小时位置",
+      "required_inputs": "15min/hourly panel|manifest target_row_ids|frozen split intervals",
+      "status": "READY",
+      "missing_fields_or_limitations": "只表示可计算，本阶段未计算",
+      "solution": "Prompt02依据已冻结规则计算"
+    },
+    {
+      "experiment": "E01",
+      "task": "每fold目标越界剔除数量",
+      "required_inputs": "15min/hourly panel|manifest target_row_ids|frozen split intervals",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "边界计数需按冻结规则重建候选；各删除原因须预设互斥顺序，避免重复计数",
+      "solution": "Prompt02依据已冻结规则计算"
+    },
+    {
+      "experiment": "E01",
+      "task": "最终样本资格漏斗",
+      "required_inputs": "15min/hourly panel|manifest target_row_ids|frozen split intervals",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "边界计数需按冻结规则重建候选；各删除原因须预设互斥顺序，避免重复计数",
+      "solution": "Prompt02依据已冻结规则计算"
+    },
+    {
+      "experiment": "E01",
+      "task": "原始返回、质量合格槽位、完全无返回区分",
+      "required_inputs": "83天上游CSV|cleaned|计划",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "筛选前CSV存在；原API JSON/失败日志/采集计划未闭环，不能区分网络失败与供应商无返回",
+      "solution": "可按推定计划网格诊断，明确分母假设；作者补已有日志"
+    },
+    {
+      "experiment": "E02",
+      "task": "Current speed分布",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "Free-flow speed分布",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "Current speed等于free-flow speed比例",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "Confidence分布",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "自由流与拥堵状态分析",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "各模型交通状态分层误差",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "连续缺失长度",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "Coverage-gap-volatility联合分析",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "有效/排除样本可观测特征差异",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E02",
+      "task": "道路封闭及质量筛选影响",
+      "required_inputs": "cleaned current_speed/free_flow_speed/confidence/road_closure|hourly|manifest|prediction",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "未来均值目标需先规定状态聚合；无返回真实速度未知；原返回CSV中closure仅0，无法估计封闭效果；volatility需按历史row_ids计算",
+      "solution": "预先冻结状态规则/阈值/同键连接与时间可得性，不推断MNAR或原位真值"
+    },
+    {
+      "experiment": "E03",
+      "task": "逐样本配对误差",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "XGBoost/GRU三种子逐样本聚合",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "等fold/等样本/等日期统计权重",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "日聚合损失差",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "时间块bootstrap及空间依赖处理",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "效应量及95%置信区间",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "多重比较校正",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "Leave-one-fold-out",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "H1 XGBoost与Persistence差值",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    },
+    {
+      "experiment": "E03",
+      "task": "fold-macro与day×spatial-block方向反转解释",
+      "required_inputs": "180 predictions:sample_id/fold/horizon/model/seed/node_id/forecast_origin/y_true/y_pred|spatial_block",
+      "status": "READY_WITH_LIMITATIONS",
+      "missing_fields_or_limitations": "预测主键历史核验及最小三种子试读通过；需事先冻结估计对象、块方案、种子聚合和检验家族；原主结果是逐seed指标汇总，均值预测指标属于新估计量",
+      "solution": "Prompt02先锁定统计方案再计算；不得把92147行或205块视为独立样本"
+    }
+  ],
+  "missing": [
+    {
+      "gap_id": "M01",
+      "asset": "src/build_phase2a1_data.py",
+      "status": "MISSING_SOURCE",
+      "affected": "E04|E05|E06",
+      "action": "从原运行机器或冻结工作树恢复；若失败，作者批准后另建实现并明确非历史源码"
+    },
+    {
+      "gap_id": "M02",
+      "asset": "src/run_phase2a1_campaign.py",
+      "status": "MISSING_SOURCE",
+      "affected": "E04|E05|E06",
+      "action": "恢复全部模型定义、特征、回退、种子及依赖模块"
+    },
+    {
+      "gap_id": "M03",
+      "asset": "src/finalize_phase2a1.py",
+      "status": "MISSING_SOURCE",
+      "affected": "E04|E05|E06",
+      "action": "恢复原汇总逻辑；现有预测可支持E03"
+    },
+    {
+      "gap_id": "M04",
+      "asset": "API JSON、采集计划、失败/HTTP状态日志",
+      "status": "MISSING_OR_NOT_LOCATED",
+      "affected": "E01|E02",
+      "action": "作者提供已有采集记录；不重新付费采集"
+    },
+    {
+      "gap_id": "M05",
+      "asset": "97.30%公式与原Fig2生成脚本",
+      "status": "DEFINITION_UNRESOLVED",
+      "affected": "G3",
+      "action": "取消该未经证实指标，后续以可复算指标替代"
+    },
+    {
+      "gap_id": "M06",
+      "asset": "原道路中心线、沿线里程及QGIS项目",
+      "status": "NOT_VERIFIED",
+      "affected": "E07",
+      "action": "作者提供已有源文件；无则条件获取小范围OSM"
+    },
+    {
+      "gap_id": "M07",
+      "asset": "商业FCD再分发授权文件",
+      "status": "LICENSE_REVIEW_REQUIRED",
+      "affected": "PUBLIC_RELEASE",
+      "action": "作者确认授权范围，不增加公开传播"
+    },
+    {
+      "gap_id": "M08",
+      "asset": "正式环境锁与HA/SeasonalHA实现定义",
+      "status": "SOURCE_PARTIAL",
+      "affected": "E04|E05|E06",
+      "action": "恢复节点匹配、季节规则和回退源码；不能从公式推断"
+    },
+    {
+      "gap_id": "M09",
+      "asset": "同址同时独立真值/未见时段或走廊",
+      "status": "NOT_AVAILABLE_IN_SCOPED_ASSETS",
+      "affected": "E08",
+      "action": "条件实验；无法取得则收窄结论"
+    }
+  ],
+  "external": [
+    {
+      "external_data_id": "EXT01",
+      "data_name": "OSM道路中心线",
+      "required_for": "E07/G3 Fig1",
+      "necessity_level": "CONDITIONAL",
+      "already_available_locally": "NOT_LOCATED_IN_SCOPED_LOCAL_ASSETS",
+      "already_available_on_github": "NOT_PRESENT_IN_TARGET_REPO_TREE",
+      "recommended_source": "https://download.geofabrik.de/asia/malaysia-singapore-brunei/",
+      "official_download_url": "https://download.geofabrik.de/asia/malaysia-singapore-brunei/",
+      "license": "ODbL;执行前核对署名与再分发要求",
+      "required_spatial_extent": "原51节点所在Sarawak走廊及小缓冲区",
+      "required_temporal_extent": "制图版本；不能冒充采集期历史路况",
+      "required_fields": "road geometry|road class|direction|CRS",
+      "expected_file_format": "OSM PBF/GPKG",
+      "estimated_size": "官方整区PBF约242MB；实际走廊提取大小UNVERIFIED",
+      "download_difficulty": "UNVERIFIED;仅核对官方入口，未试下载",
+      "manual_or_codex": "CONDITIONAL",
+      "alternative_source": "优先作者已有roadline",
+      "scientific_value": "仅支持道路几何，不提供历史速度",
+      "decision_if_unavailable": "限制结论；不阻断已有数据E01–E03",
+      "author_approval_required": "YES"
+    },
+    {
+      "external_data_id": "EXT02",
+      "data_name": "METR-LA",
+      "required_for": "E08",
+      "necessity_level": "CONDITIONAL",
+      "already_available_locally": "NOT_LOCATED_IN_SCOPED_LOCAL_ASSETS",
+      "already_available_on_github": "NOT_PRESENT_IN_TARGET_REPO_TREE",
+      "recommended_source": "https://github.com/liyaguang/DCRNN",
+      "official_download_url": "https://github.com/liyaguang/DCRNN",
+      "license": "代码MIT不自动代表原始交通数据授权；数据许可待核对",
+      "required_spatial_extent": "一个现成公开速度网络",
+      "required_temporal_extent": "数据发布原时段；入选后锁定分割",
+      "required_fields": "timestamp|sensor_id|speed|graph|units|missing mask",
+      "expected_file_format": "HDF5",
+      "estimated_size": "UNVERIFIED",
+      "download_difficulty": "UNVERIFIED;仅核对官方入口，未试下载",
+      "manual_or_codex": "CONDITIONAL",
+      "alternative_source": "不执行外部实验并收窄外推",
+      "scientific_value": "协议跨场景检验；不能作为Sarawak同址真值",
+      "decision_if_unavailable": "限制结论；不阻断已有数据E01–E03",
+      "author_approval_required": "YES"
+    },
+    {
+      "external_data_id": "EXT03",
+      "data_name": "PEMS-BAY",
+      "required_for": "E08",
+      "necessity_level": "NOT_REQUIRED_INITIAL_ROUND",
+      "already_available_locally": "NOT_LOCATED_IN_SCOPED_LOCAL_ASSETS",
+      "already_available_on_github": "NOT_PRESENT_IN_TARGET_REPO_TREE",
+      "recommended_source": "https://github.com/liyaguang/DCRNN",
+      "official_download_url": "https://github.com/liyaguang/DCRNN",
+      "license": "DATA_LICENSE_UNVERIFIED",
+      "required_spatial_extent": "一套公开速度网络",
+      "required_temporal_extent": "发布原时段；待决策",
+      "required_fields": "timestamp|sensor_id|speed|graph|units",
+      "expected_file_format": "HDF5",
+      "estimated_size": "UNVERIFIED",
+      "download_difficulty": "UNVERIFIED;仅核对官方入口，未试下载",
+      "manual_or_codex": "NOT_REQUIRED",
+      "alternative_source": "EXT02足够时不追加",
+      "scientific_value": "避免冗余第二数据集",
+      "decision_if_unavailable": "限制结论；不阻断已有数据E01–E03",
+      "author_approval_required": "YES"
+    },
+    {
+      "external_data_id": "EXT04",
+      "data_name": "Caltrans PeMS五分钟观测质量数据",
+      "required_for": "E08条件质量对照",
+      "necessity_level": "CONDITIONAL",
+      "already_available_locally": "NOT_LOCATED_IN_SCOPED_LOCAL_ASSETS",
+      "already_available_on_github": "NOT_PRESENT_IN_TARGET_REPO_TREE",
+      "recommended_source": "https://pems.dot.ca.gov/",
+      "official_download_url": "https://pems.dot.ca.gov/",
+      "license": "官方使用条款需作者核对",
+      "required_spatial_extent": "仅一个district一条高速及一方向",
+      "required_temporal_extent": "由入口实际可得日期决定，不承诺历史年份",
+      "required_fields": "Timestamp|Station|% Observed|Avg Speed(mph)|station XML",
+      "expected_file_format": "TXT/XML",
+      "estimated_size": "UNVERIFIED",
+      "download_difficulty": "UNVERIFIED;仅核对官方入口，未试下载",
+      "manual_or_codex": "CONDITIONAL",
+      "alternative_source": "已有TomTom诊断",
+      "scientific_value": "自然观测/填补对照；mph须转换，不等同TomTom confidence",
+      "decision_if_unavailable": "限制结论；不阻断已有数据E01–E03",
+      "author_approval_required": "YES"
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D01",
+      "question": "接受正式源码缺失条件下先做冻结数据E01–E03？",
+      "recommendation": "可以；E04–E06训练须等待恢复或批准新实现",
+      "status": "AUTHOR_REVIEW_PENDING"
+    },
+    {
+      "decision_id": "D02",
+      "question": "97.30%无法追溯如何处理？",
+      "recommendation": "后续删除该汇总数，以冻结网格可复算覆盖率重绘Fig2；本轮不改正文图件",
+      "status": "AUTHOR_REVIEW_PENDING"
+    },
+    {
+      "decision_id": "D03",
+      "question": "外部数据获取方式与最小范围？",
+      "recommendation": "G0不下载；可选OSM小范围和一套外部速度基准；无需批量获取",
+      "status": "AUTHOR_REVIEW_PENDING"
+    },
+    {
+      "decision_id": "D04",
+      "question": "TomTom商业数据及逐样本派生数据公开许可？",
+      "recommendation": "提供合同/授权证据；未确认前仅本机分析，不自动修改历史仓库",
+      "status": "AUTHOR_REVIEW_PENDING"
+    },
+    {
+      "decision_id": "D05",
+      "question": "能否提供API计划/失败日志、中心线及原训练源码？",
+      "recommendation": "只补已有文件，不重新付费采集；无法提供则保留对应限制",
+      "status": "AUTHOR_REVIEW_PENDING"
+    }
+  ],
+  "freeze": {
+    "repository": "D:\\2026_AJSE_FINAL\\AJSE_sparse_FCD_rolling_v1",
+    "definition_freeze_commit": "14f0a7547147051c583753a3e44cce9c967ca23e",
+    "definition_freeze_tag": "ajse-phase2a1-definition-freeze-20260730",
+    "result_freeze_commit": "733a39b7e34b95e36d04f07bfc76536473352e0f",
+    "result_freeze_tag": "ajse-phase2a1-result-freeze-20260730",
+    "final_audit_freeze_commit": "245055057b2427a804eb45515131dd258fe85359",
+    "final_audit_freeze_tag": "ajse-phase2a1-final-audit-freeze-20260730",
+    "final_hash_freeze_commit": "eba1f166c1a7678c20a7c85994c09f1cf0421d38",
+    "final_hash_freeze_tag": "ajse-phase2a1-final-audit-freeze-20260730-v2",
+    "final_complete_freeze_commit": "de2618419878c55011394509dba91f65376f14c6",
+    "final_complete_freeze_tag": "ajse-phase2a1-final-freeze-20260730",
+    "stable_final_freeze_commit": "a9573e24342c5ab3c7071bde5969b791e8bffab9",
+    "stable_final_freeze_tag": "ajse-phase2a1-final-freeze-20260730-v2",
+    "independent_file_audit_freeze_commit": "5545c42ee7e111bfe2bd3f19c2920a31c06ac502",
+    "independent_file_audit_freeze_tag": "ajse-phase2a1-final-freeze-20260730-v3",
+    "git_status": "CLEAN",
+    "config_sha256": "b6206a3618ef5af931915223f71ebed567eb17649039c354f94a9261fd1334c1",
+    "formal_runs_completed": 180,
+    "formal_runs_failed": 0,
+    "result_level_audit_status": "PASS_WITH_LIMITATIONS",
+    "independent_blind_test_claim": "PROHIBITED",
+    "other_paper_contamination": 0
+  },
+  "source": "\\\\?\\D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121",
+  "outputs": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G0_DATA_READINESS"
+}

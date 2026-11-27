@@ -1,0 +1,16 @@
+# Previously observed versions; install for the new computer's OS/GPU and verify compatibility.
+# These CPU settings are not a scientific constraint and do not define G2 training scale.
+Python 3.12.14
+numpy 2.5.5
+scipy 1.18.1
+scikit-learn 1.9.1
+xgboost 3.4.1
+torch 2.15.0+cpu (old computer only; choose suitable CPU/CUDA build on new computer)
+pyarrow 26.0.1
+shapely 2.2
+pyproj 3.8
+networkx 3.7
+requests 2.34.2
+psutil 7.2.2
+matplotlib 3.11.2
+pandas, openpyxl, pyyaml: installed in bundled runtime; record exact versions on new computer.

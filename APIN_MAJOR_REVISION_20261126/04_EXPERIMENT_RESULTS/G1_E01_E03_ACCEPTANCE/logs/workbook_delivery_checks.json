@@ -1,0 +1,170 @@
+[
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "00_Executive_Summary",
+    "rows": 10,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "01_Data_Coverage",
+    "rows": 16,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "02_Threshold_Comparison",
+    "rows": 4,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "03_Sample_Attrition",
+    "rows": 54,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "04_H6_Completeness",
+    "rows": 38,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "05_Traffic_Distribution",
+    "rows": 11,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "06_Traffic_Regime_MAE",
+    "rows": 54,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "07_Missingness_Reliability",
+    "rows": 918,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "08_Selection_Diagnostics",
+    "rows": 288,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "09_FreeFlow_Baseline",
+    "rows": 87,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "10_Seed_Aggregation",
+    "rows": 108,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "11_Table7_Reconciliation",
+    "rows": 18,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "12_Statistical_Estimands",
+    "rows": 144,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "13_Bootstrap_Holm",
+    "rows": 15,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "14_LOFO_Stability",
+    "rows": 252,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "15_Next_Experiment_Scope",
+    "rows": 15,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_02_Integrated_Results.xlsx",
+    "sheet": "16_Limitations",
+    "rows": 8,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_04_Manuscript_Consistency_Matrix.xlsx",
+    "sheet": "Consistency",
+    "rows": 9,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "sheet": "Minimum_Scope",
+    "rows": 15,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "sheet": "Sample_Feasibility",
+    "rows": 432,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  },
+  {
+    "file": "G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "sheet": "Stage_Gates",
+    "rows": 4,
+    "values_readback": "PASS",
+    "table_and_freeze": "PASS",
+    "visual": "RENDERED_AND_INSPECTED"
+  }
+]

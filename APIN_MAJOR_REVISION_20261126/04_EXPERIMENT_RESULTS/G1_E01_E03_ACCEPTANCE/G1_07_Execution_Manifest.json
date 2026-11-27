@@ -1,0 +1,2927 @@
+{
+  "project": "APIN-D-26-12623",
+  "phase": "G1_E01_E03",
+  "overall_status": "CONDITIONAL_PASS",
+  "completed_at": "2026-11-25T19:29:17.788196+08:00",
+  "output_root": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改",
+  "analysis_protocol": {
+    "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_Analysis_Protocol.yaml",
+    "sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+    "version": "G1_v1",
+    "receipt": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL\\G1_Protocol_Freeze_Receipt.json"
+  },
+  "input_versions": {
+    "G0_core_manifest": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G0_DATA_READINESS\\G0_06_Execution_Manifest.json",
+    "G0_evidence_sha256": "bbe5f93dcceb713b9559b6da0b3d3e47b69a83eff97d4181542ddb1765d01e7e",
+    "inherited_public_main": "0a4d2e00ac509d4f4e64f950df5a7d35238d6e4c",
+    "original_config_sha256": "b6206a3618ef5af931915223f71ebed567eb17649039c354f94a9261fd1334c1",
+    "original_cleaned_sha256": "915e2f50d30752c7fdb666cae83a4e49945d0d81913ea791531043ae84fdf5c3",
+    "source_metadata": [
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\01_PHASE2A_DEFINITION_FREEZE\\AJSE_Phase2A0_Definition_Freeze\\00_source_audit\\RAW_INPUT_METADATA.json",
+        "size_bytes": 696,
+        "mtime_ns": 1785232273000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\01_PHASE2A_DEFINITION_FREEZE\\AJSE_Phase2A0_Definition_Freeze\\09_distribution_license\\DISTRIBUTION_STATUS.csv",
+        "size_bytes": 952,
+        "mtime_ns": 1785232299000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\00_DEFINITION_FREEZE\\GIT_RESULT_FREEZE.json",
+        "size_bytes": 1416,
+        "mtime_ns": 1785388371000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\00_DEFINITION_FREEZE\\phase2a1_frozen.yaml",
+        "size_bytes": 4325,
+        "mtime_ns": 1785383599000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\fold_train_parameters.json",
+        "size_bytes": 2640,
+        "mtime_ns": 1785385298000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H1\\panel_index.parquet",
+        "size_bytes": 1370335,
+        "mtime_ns": 1785384138000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H1\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384138000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H1\\sample_ids.npy",
+        "size_bytes": 4825952,
+        "mtime_ns": 1785384138000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H1\\sample_manifest_fold1_H1.parquet",
+        "size_bytes": 3319230,
+        "mtime_ns": 1785384137000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H1\\X_sequence.npy",
+        "size_bytes": 62735840,
+        "mtime_ns": 1785384138000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H1\\X_tabular.npy",
+        "size_bytes": 63339068,
+        "mtime_ns": 1785384138000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H1\\y.npy",
+        "size_bytes": 201204,
+        "mtime_ns": 1785384138000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H3\\panel_index.parquet",
+        "size_bytes": 1109820,
+        "mtime_ns": 1785384201000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H3\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384201000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H3\\sample_ids.npy",
+        "size_bytes": 3877952,
+        "mtime_ns": 1785384201000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H3\\sample_manifest_fold1_H3.parquet",
+        "size_bytes": 2917758,
+        "mtime_ns": 1785384201000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H3\\X_sequence.npy",
+        "size_bytes": 50411840,
+        "mtime_ns": 1785384201000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H3\\X_tabular.npy",
+        "size_bytes": 50896568,
+        "mtime_ns": 1785384201000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H3\\y.npy",
+        "size_bytes": 161704,
+        "mtime_ns": 1785384201000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H6\\panel_index.parquet",
+        "size_bytes": 1200209,
+        "mtime_ns": 1785384271000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H6\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384271000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H6\\sample_ids.npy",
+        "size_bytes": 4256384,
+        "mtime_ns": 1785384271000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H6\\sample_manifest_fold1_H6.parquet",
+        "size_bytes": 3272437,
+        "mtime_ns": 1785384271000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H6\\X_sequence.npy",
+        "size_bytes": 55331456,
+        "mtime_ns": 1785384271000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H6\\X_tabular.npy",
+        "size_bytes": 55863488,
+        "mtime_ns": 1785384271000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold1\\H6\\y.npy",
+        "size_bytes": 177472,
+        "mtime_ns": 1785384271000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\fold_train_parameters.json",
+        "size_bytes": 2652,
+        "mtime_ns": 1785385299000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H1\\panel_index.parquet",
+        "size_bytes": 1547144,
+        "mtime_ns": 1785384358000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H1\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384358000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H1\\sample_ids.npy",
+        "size_bytes": 5458496,
+        "mtime_ns": 1785384358000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H1\\sample_manifest_fold2_H1.parquet",
+        "size_bytes": 3773854,
+        "mtime_ns": 1785384357000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H1\\X_sequence.npy",
+        "size_bytes": 70958912,
+        "mtime_ns": 1785384358000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H1\\X_tabular.npy",
+        "size_bytes": 71641208,
+        "mtime_ns": 1785384358000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H1\\y.npy",
+        "size_bytes": 227560,
+        "mtime_ns": 1785384358000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H3\\panel_index.parquet",
+        "size_bytes": 1212774,
+        "mtime_ns": 1785384429000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H3\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384429000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H3\\sample_ids.npy",
+        "size_bytes": 4257056,
+        "mtime_ns": 1785384429000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H3\\sample_manifest_fold2_H3.parquet",
+        "size_bytes": 3215230,
+        "mtime_ns": 1785384428000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H3\\X_sequence.npy",
+        "size_bytes": 55340192,
+        "mtime_ns": 1785384429000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H3\\X_tabular.npy",
+        "size_bytes": 55872308,
+        "mtime_ns": 1785384429000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H3\\y.npy",
+        "size_bytes": 177500,
+        "mtime_ns": 1785384429000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H6\\panel_index.parquet",
+        "size_bytes": 1337664,
+        "mtime_ns": 1785384503000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H6\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384503000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H6\\sample_ids.npy",
+        "size_bytes": 4744832,
+        "mtime_ns": 1785384502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H6\\sample_manifest_fold2_H6.parquet",
+        "size_bytes": 3677248,
+        "mtime_ns": 1785384502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H6\\X_sequence.npy",
+        "size_bytes": 61681280,
+        "mtime_ns": 1785384502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H6\\X_tabular.npy",
+        "size_bytes": 62274368,
+        "mtime_ns": 1785384502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold2\\H6\\y.npy",
+        "size_bytes": 197824,
+        "mtime_ns": 1785384502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\fold_train_parameters.json",
+        "size_bytes": 2629,
+        "mtime_ns": 1785385300000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H1\\panel_index.parquet",
+        "size_bytes": 1740773,
+        "mtime_ns": 1785384598000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H1\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384598000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H1\\sample_ids.npy",
+        "size_bytes": 6149504,
+        "mtime_ns": 1785384598000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H1\\sample_manifest_fold3_H1.parquet",
+        "size_bytes": 4276943,
+        "mtime_ns": 1785384597000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H1\\X_sequence.npy",
+        "size_bytes": 79942016,
+        "mtime_ns": 1785384598000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H1\\X_tabular.npy",
+        "size_bytes": 80710688,
+        "mtime_ns": 1785384598000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H1\\y.npy",
+        "size_bytes": 256352,
+        "mtime_ns": 1785384598000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H3\\panel_index.parquet",
+        "size_bytes": 1363128,
+        "mtime_ns": 1785384678000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H3\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384678000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H3\\sample_ids.npy",
+        "size_bytes": 4744928,
+        "mtime_ns": 1785384678000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H3\\sample_manifest_fold3_H3.parquet",
+        "size_bytes": 3677241,
+        "mtime_ns": 1785384677000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H3\\X_sequence.npy",
+        "size_bytes": 61682528,
+        "mtime_ns": 1785384678000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H3\\X_tabular.npy",
+        "size_bytes": 62275628,
+        "mtime_ns": 1785384678000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H3\\y.npy",
+        "size_bytes": 197828,
+        "mtime_ns": 1785384678000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H6\\panel_index.parquet",
+        "size_bytes": 1517481,
+        "mtime_ns": 1785384765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H6\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H6\\sample_ids.npy",
+        "size_bytes": 5354624,
+        "mtime_ns": 1785384765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H6\\sample_manifest_fold3_H6.parquet",
+        "size_bytes": 4213603,
+        "mtime_ns": 1785384765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H6\\X_sequence.npy",
+        "size_bytes": 69608576,
+        "mtime_ns": 1785384765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H6\\X_tabular.npy",
+        "size_bytes": 70277888,
+        "mtime_ns": 1785384765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold3\\H6\\y.npy",
+        "size_bytes": 223232,
+        "mtime_ns": 1785384765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\fold_train_parameters.json",
+        "size_bytes": 2651,
+        "mtime_ns": 1785385301000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H1\\panel_index.parquet",
+        "size_bytes": 1911063,
+        "mtime_ns": 1785384871000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H1\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384871000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H1\\sample_ids.npy",
+        "size_bytes": 6762464,
+        "mtime_ns": 1785384871000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H1\\sample_manifest_fold4_H1.parquet",
+        "size_bytes": 4731971,
+        "mtime_ns": 1785384870000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H1\\X_sequence.npy",
+        "size_bytes": 87910496,
+        "mtime_ns": 1785384871000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H1\\X_tabular.npy",
+        "size_bytes": 88755788,
+        "mtime_ns": 1785384871000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H1\\y.npy",
+        "size_bytes": 281892,
+        "mtime_ns": 1785384871000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H3\\panel_index.parquet",
+        "size_bytes": 1470647,
+        "mtime_ns": 1785384953000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H3\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785384953000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H3\\sample_ids.npy",
+        "size_bytes": 5149664,
+        "mtime_ns": 1785384953000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H3\\sample_manifest_fold4_H3.parquet",
+        "size_bytes": 3985040,
+        "mtime_ns": 1785384953000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H3\\X_sequence.npy",
+        "size_bytes": 66944096,
+        "mtime_ns": 1785384953000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H3\\X_tabular.npy",
+        "size_bytes": 67587788,
+        "mtime_ns": 1785384953000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H3\\y.npy",
+        "size_bytes": 214692,
+        "mtime_ns": 1785384953000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H6\\panel_index.parquet",
+        "size_bytes": 1650761,
+        "mtime_ns": 1785385044000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H6\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785385044000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H6\\sample_ids.npy",
+        "size_bytes": 5822816,
+        "mtime_ns": 1785385044000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H6\\sample_manifest_fold4_H6.parquet",
+        "size_bytes": 4611820,
+        "mtime_ns": 1785385044000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H6\\X_sequence.npy",
+        "size_bytes": 75695072,
+        "mtime_ns": 1785385044000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H6\\X_tabular.npy",
+        "size_bytes": 76422908,
+        "mtime_ns": 1785385044000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold4\\H6\\y.npy",
+        "size_bytes": 242740,
+        "mtime_ns": 1785385044000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\fold_train_parameters.json",
+        "size_bytes": 2626,
+        "mtime_ns": 1785385302000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H1\\panel_index.parquet",
+        "size_bytes": 2059888,
+        "mtime_ns": 1785385155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H1\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785385155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H1\\sample_ids.npy",
+        "size_bytes": 7297568,
+        "mtime_ns": 1785385155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H1\\sample_manifest_fold5_H1.parquet",
+        "size_bytes": 5132417,
+        "mtime_ns": 1785385154000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H1\\X_sequence.npy",
+        "size_bytes": 94866848,
+        "mtime_ns": 1785385155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H1\\X_tabular.npy",
+        "size_bytes": 95779028,
+        "mtime_ns": 1785385155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H1\\y.npy",
+        "size_bytes": 304188,
+        "mtime_ns": 1785385155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H3\\panel_index.parquet",
+        "size_bytes": 1565858,
+        "mtime_ns": 1785385245000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H3\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785385245000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H3\\sample_ids.npy",
+        "size_bytes": 5475200,
+        "mtime_ns": 1785385245000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H3\\sample_manifest_fold5_H3.parquet",
+        "size_bytes": 4261182,
+        "mtime_ns": 1785385245000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H3\\X_sequence.npy",
+        "size_bytes": 71176064,
+        "mtime_ns": 1785385245000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H3\\X_tabular.npy",
+        "size_bytes": 71860448,
+        "mtime_ns": 1785385245000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H3\\y.npy",
+        "size_bytes": 228256,
+        "mtime_ns": 1785385245000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H6\\panel_index.parquet",
+        "size_bytes": 1750109,
+        "mtime_ns": 1785385443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H6\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785385443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H6\\sample_ids.npy",
+        "size_bytes": 6199136,
+        "mtime_ns": 1785385443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H6\\sample_manifest_fold5_H6.parquet",
+        "size_bytes": 4899265,
+        "mtime_ns": 1785385442000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H6\\X_sequence.npy",
+        "size_bytes": 80587232,
+        "mtime_ns": 1785385443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H6\\X_tabular.npy",
+        "size_bytes": 81362108,
+        "mtime_ns": 1785385443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold5\\H6\\y.npy",
+        "size_bytes": 258420,
+        "mtime_ns": 1785385443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\fold_train_parameters.json",
+        "size_bytes": 2647,
+        "mtime_ns": 1785385444000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H1\\panel_index.parquet",
+        "size_bytes": 2239081,
+        "mtime_ns": 1785385595000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H1\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785385595000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H1\\sample_ids.npy",
+        "size_bytes": 7939136,
+        "mtime_ns": 1785385595000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H1\\sample_manifest_fold6_H1.parquet",
+        "size_bytes": 5600954,
+        "mtime_ns": 1785385594000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H1\\X_sequence.npy",
+        "size_bytes": 103207232,
+        "mtime_ns": 1785385594000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H1\\X_tabular.npy",
+        "size_bytes": 104199608,
+        "mtime_ns": 1785385595000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H1\\y.npy",
+        "size_bytes": 330920,
+        "mtime_ns": 1785385595000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H3\\panel_index.parquet",
+        "size_bytes": 1709510,
+        "mtime_ns": 1785385695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H3\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785385695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H3\\sample_ids.npy",
+        "size_bytes": 6021152,
+        "mtime_ns": 1785385695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H3\\sample_manifest_fold6_H3.parquet",
+        "size_bytes": 4632321,
+        "mtime_ns": 1785385695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H3\\X_sequence.npy",
+        "size_bytes": 78273440,
+        "mtime_ns": 1785385695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H3\\X_tabular.npy",
+        "size_bytes": 79026068,
+        "mtime_ns": 1785385695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H3\\y.npy",
+        "size_bytes": 251004,
+        "mtime_ns": 1785385695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H6\\panel_index.parquet",
+        "size_bytes": 1930527,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H6\\sample_build_summary.json",
+        "size_bytes": 348,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H6\\sample_ids.npy",
+        "size_bytes": 6812768,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H6\\sample_manifest_fold6_H6.parquet",
+        "size_bytes": 5422161,
+        "mtime_ns": 1785385816000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H6\\X_sequence.npy",
+        "size_bytes": 88564448,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H6\\X_tabular.npy",
+        "size_bytes": 89416028,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\folds\\fold6\\H6\\y.npy",
+        "size_bytes": 283988,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\full_sample_leakage_assertions.csv",
+        "size_bytes": 850,
+        "mtime_ns": 1785385832000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\panels\\deduplicated_15min_observations.parquet",
+        "size_bytes": 911595,
+        "mtime_ns": 1785385298000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\panels\\hourly_panel_all_thresholds.parquet",
+        "size_bytes": 1106149,
+        "mtime_ns": 1785385298000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\panels\\panel_build_summary.json",
+        "size_bytes": 672,
+        "mtime_ns": 1785385298000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\pipeline_status.json",
+        "size_bytes": 1367,
+        "mtime_ns": 1785385833000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\quality_filter_audit.csv",
+        "size_bytes": 952,
+        "mtime_ns": 1785385297000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\random_1000_recalculation_audit.csv",
+        "size_bytes": 94766,
+        "mtime_ns": 1785385833000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\sample_count_registry.csv",
+        "size_bytes": 1739,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\01_DATA_PIPELINE\\sample_manifest_hash_registry.csv",
+        "size_bytes": 3294,
+        "mtime_ns": 1785385833000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\02_MANIFESTS_AND_ASSERTIONS\\full_sample_leakage_assertions.csv",
+        "size_bytes": 850,
+        "mtime_ns": 1785385832000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\02_MANIFESTS_AND_ASSERTIONS\\random_1000_recalculation_audit.csv",
+        "size_bytes": 94766,
+        "mtime_ns": 1785385833000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\02_MANIFESTS_AND_ASSERTIONS\\sample_count_registry.csv",
+        "size_bytes": 1739,
+        "mtime_ns": 1785385817000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\02_MANIFESTS_AND_ASSERTIONS\\sample_manifest_hash_registry.csv",
+        "size_bytes": 3294,
+        "mtime_ns": 1785385833000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\campaign_status.json",
+        "size_bytes": 250,
+        "mtime_ns": 1785387318000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\formal_run_registry.csv",
+        "size_bytes": 86325,
+        "mtime_ns": 1785387318000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H1_S2026.parquet",
+        "size_bytes": 367716,
+        "mtime_ns": 1785386055000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H1_S3407.parquet",
+        "size_bytes": 367656,
+        "mtime_ns": 1785386069000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H1_S42.parquet",
+        "size_bytes": 367539,
+        "mtime_ns": 1785386041000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H3_S2026.parquet",
+        "size_bytes": 187362,
+        "mtime_ns": 1785386111000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H3_S3407.parquet",
+        "size_bytes": 187503,
+        "mtime_ns": 1785386119000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H3_S42.parquet",
+        "size_bytes": 187325,
+        "mtime_ns": 1785386097000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H6_S2026.parquet",
+        "size_bytes": 223652,
+        "mtime_ns": 1785386155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H6_S3407.parquet",
+        "size_bytes": 223593,
+        "mtime_ns": 1785386168000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F1_H6_S42.parquet",
+        "size_bytes": 223577,
+        "mtime_ns": 1785386147000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H1_S2026.parquet",
+        "size_bytes": 398277,
+        "mtime_ns": 1785386211000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H1_S3407.parquet",
+        "size_bytes": 398306,
+        "mtime_ns": 1785386219000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H1_S42.parquet",
+        "size_bytes": 398490,
+        "mtime_ns": 1785386195000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H3_S2026.parquet",
+        "size_bytes": 240613,
+        "mtime_ns": 1785386266000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H3_S3407.parquet",
+        "size_bytes": 240390,
+        "mtime_ns": 1785386285000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H3_S42.parquet",
+        "size_bytes": 240593,
+        "mtime_ns": 1785386246000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H6_S2026.parquet",
+        "size_bytes": 303362,
+        "mtime_ns": 1785386337000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H6_S3407.parquet",
+        "size_bytes": 303604,
+        "mtime_ns": 1785386353000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F2_H6_S42.parquet",
+        "size_bytes": 303830,
+        "mtime_ns": 1785386320000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H1_S2026.parquet",
+        "size_bytes": 432868,
+        "mtime_ns": 1785386413000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H1_S3407.parquet",
+        "size_bytes": 432711,
+        "mtime_ns": 1785386431000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H1_S42.parquet",
+        "size_bytes": 433491,
+        "mtime_ns": 1785386390000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H3_S2026.parquet",
+        "size_bytes": 312331,
+        "mtime_ns": 1785386479000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H3_S3407.parquet",
+        "size_bytes": 312051,
+        "mtime_ns": 1785386501000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H3_S42.parquet",
+        "size_bytes": 312188,
+        "mtime_ns": 1785386464000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H6_S2026.parquet",
+        "size_bytes": 385452,
+        "mtime_ns": 1785386551000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H6_S3407.parquet",
+        "size_bytes": 385682,
+        "mtime_ns": 1785386567000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F3_H6_S42.parquet",
+        "size_bytes": 385317,
+        "mtime_ns": 1785386537000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H1_S2026.parquet",
+        "size_bytes": 387418,
+        "mtime_ns": 1785386637000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H1_S3407.parquet",
+        "size_bytes": 387881,
+        "mtime_ns": 1785386658000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H1_S42.parquet",
+        "size_bytes": 387183,
+        "mtime_ns": 1785386611000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H3_S2026.parquet",
+        "size_bytes": 262911,
+        "mtime_ns": 1785386710000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H3_S3407.parquet",
+        "size_bytes": 262834,
+        "mtime_ns": 1785386729000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H3_S42.parquet",
+        "size_bytes": 262717,
+        "mtime_ns": 1785386695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H6_S2026.parquet",
+        "size_bytes": 301255,
+        "mtime_ns": 1785386781000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H6_S3407.parquet",
+        "size_bytes": 300704,
+        "mtime_ns": 1785386800000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F4_H6_S42.parquet",
+        "size_bytes": 301168,
+        "mtime_ns": 1785386768000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H1_S2026.parquet",
+        "size_bytes": 339369,
+        "mtime_ns": 1785386855000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H1_S3407.parquet",
+        "size_bytes": 338887,
+        "mtime_ns": 1785386878000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H1_S42.parquet",
+        "size_bytes": 339237,
+        "mtime_ns": 1785386835000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H3_S2026.parquet",
+        "size_bytes": 207878,
+        "mtime_ns": 1785386942000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H3_S3407.parquet",
+        "size_bytes": 207075,
+        "mtime_ns": 1785386960000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H3_S42.parquet",
+        "size_bytes": 207761,
+        "mtime_ns": 1785386925000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H6_S2026.parquet",
+        "size_bytes": 233118,
+        "mtime_ns": 1785387028000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H6_S3407.parquet",
+        "size_bytes": 232878,
+        "mtime_ns": 1785387049000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F5_H6_S42.parquet",
+        "size_bytes": 232771,
+        "mtime_ns": 1785387013000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H1_S2026.parquet",
+        "size_bytes": 398126,
+        "mtime_ns": 1785387131000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H1_S3407.parquet",
+        "size_bytes": 397953,
+        "mtime_ns": 1785387154000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H1_S42.parquet",
+        "size_bytes": 397812,
+        "mtime_ns": 1785387114000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H3_S2026.parquet",
+        "size_bytes": 340815,
+        "mtime_ns": 1785387223000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H3_S3407.parquet",
+        "size_bytes": 340753,
+        "mtime_ns": 1785387242000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H3_S42.parquet",
+        "size_bytes": 340431,
+        "mtime_ns": 1785387191000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H6_S2026.parquet",
+        "size_bytes": 376119,
+        "mtime_ns": 1785387298000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H6_S3407.parquet",
+        "size_bytes": 377020,
+        "mtime_ns": 1785387318000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\GRU_F6_H6_S42.parquet",
+        "size_bytes": 377087,
+        "mtime_ns": 1785387280000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F1_H1_S42.parquet",
+        "size_bytes": 196001,
+        "mtime_ns": 1785385886000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F1_H3_S42.parquet",
+        "size_bytes": 111540,
+        "mtime_ns": 1785386069000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F1_H6_S42.parquet",
+        "size_bytes": 134651,
+        "mtime_ns": 1785386119000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F2_H1_S42.parquet",
+        "size_bytes": 210124,
+        "mtime_ns": 1785386168000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F2_H3_S42.parquet",
+        "size_bytes": 138940,
+        "mtime_ns": 1785386219000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F2_H6_S42.parquet",
+        "size_bytes": 177780,
+        "mtime_ns": 1785386285000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F3_H1_S42.parquet",
+        "size_bytes": 227717,
+        "mtime_ns": 1785386353000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F3_H3_S42.parquet",
+        "size_bytes": 176196,
+        "mtime_ns": 1785386431000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F3_H6_S42.parquet",
+        "size_bytes": 221583,
+        "mtime_ns": 1785386501000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F4_H1_S42.parquet",
+        "size_bytes": 207951,
+        "mtime_ns": 1785386567000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F4_H3_S42.parquet",
+        "size_bytes": 153083,
+        "mtime_ns": 1785386658000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F4_H6_S42.parquet",
+        "size_bytes": 180806,
+        "mtime_ns": 1785386729000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F5_H1_S42.parquet",
+        "size_bytes": 181328,
+        "mtime_ns": 1785386800000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F5_H3_S42.parquet",
+        "size_bytes": 120507,
+        "mtime_ns": 1785386878000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F5_H6_S42.parquet",
+        "size_bytes": 137085,
+        "mtime_ns": 1785386961000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F6_H1_S42.parquet",
+        "size_bytes": 217079,
+        "mtime_ns": 1785387049000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F6_H3_S42.parquet",
+        "size_bytes": 198147,
+        "mtime_ns": 1785387154000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\HA_F6_H6_S42.parquet",
+        "size_bytes": 225593,
+        "mtime_ns": 1785387243000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F1_H1_S42.parquet",
+        "size_bytes": 203477,
+        "mtime_ns": 1785385886000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F1_H3_S42.parquet",
+        "size_bytes": 113968,
+        "mtime_ns": 1785386069000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F1_H6_S42.parquet",
+        "size_bytes": 137214,
+        "mtime_ns": 1785386119000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F2_H1_S42.parquet",
+        "size_bytes": 220911,
+        "mtime_ns": 1785386169000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F2_H3_S42.parquet",
+        "size_bytes": 142572,
+        "mtime_ns": 1785386219000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F2_H6_S42.parquet",
+        "size_bytes": 181410,
+        "mtime_ns": 1785386285000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F3_H1_S42.parquet",
+        "size_bytes": 238605,
+        "mtime_ns": 1785386353000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F3_H3_S42.parquet",
+        "size_bytes": 180745,
+        "mtime_ns": 1785386431000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F3_H6_S42.parquet",
+        "size_bytes": 225991,
+        "mtime_ns": 1785386502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F4_H1_S42.parquet",
+        "size_bytes": 218776,
+        "mtime_ns": 1785386567000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F4_H3_S42.parquet",
+        "size_bytes": 157614,
+        "mtime_ns": 1785386658000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F4_H6_S42.parquet",
+        "size_bytes": 184719,
+        "mtime_ns": 1785386730000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F5_H1_S42.parquet",
+        "size_bytes": 188846,
+        "mtime_ns": 1785386801000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F5_H3_S42.parquet",
+        "size_bytes": 123929,
+        "mtime_ns": 1785386879000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F5_H6_S42.parquet",
+        "size_bytes": 140735,
+        "mtime_ns": 1785386961000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F6_H1_S42.parquet",
+        "size_bytes": 228974,
+        "mtime_ns": 1785387049000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F6_H3_S42.parquet",
+        "size_bytes": 204672,
+        "mtime_ns": 1785387155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Persistence_F6_H6_S42.parquet",
+        "size_bytes": 231446,
+        "mtime_ns": 1785387243000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F1_H1_S42.parquet",
+        "size_bytes": 367127,
+        "mtime_ns": 1785386004000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F1_H3_S42.parquet",
+        "size_bytes": 187100,
+        "mtime_ns": 1785386069000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F1_H6_S42.parquet",
+        "size_bytes": 223561,
+        "mtime_ns": 1785386119000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F2_H1_S42.parquet",
+        "size_bytes": 398017,
+        "mtime_ns": 1785386169000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F2_H3_S42.parquet",
+        "size_bytes": 240154,
+        "mtime_ns": 1785386220000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F2_H6_S42.parquet",
+        "size_bytes": 303656,
+        "mtime_ns": 1785386285000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F3_H1_S42.parquet",
+        "size_bytes": 433486,
+        "mtime_ns": 1785386354000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F3_H3_S42.parquet",
+        "size_bytes": 312216,
+        "mtime_ns": 1785386432000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F3_H6_S42.parquet",
+        "size_bytes": 385859,
+        "mtime_ns": 1785386502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F4_H1_S42.parquet",
+        "size_bytes": 387805,
+        "mtime_ns": 1785386568000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F4_H3_S42.parquet",
+        "size_bytes": 263233,
+        "mtime_ns": 1785386658000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F4_H6_S42.parquet",
+        "size_bytes": 301552,
+        "mtime_ns": 1785386730000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F5_H1_S42.parquet",
+        "size_bytes": 340379,
+        "mtime_ns": 1785386801000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F5_H3_S42.parquet",
+        "size_bytes": 208199,
+        "mtime_ns": 1785386879000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F5_H6_S42.parquet",
+        "size_bytes": 233801,
+        "mtime_ns": 1785386961000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F6_H1_S42.parquet",
+        "size_bytes": 402738,
+        "mtime_ns": 1785387050000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F6_H3_S42.parquet",
+        "size_bytes": 345114,
+        "mtime_ns": 1785387155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\Ridge_F6_H6_S42.parquet",
+        "size_bytes": 381095,
+        "mtime_ns": 1785387243000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F1_H1_S42.parquet",
+        "size_bytes": 222386,
+        "mtime_ns": 1785385886000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F1_H3_S42.parquet",
+        "size_bytes": 130419,
+        "mtime_ns": 1785386069000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F1_H6_S42.parquet",
+        "size_bytes": 165943,
+        "mtime_ns": 1785386119000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F2_H1_S42.parquet",
+        "size_bytes": 242955,
+        "mtime_ns": 1785386169000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F2_H3_S42.parquet",
+        "size_bytes": 165564,
+        "mtime_ns": 1785386219000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F2_H6_S42.parquet",
+        "size_bytes": 223871,
+        "mtime_ns": 1785386285000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F3_H1_S42.parquet",
+        "size_bytes": 268437,
+        "mtime_ns": 1785386353000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F3_H3_S42.parquet",
+        "size_bytes": 213654,
+        "mtime_ns": 1785386431000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F3_H6_S42.parquet",
+        "size_bytes": 284229,
+        "mtime_ns": 1785386502000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F4_H1_S42.parquet",
+        "size_bytes": 241119,
+        "mtime_ns": 1785386567000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F4_H3_S42.parquet",
+        "size_bytes": 179990,
+        "mtime_ns": 1785386658000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F4_H6_S42.parquet",
+        "size_bytes": 224756,
+        "mtime_ns": 1785386729000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F5_H1_S42.parquet",
+        "size_bytes": 214560,
+        "mtime_ns": 1785386800000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F5_H3_S42.parquet",
+        "size_bytes": 147999,
+        "mtime_ns": 1785386878000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F5_H6_S42.parquet",
+        "size_bytes": 179839,
+        "mtime_ns": 1785386961000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F6_H1_S42.parquet",
+        "size_bytes": 256476,
+        "mtime_ns": 1785387049000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F6_H3_S42.parquet",
+        "size_bytes": 241252,
+        "mtime_ns": 1785387155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\SeasonalHA_F6_H6_S42.parquet",
+        "size_bytes": 290926,
+        "mtime_ns": 1785387243000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H1_S2026.parquet",
+        "size_bytes": 364711,
+        "mtime_ns": 1785386015000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H1_S3407.parquet",
+        "size_bytes": 364330,
+        "mtime_ns": 1785386020000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H1_S42.parquet",
+        "size_bytes": 364304,
+        "mtime_ns": 1785386009000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H3_S2026.parquet",
+        "size_bytes": 186054,
+        "mtime_ns": 1785386080000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H3_S3407.parquet",
+        "size_bytes": 186240,
+        "mtime_ns": 1785386085000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H3_S42.parquet",
+        "size_bytes": 185979,
+        "mtime_ns": 1785386075000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H6_S2026.parquet",
+        "size_bytes": 222412,
+        "mtime_ns": 1785386130000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H6_S3407.parquet",
+        "size_bytes": 222418,
+        "mtime_ns": 1785386136000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F1_H6_S42.parquet",
+        "size_bytes": 222543,
+        "mtime_ns": 1785386125000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H1_S2026.parquet",
+        "size_bytes": 393816,
+        "mtime_ns": 1785386180000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H1_S3407.parquet",
+        "size_bytes": 393797,
+        "mtime_ns": 1785386185000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H1_S42.parquet",
+        "size_bytes": 394285,
+        "mtime_ns": 1785386174000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H3_S2026.parquet",
+        "size_bytes": 237541,
+        "mtime_ns": 1785386231000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H3_S3407.parquet",
+        "size_bytes": 237734,
+        "mtime_ns": 1785386236000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H3_S42.parquet",
+        "size_bytes": 237921,
+        "mtime_ns": 1785386225000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H6_S2026.parquet",
+        "size_bytes": 300857,
+        "mtime_ns": 1785386297000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H6_S3407.parquet",
+        "size_bytes": 300782,
+        "mtime_ns": 1785386303000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F2_H6_S42.parquet",
+        "size_bytes": 300465,
+        "mtime_ns": 1785386291000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H1_S2026.parquet",
+        "size_bytes": 427835,
+        "mtime_ns": 1785386365000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H1_S3407.parquet",
+        "size_bytes": 427657,
+        "mtime_ns": 1785386371000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H1_S42.parquet",
+        "size_bytes": 426977,
+        "mtime_ns": 1785386359000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H3_S2026.parquet",
+        "size_bytes": 309452,
+        "mtime_ns": 1785386443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H3_S3407.parquet",
+        "size_bytes": 309564,
+        "mtime_ns": 1785386449000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H3_S42.parquet",
+        "size_bytes": 309428,
+        "mtime_ns": 1785386437000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H6_S2026.parquet",
+        "size_bytes": 383124,
+        "mtime_ns": 1785386514000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H6_S3407.parquet",
+        "size_bytes": 382441,
+        "mtime_ns": 1785386520000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F3_H6_S42.parquet",
+        "size_bytes": 383175,
+        "mtime_ns": 1785386508000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H1_S2026.parquet",
+        "size_bytes": 384448,
+        "mtime_ns": 1785386579000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H1_S3407.parquet",
+        "size_bytes": 384936,
+        "mtime_ns": 1785386585000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H1_S42.parquet",
+        "size_bytes": 384693,
+        "mtime_ns": 1785386573000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H3_S2026.parquet",
+        "size_bytes": 259676,
+        "mtime_ns": 1785386670000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H3_S3407.parquet",
+        "size_bytes": 259900,
+        "mtime_ns": 1785386676000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H3_S42.parquet",
+        "size_bytes": 261275,
+        "mtime_ns": 1785386664000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H6_S2026.parquet",
+        "size_bytes": 299629,
+        "mtime_ns": 1785386742000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H6_S3407.parquet",
+        "size_bytes": 299742,
+        "mtime_ns": 1785386748000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F4_H6_S42.parquet",
+        "size_bytes": 299509,
+        "mtime_ns": 1785386736000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H1_S2026.parquet",
+        "size_bytes": 337697,
+        "mtime_ns": 1785386812000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H1_S3407.parquet",
+        "size_bytes": 337693,
+        "mtime_ns": 1785386818000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H1_S42.parquet",
+        "size_bytes": 337678,
+        "mtime_ns": 1785386807000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H3_S2026.parquet",
+        "size_bytes": 206124,
+        "mtime_ns": 1785386890000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H3_S3407.parquet",
+        "size_bytes": 206332,
+        "mtime_ns": 1785386896000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H3_S42.parquet",
+        "size_bytes": 206129,
+        "mtime_ns": 1785386885000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H6_S2026.parquet",
+        "size_bytes": 231623,
+        "mtime_ns": 1785386974000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H6_S3407.parquet",
+        "size_bytes": 231541,
+        "mtime_ns": 1785386980000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F5_H6_S42.parquet",
+        "size_bytes": 231573,
+        "mtime_ns": 1785386968000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H1_S2026.parquet",
+        "size_bytes": 396358,
+        "mtime_ns": 1785387062000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H1_S3407.parquet",
+        "size_bytes": 396651,
+        "mtime_ns": 1785387068000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H1_S42.parquet",
+        "size_bytes": 395901,
+        "mtime_ns": 1785387056000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H3_S2026.parquet",
+        "size_bytes": 340420,
+        "mtime_ns": 1785387167000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H3_S3407.parquet",
+        "size_bytes": 339560,
+        "mtime_ns": 1785387173000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H3_S42.parquet",
+        "size_bytes": 340880,
+        "mtime_ns": 1785387161000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H6_S2026.parquet",
+        "size_bytes": 376877,
+        "mtime_ns": 1785387256000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H6_S3407.parquet",
+        "size_bytes": 376224,
+        "mtime_ns": 1785387262000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\predictions\\XGBoost_F6_H6_S42.parquet",
+        "size_bytes": 377099,
+        "mtime_ns": 1785387250000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H1_S2026.csv",
+        "size_bytes": 765,
+        "mtime_ns": 1785386055000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H1_S3407.csv",
+        "size_bytes": 770,
+        "mtime_ns": 1785386069000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H1_S42.csv",
+        "size_bytes": 776,
+        "mtime_ns": 1785386041000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H3_S2026.csv",
+        "size_bytes": 908,
+        "mtime_ns": 1785386111000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H3_S3407.csv",
+        "size_bytes": 471,
+        "mtime_ns": 1785386118000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H3_S42.csv",
+        "size_bytes": 775,
+        "mtime_ns": 1785386096000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H6_S2026.csv",
+        "size_bytes": 514,
+        "mtime_ns": 1785386155000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H6_S3407.csv",
+        "size_bytes": 734,
+        "mtime_ns": 1785386168000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F1_H6_S42.csv",
+        "size_bytes": 694,
+        "mtime_ns": 1785386147000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H1_S2026.csv",
+        "size_bytes": 728,
+        "mtime_ns": 1785386211000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H1_S3407.csv",
+        "size_bytes": 425,
+        "mtime_ns": 1785386219000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H1_S42.csv",
+        "size_bytes": 513,
+        "mtime_ns": 1785386195000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H3_S2026.csv",
+        "size_bytes": 1116,
+        "mtime_ns": 1785386266000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H3_S3407.csv",
+        "size_bytes": 992,
+        "mtime_ns": 1785386285000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H3_S42.csv",
+        "size_bytes": 687,
+        "mtime_ns": 1785386246000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H6_S2026.csv",
+        "size_bytes": 912,
+        "mtime_ns": 1785386337000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H6_S3407.csv",
+        "size_bytes": 780,
+        "mtime_ns": 1785386353000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F2_H6_S42.csv",
+        "size_bytes": 999,
+        "mtime_ns": 1785386320000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H1_S2026.csv",
+        "size_bytes": 899,
+        "mtime_ns": 1785386412000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H1_S3407.csv",
+        "size_bytes": 729,
+        "mtime_ns": 1785386431000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H1_S42.csv",
+        "size_bytes": 817,
+        "mtime_ns": 1785386390000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H3_S2026.csv",
+        "size_bytes": 779,
+        "mtime_ns": 1785386479000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H3_S3407.csv",
+        "size_bytes": 1083,
+        "mtime_ns": 1785386501000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H3_S42.csv",
+        "size_bytes": 819,
+        "mtime_ns": 1785386464000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H6_S2026.csv",
+        "size_bytes": 739,
+        "mtime_ns": 1785386551000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H6_S3407.csv",
+        "size_bytes": 782,
+        "mtime_ns": 1785386567000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F3_H6_S42.csv",
+        "size_bytes": 957,
+        "mtime_ns": 1785386537000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H1_S2026.csv",
+        "size_bytes": 989,
+        "mtime_ns": 1785386637000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H1_S3407.csv",
+        "size_bytes": 772,
+        "mtime_ns": 1785386658000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H1_S42.csv",
+        "size_bytes": 1031,
+        "mtime_ns": 1785386611000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H3_S2026.csv",
+        "size_bytes": 691,
+        "mtime_ns": 1785386710000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H3_S3407.csv",
+        "size_bytes": 910,
+        "mtime_ns": 1785386729000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H3_S42.csv",
+        "size_bytes": 952,
+        "mtime_ns": 1785386695000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H6_S2026.csv",
+        "size_bytes": 561,
+        "mtime_ns": 1785386781000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H6_S3407.csv",
+        "size_bytes": 867,
+        "mtime_ns": 1785386800000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F4_H6_S42.csv",
+        "size_bytes": 953,
+        "mtime_ns": 1785386768000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H1_S2026.csv",
+        "size_bytes": 692,
+        "mtime_ns": 1785386855000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H1_S3407.csv",
+        "size_bytes": 735,
+        "mtime_ns": 1785386878000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H1_S42.csv",
+        "size_bytes": 646,
+        "mtime_ns": 1785386835000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H3_S2026.csv",
+        "size_bytes": 694,
+        "mtime_ns": 1785386942000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H3_S3407.csv",
+        "size_bytes": 775,
+        "mtime_ns": 1785386960000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H3_S42.csv",
+        "size_bytes": 1215,
+        "mtime_ns": 1785386925000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H6_S2026.csv",
+        "size_bytes": 601,
+        "mtime_ns": 1785387028000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H6_S3407.csv",
+        "size_bytes": 735,
+        "mtime_ns": 1785387049000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F5_H6_S42.csv",
+        "size_bytes": 1216,
+        "mtime_ns": 1785387013000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H1_S2026.csv",
+        "size_bytes": 514,
+        "mtime_ns": 1785387131000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H1_S3407.csv",
+        "size_bytes": 681,
+        "mtime_ns": 1785387154000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H1_S42.csv",
+        "size_bytes": 1336,
+        "mtime_ns": 1785387114000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H3_S2026.csv",
+        "size_bytes": 1259,
+        "mtime_ns": 1785387223000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H3_S3407.csv",
+        "size_bytes": 775,
+        "mtime_ns": 1785387242000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H3_S42.csv",
+        "size_bytes": 732,
+        "mtime_ns": 1785387191000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H6_S2026.csv",
+        "size_bytes": 602,
+        "mtime_ns": 1785387298000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H6_S3407.csv",
+        "size_bytes": 692,
+        "mtime_ns": 1785387318000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\GRU_F6_H6_S42.csv",
+        "size_bytes": 643,
+        "mtime_ns": 1785387280000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H1_S2026.csv",
+        "size_bytes": 11839,
+        "mtime_ns": 1785386015000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H1_S3407.csv",
+        "size_bytes": 11837,
+        "mtime_ns": 1785386020000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H1_S42.csv",
+        "size_bytes": 11848,
+        "mtime_ns": 1785386009000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H3_S2026.csv",
+        "size_bytes": 11842,
+        "mtime_ns": 1785386080000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H3_S3407.csv",
+        "size_bytes": 11837,
+        "mtime_ns": 1785386085000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H3_S42.csv",
+        "size_bytes": 11832,
+        "mtime_ns": 1785386074000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H6_S2026.csv",
+        "size_bytes": 11830,
+        "mtime_ns": 1785386130000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H6_S3407.csv",
+        "size_bytes": 11821,
+        "mtime_ns": 1785386136000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F1_H6_S42.csv",
+        "size_bytes": 11826,
+        "mtime_ns": 1785386125000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H1_S2026.csv",
+        "size_bytes": 11815,
+        "mtime_ns": 1785386180000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H1_S3407.csv",
+        "size_bytes": 11815,
+        "mtime_ns": 1785386185000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H1_S42.csv",
+        "size_bytes": 11804,
+        "mtime_ns": 1785386174000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H3_S2026.csv",
+        "size_bytes": 11842,
+        "mtime_ns": 1785386231000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H3_S3407.csv",
+        "size_bytes": 11832,
+        "mtime_ns": 1785386236000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H3_S42.csv",
+        "size_bytes": 11825,
+        "mtime_ns": 1785386225000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H6_S2026.csv",
+        "size_bytes": 11817,
+        "mtime_ns": 1785386297000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H6_S3407.csv",
+        "size_bytes": 11822,
+        "mtime_ns": 1785386303000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F2_H6_S42.csv",
+        "size_bytes": 11827,
+        "mtime_ns": 1785386291000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H1_S2026.csv",
+        "size_bytes": 11827,
+        "mtime_ns": 1785386365000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H1_S3407.csv",
+        "size_bytes": 11831,
+        "mtime_ns": 1785386371000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H1_S42.csv",
+        "size_bytes": 11818,
+        "mtime_ns": 1785386359000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H3_S2026.csv",
+        "size_bytes": 11817,
+        "mtime_ns": 1785386443000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H3_S3407.csv",
+        "size_bytes": 11838,
+        "mtime_ns": 1785386449000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H3_S42.csv",
+        "size_bytes": 11814,
+        "mtime_ns": 1785386437000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H6_S2026.csv",
+        "size_bytes": 11832,
+        "mtime_ns": 1785386514000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H6_S3407.csv",
+        "size_bytes": 11833,
+        "mtime_ns": 1785386520000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F3_H6_S42.csv",
+        "size_bytes": 11833,
+        "mtime_ns": 1785386508000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H1_S2026.csv",
+        "size_bytes": 11844,
+        "mtime_ns": 1785386579000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H1_S3407.csv",
+        "size_bytes": 11825,
+        "mtime_ns": 1785386585000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H1_S42.csv",
+        "size_bytes": 11840,
+        "mtime_ns": 1785386573000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H3_S2026.csv",
+        "size_bytes": 11829,
+        "mtime_ns": 1785386670000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H3_S3407.csv",
+        "size_bytes": 11837,
+        "mtime_ns": 1785386676000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H3_S42.csv",
+        "size_bytes": 11834,
+        "mtime_ns": 1785386664000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H6_S2026.csv",
+        "size_bytes": 11824,
+        "mtime_ns": 1785386742000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H6_S3407.csv",
+        "size_bytes": 11837,
+        "mtime_ns": 1785386748000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F4_H6_S42.csv",
+        "size_bytes": 11815,
+        "mtime_ns": 1785386736000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H1_S2026.csv",
+        "size_bytes": 11823,
+        "mtime_ns": 1785386812000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H1_S3407.csv",
+        "size_bytes": 11822,
+        "mtime_ns": 1785386818000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H1_S42.csv",
+        "size_bytes": 11806,
+        "mtime_ns": 1785386807000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H3_S2026.csv",
+        "size_bytes": 11809,
+        "mtime_ns": 1785386890000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H3_S3407.csv",
+        "size_bytes": 11802,
+        "mtime_ns": 1785386896000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H3_S42.csv",
+        "size_bytes": 11834,
+        "mtime_ns": 1785386885000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H6_S2026.csv",
+        "size_bytes": 11826,
+        "mtime_ns": 1785386974000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H6_S3407.csv",
+        "size_bytes": 11841,
+        "mtime_ns": 1785386980000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F5_H6_S42.csv",
+        "size_bytes": 11828,
+        "mtime_ns": 1785386967000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H1_S2026.csv",
+        "size_bytes": 11682,
+        "mtime_ns": 1785387062000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H1_S3407.csv",
+        "size_bytes": 11658,
+        "mtime_ns": 1785387068000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H1_S42.csv",
+        "size_bytes": 11738,
+        "mtime_ns": 1785387056000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H3_S2026.csv",
+        "size_bytes": 11750,
+        "mtime_ns": 1785387167000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H3_S3407.csv",
+        "size_bytes": 11757,
+        "mtime_ns": 1785387173000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H3_S42.csv",
+        "size_bytes": 11765,
+        "mtime_ns": 1785387161000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H6_S2026.csv",
+        "size_bytes": 11804,
+        "mtime_ns": 1785387256000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H6_S3407.csv",
+        "size_bytes": 11809,
+        "mtime_ns": 1785387262000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\03_FORMAL_PREDICTIONS\\training_curves\\XGBoost_F6_H6_S42.csv",
+        "size_bytes": 11814,
+        "mtime_ns": 1785387250000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\04_METRICS\\fold_level_model_metrics.csv",
+        "size_bytes": 16066,
+        "mtime_ns": 1785387766000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\04_METRICS\\model_horizon_summary.csv",
+        "size_bytes": 2036,
+        "mtime_ns": 1785387766000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\04_METRICS\\per_run_test_metrics.csv",
+        "size_bytes": 20729,
+        "mtime_ns": 1785387765000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\04_METRICS\\seed_averaged_sample_errors.parquet",
+        "size_bytes": 27546996,
+        "mtime_ns": 1785387766000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\04_METRICS\\seed_stability.csv",
+        "size_bytes": 1695,
+        "mtime_ns": 1785387766000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\05_STATISTICS\\clustered_day_spatial_block_bootstrap.csv",
+        "size_bytes": 1938,
+        "mtime_ns": 1785387848000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\05_STATISTICS\\corrected_fold_pairwise_tests_holm.csv",
+        "size_bytes": 3438,
+        "mtime_ns": 1785387848000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\05_STATISTICS\\day_level_metrics.csv",
+        "size_bytes": 61740,
+        "mtime_ns": 1785387766000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\05_STATISTICS\\forecast_origin_metrics.csv",
+        "size_bytes": 1520631,
+        "mtime_ns": 1785387767000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\05_STATISTICS\\original_naive_sample_level_tests_descriptive_only.csv",
+        "size_bytes": 1493,
+        "mtime_ns": 1785387848000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\05_STATISTICS\\spatial_block_day_metrics.csv",
+        "size_bytes": 316420,
+        "mtime_ns": 1785387766000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\06_REPORTS\\AJSE_PHASE2A_PAPER_MODEL_PERFORMANCE.csv",
+        "size_bytes": 1987,
+        "mtime_ns": 1785387946000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\07_HASHES\\PHASE2A_RESULT_FILE_SHA256.csv",
+        "size_bytes": 66478,
+        "mtime_ns": 1785388433000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\08_FINAL_AUDIT\\GIT_RESULT_FREEZE.json",
+        "size_bytes": 1416,
+        "mtime_ns": 1785388371000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\08_FINAL_AUDIT\\PHASE2A_HASH_VERIFICATION.json",
+        "size_bytes": 922,
+        "mtime_ns": 1785388436000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\08_FINAL_AUDIT\\PHASE2A_RESULT_LEVEL_AUDIT_STATUS.json",
+        "size_bytes": 1268,
+        "mtime_ns": 1785387848000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\08_FINAL_AUDIT\\prediction_integrity_checks.csv",
+        "size_bytes": 639,
+        "mtime_ns": 1785387848000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\08_FINAL_AUDIT\\PREDICTION_REGISTRY_HASH_RECHECK.csv",
+        "size_bytes": 14468,
+        "mtime_ns": 1785388393000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\08_FINAL_AUDIT\\PREDICTION_REGISTRY_HASH_RECHECK.json",
+        "size_bytes": 221,
+        "mtime_ns": 1785388393000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\04_PHASE2A_DATA_RESULTS\\08_FINAL_AUDIT\\workbook_previews\\reopen_verification.json",
+        "size_bytes": 12236,
+        "mtime_ns": 1785388054000000000
+      },
+      {
+        "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\历史投稿文章\\20260623\\PanBorneo_TomTom_Cleaned_Experiment_Package.zip",
+        "size_bytes": 74994919,
+        "mtime_ns": 1782187490765926200
+      }
+    ],
+    "content_hash_policy": "Reuse G0 file hashes; do not repeat entire544 hash audit; current source stat signatures pin actual read assets"
+  },
+  "software_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19042-SP0",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "3.0.1",
+      "pyarrow": "26.0.1",
+      "scipy": "NOT_INSTALLED_OR_METADATA_UNAVAILABLE",
+      "openpyxl": "3.1.5",
+      "matplotlib": "NOT_INSTALLED_OR_METADATA_UNAVAILABLE"
+    },
+    "protocol_sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+    "receipt_recovered_at": "2026-11-25T19:11:36.072026+08:00"
+  },
+  "plotting_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2",
+    "output_count": 6,
+    "output_paths": [
+      "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D01_Coverage.png",
+      "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D02_Return_Distributions.png",
+      "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D03_Regime_MAE.png",
+      "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D04_Gap_MAE.png",
+      "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D05_Weighting_Effects.png",
+      "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D06_LOFO.png"
+    ]
+  },
+  "random_seed": 20261125,
+  "bootstrap_replicates": 10000,
+  "primary_block_days": 3,
+  "sensitivity_block_days": 7,
+  "actual_commands": [
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe inspect_inputs.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe freeze_protocol.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe probe_schema.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe prepare_shared.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe prepare_shared.py --resume-receipt-only",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe run_e01.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe run_e01.py --summary-only",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe run_e02.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe probe_statistics.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe run_e03.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe check_cluster.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe fix_cluster_reconstruction.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe validate_g1.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe fix_validation_precision.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe build_g1_deliverables.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe make_diagnostics.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe g1_support_note.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe finalize_g1.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "C:\\Users\\17279\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe run_e01_e03_pipeline.py",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03"
+    },
+    {
+      "command": "node G1_workbooks.mjs",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL"
+    },
+    {
+      "command": "python -m pip install matplotlib --target plotting_deps --no-cache-dir --no-compile --disable-pip-version-check",
+      "cwd": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\00_PROJECT_CONTROL"
+    }
+  ],
+  "analysis_code_sha256": [
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03\\common.py",
+      "sha256": "47ec00938472a8cf0ba7dd959d0d32a806182843f6942d8e76ff63b314a32a27"
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03\\prepare_shared.py",
+      "sha256": "7f3c812523b1df006a108dc5b47181add7171303b6887085a0f9b74d03811b9c"
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03\\run_e01.py",
+      "sha256": "8f1b259429bcdc6a5612d99c624106188d12b3e2d76b70ba29289a3df35ca032"
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03\\run_e02.py",
+      "sha256": "bccfb6514536ae33050073737efa4717ef8a3a1da766dc83ea3f9e0983a4320e"
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03\\run_e03.py",
+      "sha256": "c6812e07d074590a2bda42a72dca3c8a3195c4d6cb0167e28a77d832a86e0e6f"
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\03_CODE\\E01_E03\\validate_g1.py",
+      "sha256": "8179dcee520c12923a19259f23c98e61e302824467aef034a961ea65f95fd55c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_01_Data_Lineage_and_Coverage.csv",
+      "sha256": "f123df397166f0f16d2ff58eb5dad32599e28110da8e117041eeed772d7633a9",
+      "size_bytes": 1302
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_02_Hourly_Threshold_Coverage.csv",
+      "sha256": "da78cd62c1423909791acb896b9f62d5340bb3c019af35e3b04d962c10552fff",
+      "size_bytes": 366
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_02b_Quarter_Count_Frequency.csv",
+      "sha256": "2986af24940f80dae417950f8ae97c0b066d831a7523f85792e8a5d773387c35",
+      "size_bytes": 74
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_03_Daily_Coverage.csv",
+      "sha256": "90bdaa7e7b6525b50e1ed302d875fd43e4a9ff6802619f9efe0a7c5f0d5c108e",
+      "size_bytes": 27040
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_03b_Coverage_Weighting.csv",
+      "sha256": "42c61408efb6d83aa3a5749f7eaf5de1071c433a164e54b4ed363aa4f450f47e",
+      "size_bytes": 337
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_04_Node_Hour_Coverage.csv",
+      "sha256": "594bc76aba8ddea66a6c6f45de01d48ae3173118c466f4a6ef66c337ed8bca5c",
+      "size_bytes": 1086574
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_05_Missing_Run_Distribution.csv",
+      "sha256": "9b4a5203abbb81f4cfa8263e9af9e5d874a4ecef311435d7ee893cb359b220f5",
+      "size_bytes": 3702
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_06_H6_Target_Completeness.csv",
+      "sha256": "62162606da1266a94abe4fcbb422c2a367c6d8c6ed337e841c586f018a1c89ce",
+      "size_bytes": 3578
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_07_H6_Missing_Position.csv",
+      "sha256": "f1ad4007eb8c7c9b41214ab16646f1f60dad0665439c4d716fe9efb0de959740",
+      "size_bytes": 1966
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_08_H6_Stratified_Model_Performance.csv",
+      "sha256": "c938974e6fcbedb814034e6213334b5557d0d1702371700cd63d800c1c785281",
+      "size_bytes": 11564
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_09_H3_H6_Common_Origins.csv",
+      "sha256": "8b081c9030e15400c04f18b4122779aa4d2845ed29424e9c85414fa347c0887e",
+      "size_bytes": 1086
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_10_Fold_Sample_Attrition.csv",
+      "sha256": "31d04abe4ecdf6476a8ca50add02774a815790906fcd4796a497eac26ac7632b",
+      "size_bytes": 3541
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_11_E04_Sample_Feasibility.csv",
+      "sha256": "6b81f3541216a6ecb03dbc53f0954067a36218b9f6a7f623418c1bff72095100",
+      "size_bytes": 23813
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E01_DATA_COMPLETENESS\\E01_Summary_CN.md",
+      "sha256": "909ab3866319ab18f77880151e5d29f0eecbecc4e3d0e63fc29602fd53185077",
+      "size_bytes": 3741
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_01_Speed_and_Target_Distribution.csv",
+      "sha256": "a69ec0ae9bb78bc40eb5b41bf50e791b9beff06c2cb816a89b562bdec5d05223",
+      "size_bytes": 66070
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_01b_Distribution_Histograms.csv",
+      "sha256": "a78ee0868e033ba86945cf43d616f7527fadf45e45742b9920b66887964cab69",
+      "size_bytes": 3645
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_02_FreeFlow_Equality.csv",
+      "sha256": "a884fae4fd5bc3f7bb6a02808ed2070b8d8656286a5a9d03001118d0705a9355",
+      "size_bytes": 14173
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_03_Confidence_Distribution.csv",
+      "sha256": "5e12183b40869803851bd505c901bc29ec32579b629d51ca0b128d4ea193ccaf",
+      "size_bytes": 75400
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_04_Traffic_Regime_Distribution.csv",
+      "sha256": "bddd9bf332d0b126c25d68419c96a5ee0f92b36bf3f06977ce25009acb005e39",
+      "size_bytes": 1204
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_05_Regime_Model_Performance.csv",
+      "sha256": "28a95890472e083ccefb12fcb0c4077d9d09709bd6ee5a4c72d3a9d50671b9fd",
+      "size_bytes": 8994
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_05b_Regime_Threshold_Sensitivity.csv",
+      "sha256": "14fd1b1471fa334faef4ebad5203b1829a70cc54e3e11210bdeeba34eaf4e59f",
+      "size_bytes": 15153
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_06_Gap_Conditioned_Performance.csv",
+      "sha256": "b77b0303b76c97dd1c883d5f7131538e2aa3214b216b92aafa0dd433ab512232",
+      "size_bytes": 31528
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_07_Coverage_Gap_Volatility.csv",
+      "sha256": "7dee5f242781adbab57a3ef640e3012b8dae7affc645016693c3d87851c767db",
+      "size_bytes": 165457
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_08_Sample_Selection_Diagnostics.csv",
+      "sha256": "ab5520b59858eb3f5010ed77b0ec4bd95ef175139f43fbb285d847508fe4205c",
+      "size_bytes": 355500
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_09_Closure_and_Quality_Filter.csv",
+      "sha256": "65e72365622c94dca0c8d2f6c6e405b26477577e6429d557a5558f67c3c46baa",
+      "size_bytes": 331
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_10_FreeFlow_Baseline.csv",
+      "sha256": "835c3f8277cdfb81dfddfe27acbc4a1276e85776763e3a0038d15cb9ede8fa79",
+      "size_bytes": 14589
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E02_TRAFFIC_RELIABILITY\\E02_Summary_CN.md",
+      "sha256": "d5b93ce1f5eb8a19070c86583159761977d934864757b0635873c7b815622a94",
+      "size_bytes": 4732
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_01_Seed_Aggregation_Reconciliation.csv",
+      "sha256": "b35b65b8fe6931e3a3265014af300b1ca0c712ef78dda38fee24fb2f1b1c6e7e",
+      "size_bytes": 28964
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_02_Fold_Model_Metrics.csv",
+      "sha256": "7654a924201356dba1b4767d91d5a26ba903939d65081c4495194be00f285c06",
+      "size_bytes": 15218
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_03_Original_vs_Recomputed_Table7.csv",
+      "sha256": "f98a90917d88c4a0320146331ea4bc4b4b236af768dd2122f5c79eea5376f105",
+      "size_bytes": 5632
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_04_Weighting_Estimands.csv",
+      "sha256": "6c8970ac56418c34752cba2bd379eca7d1a1f55df1a49437a1ff568cac77b7e7",
+      "size_bytes": 20537
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_04b_Historical_Cluster_Reconstruction.csv",
+      "sha256": "376077231685d12ca870acc806394be1f569889ed9d70bcf665aec8d1cd1e8a6",
+      "size_bytes": 4189
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_05_Daily_Paired_Loss.csv",
+      "sha256": "7d9614cf48dec31402b67de81a8ce423c070b6aa62a065b7ac9ae10646bfad15",
+      "size_bytes": 47511
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_05b_Daily_Support_Diagnostics.csv",
+      "sha256": "d37157279b43fd1e5444ba9210cac7e9d6e68aaef02bb27d66365c38c41cf7b3",
+      "size_bytes": 7951
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_06_Block_Bootstrap_Results.csv",
+      "sha256": "99640c57e6f3c619735895daabbd4cc29097bf95b602c25a072699f0e229bdbd",
+      "size_bytes": 5509
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_07_Block_Length_Sensitivity.csv",
+      "sha256": "a31ac1bbf68aeebacd9ee6a5589d6efc74ee38f89985d2386b506b68f3777007",
+      "size_bytes": 5506
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_08_Holm_Adjusted_Comparisons.csv",
+      "sha256": "c8af1a35efd72df65e64769f7d6041786c83731a34282db32b064737f40d6b24",
+      "size_bytes": 5905
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_09_H1_Practical_Differences.csv",
+      "sha256": "6ca9a7d98806ffc5cc66feb9141e4bcbf13a6a87ad4f1f5512b2fae98965ca1d",
+      "size_bytes": 1003
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_10_LOFO_Stability.csv",
+      "sha256": "137bd2e59dbc618384d646dbe1d607b39589fd1ecc7a5c7218d70e3f361aa219",
+      "size_bytes": 26892
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_11_Seed_Stability.csv",
+      "sha256": "21fa0fe06080a5b5dd9d8e563c9a323b5a624146165022f60b3851658ceda232",
+      "size_bytes": 14772
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_12_Fold_Regime_Diagnostics.csv",
+      "sha256": "81015311a4a58222ba7de4fb0d1a721e041af08676326e9cc7ca5f0db38fba0d",
+      "size_bytes": 71535
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_13_Estimand_Reversal_Explanation.md",
+      "sha256": "ddeb9e79b0933580e56dab2cd41092eec02ea2ef85247fb35d7e9e7ffe2f3d92",
+      "size_bytes": 4601
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\E03_STATISTICAL_INFERENCE\\E03_Summary_CN.md",
+      "sha256": "a84301d27df6628e687c148857bbda17c4488bd446449a67f2f10390f7e9fb17",
+      "size_bytes": 6720
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D01_Coverage.png",
+      "sha256": "0287ef8c6b13ca148dd1da26f5edcbb908fa5facf1c5939b96103f27c1653582",
+      "size_bytes": 139774
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D02_Return_Distributions.png",
+      "sha256": "d0fe595a689803122644a9221000fc03c6d0fa208b9be71f9385029256442609",
+      "size_bytes": 80723
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D03_Regime_MAE.png",
+      "sha256": "84cf24c16021dd1193444c80b11a7ef2661587bc431afabace0ccd130b1b3e2a",
+      "size_bytes": 175940
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D04_Gap_MAE.png",
+      "sha256": "177b40d252694dc68b3c5958b3ddbeef1aedf60c084f0a3e1f672fac61d46c46",
+      "size_bytes": 175311
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D05_Weighting_Effects.png",
+      "sha256": "840ab6ffabc06e1ee889e8074325b96caa560790e3cad6bc51f8343d23930ab3",
+      "size_bytes": 76999
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\G1_D06_LOFO.png",
+      "sha256": "1f38a1d43295258792f5b5dcd0f0f87f4a1461ed31fe7a7f9686c73d5b0f7071",
+      "size_bytes": 199669
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\07_FIGURES_TABLES\\G1_DIAGNOSTICS\\Diagnostic_Source_Index.csv",
+      "sha256": "57733aca35068f3b13d12e1c833518026975f1116d09b6d933cf95e5fc17cd6f",
+      "size_bytes": 2325
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_02_Integrated_Results.xlsx",
+      "sha256": "53e4ffe909bfbf523a9cf6d231e0f119adb08da497fcf4781c5fecb7ddd92161",
+      "size_bytes": 233358
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_03_Reviewer_Response_Progress.csv",
+      "sha256": "ebc43245eaa9f2552bf911d6d02c22d2f205506374c203b6c22c933dd5bab5cc",
+      "size_bytes": 36010
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_04_Manuscript_Consistency_Matrix.xlsx",
+      "sha256": "e182e9280549276b41bac48a5d2ebdcca3d8fd390dcd4dbef32f557a56c15d79",
+      "size_bytes": 6900
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+      "sha256": "3d5efcece14da9b37b13d44e181cfb0920e9ced0563a4c500abaaf71571ea284",
+      "size_bytes": 32064
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_06_Acceptance_Report_CN.md",
+      "sha256": "1141f71b06f72dbf90ef8e03fba75ce256c6a66ec67349a11abfb5417c3f2dce",
+      "size_bytes": 11850
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_Limitations.csv",
+      "sha256": "11a3258248229d9c68c9a1314cc1ae3e512a7dcc15b1e2b86355d6d15f61d34b",
+      "size_bytes": 1963
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_Manuscript_Consistency.csv",
+      "sha256": "7a566e4d6f3c3dd3746525b657165a2065cf5e22164ffe0ae2f989b6531fe2c1",
+      "size_bytes": 3195
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_Next_Experiment_Scope.csv",
+      "sha256": "cbfb2462827ca4cd1ebbbdcf846d40f255bcd4cffdc760d2f95cfd2716089727",
+      "size_bytes": 11818
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_Validation_Checks.csv",
+      "sha256": "1e1dbb58b7c4d51f4dad4e5afa6a68b1c42336c53fd1ac91be0e025520ebcecf",
+      "size_bytes": 1707
+    },
+    {
+      "path": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_01_E01_E03_Result_Registry.csv",
+      "sha256": "77e76166ba890325d8b1be25dfed69f4e7bc6f64c3129698af99397f5b70e6f1",
+      "size_bytes": 36016
+    }
+  ],
+  "core_outputs": [
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_01_E01_E03_Result_Registry.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_02_Integrated_Results.xlsx",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_03_Reviewer_Response_Progress.csv",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_04_Manuscript_Consistency_Matrix.xlsx",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_05_Minimum_Remaining_Experiment_Plan.xlsx",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_06_Acceptance_Report_CN.md",
+    "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\G1_07_Execution_Manifest.json"
+  ],
+  "local_restricted_intermediates": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E01_E03",
+  "zip_exclusions": [
+    "raw commercial FCD",
+    "record-level derived speeds",
+    "per-sample predictions",
+    "feature tensors",
+    "model weights",
+    "API credentials",
+    "dependencies"
+  ],
+  "tasks_completed": [
+    "E01 7 components",
+    "E02 10 components with closure NOT_ESTIMABLE",
+    "E03 9 components",
+    "31 original comments progress",
+    "data-supported E04-E07 bounded proposal",
+    "3 workbooks21 sheets values/native tables/rendered QA",
+    "6 aggregate diagnostic figures"
+  ],
+  "not_completed_or_not_applicable": [
+    "formal Phase2A1 source recovery",
+    "original97.30 definition (author decided no further search)",
+    "road closure effect not observable",
+    "independent ground truth",
+    "HAC/DM not applicable under frozen choice",
+    "official calendar/GIS road distance",
+    "model_training",
+    "formal_manuscript_and_response_edit"
+  ],
+  "validation": {
+    "overall_status": "CONDITIONAL_PASS",
+    "created_at": "2026-11-25T19:19:36.217019+08:00",
+    "protocol_sha256": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4",
+    "checks": [
+      {
+        "check_id": "PROTOCOL_UNCHANGED",
+        "status": "PASS",
+        "detail": "e7e82b7260ebbc81585c4c7f7034d7a2d80a92730aa8d907687693c2cb2699f4"
+      },
+      {
+        "check_id": "SLOT_PARTITION",
+        "status": "PASS",
+        "detail": "403512=241601+1156+160755"
+      },
+      {
+        "check_id": "RECORD_PARTITION",
+        "status": "PASS",
+        "detail": "row-level distinct from slot-level"
+      },
+      {
+        "check_id": "THRESHOLDS",
+        "status": "PASS",
+        "detail": "four counts independently recomputed from input and nested"
+      },
+      {
+        "check_id": "54_ATTRITION_COMBINATIONS",
+        "status": "PASS",
+        "detail": "mutually exclusive reconstruction matches all original manifests"
+      },
+      {
+        "check_id": "ATTRITION_IDENTITIES",
+        "status": "PASS",
+        "detail": "exclusive reason totals equal theoretical"
+      },
+      {
+        "check_id": "TEST_COUNTS",
+        "status": "PASS",
+        "detail": "test total92147"
+      },
+      {
+        "check_id": "ALIGNED_6_MODELS_18_TASKS",
+        "status": "PASS",
+        "detail": "all six models x18 common tasks; raw180 runs three seeds explicitly checked"
+      },
+      {
+        "check_id": "FEATURE_UNITS",
+        "status": "PASS",
+        "detail": "restored original scaler units, causal ddof0 volatility maxdiff 2.26041519088e-06"
+      },
+      {
+        "check_id": "SEED_JENSEN",
+        "status": "PASS",
+        "detail": "ensemble MAE <= mean seed-level MAE"
+      },
+      {
+        "check_id": "TABLE7_DISCREPANCY_RECORDED",
+        "status": "CONDITIONAL_PASS",
+        "detail": "Table7 six stochastic cells match B not Equation12 A"
+      },
+      {
+        "check_id": "15_PRESPECIFIED_TESTS",
+        "status": "PASS",
+        "detail": "all horizon families retained"
+      },
+      {
+        "check_id": "DAILY_EFFECT_ESTIMAND",
+        "status": "PASS",
+        "detail": "each bootstrap point estimate equals mean daily paired loss"
+      },
+      {
+        "check_id": "HOLM_ALGORITHM",
+        "status": "PASS",
+        "detail": "independent sorted family calculation verified"
+      },
+      {
+        "check_id": "BOOTSTRAP_P_FINITE",
+        "status": "PASS",
+        "detail": "finite correction verified; min p serialization rounds12significant digits, allowed absolute tolerance5e-13"
+      },
+      {
+        "check_id": "LOFO_FULL",
+        "status": "PASS",
+        "detail": "A/B x3 horizons x6models xall+6 exclusions"
+      },
+      {
+        "check_id": "HISTORICAL_BLOCK_B",
+        "status": "PASS",
+        "detail": "205 old day-block point estimates exactly reconstructed; old CI resampling remains partial"
+      },
+      {
+        "check_id": "FREEFLOW_NO_FUTURE",
+        "status": "CONDITIONAL_PASS",
+        "detail": "conservative >=1hour historical return plus parsed known timestamps; ingestion logs unavailable"
+      },
+      {
+        "check_id": "TARGET_NO_IMPUTATION",
+        "status": "PASS",
+        "detail": "all1053618 manifest targets rebuilt solely from observed source hours"
+      },
+      {
+        "check_id": "CLOSURE_NONESTIMABILITY",
+        "status": "NOT_ESTIMABLE",
+        "detail": "no observed closure events, no synthetic effects"
+      }
+    ],
+    "policy": "accepted outputs immutable; only concrete scientific/code issue reopens affected tasks; no whole E01-E03 repeat",
+    "targeted_fix": "CSV raw_p12-digit rounding vs exact1/10001 lower-bound; no statistical values changed, no analyses rerun",
+    "targeted_fix_at": "2026-11-25T19:19:58.414418+08:00"
+  },
+  "implementation_fixes_log": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G1_E01_E03_ACCEPTANCE\\logs\\implementation_fixes.md",
+  "remaining_training": {
+    "core_max_executions": 624,
+    "conditional_max_executions": 78,
+    "actual_training_executions_this_stage": 0,
+    "source_gate_max6_first": "all later budgets0 until passed and author-approved",
+    "not_a_full_factorial_design": true
+  },
+  "reuse_policy": "Accepted E01-E03 do not rerun. Compare protocol/code/input/output signatures and mark REUSED_PASS. Reopen only affected task for recorded concrete scientific/code issue.",
+  "self_hash_policy": "manifest and ZIP hashes in external G1_Delivery_SHA256.csv and delivery_receipt.json; no self-hash"
+}

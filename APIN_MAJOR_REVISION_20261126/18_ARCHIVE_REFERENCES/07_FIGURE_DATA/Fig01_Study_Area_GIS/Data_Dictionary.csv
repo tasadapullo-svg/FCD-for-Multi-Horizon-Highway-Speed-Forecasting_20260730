@@ -1,0 +1,24 @@
+﻿file,column,dtype,sample_values
+Fig01B_Inter_Node_Distance_Diagnostic.csv,from_node,object,N001
+Fig01B_Inter_Node_Distance_Diagnostic.csv,to_node,object,N002
+Fig01B_Inter_Node_Distance_Diagnostic.csv,order_from,int64,1
+Fig01B_Inter_Node_Distance_Diagnostic.csv,order_to,int64,2
+Fig01B_Inter_Node_Distance_Diagnostic.csv,straight_geodesic_m,float64,1865.3600028957544
+Fig01B_Inter_Node_Distance_Diagnostic.csv,current_osm_undirected_shortest_path_m,float64,2193.3874183245407
+Fig01B_Inter_Node_Distance_Diagnostic.csv,road_to_straight_ratio,float64,1.175852068726445
+Fig01B_Inter_Node_Distance_Diagnostic.csv,cumulative_straight_m,float64,1865.3600028957544
+Fig01B_Inter_Node_Distance_Diagnostic.csv,cumulative_road_graph_m,float64,2193.3874183245407
+Fig01B_Inter_Node_Distance_Diagnostic.csv,connected_current_graph,bool,True
+Fig01B_Inter_Node_Distance_Diagnostic.csv,historical_connection_verified,bool,False
+Fig01B_Inter_Node_Distance_Diagnostic.csv,direction_verified,bool,False
+Fig01B_Inter_Node_Distance_Diagnostic.csv,review_flags,object,ROAD_PATH_GT_8KM
+Fig01_Observation_Nodes.csv,node_id_original,object,N001
+Fig01_Observation_Nodes.csv,node_id_display,object,N01
+Fig01_Observation_Nodes.csv,node_order,int64,1
+Fig01_Observation_Nodes.csv,latitude,float64,1.7873096
+Fig01_Observation_Nodes.csv,longitude,float64,109.7447799
+Fig01_Observation_Nodes.csv,road_name,object,Jalan Lundu-Sematan
+Fig01_Observation_Nodes.csv,data_source,object,Pan Borneo TomTom FCD author-local
+Fig01_Observation_Nodes.csv,observation_period,object,2025-12-08 to 2026-02-28
+Fig01_Observation_Nodes.csv,coordinate_crs,object,EPSG:4326
+Fig01_Observation_Nodes.csv,match_status,object,ORIGINAL_OBSERVATION_LOCATION

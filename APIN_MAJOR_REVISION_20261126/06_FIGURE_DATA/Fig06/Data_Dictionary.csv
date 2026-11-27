@@ -1,4 +1,4 @@
-filename,column,dtype,rule
+﻿filename,column,dtype,rule
 Fig06A_H1_Paired_Effects.csv,family,object,Frozen value or documented formatting only; no new metric
 Fig06A_H1_Paired_Effects.csv,horizon,int64,Frozen value or documented formatting only; no new metric
 Fig06A_H1_Paired_Effects.csv,comparison,object,Frozen value or documented formatting only; no new metric

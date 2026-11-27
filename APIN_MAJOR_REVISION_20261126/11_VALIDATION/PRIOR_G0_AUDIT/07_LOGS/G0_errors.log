@@ -1,0 +1,1 @@
+历史执行错误及修复：默认GBK读取config失败→使用-X utf8；临时inspect.py遮蔽stdlib→重命名schema_probe.py；row_ids并非JSON数组→按分隔数字解析；报告tree变量未定义→显式读取github_tree。均已重跑成功。完整执行输出见G0_commands.log。PowerShell启动CET失败，改用Node文件API和bundled Python。

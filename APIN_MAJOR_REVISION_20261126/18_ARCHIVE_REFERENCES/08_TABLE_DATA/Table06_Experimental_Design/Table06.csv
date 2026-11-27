@@ -1,0 +1,5 @@
+﻿stage,unique_runs,meaning,source
+original frozen,180,historical model run records,G0
+G2 revision,651,"489 fits, 162 deterministic executions",G2
+Ridge SVD diagnosis,93,numerical correction only,Prompt04
+E08 external,0,target asset not found,Prompt05

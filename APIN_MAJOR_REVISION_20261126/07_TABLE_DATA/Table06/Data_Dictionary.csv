@@ -1,0 +1,4 @@
+﻿column,type,meaning
+stage,object,see frozen source/column names; full precision retained; blank is not zero
+units,int64,see frozen source/column names; full precision retained; blank is not zero
+meaning,object,see frozen source/column names; full precision retained; blank is not zero

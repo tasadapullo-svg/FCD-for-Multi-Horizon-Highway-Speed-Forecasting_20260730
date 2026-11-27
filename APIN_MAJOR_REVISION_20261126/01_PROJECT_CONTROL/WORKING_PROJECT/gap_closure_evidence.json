@@ -1,0 +1,145 @@
+{
+  "fig2_text_hits": [
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\fig\\历史修改\\fig02\\Figure2_PNG_TIFF_300_600dpi\\EXPORT_MANIFEST.json",
+      "text": "{\n  \"source\": \"imagegen.png\",\n  \"source_pixels\": [\n    1448,\n    1086\n  ],\n  \"method\": \"300 dpi retains source pixels; 600 dpi uses 2x Lanczos upscaling to preserve the same physical print size.\",\n  \"files\": [\n    {\n      \"file\": \"Figure2_300dpi.png\",\n      \"format\": \"PNG\",\n      \"mode\": \"RGB\",\n      \"pixels\": [\n        1448,\n        1086\n      ],\n      \"dpi\": [\n        299.9994,\n        299.9994\n      ],\n      \"bytes\": 1527975,\n      \"sha256\": \"316a37c26e57aaa85bb500116b150191a86181564beecc46af6fa5d978240ebf\"\n    },\n    {\n      \"file\": \"Figure2_600dpi.png\",\n      \"format\": \"PNG\",\n      \"mode\": \"RGB\",\n      \"pixels\": [\n        2896,\n        2172\n      ],\n      \"dpi\": [\n        599.9988,\n        599.9988\n      ],\n      \"bytes\": 3622613,\n      \"sha256\": \"0f1e9c2714bac89e0c6bce87adcf532589a469af4010f0b6e5c3d7693550748a\"\n    },\n    {\n      \"file\": \"Figure2_300dpi.tiff\",\n      \"format\": \"TIFF\",\n      \"mode\": \"RGB\",\n      \"pixels\": [\n        1448,\n        1086\n      ],\n      \"dpi\": [\n        300.0,\n        300.0\n      ],\n      \"bytes\": 1916834,\n      \"sha256\": \"9e63116994c0e4bba76752b3b393332883ebd4b4e24eeedcd78f5f92c2b0b3a4\"\n    },\n    {\n      \"file\": \"Figure2_600dpi.tiff\",\n      \"format\": \"TIFF\",\n      \"mode\": \"RGB\",\n      \"pixels\": [\n        2896,\n        2172\n      ],\n      \"dpi\": [\n        600.0,\n        600.0\n      ],\n      \"bytes\": 7135726,\n      \"sha256\": \"e671cb8bf5a2fe2bb9559827f28ae8b1b183e61513ec1a252e92d66528e086ca\"\n    }\n  ]\n}"
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\历史投稿文章\\paper_data_package_for_gpt_review\\paper_data_package_for_gpt_review\\01_FIGURE_CANDIDATE_DATA\\Fig02_candidate_data\\Fig02_readiness_notes.md",
+      "text": "# Fig02 readiness notes\n\nSupports main baseline performance across 7 models, 3 horizons, 5 seeds.\n\nNo figure was drawn by this task. GPT should review candidate data before plotting.\n"
+    }
+  ],
+  "source_hits": [
+    "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\03_PHASE2A_BUILD_CODE\\build_phase2a0.py",
+    "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\20260730_AJSE_FINAL_GitHub\\05_COMPREHENSIVE_DATA_RESULT_AUDIT_20260730\\09_AUDIT_SCRIPTS\\build_ajse_comprehensive_audit.py",
+    "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\fig\\历史修改\\fig05\\Fig05\\src\\02_build_unique_origins.py",
+    "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\fig\\历史修改\\fig05\\Fig05\\src\\10_build_excel_package.py"
+  ],
+  "upstream_readiness": [
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\历史投稿文章\\20260623\\PanBorneo_TomTom_Cleaned_Experiment_Package.zip!00_raw_original/output_tomtom_data完整数据(4).zip",
+      "rows": 244477,
+      "columns": [
+        "pd_uuid",
+        "point_uuid",
+        "pd_latitude",
+        "pd_longitude",
+        "key_number",
+        "pd_create_time",
+        "flow_uuid",
+        "capture_time",
+        "current_speed",
+        "free_flow_speed",
+        "current_travel_time",
+        "free_flow_travel_time",
+        "confidence",
+        "road_closure",
+        "flow_create_time"
+      ],
+      "confidence_below_0_8": 1170,
+      "closure_values": [
+        "0"
+      ],
+      "raw_node_identifier": "point_uuid; node_id needs verified nodes mapping",
+      "planned_slots_not_returned": "requires schedule/logs; not derivable from successful return CSV alone"
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\历史投稿\\历史投稿文章\\20260623\\PanBorneo_TomTom_Cleaned_Experiment_Package.zip!01_source_fixed_dates_csv/output_tomtom_data_fixed_dates_CSV_only(2).zip",
+      "rows": 244477,
+      "columns": [
+        "pd_uuid",
+        "point_uuid",
+        "pd_latitude",
+        "pd_longitude",
+        "key_number",
+        "pd_create_time",
+        "flow_uuid",
+        "capture_time",
+        "current_speed",
+        "free_flow_speed",
+        "current_travel_time",
+        "free_flow_travel_time",
+        "confidence",
+        "road_closure",
+        "flow_create_time"
+      ],
+      "confidence_below_0_8": 1170,
+      "closure_values": [
+        "0"
+      ],
+      "raw_node_identifier": "point_uuid; node_id needs verified nodes mapping",
+      "planned_slots_not_returned": "requires schedule/logs; not derivable from successful return CSV alone"
+    }
+  ],
+  "prior_evidence_hash_checks": [
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\03_CODE_AND_RESULTS\\G0_formal_180_run_integrity.csv",
+      "sha256": "25a88b6d34f37a21ad703283e3e0847a0c8aca8c230df4a10d10806ea94a13fd",
+      "expected": "25a88b6d34f37a21ad703283e3e0847a0c8aca8c230df4a10d10806ea94a13fd",
+      "match": true
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\03_CODE_AND_RESULTS\\G0_saved_metrics_recalculation.csv",
+      "sha256": "281fe016d7e7c691f08c7caa0dd2657c36572ccf1106a157921cc18cd51c89ea",
+      "expected": "281fe016d7e7c691f08c7caa0dd2657c36572ccf1106a157921cc18cd51c89ea",
+      "match": true
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\03_CODE_AND_RESULTS\\G0_source_to_run_map.csv",
+      "sha256": "e6ff9e5f47153a45c6bd3d3f8d41e2d8d108b8aa96ac1debbc07f50a9b8610d8",
+      "expected": "e6ff9e5f47153a45c6bd3d3f8d41e2d8d108b8aa96ac1debbc07f50a9b8610d8",
+      "match": true
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\01_DATA_LINEAGE\\G0_target_rebuild_audit.csv",
+      "sha256": "b4675fb803e38a44d4817b42eaeb844553702522b98098bedbc49e0f96c45b7b",
+      "expected": "b4675fb803e38a44d4817b42eaeb844553702522b98098bedbc49e0f96c45b7b",
+      "match": true
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\01_DATA_LINEAGE\\G0_split_manifest_audit.csv",
+      "sha256": "5372f02bf60a5b11e774db21eec1252db722814416162b1f5d3134e446886fb2",
+      "expected": "5372f02bf60a5b11e774db21eec1252db722814416162b1f5d3134e446886fb2",
+      "match": true
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\01_DATA_LINEAGE\\G0_raw_to_panel_value_comparison.csv",
+      "sha256": "304e7514312d12b2cde7169d9c8c0cd578b98104ee2be4412ac9f53831e1c5de",
+      "expected": "304e7514312d12b2cde7169d9c8c0cd578b98104ee2be4412ac9f53831e1c5de",
+      "match": true
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\02_PAPER_ALIGNMENT\\G0_submission_version_alignment.csv",
+      "sha256": "e2a1441cd5cfca896da2fbe449042d207f14b8810063ce11dcbc72fe3a5b57aa",
+      "expected": "e2a1441cd5cfca896da2fbe449042d207f14b8810063ce11dcbc72fe3a5b57aa",
+      "match": true
+    },
+    {
+      "path": "D:\\Desktop\\论文\\2027年投稿期刊\\论文项目\\已完成大修_20260905-低成本稀疏浮动车数据采集与可靠性感知预测框架：面向数据稀缺高速走廊_Applied Intelligence\\20260905Applied Intelligence 投稿\\APIN_R1_G0_AUDIT_20261121\\05_REPORTS\\G0_FULL_AUDIT_REPORT.md",
+      "sha256": "e54e947989769d9f8a553ad77b8df4a1fa8f43a3c1c1f8ff461fb5bd348c348b",
+      "expected": "e54e947989769d9f8a553ad77b8df4a1fa8f43a3c1c1f8ff461fb5bd348c348b",
+      "match": true
+    }
+  ],
+  "node_mapping": {
+    "rows": 51,
+    "columns": [
+      "node_id",
+      "order_index",
+      "latitude",
+      "longitude",
+      "lat_round",
+      "lon_round",
+      "raw_records",
+      "unique_point_uuid",
+      "unique_key_number",
+      "first_time",
+      "last_time"
+    ],
+    "id_first": "N001",
+    "id_last": "N051",
+    "node_order_unique": null,
+    "coordinates_complete": true,
+    "roadline_verified": false
+  }
+}

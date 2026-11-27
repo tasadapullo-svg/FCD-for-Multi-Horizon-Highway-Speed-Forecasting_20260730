@@ -1,0 +1,9 @@
+﻿item,format,source,claim,status
+Coverage/return funnel,Figure+Table,G1 E01 coverage and attrition CSV,"separate slot return, eligible observation, daily measures",READY_FOR_DRAFT
+Target/state distribution,Figure,G1 E01 and E02 state stratification,provider speed target; congestion coverage,READY_FOR_DRAFT
+Model performance H1/H3/H6,Table,G1 accepted metrics; Ridge SVD overlay,within-horizon descriptive comparison,READY_FOR_DRAFT
+Inference forest plot,Figure,Final_Statistical_Inference.csv; 7-day sensitivity,show effect/CI/Holm; do not imply universal ranking,READY_FOR_DRAFT
+E04–E06 sensitivity,Tables,G2 accepted integrated results and matched contrasts,only applicable executed conditions,READY_FOR_DRAFT
+GIS corridor,Figure,GIS local GPKG and CSV,current OSM illustrative only; historical 130 km unverified,AUTHOR_MANUAL_REVIEW_NEEDED
+Inference timing,Table,Final_Computational_Efficiency_Table.csv,different timing boundaries explicitly labeled,READY_WITH_CAVEAT
+References,Reference list,Final_Reviewer_Recommended_Literature.csv; Final_Required_Method_References.csv,"include only relevant verified metadata, do not cite wrong DOIs",FULLTEXT_CHECK_PENDING

@@ -1,94 +1,33 @@
-# Sparse FCD forecasting — Applied Intelligence major revision
+# Applied Intelligence research support data — full author-directed publication
 
-# Research evidence summary
+The author explicitly authorized publication of all scientific support data on 2026-11-27. This update includes detailed numerical figure/table/experiment results and selected scientific source payloads, with existing byte-identical remote data reused. The author direction is recorded separately from historical supplier-contract verification; no independently verified provider license is invented.
 
-The frozen record contains 180 original executions, 651 unique G2 execution units (489 fits, 162 deterministic runs; 642 test-bearing, nine validation-only; 414 reuse events) and 93 Ridge SVD diagnostic fits. The 924 total execution units are not 924 independent scientific experiments. This publication stage added zero fits and zero traffic observations.
+## Read the actual data
 
-G1 Method A is the per-sample three-seed ensemble primary result; Method B is supplementary. G2 is an independent revision implementation. Corrected native Ridge SVD metrics cannot substitute for unavailable SVD common-reference paired results. Fifteen prespecified G1 contrasts include seven Holm-significant contrasts; the seven remain significant in the seven-day sensitivity record. XGBoost versus SeasonalHA is nonsignificant at all three horizons. The four G2 key contrasts are nonsignificant after Holm; this does not prove equivalence.
+- [55 figure and auxiliary CSVs](FIGURE_DATA_INDEX.csv)
+- [All nine full main tables](TABLE_DATA_INDEX.csv)
+- [E01–E07 and frozen-stage result files](EXPERIMENT_RESULT_INDEX.csv)
+- [S01–S08 actual supplemental files](SUPPLEMENTARY_DATA_INDEX.csv)
+- [Canonical final result sources](CANONICAL_RESULT_INDEX.csv)
+- [37 saved master-workbook sheet CSVs](MASTER_WORKBOOK_SHEET_INDEX.csv)
+- [Scientific claims, including H1/H3 significant and H6 nonsignificant Persistence–HA](SCIENTIFIC_CLAIMS_REGISTRY.csv)
+- [GIS asset paths](GIS_LAYER_INDEX.csv)
+- [Source/content map and reuse aliases](ALL_SCIENTIFIC_CONTENT_UPLOAD_MAP.csv)
+- [Items not uploaded](NOT_UPLOADED_FILES.csv)
+- [GPT reading order](START_HERE_GPT.md)
 
-Unique returned-slot coverage is 60.161036%; quality-qualified deduplicated coverage is 59.874551%. The untraceable 97.30% figure is retired. H6 includes partial 5/6 and complete 6/6 windows. Table7 aggregation, Ridge numerical stability, dependence-aware inference and prepared-input timing boundaries were corrected. Numerical plotting tables remain permission pending under the inherited distribution record.
+## Scientific boundaries
 
-GIS evidence: 51 original and matched nodes, 50 current undirected diagnostic routes, 1598 road features; 15 candidates require author review. Historical approximately 130 km remains unverified. No QGZ runtime verification. E08 target asset was not found; no external validation or spatial-neighbor training. Single corridor, retrospective test exposure, no independent colocated true-speed measurement, and commercial rights limit interpretation.
+Original 180 executions, G2 651 execution units (489 fits and 162 deterministic executions), 93 Ridge SVD diagnostic fits are historical. No new experiments occurred in this upload. G1 Method A is primary; Method B supplementary; G2 is an independent implementation, not recovered original training code. Corrected native Ridge metrics do not replace missing SVD special common-target paired results. E08 and spatial-neighbor models were not run. Historical corridor length remains unverified; GIS candidates require author review. G1 Method A sMAPE and target-histogram frequencies were not saved and are not fabricated.
 
-## Repository history
+## Data and history layout
 
-The 2026-07-30 AJSE Phase 2A identity is retained as the original study lineage; APIN adds revision evidence without rewriting it. [Historical README](APIN_MAJOR_REVISION_20261126/00_START_HERE/HISTORICAL_README.md). Original provider-reported speeds: Pan Borneo corridor, Sarawak; 51 nodes, 2025-12-08 through 2026-02-28; H1/H3/H6 future-window means, 24h causal history, six retrospective rolling-origin folds; HA, SeasonalHA, Persistence, Ridge, XGBoost, GRU. GATE-FCD provides an auditable evaluation contract, not an accuracy guarantee.
+Current revision data are under `APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA`, `07_TABLE_DATA`, `09_SUPPLEMENTARY_MATERIALS`, `14_DATA_ASSETS`; full legacy manuscript support is under `19_LEGACY_MANUSCRIPT_HISTORY`. Original historical root folders and Git history remain preserved. Per-file source maps retain aliases rather than duplicating identical tensors/predictions. Canonical Prompt12 views supersede old snapshot columns only where explicitly documented.
 
-## Major revision evidence
+## Reproducibility
 
-- [E01: Data availability and eligibility](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E01/README.md)
-- [E02: Regimes and reliability](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E02/README.md)
-- [E03: Original-model evaluation and block inference](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E03/README.md)
-- [E04: Threshold, strict H6, imputation and history sensitivity](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E04/README.md)
-- [E05: Grid and scaling ablation](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E05/README.md)
-- [E06: Limited tuning, static GRU and Ridge SVD](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E06/README.md)
-- [E07: GIS, calendar and inference costs](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E07/README.md)
-- [E08: Target asset absent; external validation not run](APIN_MAJOR_REVISION_20261126/04_EXPERIMENT_RESULTS/E08/README.md)
+Source programs retain their historical controlled-project layout assumptions. A repository clone is not automatically a runnable training environment: resolve source paths with the source/content map and reproduce the archived environment before execution. No source program was executed for scientific analysis in this publication stage. API keys and local runtime installations are not included.
 
-## Data and numerical increments
+## Access
 
-[Data increment report](DATA_INCREMENT_REPORT.md); [canonical results](CANONICAL_RESULT_INDEX.csv); [source boundary](DATA_AVAILABILITY.md). Observation counts are not unique slots; H6 5/6 is different from 6/6. Prepared-input CPU timing is not end-to-end latency.
-
-## Actual files and structure
-
-[Actual release changes](RELEASE_FILE_CHANGELOG.csv), [master file index](MASTER_FILE_INDEX.csv), [source code](APIN_MAJOR_REVISION_20261126/03_SOURCE_CODE), [reproducibility](REPRODUCIBILITY.md). Historic directories retain their existing links.
-
-## Figure data guide
-
-- [Fig01: Study area](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig01/README.md) — detailed CSV/XLSX permission pending.
-- [Fig02: Data completeness](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig02/README.md) — detailed CSV/XLSX permission pending.
-- [Fig03: GATE-FCD protocol](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig03/README.md) — detailed CSV/XLSX permission pending.
-- [Fig04: Main model performance](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig04/README.md) — detailed CSV/XLSX permission pending.
-- [Fig05: Reliability and spatial error](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig05/README.md) — detailed CSV/XLSX permission pending.
-- [Fig06: Statistical inference](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig06/README.md) — detailed CSV/XLSX permission pending.
-- [Fig07: Traffic regimes](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig07/README.md) — detailed CSV/XLSX permission pending.
-- [Fig08: Sensitivity and fairness](APIN_MAJOR_REVISION_20261126/06_FIGURE_DATA/Fig08/README.md) — detailed CSV/XLSX permission pending.
-
-## Table guide
-
-- [Table01](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table01/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table02](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table02/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table03](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table03/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table04](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table04/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table05](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table05/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table06](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table06/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table07](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table07/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table08](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table08/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-- [Table09](APIN_MAJOR_REVISION_20261126/07_TABLE_DATA/Table09/README.md) — CSV/XLSX/LaTeX withheld pending permission.
-
-## QGIS guide
-
-[Layer summary](GIS_LAYER_INDEX.csv): original observation points differ from matched points; current OSM candidate roads and diagnostic paths are not historically confirmed mainline. WGS84/EPSG:4326 is the archived CRS. No spatial layer has documented new public approval. Full GPKG, SHP and GeoJSON remain local.
-
-## Data access and license
-
-[Inherited distribution record](APIN_MAJOR_REVISION_20261126/02_DATA_AND_PROVENANCE/DISTRIBUTION_STATUS_INHERITED.md). No new open-source license is invented. Code license does not grant provider-data rights. Unpublished manuscript and reviewer correspondence remain confidential. Legacy risk objects are listed for author review; none are removed or history-rewritten.
-
-## GPT access
-
-Begin at [START_HERE_GPT.md](START_HERE_GPT.md); read indexes in its specified order. Remote reading supports published summaries and code. Full detailed scientific plotting remains conditional on derived-data license approval.
-
-
-## Prompt10 targeted method-data supplement
-
-Actual Fig03 protocol node/edge/time CSVs and workbook, Table02 feature definitions, Table03 target definitions, Table04 historical revision parameters (method-only views), their workbooks/LaTeX, and eight field dictionaries/caption/design documents are added. Numeric metrics, CI/Holm, reliability results and full workbooks remain pending the explicit supplier publication grant documented as missing in the final license matrix. Method-only views do not replace the complete local research results.
-
-
-## Final editorial closure
-
-Experiments are FROZEN_WITH_LIMITATIONS. See [APIN_MAJOR_REVISION_20261126/10_SCIENTIFIC_REPORTS/FINAL_EDITORIAL_CLOSURE](APIN_MAJOR_REVISION_20261126/10_SCIENTIFIC_REPORTS/FINAL_EDITORIAL_CLOSURE/Final_Editorial_Closure_PUBLIC_STATUS.md). Persistence–HA: H1/H3 significant, H6 nonsignificant in frozen G1 inference. No tests recomputed. Detailed numbers and manuscript/editorial candidates remain controlled locally; permissions unchanged.
-
-
-## Prompt12 final non-GIS delivery — 2026-11-27
-
-Local scope: 55 actual figure/auxiliary CSV views (Fig1 4 existing non-geometry diagnostics; Fig2 10; Fig3 3; Fig4 6; Fig5 5; Fig6 5; Fig7 7; Fig8 15), nine main tables, eight supplemental groups. These are not the 53 frozen research-aggregate sources. Extra views are only filters/pivots/labels of existing data. QGIS maps are the author's responsibility; no GIS processing occurred.
-
-Public data: Fig03 three method CSVs plus workbook; Table02 definitions, Table03 method-only target definitions and Table04 configuration-only view. Updated actual dictionaries/captions/designs and per-panel indices. Fig02/04/05/06/07/08 detailed numerical panels and Tables01/05/06/07/08/09 remain local pending commercial derived-result distribution rights; no license grant is inferred. Total public figure numerical-result CSVs added: zero. Existing method views are updated, not described as full scientific result-table uploads.
-
-Corrections: archived observations replace unsupported raw archive wording; history/future-target DAG separation; history24_matched restores the actual history-window comparator; original G1 Method A remains separate from G2; old Cholesky Ridge common-target columns are labeled historical, corrected unavailable values left blank. Method A sMAPE, future-target histogram frequencies and SVD special common-target paired metrics were not saved and remain NOT_AVAILABLE. No fits, observations, statistical tests, or GIS processing were added.
-
-Use [FINAL_FIGURE_PANEL_DATA_INDEX.csv](FINAL_FIGURE_PANEL_DATA_INDEX.csv) and [FINAL_TABLE_DATA_INDEX.csv](FINAL_TABLE_DATA_INDEX.csv). Dictionaries alone never imply numerical-data availability. Historical source workbooks remain snapshots; the local version map identifies all overrides.
-
-Actual Prompt12 release diff: 4 added files, 42 modified files; 22 CSVs, 4 XLSX, 3 LaTeX files changed (these are changed files, not all newly added). New numerical-result CSV uploads: 0. Public figure CSV content is the corrected Fig03 method data. Full numerical plotting remains in the controlled local delivery.
-
-Prompt12 final local comparator clarification: Fig08 base-reference rows are restricted to the frozen fixed configuration and seed42, with full tuning/seed registry retained separately locally. The existing history24_matched condition remains the history-window comparator. This is filtering of existing results, not a new run.
+CSV/JSON/Markdown provide direct text access. Large tensors, Parquet, checkpoints and binary workbooks require appropriate software; a browser or GPT connector may not read large binary contents even when GitHub stores the file. No missing result is synthesized to overcome client limits.

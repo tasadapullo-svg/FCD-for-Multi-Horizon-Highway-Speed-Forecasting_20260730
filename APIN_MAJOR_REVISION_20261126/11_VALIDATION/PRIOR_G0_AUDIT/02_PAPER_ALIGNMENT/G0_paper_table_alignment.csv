@@ -1,0 +1,271 @@
+﻿tex_line,table_or_figure,source_line,status,reason
+262,table@262,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+263,table@262,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+264,table@262,\caption{Dataset and eligibility protocol for construction of the hourly FCD panel.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+265,tab:data_eligibility_protocol,\label{tab:data_eligibility_protocol},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+266,tab:data_eligibility_protocol,\footnotesize,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+267,tab:data_eligibility_protocol,\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.23\textwidth}|>{\raggedright\arraybackslash}p{0.30\textwidth}|>{\raggedright\arraybackslash}X|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+268,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+269,tab:data_eligibility_protocol,\textbf{Component} & \textbf{Frozen definition} & \textbf{Result / purpose} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+270,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+271,tab:data_eligibility_protocol,Raw observation window & 8 Dec 2025 13:15 to 28 Feb 2026 23:45; UTC+08:00 & Preserves the collected-data provenance. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+272,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+273,tab:data_eligibility_protocol,Formal analysis grid & 8 Dec 2025 14:00 to 28 Feb 2026 23:45; 51 nodes & Excludes the incomplete starting hour. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+274,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+275,tab:data_eligibility_protocol,"Planned grid & 7,912 quarter-hours and 1,978 complete hours per node & 403,512 node--quarter-hours and 100,878 node--hours. \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+276,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+277,tab:data_eligibility_protocol,"Record eligibility & Valid time, coordinates, speed, travel time, confidence and flags; road closure false; positive finite travel time; $0<v\leq130$~km~h$^{-1}$; $0.80\leq c\leq1.00$ & 244,477 raw records reduced to 243,307 eligible records; 1,170 fail confidence. \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+278,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+279,tab:data_eligibility_protocol,"Duplicate handling & Arithmetic mean within identical node--quarter-hour keys after filtering & 241,601 deduplicated 15-min records; 1,580 duplicate groups. \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+280,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+281,tab:data_eligibility_protocol,"Primary hourly rule & Mean of eligible quarter-hour speeds when at least 2 of 4 positions are observed & 83,439 observed and 17,439 missing node--hours; 82.71\% coverage. \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+282,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+283,tab:data_eligibility_protocol,"Sensitivity rules & 1-of-4, 3-of-4, and 4-of-4 & Used only to assess coverage sensitivity. \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+284,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+285,tab:data_eligibility_protocol,Target semantics & Provider-reported FCD speed; no independent detector ground truth & Forecasting evaluates temporal predictability of the commercial traffic-state product. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+286,tab:data_eligibility_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+287,tab:data_eligibility_protocol,\end{tabularx},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+288,tab:data_eligibility_protocol,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+357,table@357,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+358,table@357,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+359,table@357,\caption{Frozen 13-feature sequence for each hourly history row.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+360,tab:feature_set,\label{tab:feature_set},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+361,tab:feature_set,\footnotesize,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+362,tab:feature_set,\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.05\textwidth}|>{\raggedright\arraybackslash}p{0.32\textwidth}|>{\raggedright\arraybackslash}X|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+363,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+364,tab:feature_set,\textbf{No.} & \textbf{Feature} & \textbf{Definition} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+365,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+366,tab:feature_set,1 & \texttt{input\_speed\_filled} & Observed hourly speed after causal forward fill and training-only fallback. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+367,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+368,tab:feature_set,2 & \texttt{hourly\_missing\_mask} & 1 when the primary hourly speed is missing; 0 otherwise. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+369,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+370,tab:feature_set,3 & \texttt{imputed\_flag} & 1 when the model input speed is filled; numerically identical to the missing mask in the frozen pipeline. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+371,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+372,tab:feature_set,4 & \texttt{hours\_since\_last\_observation} & Elapsed hourly grid steps since the most recent observation; 0 when observed and capped at 168 h. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+373,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+374,tab:feature_set,5 & \texttt{history\_coverage\_ratio} & Observed fraction in the trailing window of at most 24 h. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+375,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+376,tab:feature_set,6 & \texttt{history\_imputation\_ratio} & One minus the history-coverage ratio. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+377,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+378,tab:feature_set,7 & \texttt{max\_gap\_24h} & Longest consecutive missing run within the trailing window. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+379,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+380,tab:feature_set,8 & \texttt{volatility\_24h} & Population SD of the filled speed within the trailing window. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+381,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+382,tab:feature_set,9 & \texttt{hour\_sin} & Sine encoding of hour of day. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+383,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+384,tab:feature_set,10 & \texttt{hour\_cos} & Cosine encoding of hour of day. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+385,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+386,tab:feature_set,11 & \texttt{dow\_sin} & Sine encoding of day of week. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+387,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+388,tab:feature_set,12 & \texttt{dow\_cos} & Cosine encoding of day of week. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+389,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+390,tab:feature_set,13 & \texttt{weekend\_flag} & 1 for Saturday or Sunday; 0 otherwise. \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+391,tab:feature_set,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+392,tab:feature_set,\end{tabularx},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+393,tab:feature_set,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+441,table@441,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+442,table@441,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+443,table@441,\caption{Primary future-window mean-speed target definitions.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+444,tab:target_definitions,\label{tab:target_definitions},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+445,tab:target_definitions,\small,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+446,tab:target_definitions,\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.07\textwidth}|>{\raggedright\arraybackslash}p{0.18\textwidth}|>{\raggedright\arraybackslash}p{0.17\textwidth}|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.13\textwidth}|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+447,tab:target_definitions,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+448,tab:target_definitions,\textbf{Task} & \textbf{Future window} & \textbf{Observed-hour rule} & \textbf{Target} & \textbf{Equation} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+449,tab:target_definitions,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+450,tab:target_definitions,H1 & $t_0+1$~h & 1 of 1 & Speed in the next observed hour. & Eq.~\eqref{eq:target_contract} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+451,tab:target_definitions,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+452,tab:target_definitions,H3 & $t_0+1$ to $t_0+3$~h & 3 of 3 & Mean of all three future hourly speeds. & Eq.~\eqref{eq:target_contract} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+453,tab:target_definitions,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+454,tab:target_definitions,H6 & $t_0+1$ to $t_0+6$~h & At least 5 of 6 & Mean of the 5 or 6 observed future hourly speeds; no target imputation. & Eq.~\eqref{eq:target_contract} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+455,tab:target_definitions,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+456,tab:target_definitions,\end{tabularx},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+457,tab:target_definitions,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+527,table@527,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+528,table@527,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+529,table@527,\caption{Frozen forecasting models and experimental roles.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+530,tab:model_protocol,\label{tab:model_protocol},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+531,tab:model_protocol,\footnotesize,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+532,tab:model_protocol,\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.11\textwidth}|>{\raggedright\arraybackslash}p{0.17\textwidth}|>{\raggedright\arraybackslash}p{0.29\textwidth}|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.15\textwidth}|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+533,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+534,tab:model_protocol,\textbf{Model} & \textbf{Primary input} & \textbf{Frozen rule / setting} & \textbf{Role} & \textbf{Equation(s)} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+535,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+536,tab:model_protocol,HA & Fold--horizon training targets & Arithmetic mean; deterministic & Overall mean reference. & Eq.~\eqref{eq:baseline_models} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+537,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+538,tab:model_protocol,SeasonalHA & Seasonally matched training targets & Mean of the frozen seasonal reference set; deterministic & Calendar-pattern reference. & Eq.~\eqref{eq:baseline_models} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+539,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+540,tab:model_protocol,Persistence & Filled speed at $t_0$ & No fitted parameters & Current-state reference. & Eq.~\eqref{eq:baseline_models} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+541,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+542,tab:model_protocol,Ridge & 315-dimensional vector & L2 regression; $\alpha=1.0$ & Learned linear benchmark. & Eq.~\eqref{eq:ridge} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+543,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+544,tab:model_protocol,"XGBoost & 315-dimensional vector & 500 trees; depth 8; learning rate 0.05; subsample 0.8; column subsample 0.8; three seeds & Nonlinear tabular benchmark. & Eqs.~\eqref{eq:xgboost_prediction}, \eqref{eq:seed_ensemble} \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+545,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+546,tab:model_protocol,"GRU & $24\times13$ sequence & One layer; hidden 64; batch 256; learning rate $10^{-3}$; weight decay $10^{-4}$; max 30 epochs; patience 5; three seeds & Recurrent benchmark. & Eqs.~\eqref{eq:gru_model}, \eqref{eq:seed_ensemble} \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+547,tab:model_protocol,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+548,tab:model_protocol,\end{tabularx},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+549,tab:model_protocol,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+565,table@565,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+566,table@565,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+567,table@565,\caption{Frozen retrospective rolling-origin fold schedule. Interval end times are exclusive.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+568,tab:rolling_folds,\label{tab:rolling_folds},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+569,tab:rolling_folds,\footnotesize,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+570,tab:rolling_folds,\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.07\textwidth}|>{\raggedright\arraybackslash}p{0.29\textwidth}|>{\raggedright\arraybackslash}p{0.27\textwidth}|>{\raggedright\arraybackslash}X|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+571,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+572,tab:rolling_folds,\textbf{Fold} &,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+573,tab:rolling_folds,\textbf{Training interval} &,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+574,tab:rolling_folds,\textbf{Validation interval} &,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+575,tab:rolling_folds,\textbf{Test interval} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+576,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+577,tab:rolling_folds,1 & 9 Dec 2025 00:00--12 Jan 2026 00:00 & 12 Jan 2026 00:00--19 Jan 2026 00:00 & 19 Jan 2026 00:00--26 Jan 2026 00:00 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+578,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+579,tab:rolling_folds,2 & 9 Dec 2025 00:00--19 Jan 2026 00:00 & 19 Jan 2026 00:00--26 Jan 2026 00:00 & 26 Jan 2026 00:00--2 Feb 2026 00:00 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+580,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+581,tab:rolling_folds,3 & 9 Dec 2025 00:00--26 Jan 2026 00:00 & 26 Jan 2026 00:00--2 Feb 2026 00:00 & 2 Feb 2026 00:00--9 Feb 2026 00:00 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+582,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+583,tab:rolling_folds,4 & 9 Dec 2025 00:00--2 Feb 2026 00:00 & 2 Feb 2026 00:00--9 Feb 2026 00:00 & 9 Feb 2026 00:00--16 Feb 2026 00:00 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+584,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+585,tab:rolling_folds,5 & 9 Dec 2025 00:00--9 Feb 2026 00:00 & 9 Feb 2026 00:00--16 Feb 2026 00:00 & 16 Feb 2026 00:00--23 Feb 2026 00:00 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+586,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+587,tab:rolling_folds,6 & 9 Dec 2025 00:00--16 Feb 2026 00:00 & 16 Feb 2026 00:00--23 Feb 2026 00:00 & 23 Feb 2026 00:00--1 Mar 2026 00:00 \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+588,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+589,tab:rolling_folds,"\multicolumn{4}{|p{0.965\textwidth}|}{\textit{Equation reference:} the future target must remain wholly inside the assigned split under Eq.~\eqref{eq:target_contract}; all intervals use the half-open convention $[\mathrm{start},\mathrm{end})$.} \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+590,tab:rolling_folds,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+591,tab:rolling_folds,\end{tabularx},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+592,tab:rolling_folds,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+608,table@608,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+609,table@608,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+610,table@608,\caption{Formal experimental scale and sample-audit summary.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+611,tab:audit_scale,\label{tab:audit_scale},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+612,tab:audit_scale,\small,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+613,tab:audit_scale,\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.42\textwidth}|>{\raggedright\arraybackslash}X|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+614,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+615,tab:audit_scale,\textbf{Audit or scale item} & \textbf{Formal result} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+616,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+617,tab:audit_scale,Common fold--horizon manifests & 18; target eligibility follows Eq.~\eqref{eq:target_contract} \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+618,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+619,tab:audit_scale,Formal model runs & 180/180 completed; 0 failed; stochastic predictions are aggregated by Eq.~\eqref{eq:seed_ensemble} \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+620,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+621,tab:audit_scale,"Total manifest records & 1,053,618 \\ ",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+622,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+623,tab:audit_scale,"Training / validation / test records & 873,874 / 87,597 / 92,147 \\ ",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+624,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+625,tab:audit_scale,"Test records by horizon & H1: 38,201; H3: 24,805; H6: 29,141 \\ ",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+626,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+627,tab:audit_scale,Full-sample leakage and consistency assertions & 20/20 PASS \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+628,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+629,tab:audit_scale,Future-information violations & 0 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+630,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+631,tab:audit_scale,Target-recomputation mismatches & 0 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+632,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+633,tab:audit_scale,Cross-split target-window violations & 0; split containment is part of Eq.~\eqref{eq:target_contract} \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+634,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+635,tab:audit_scale,Primary inferential unit & Rolling-origin fold ($n=6$); paired effect defined by Eq.~\eqref{eq:paired_delta} \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+636,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+637,tab:audit_scale,Evidence level & Retrospective rolling-origin; independent blind-test claim not made \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+638,tab:audit_scale,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+639,tab:audit_scale,\end{tabularx},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+640,tab:audit_scale,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+678,table@678,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+679,table@678,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+680,table@678,"\caption{Fold-macro MAE of the six forecasting models. Values are mean $\pm$ sample standard deviation across six retrospective rolling-origin folds, in km~h$^{-1}$.}",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+681,tab:main_mae,\label{tab:main_mae},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+682,tab:main_mae,\small,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+683,tab:main_mae,\begin{tabular}{|l|c|c|c|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+684,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+685,tab:main_mae,\textbf{Model} & \textbf{H1} & \textbf{H3} & \textbf{H6} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+686,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+687,tab:main_mae,\multicolumn{4}{|l|}{\textit{Metric definition:} MAE is defined in Eq.~\eqref{eq:evaluation_metrics}.} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+688,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+689,tab:main_mae,XGBoost     & $0.949\pm0.258$ & $0.829\pm0.168$ & $0.752\pm0.142$ \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+690,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+691,tab:main_mae,SeasonalHA  & $0.961\pm0.115$ & $0.853\pm0.105$ & $0.774\pm0.102$ \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+692,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+693,tab:main_mae,Persistence & $0.950\pm0.155$ & $1.170\pm0.136$ & $1.470\pm0.182$ \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+694,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+695,tab:main_mae,GRU         & $1.151\pm0.230$ & $1.043\pm0.195$ & $0.958\pm0.199$ \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+696,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+697,tab:main_mae,Ridge       & $1.225\pm0.267$ & $1.131\pm0.213$ & $1.086\pm0.277$ \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+698,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+699,tab:main_mae,HA          & $1.825\pm0.119$ & $1.704\pm0.136$ & $1.505\pm0.120$ \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+700,tab:main_mae,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+701,tab:main_mae,\end{tabular},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+702,tab:main_mae,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+829,table@829,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+830,table@829,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+831,table@829,\caption{Frozen model and training settings used in the formal experiment.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+832,tab:appendix_hyperparameters,\label{tab:appendix_hyperparameters},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+833,tab:appendix_hyperparameters,\footnotesize,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+834,tab:appendix_hyperparameters,\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.16\textwidth}|>{\raggedright\arraybackslash}X|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+835,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+836,tab:appendix_hyperparameters,\textbf{Component} & \textbf{Frozen setting} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+837,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+838,tab:appendix_hyperparameters,HA & Mean of eligible fold--horizon training targets. \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+839,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+840,tab:appendix_hyperparameters,SeasonalHA & Mean of the frozen seasonally matched training reference set. \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+841,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+842,tab:appendix_hyperparameters,Persistence & Causally filled speed at forecast origin $t_0$. \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+843,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+844,tab:appendix_hyperparameters,Ridge & 315-dimensional tabular input; L2 penalty $\alpha=1.0$; deterministic. \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+845,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+846,tab:appendix_hyperparameters,"XGBoost & 315-dimensional tabular input; 500 trees; maximum depth 8; learning rate 0.05; subsample 0.8; column subsample 0.8; objective \texttt{reg:squarederror}; \texttt{tree\_method=hist}; 10 CPU jobs; seeds 42, 2026, 3407. \\ ",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+847,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+848,tab:appendix_hyperparameters,"GRU & $24\times13$ input; one GRU layer; hidden size 64; dropout 0.0; batch 256; learning rate $10^{-3}$; weight decay $10^{-4}$; maximum 30 epochs; patience 5; \texttt{minimum\_delta=0.0}; gradient clipping norm 1.0; seeds 42, 2026, 3407. \\ ",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+849,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+850,tab:appendix_hyperparameters,Stochastic aggregation & Average the three seed-level predictions for each sample before calculation of the primary metrics. \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+851,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+852,tab:appendix_hyperparameters,"Input filling & Node-wise causal forward fill; if unavailable, fold-training node median, then fold-training corridor median. \\ ",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+853,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+854,tab:appendix_hyperparameters,Feature scaling & Each of the 13 sequence features standardized using the fold-training mean and population SD; validation and test use frozen training parameters. \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+855,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+856,tab:appendix_hyperparameters,Sequence input & 24 hourly rows $\times$ 13 standardized features. \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+857,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+858,tab:appendix_hyperparameters,"Tabular input & Flattened 312 sequence values plus node order, latitude, and longitude = 315 dimensions. \\",NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+859,tab:appendix_hyperparameters,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+860,tab:appendix_hyperparameters,\end{tabularx},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+861,tab:appendix_hyperparameters,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+871,table@871,\begin{table}[!htbp],NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+872,table@871,\centering,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+873,table@871,\caption{Secondary fold-macro performance metrics. RMSE is in km~h$^{-1}$; sMAPE is in percent; Bias is in km~h$^{-1}$.},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+874,tab:secondary_metrics,\label{tab:secondary_metrics},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+875,tab:secondary_metrics,\footnotesize,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+876,tab:secondary_metrics,\begin{tabular}{|l|l|r|r|r|},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+877,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+878,tab:secondary_metrics,\textbf{Horizon} & \textbf{Model} & \textbf{RMSE} & \textbf{sMAPE} & \textbf{Bias} \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+879,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+880,tab:secondary_metrics,H1 & XGBoost     & 2.138 & 1.305 & -0.175 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+881,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+882,tab:secondary_metrics,H1 & SeasonalHA  & 2.399 & 1.379 & -0.026 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+883,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+884,tab:secondary_metrics,H1 & Persistence & 3.007 & 1.450 &  0.004 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+885,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+886,tab:secondary_metrics,H1 & GRU         & 2.333 & 1.577 &  0.124 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+887,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+888,tab:secondary_metrics,H1 & Ridge       & 2.455 & 1.672 & -0.141 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+889,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+890,tab:secondary_metrics,H1 & HA          & 3.738 & 2.818 & -0.039 \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+891,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+892,tab:secondary_metrics,H3 & XGBoost     & 1.787 & 1.172 & -0.005 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+893,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+894,tab:secondary_metrics,H3 & SeasonalHA  & 1.793 & 1.209 & -0.002 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+895,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+896,tab:secondary_metrics,H3 & Persistence & 3.143 & 1.810 &  0.106 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+897,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+898,tab:secondary_metrics,H3 & GRU         & 1.852 & 1.417 &  0.089 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+899,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+900,tab:secondary_metrics,H3 & Ridge       & 2.021 & 1.551 & -0.046 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+901,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+902,tab:secondary_metrics,H3 & HA          & 3.300 & 2.644 &  0.003 \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+903,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+904,tab:secondary_metrics,H6 & XGBoost     & 1.396 & 1.046 & -0.027 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+905,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+906,tab:secondary_metrics,H6 & SeasonalHA  & 1.467 & 1.089 & -0.004 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+907,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+908,tab:secondary_metrics,H6 & Persistence & 3.664 & 2.296 &  0.194 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+909,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+910,tab:secondary_metrics,H6 & GRU         & 1.641 & 1.307 &  0.067 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+911,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+912,tab:secondary_metrics,H6 & Ridge       & 1.821 & 1.476 & -0.091 \\ ,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+913,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+914,tab:secondary_metrics,H6 & HA          & 2.874 & 2.341 &  0.009 \\,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+915,tab:secondary_metrics,\hline,NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+916,tab:secondary_metrics,\end{tabular},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配
+917,tab:secondary_metrics,\end{table},NOT_VERIFIED,需逐单元格语义关联，不能按相同数字自动匹配

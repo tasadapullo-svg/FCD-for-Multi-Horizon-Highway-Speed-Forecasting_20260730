@@ -1,0 +1,10 @@
+﻿column,type,meaning
+metric,object,see frozen source/column names; full precision retained; blank is not zero
+value,int64,see frozen source/column names; full precision retained; blank is not zero
+statistical_level,object,see frozen source/column names; full precision retained; blank is not zero
+denominator,float64,see frozen source/column names; full precision retained; blank is not zero
+ratio,float64,see frozen source/column names; full precision retained; blank is not zero
+historical_value,float64,see frozen source/column names; full precision retained; blank is not zero
+difference,float64,see frozen source/column names; full precision retained; blank is not zero
+definition,float64,see frozen source/column names; full precision retained; blank is not zero
+version,object,see frozen source/column names; full precision retained; blank is not zero

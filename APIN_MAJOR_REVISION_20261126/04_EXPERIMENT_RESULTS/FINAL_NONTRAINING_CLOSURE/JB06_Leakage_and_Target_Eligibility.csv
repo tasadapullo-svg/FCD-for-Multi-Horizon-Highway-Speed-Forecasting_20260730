@@ -1,0 +1,6 @@
+﻿check,result,blocking,minimum_evidence
+true vs imputed speed,NOT_ASSESSABLE_TARGET_NOT_FOUND,YES,target CSV plus original observation/imputation and processing logs
+bidirectional interpolation,NOT_ASSESSABLE_TARGET_NOT_FOUND,YES,target CSV plus original observation/imputation and processing logs
+full-period mean fill or normalization,NOT_ASSESSABLE_TARGET_NOT_FOUND,YES,target CSV plus original observation/imputation and processing logs
+future smoothing/target fill,NOT_ASSESSABLE_TARGET_NOT_FOUND,YES,target CSV plus original observation/imputation and processing logs
+cross-boundary target aggregation,NOT_ASSESSABLE_TARGET_NOT_FOUND,YES,target CSV plus original observation/imputation and processing logs

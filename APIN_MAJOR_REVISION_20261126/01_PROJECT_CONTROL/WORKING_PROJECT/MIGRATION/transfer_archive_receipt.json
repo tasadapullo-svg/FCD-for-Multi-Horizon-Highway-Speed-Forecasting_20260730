@@ -1,0 +1,10 @@
+{
+  "archive": "D:\\Desktop\\大修_Applied Intelligence_2026112_论文修改\\APIN_PRIVATE_NewPC_Transfer_20261125.zip",
+  "sha256": "4579fa79da3ec76a78657caec67543b21698d4a317bec2678d29be08e2999729",
+  "archive_bytes": 611916943,
+  "members": 1053,
+  "files_hashed": 1052,
+  "raw_bytes": 3382719313,
+  "zip_crc": "PASS",
+  "training_on_old_pc": "STOPPED; SOURCE_GATE blocked before any fit"
+}

@@ -1,0 +1,99 @@
+PAGE 1
+Auditable Multi-Horizon Highway Speed
+Forecasting from Sparse Floating Car Data: The
+GATE-FCD Framework
+Wenjie Sun1*, Safizahanin binti Mokhtar 1*,
+Gabriel Ling Hoh Teck1, Ruiqing Li 2, Lvmin Liu 3
+1*Department of Urban and Regional Planning, Universiti Teknologi
+Malaysia, Skudai, 81310, Johor, Malaysia .
+2Faculty of Computing, Universiti Teknologi Malaysia, Johor Bahru,
+81310, Johor, Malaysia .
+3School of Information Engineering, Nanjing Normal University
+Taizhou College, Taizhou, Jiangsu Province, China .
+*Corresponding author(s). E-mail(s): sunwenjie@graduate.utm.my;
+safizahanin@utm.my;
+Contributing authors: gabriel.ling@utm.my;
+liruiqing@graduate.utm.my; llm1194568495@gmail.com;
+Abstract
+The Pan Borneo Highway is a major interregional road infrastructure system
+in East Malaysia, where long-distance highway monitoring can be constrained
+by sparse roadside sensing infrastructure. Floating car data (FCD) provide an
+alternative source for highway speed forecasting in such environments. However,
+FCD services may omit planned observation slots, obscuring the complete obser-
+vation space, while model comparisons may be affected by inconsistent samples,
+preprocessing boundaries, or limited evaluation periods. This study proposes
+the Grid-Reconstructed, Auditable, Temporally Causal, and Eligibility-Gated
+Multi-Horizon FCD Forecasting (GATE-FCD) framework for reproducible high-
+way speed forecasting. GATE-FCD reconstructs the complete spatiotemporal
+grid, applies eligibility gating, and constructs a 24-h temporally causal history
+at 51 fixed virtual observation nodes. Before model comparison, common sam-
+ple manifests are frozen across six retrospective rolling-origin folds for 1-, 3-,
+and 6-h forecasting horizons (H1, H3, and H6), ensuring that all models are
+evaluated under consistent data and temporal boundaries. Among the evalu-
+ated models, XGBoost achieved the lowest descriptive mean absolute error at
+1
+PAGE 2
+all three horizons, with MAEs of 0.949, 0.829, and 0.752 km h −1 for H1, H3,
+and H6, respectively. The results demonstrate the feasibility of auditable multi-
+horizon forecasting using sparse FCD under controlled evaluation conditions.
+Future research should extend the observation period, incorporate independent
+reference speeds, and evaluate the framework across additional corridors and
+FCD providers.
+Keywords: floating car data, traffic speed forecasting, multi-horizon forecasting,
+model reliability, rolling-origin evaluation, intelligent transportation systems
+2
+PAGE 3
+3
+PAGE 4
+1 Introduction
+2 Related work
+2.1 FCD-based traffic forecasting
+2.2 Multi-horizon traffic forecasting and model complexity
+2.3 Forecasting with incomplete and reliability-varying traffic
+data
+3 Dataset and preprocessing
+3.1 Study corridor and FCD collection
+3.2 Complete-grid reconstruction and data eligibility
+3.3 Dataset characteristics
+3.4 Causal preprocessing and feature construction
+4 Forecasting models
+4.1 Multi-horizon forecasting tasks
+4.2 Naive and statistical baselines
+4.3 Machine-learning and deep-learning models
+5 Evaluation
+5.1 Experimental setup
+5.2 Rolling-origin evaluation and common-sample
+benchmarking
+5.3 Evaluation metrics and statistical analysis
+5.4 Multi-horizon forecasting results
+5.5 Cross-fold and random-seed stability
+5.6 Reliability-conditioned forecasting performance
+5.7 Threats to validity
+6 Conclusion
+A Detailed eligibility and audit protocol
+B Model hyperparameters and implementation
+details
+C Supplementary metrics and sensitivity analyses
+Acknowledgments
+The authors thank the Faculty of Built Environment and Surveying, Universiti
+Teknologi Malaysia, for providing laboratory support. The authors also acknowl-
+edge the planning background information related to corridor operations in Sarawak,
+4
+PAGE 5
+Malaysia, which helped clarify the practical context of this study. No individual or
+institution influenced the study design, data analysis, interpretation of the results, or
+conclusions of the manuscript.
+Statements and Declarations
+F unding.This research received no specific grant from any funding agency in the
+public, commercial, or not-for-profit sectors.
+Competing interests.The authors declare no competing interests.
+Author contributions. Author contribution statement to be finalized and con-
+firmed by all authors before submission.
+Data availability .The floating car data used in this study were obtained through
+the TomTom Traffic API. Raw provider data and sample-level records are not publicly
+redistributed because of provider licensing restrictions. Publicly shareable research
+outputs are provided through the project repository.
+Code availability .Public code, frozen configurations, aggregated results, and
+audit materials are available at https://github.com/tasadapullo-svg/FCD-for-Multi
+-Horizon-Highway-Speed-Forecasting 20260730.
+5

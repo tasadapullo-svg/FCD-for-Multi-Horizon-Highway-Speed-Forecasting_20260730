@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.15.0+cpu",
+  "sklearn": "1.9.1",
+  "xgboost": "3.4.1",
+  "numpy": "2.5.5",
+  "pandas": "3.0.1",
+  "CPU": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "logical_cores": 8,
+  "physical_cores": 4,
+  "RAM_bytes": 16969424896,
+  "torch_threads": 2,
+  "GPU_used": false,
+  "reason": "existing NVIDIA driver457.56 CUDA11.1; new CPU-only wheel; no driver changes",
+  "platform": "Windows-10-10.0.19042-SP0"
+}

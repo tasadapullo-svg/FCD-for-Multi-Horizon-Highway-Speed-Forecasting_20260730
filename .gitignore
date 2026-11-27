@@ -1,0 +1,11 @@
+# Author-approved scientific data are intentionally tracked.
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+id_rsa
+id_ed25519
+node_modules/
+__pycache__/
+*.pyc

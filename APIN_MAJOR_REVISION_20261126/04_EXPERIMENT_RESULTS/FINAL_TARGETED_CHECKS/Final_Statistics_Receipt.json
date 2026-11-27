@@ -1,0 +1,11 @@
+{
+  "g1_primary_significant": 7,
+  "g1_7d_sensitivity_significant": 7,
+  "g1_primary_significant_7d_preserved": true,
+  "g2_primary_significant": 0,
+  "sources": [
+    "E03_08_Holm_Adjusted_Comparisons.csv",
+    "E03_07_Block_Length_Sensitivity.csv",
+    "G2_Key_Comparisons_Actual.csv"
+  ]
+}
