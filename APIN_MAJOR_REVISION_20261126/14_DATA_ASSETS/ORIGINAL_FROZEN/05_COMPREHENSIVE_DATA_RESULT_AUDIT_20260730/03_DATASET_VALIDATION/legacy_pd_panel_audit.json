@@ -1,0 +1,19 @@
+{
+  "path": "D:\\2026_PD\\data\\processed\\phase2_panel_1h_model_ready.csv.gz",
+  "sha256": "f43ae3724af91feb63ba4c667be0b3989c18e3014075721b92371e9a95cc87f8",
+  "rows": 100980,
+  "nodes": 51,
+  "first_timestamp": "2025-12-08 13:00:00",
+  "last_timestamp": "2026-03-01 00:00:00",
+  "duplicate_node_time_keys": 0,
+  "missing_target_rows": 3886,
+  "observed_target_rows": 97094,
+  "complete_hour_rows": 100878,
+  "complete_hour_expected_rows": 100878,
+  "boundary_rows_outside_complete_grid": 102,
+  "boundary_hours_outside_complete_grid": [
+    "2025-12-08 13:00:00",
+    "2026-03-01 00:00:00"
+  ],
+  "complete_grid_row_match": true
+}

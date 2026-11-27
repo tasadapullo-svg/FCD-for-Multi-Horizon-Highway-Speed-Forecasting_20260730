@@ -1,0 +1,32 @@
+{
+  "folder": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\e8d385cbcc4e2642308f",
+  "shared_features": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\hour_features\\leaky_scaling_F4_v2",
+  "condition": "leaky_scaling",
+  "fold": 4,
+  "horizon": 6,
+  "manifest_sha256": "4dfab902b4c93ba6f026b7cb7857acabcaaa944ccc1107e36e21d49e0e6834e5",
+  "schema_sha256": "412f20793331ba21600eb54c8f34c38598825e72c1eeddac6131e6bdb706912e",
+  "preprocess_seconds": 1.3960475000203587,
+  "split_hashes": {
+    "train": "b3b547dbe170386b02c741381d06793ecf7b4ef883fab36331c927590da37f4f",
+    "validation": "e05446ba7b30d05e8b58361898dfbf2c52d7337ee885de9b28923e2a76a92427",
+    "test": "40add2e7376f617b2b142ab26e413a341dc5cd3f8155e22f11e1d9d3fa8f6371"
+  },
+  "support": {
+    "train": {
+      "n": 49650,
+      "nodes": 51,
+      "dates": 55
+    },
+    "validation": {
+      "n": 6233,
+      "nodes": 51,
+      "dates": 7
+    },
+    "test": {
+      "n": 4770,
+      "nodes": 51,
+      "dates": 7
+    }
+  }
+}

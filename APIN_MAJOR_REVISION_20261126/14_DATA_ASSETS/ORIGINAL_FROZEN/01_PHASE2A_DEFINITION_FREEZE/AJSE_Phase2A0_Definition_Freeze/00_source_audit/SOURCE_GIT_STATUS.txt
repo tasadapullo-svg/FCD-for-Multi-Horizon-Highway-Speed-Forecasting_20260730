@@ -1,0 +1,51 @@
+audit_time=2026-07-28T17:51:11+08:00
+source_root=D:\2026_07_23\CRG_TCN_review_v2\package_extracted\03_CRG_TCN_experiment_framework_v2_final_week_blind
+commit=70fd08cb47895be22e6c9425df37ea4b0fb23cca
+dirty=True
+
+git status --porcelain=v1 --untracked-files=all
+?? configs/matrices/phase1_rolling_smoke_v2_2.yaml
+?? configs/matrices/phase2_parallel_jobs_v2_2.yaml
+?? configs/matrices/phase2_parallel_retry_v2_2.yaml
+?? configs/matrices/phase2_smoke_v2_2.yaml
+?? configs/matrices/v2_2/P3_hyperparameter_screening.yaml
+?? configs/matrices/v2_2/P3_hyperparameter_screening_resolved.yaml
+?? configs/matrices/v2_2/P4_temporal_validation_5seed.yaml
+?? configs/matrices/v2_2/P4_temporal_validation_resolved.yaml
+?? configs/matrices/v2_2/P5A_data_budget.yaml
+?? configs/matrices/v2_2/P5B_structure_evidence.yaml
+?? configs/matrices/v2_2/P5C_history_window.yaml
+?? configs/matrices/v2_2/P5_formal_resolved.yaml
+?? configs/matrices/v2_2/P6B_contiguous_spatial_holdout.yaml
+?? configs/matrices/v2_2/P6_formal_resolved.yaml
+?? configs/matrices/v2_2/P7_final_week_frozen_10plus20seed.yaml
+?? requirements-models.txt
+?? scripts/prepare_phase3_matrix.py
+?? scripts/prepare_phase4_matrix.py
+?? scripts/prepare_phase5_matrix.py
+?? scripts/prepare_phase6_matrix.py
+?? scripts/run_phase2_parallel.py
+?? scripts/run_phase3_parallel.py
+?? scripts/run_phase3_trial.py
+?? scripts/run_phase4_campaign.py
+?? scripts/run_phase4_parallel.py
+?? scripts/run_phase4_trial.py
+?? scripts/run_phase5_campaign.py
+?? scripts/run_phase5_gpu_light_boost.py
+?? scripts/run_phase5_parallel.py
+?? scripts/run_phase5_trial.py
+?? scripts/run_phase6_campaign.py
+?? scripts/run_phase6_parallel.py
+?? scripts/run_phase6_trial.py
+?? scripts/run_rolling_experiment.py
+?? scripts/validate_phase2.py
+?? scripts/validate_phase3.py
+?? scripts/validate_phase4.py
+?? scripts/validate_phase5.py
+?? scripts/validate_phase6.py
+?? src/models/__init__.py
+?? src/models/rolling_models.py
+?? src/rolling_dataset.py
+?? tests/test_phase2_models.py
+?? tests/test_phase3_preflight.py
+?? tests/test_phase5_contract.py

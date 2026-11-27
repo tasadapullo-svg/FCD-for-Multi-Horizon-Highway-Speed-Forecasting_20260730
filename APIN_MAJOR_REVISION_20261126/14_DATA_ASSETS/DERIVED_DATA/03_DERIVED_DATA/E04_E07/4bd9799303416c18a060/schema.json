@@ -1,0 +1,68 @@
+{
+  "features": [
+    "input_speed_filled",
+    "hourly_missing_mask",
+    "imputed_flag",
+    "hours_since_last_observation",
+    "history_coverage_ratio",
+    "history_imputation_ratio",
+    "max_gap_24h",
+    "volatility_24h",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "weekend_flag"
+  ],
+  "history_length": 24,
+  "reliability_window": 24,
+  "threshold": 1,
+  "target_required": 1,
+  "hour_label": "start",
+  "decision_offset_hours": 1,
+  "fit_scope": "fold_train_hours_only",
+  "mu": [
+    88.86088562011719,
+    0.024846212938427925,
+    0.024846212938427925,
+    0.08496732264757156,
+    0.9739615321159363,
+    0.026038479059934616,
+    0.5554594397544861,
+    2.633554220199585,
+    0.0,
+    0.0,
+    0.0,
+    -0.029411761090159416,
+    0.29411765933036804
+  ],
+  "scale": [
+    16.18778419494629,
+    0.15565627813339233,
+    0.15565627813339233,
+    0.6677390933036804,
+    0.07701484113931656,
+    0.07701484113931656,
+    1.6520990133285522,
+    2.8823840618133545,
+    0.7071067690849304,
+    0.7071067690849304,
+    0.717430055141449,
+    0.6960093975067139,
+    0.4556451141834259
+  ],
+  "static_mean": [
+    26.0,
+    1.5849531888961792,
+    109.98995208740234
+  ],
+  "static_scale": [
+    14.71960163116455,
+    0.11153329163789749,
+    0.178324893116951
+  ],
+  "imputation": "node_ffill_then_train_node_median_then_corridor",
+  "condition": "threshold1",
+  "fold": 1,
+  "horizon": 1
+}

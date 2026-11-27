@@ -1,0 +1,15 @@
+{
+  "validation_status": "PASS",
+  "audit_root": "D:\\2026_AJSE_FINAL\\05_COMPREHENSIVE_DATA_RESULT_AUDIT_20260730",
+  "audit_file_count_in_manifest": 84,
+  "workbook": "D:\\2026_AJSE_FINAL\\05_COMPREHENSIVE_DATA_RESULT_AUDIT_20260730\\AJSE_DATA_RESULT_AUDIT_MASTER.xlsx",
+  "workbook_sha256": "439df7e7b503b51f8fd33e311cab9acbcebff3da2be1d20fac641f3c795c24e6",
+  "workbook_sheet_count": 16,
+  "report": "D:\\2026_AJSE_FINAL\\05_COMPREHENSIVE_DATA_RESULT_AUDIT_20260730\\06_REPORTS\\AJSE_COMPREHENSIVE_DATA_AND_RESULT_AUDIT_REPORT.md",
+  "report_sha256": "c4d59d8f33e55a8b7479fb7080e43e1e5c5f407052e7e7f7232869bebd66959e",
+  "zip": "D:\\2026_AJSE_FINAL\\AJSE_COMPREHENSIVE_DATA_RESULT_AUDIT_20260730.zip",
+  "zip_sha256": "de1464a255de0bedd713997f036b36407ed365529d962522e5c1c5df0005bcfd",
+  "zip_member_count": 85,
+  "zip_crc_check": "PASS",
+  "zip_sidecar": "D:\\2026_AJSE_FINAL\\AJSE_COMPREHENSIVE_DATA_RESULT_AUDIT_20260730.zip.sha256"
+}

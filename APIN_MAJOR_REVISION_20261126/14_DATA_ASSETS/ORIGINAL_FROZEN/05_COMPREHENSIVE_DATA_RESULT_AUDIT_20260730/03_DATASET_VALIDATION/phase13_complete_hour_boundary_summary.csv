@@ -1,0 +1,4 @@
+﻿horizon,prediction_files,boundary_excluded_rows_per_file,mean_MAE_change,max_absolute_MAE_change,all_files_match_boundary
+1,35,0,0.0,0.0,True
+3,35,0,0.0,0.0,True
+6,35,51,-0.002507724460457683,0.003875069226014438,False

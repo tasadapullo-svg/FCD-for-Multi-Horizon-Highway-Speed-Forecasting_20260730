@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "registry_rows": 180,
+  "passed_rows": 180,
+  "failed_rows": 0,
+  "prediction_hash_mismatches": 0,
+  "manifest_hash_mismatches": 0,
+  "unreadable_parquet": 0,
+  "sample_id_mismatches": 0
+}

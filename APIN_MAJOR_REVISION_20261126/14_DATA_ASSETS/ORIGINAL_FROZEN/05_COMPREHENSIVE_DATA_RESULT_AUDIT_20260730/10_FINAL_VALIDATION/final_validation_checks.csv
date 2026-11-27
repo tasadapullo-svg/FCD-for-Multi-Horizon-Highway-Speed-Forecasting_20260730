@@ -1,0 +1,18 @@
+﻿check,passed,detail
+prediction_file_rows_105,True,105
+prediction_metrics_recomputed_match,True,0
+targets_fully_recomputed,True,36309/36309
+common_sample_hash_per_horizon,True,"[{'horizon': 1, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 3, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 6, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}]"
+common_truth_hash_per_horizon,True,"[{'horizon': 1, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 3, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}, {'horizon': 6, 'prediction_file_count': 35, 'unique_sample_set_hashes': 1, 'unique_truth_set_hashes': 1, 'common_samples_across_models_and_seeds': True, 'common_truth_across_models_and_seeds': True}]"
+six_fold_not_misreported,True,"[{'experiment_step': 'A7', 'requirement': 'Six-fold multi-horizon benchmark', 'status': 'NOT_EXECUTED', 'evidence_summary': 'No canonical six-fold future-window-mean result set found', 'source_evidence': 'D-drive scan; Phase2A status', 'required_action': 'Required for primary manuscript evidence'}]"
+h6_boundary_mismatch_recorded,True,"[{'horizon': 1, 'prediction_files': 35, 'boundary_excluded_rows_per_file': 0, 'mean_MAE_change': 0.0, 'max_absolute_MAE_change': 0.0, 'all_files_match_boundary': True}, {'horizon': 3, 'prediction_files': 35, 'boundary_excluded_rows_per_file': 0, 'mean_MAE_change': 0.0, 'max_absolute_MAE_change': 0.0, 'all_files_match_boundary': True}, {'horizon': 6, 'prediction_files': 35, 'boundary_excluded_rows_per_file': 51, 'mean_MAE_change': -0.0025077244604576, 'max_absolute_MAE_change': 0.0038750692260144, 'all_files_match_boundary': False}]"
+copied_evidence_hashes_match,True,copied=21
+workbook_zip_integrity,True,None
+workbook_sheet_count_16,True,16
+workbook_formula_error_scan_zero,True,"{""kind"":""notice"",""message"":""Cell search matched 0 entries.""}"
+workbook_preview_count_16,True,16
+report_contains_PRIMARY_RESULTS_NOT_READY,True,PRIMARY_RESULTS_NOT_READY
+report_contains_six-fold,True,six-fold
+report_contains_future-window mean,True,future-window mean
+report_contains_51 samples,True,51 samples
+report_contains_independent blind test,True,independent blind test

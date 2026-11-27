@@ -1,0 +1,32 @@
+{
+  "folder": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\b1391528db80c41e0359",
+  "shared_features": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\hour_features\\seasonal_impute_F2_v2",
+  "condition": "seasonal_impute",
+  "fold": 2,
+  "horizon": 3,
+  "manifest_sha256": "073d2277bd011440ae92c0889619d358fb5516d409353f5fcc9e3011c2b13be2",
+  "schema_sha256": "304ea3836f3e0bdf172a679d937b3011f2de37bc97f6e9f91ed9956719c735cb",
+  "preprocess_seconds": 1.113424599985592,
+  "split_hashes": {
+    "train": "f19b43accd4b31c6629f1075d2a96a0c163f1b3533631b1494a4d1f26d2b2bd1",
+    "validation": "4a3ad67e8fc56b5fcd8c484e7b1e9cb43cf2e8e5251ddeb85e9f3c134081739e",
+    "test": "2a0ba2aefd47ff48ffa41536e6b47b89e60ca900da332ff7a0e6d7d1a4572d48"
+  },
+  "support": {
+    "train": {
+      "n": 37588,
+      "nodes": 51,
+      "dates": 41
+    },
+    "validation": {
+      "n": 2919,
+      "nodes": 51,
+      "dates": 7
+    },
+    "test": {
+      "n": 3836,
+      "nodes": 51,
+      "dates": 7
+    }
+  }
+}

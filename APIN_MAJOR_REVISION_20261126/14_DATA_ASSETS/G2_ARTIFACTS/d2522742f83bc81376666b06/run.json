@@ -1,0 +1,69 @@
+{
+  "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+  "condition": "base",
+  "model": "HA",
+  "fold": 4,
+  "horizon": 1,
+  "seed": 42,
+  "configuration": {
+    "rule": "node_target_mean"
+  },
+  "split_hashes": {
+    "train": "a5ece40a73945d87220eddd9ccea2c96a608774cbe3d5f00502d556308ff44bc",
+    "validation": "4a5f8f9b24b1a5c73864dfa220255eff418f9c0e300fb1a4ee6743ea454eafc9",
+    "test": "f041d3dc8b056bee383d38af41c75bbf66a6e0135e2564f539973ad12fda7d6d"
+  },
+  "schema_hash": "cf0e4007634e81499c800437f337fc5c436160630906728365f0d25e2c22f632",
+  "target": "future_observed_window_mean",
+  "preprocessing": "revision_data_v2",
+  "run_id": "d2522742f83bc81376666b06",
+  "experiment_first_use": "E04_MATCHED_BASELINES",
+  "status": "COMPLETED",
+  "started_at": "2026-11-25T23:55:31.651069+08:00",
+  "artifact_folder": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G2_ARTIFACTS\\d2522742f83bc81376666b06",
+  "support": {
+    "train": {
+      "n": 56920,
+      "nodes": 51,
+      "dates": 55
+    },
+    "validation": {
+      "n": 7164,
+      "nodes": 51,
+      "dates": 7
+    },
+    "test": {
+      "n": 6357,
+      "nodes": 51,
+      "dates": 7
+    }
+  },
+  "preprocess_seconds": 1.576824200048577,
+  "config_id": "97e6870d3ad80e07b5518a2f8b515aca5cb12f8b3ec5b046f07e3bf28a918135",
+  "manifest_path": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\3c9323dd0ed18fff44ef\\manifest.parquet",
+  "manifest_sha256": "bef98c5d1a8fa4115dd85c2e9c0008ed11de002b5bbf9d7f7e502cefe7f899c0",
+  "model_fit": false,
+  "deterministic_execution": true,
+  "validation_only": false,
+  "training_seconds": 0.014590599981602281,
+  "validation_metrics": {
+    "n": 7164,
+    "MAE": 1.687334009431069,
+    "RMSE": 3.4587584805677207,
+    "Bias": -0.1607545462940115,
+    "sMAPE": 2.68416698260746
+  },
+  "model_type": "baseline",
+  "ended_at": "2026-11-25T23:55:31.687081+08:00",
+  "model_size_bytes": 260,
+  "inference_seconds": 0.0278923999867402,
+  "test_metrics": {
+    "n": 6357,
+    "MAE": 1.9922901192809164,
+    "RMSE": 4.243381778997129,
+    "Bias": 0.191726356518873,
+    "sMAPE": 3.148819353111672
+  },
+  "prediction_path": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G2_ARTIFACTS\\d2522742f83bc81376666b06\\predictions_test.parquet",
+  "prediction_sha256": "5740dd8f7b556f39c64cb51c4ef2157a7dc90b7a17530be89ccf0ac33c49cd71"
+}

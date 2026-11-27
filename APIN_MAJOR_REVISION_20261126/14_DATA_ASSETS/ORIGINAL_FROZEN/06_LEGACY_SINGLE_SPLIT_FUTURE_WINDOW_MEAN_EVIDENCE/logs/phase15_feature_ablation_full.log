@@ -1,0 +1,155 @@
+2026-06-26 23:52:34,264 INFO feature_group=speed_only horizon=1 seed=42 MAE=0.906023
+2026-06-27 00:09:57,350 INFO feature_group=speed_only horizon=1 seed=2024 MAE=0.925140
+2026-06-27 00:43:07,458 INFO feature_group=speed_only horizon=1 seed=2025 MAE=0.908491
+2026-06-27 00:53:12,723 INFO feature_group=speed_only horizon=1 seed=2026 MAE=0.982802
+2026-06-27 01:33:38,562 INFO resume_skip_existing feature_group=speed_only horizon=1 seed=42 path=outputs\predictions\phase15\speed_only_h1_seed42.parquet
+2026-06-27 01:33:38,568 INFO feature_group=speed_only horizon=1 seed=42 MAE=0.906023
+2026-06-27 01:33:38,579 INFO resume_skip_existing feature_group=speed_only horizon=1 seed=2024 path=outputs\predictions\phase15\speed_only_h1_seed2024.parquet
+2026-06-27 01:33:38,583 INFO feature_group=speed_only horizon=1 seed=2024 MAE=0.925140
+2026-06-27 01:33:38,595 INFO resume_skip_existing feature_group=speed_only horizon=1 seed=2025 path=outputs\predictions\phase15\speed_only_h1_seed2025.parquet
+2026-06-27 01:33:38,601 INFO feature_group=speed_only horizon=1 seed=2025 MAE=0.908491
+2026-06-27 01:33:38,613 INFO resume_skip_existing feature_group=speed_only horizon=1 seed=2026 path=outputs\predictions\phase15\speed_only_h1_seed2026.parquet
+2026-06-27 01:33:38,618 INFO feature_group=speed_only horizon=1 seed=2026 MAE=0.982802
+2026-06-27 01:33:38,626 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h1_seed3407.parquet existing_n=128 expected_n=12265
+2026-06-27 01:52:57,031 INFO feature_group=speed_only horizon=1 seed=3407 MAE=1.105581
+2026-06-27 01:52:57,143 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h1_seed42.parquet existing_n=128 expected_n=12265
+2026-06-27 02:34:26,683 INFO feature_group=speed_time horizon=1 seed=42 MAE=1.166231
+2026-06-27 02:34:26,689 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h1_seed2024.parquet existing_n=128 expected_n=12265
+2026-06-27 03:15:54,277 INFO feature_group=speed_time horizon=1 seed=2024 MAE=1.153662
+2026-06-27 03:15:54,283 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h1_seed2025.parquet existing_n=128 expected_n=12265
+2026-06-27 03:46:30,710 INFO feature_group=speed_time horizon=1 seed=2025 MAE=1.171471
+2026-06-27 03:46:30,716 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h1_seed2026.parquet existing_n=128 expected_n=12265
+2026-06-27 04:24:19,295 INFO feature_group=speed_time horizon=1 seed=2026 MAE=1.129347
+2026-06-27 04:24:19,300 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h1_seed3407.parquet existing_n=128 expected_n=12265
+2026-06-27 05:06:04,737 INFO feature_group=speed_time horizon=1 seed=3407 MAE=1.153916
+2026-06-27 05:06:04,833 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h1_seed42.parquet existing_n=128 expected_n=12265
+2026-06-27 05:33:56,669 INFO feature_group=speed_reliability horizon=1 seed=42 MAE=1.268217
+2026-06-27 05:33:56,675 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h1_seed2024.parquet existing_n=128 expected_n=12265
+2026-06-27 06:11:25,289 INFO feature_group=speed_reliability horizon=1 seed=2024 MAE=1.087687
+2026-06-27 06:11:25,296 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h1_seed2025.parquet existing_n=128 expected_n=12265
+2026-06-27 06:50:22,130 INFO feature_group=speed_reliability horizon=1 seed=2025 MAE=1.222093
+2026-06-27 06:50:22,135 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h1_seed2026.parquet existing_n=128 expected_n=12265
+2026-06-27 07:15:28,745 INFO feature_group=speed_reliability horizon=1 seed=2026 MAE=1.158497
+2026-06-27 07:15:28,750 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h1_seed3407.parquet existing_n=128 expected_n=12265
+2026-06-27 07:44:40,161 INFO feature_group=speed_reliability horizon=1 seed=3407 MAE=1.104836
+2026-06-27 07:44:40,242 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h1_seed42.parquet existing_n=128 expected_n=12265
+2026-06-27 08:02:44,604 INFO feature_group=speed_volatility horizon=1 seed=42 MAE=1.065406
+2026-06-27 08:02:44,610 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h1_seed2024.parquet existing_n=128 expected_n=12265
+2026-06-27 08:18:10,649 INFO feature_group=speed_volatility horizon=1 seed=2024 MAE=1.202566
+2026-06-27 08:18:10,655 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h1_seed2025.parquet existing_n=128 expected_n=12265
+2026-06-27 08:48:38,811 INFO feature_group=speed_volatility horizon=1 seed=2025 MAE=1.014876
+2026-06-27 08:48:38,816 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h1_seed2026.parquet existing_n=128 expected_n=12265
+2026-06-27 09:31:22,307 INFO feature_group=speed_volatility horizon=1 seed=2026 MAE=1.031352
+2026-06-27 09:31:22,313 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h1_seed3407.parquet existing_n=128 expected_n=12265
+2026-06-27 10:03:45,351 INFO feature_group=speed_volatility horizon=1 seed=3407 MAE=1.065335
+2026-06-27 10:03:45,518 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h1_seed42.parquet existing_n=128 expected_n=12265
+2026-06-27 10:51:31,796 INFO feature_group=full_features horizon=1 seed=42 MAE=1.130643
+2026-06-27 10:51:31,802 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h1_seed2024.parquet existing_n=128 expected_n=12265
+2026-06-27 11:39:33,636 INFO feature_group=full_features horizon=1 seed=2024 MAE=1.152644
+2026-06-27 11:39:33,643 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h1_seed2025.parquet existing_n=128 expected_n=12265
+2026-06-27 12:27:55,467 INFO feature_group=full_features horizon=1 seed=2025 MAE=1.271935
+2026-06-27 12:27:55,474 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h1_seed2026.parquet existing_n=128 expected_n=12265
+2026-06-27 13:16:16,596 INFO feature_group=full_features horizon=1 seed=2026 MAE=1.163297
+2026-06-27 13:16:16,601 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h1_seed3407.parquet existing_n=128 expected_n=12265
+2026-06-27 13:39:02,792 INFO feature_group=full_features horizon=1 seed=3407 MAE=1.389465
+2026-06-27 13:39:24,073 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h3_seed42.parquet existing_n=128 expected_n=11878
+2026-06-27 14:04:41,994 INFO feature_group=speed_only horizon=3 seed=42 MAE=1.030489
+2026-06-27 14:04:42,002 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h3_seed2024.parquet existing_n=128 expected_n=11878
+2026-06-27 14:28:55,122 INFO feature_group=speed_only horizon=3 seed=2024 MAE=1.035379
+2026-06-27 14:28:55,128 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h3_seed2025.parquet existing_n=128 expected_n=11878
+2026-06-27 14:59:13,597 INFO feature_group=speed_only horizon=3 seed=2025 MAE=1.065614
+2026-06-27 14:59:13,603 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h3_seed2026.parquet existing_n=128 expected_n=11878
+2026-06-27 15:15:48,975 INFO feature_group=speed_only horizon=3 seed=2026 MAE=1.074866
+2026-06-27 15:15:48,981 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h3_seed3407.parquet existing_n=128 expected_n=11878
+2026-06-27 16:00:04,097 INFO feature_group=speed_only horizon=3 seed=3407 MAE=1.004601
+2026-06-27 16:00:04,222 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h3_seed42.parquet existing_n=128 expected_n=11878
+2026-06-27 16:47:45,112 INFO feature_group=speed_time horizon=3 seed=42 MAE=1.086942
+2026-06-27 16:47:45,117 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h3_seed2024.parquet existing_n=128 expected_n=11878
+2026-06-27 17:35:00,944 INFO feature_group=speed_time horizon=3 seed=2024 MAE=1.069435
+2026-06-27 17:35:00,950 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h3_seed2025.parquet existing_n=128 expected_n=11878
+2026-06-27 18:22:48,431 INFO feature_group=speed_time horizon=3 seed=2025 MAE=1.050853
+2026-06-27 18:22:48,436 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h3_seed2026.parquet existing_n=128 expected_n=11878
+2026-06-27 19:10:12,207 INFO feature_group=speed_time horizon=3 seed=2026 MAE=1.046517
+2026-06-27 19:10:12,212 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h3_seed3407.parquet existing_n=128 expected_n=11878
+2026-06-27 19:57:24,997 INFO feature_group=speed_time horizon=3 seed=3407 MAE=1.084592
+2026-06-27 19:57:25,121 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h3_seed42.parquet existing_n=128 expected_n=11878
+2026-06-27 20:33:42,631 INFO feature_group=speed_reliability horizon=3 seed=42 MAE=1.212192
+2026-06-27 20:33:42,637 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h3_seed2024.parquet existing_n=128 expected_n=11878
+2026-06-27 21:08:37,506 INFO feature_group=speed_reliability horizon=3 seed=2024 MAE=1.110818
+2026-06-27 21:08:37,513 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h3_seed2025.parquet existing_n=128 expected_n=11878
+2026-06-27 21:40:55,228 INFO feature_group=speed_reliability horizon=3 seed=2025 MAE=1.138494
+2026-06-27 21:40:55,233 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h3_seed2026.parquet existing_n=128 expected_n=11878
+2026-06-27 22:22:04,777 INFO feature_group=speed_reliability horizon=3 seed=2026 MAE=1.038574
+2026-06-27 22:22:04,783 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h3_seed3407.parquet existing_n=128 expected_n=11878
+2026-06-27 22:55:34,020 INFO feature_group=speed_reliability horizon=3 seed=3407 MAE=1.069652
+2026-06-27 22:55:34,106 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h3_seed42.parquet existing_n=128 expected_n=11878
+2026-06-27 23:14:47,624 INFO feature_group=speed_volatility horizon=3 seed=42 MAE=1.081836
+2026-06-27 23:14:47,630 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h3_seed2024.parquet existing_n=128 expected_n=11878
+2026-06-27 23:51:35,706 INFO feature_group=speed_volatility horizon=3 seed=2024 MAE=0.975187
+2026-06-27 23:51:35,712 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h3_seed2025.parquet existing_n=128 expected_n=11878
+2026-06-28 00:21:45,698 INFO feature_group=speed_volatility horizon=3 seed=2025 MAE=1.010132
+2026-06-28 00:21:45,704 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h3_seed2026.parquet existing_n=128 expected_n=11878
+2026-06-28 01:05:00,703 INFO feature_group=speed_volatility horizon=3 seed=2026 MAE=0.958707
+2026-06-28 01:05:00,709 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h3_seed3407.parquet existing_n=128 expected_n=11878
+2026-06-28 01:31:28,904 INFO feature_group=speed_volatility horizon=3 seed=3407 MAE=1.037559
+2026-06-28 01:31:29,035 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h3_seed42.parquet existing_n=128 expected_n=11878
+2026-06-28 01:59:42,449 INFO feature_group=full_features horizon=3 seed=42 MAE=1.128039
+2026-06-28 01:59:42,454 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h3_seed2024.parquet existing_n=128 expected_n=11878
+2026-06-28 02:34:57,076 INFO feature_group=full_features horizon=3 seed=2024 MAE=1.096502
+2026-06-28 02:34:57,081 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h3_seed2025.parquet existing_n=128 expected_n=11878
+2026-06-28 03:10:15,006 INFO feature_group=full_features horizon=3 seed=2025 MAE=1.172281
+2026-06-28 03:10:15,011 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h3_seed2026.parquet existing_n=128 expected_n=11878
+2026-06-28 03:45:39,146 INFO feature_group=full_features horizon=3 seed=2026 MAE=1.190433
+2026-06-28 03:45:39,152 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h3_seed3407.parquet existing_n=128 expected_n=11878
+2026-06-28 04:21:04,301 INFO feature_group=full_features horizon=3 seed=3407 MAE=1.155516
+2026-06-28 04:21:20,056 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h6_seed42.parquet existing_n=128 expected_n=12166
+2026-06-28 04:51:31,819 INFO feature_group=speed_only horizon=6 seed=42 MAE=0.914651
+2026-06-28 04:51:31,823 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h6_seed2024.parquet existing_n=128 expected_n=12166
+2026-06-28 05:10:56,279 INFO feature_group=speed_only horizon=6 seed=2024 MAE=0.920780
+2026-06-28 05:10:56,285 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h6_seed2025.parquet existing_n=128 expected_n=12166
+2026-06-28 05:36:19,708 INFO feature_group=speed_only horizon=6 seed=2025 MAE=0.974630
+2026-06-28 05:36:19,714 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h6_seed2026.parquet existing_n=128 expected_n=12166
+2026-06-28 05:56:53,788 INFO feature_group=speed_only horizon=6 seed=2026 MAE=0.920633
+2026-06-28 05:56:53,793 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_only_h6_seed3407.parquet existing_n=128 expected_n=12166
+2026-06-28 06:23:26,710 INFO feature_group=speed_only horizon=6 seed=3407 MAE=0.918232
+2026-06-28 06:23:26,803 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h6_seed42.parquet existing_n=128 expected_n=12166
+2026-06-28 06:59:36,815 INFO feature_group=speed_time horizon=6 seed=42 MAE=1.026109
+2026-06-28 06:59:36,820 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h6_seed2024.parquet existing_n=128 expected_n=12166
+2026-06-28 07:35:46,408 INFO feature_group=speed_time horizon=6 seed=2024 MAE=0.999963
+2026-06-28 07:35:46,413 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h6_seed2025.parquet existing_n=128 expected_n=12166
+2026-06-28 08:11:58,966 INFO feature_group=speed_time horizon=6 seed=2025 MAE=0.976584
+2026-06-28 08:11:58,971 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h6_seed2026.parquet existing_n=128 expected_n=12166
+2026-06-28 08:48:11,868 INFO feature_group=speed_time horizon=6 seed=2026 MAE=0.947541
+2026-06-28 08:48:11,873 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_time_h6_seed3407.parquet existing_n=128 expected_n=12166
+2026-06-28 09:24:25,274 INFO feature_group=speed_time horizon=6 seed=3407 MAE=0.976456
+2026-06-28 09:24:25,355 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h6_seed42.parquet existing_n=128 expected_n=12166
+2026-06-28 09:54:38,350 INFO feature_group=speed_reliability horizon=6 seed=42 MAE=1.122700
+2026-06-28 09:54:38,356 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h6_seed2024.parquet existing_n=128 expected_n=12166
+2026-06-28 10:12:49,842 INFO feature_group=speed_reliability horizon=6 seed=2024 MAE=1.203896
+2026-06-28 10:12:49,847 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h6_seed2025.parquet existing_n=128 expected_n=12166
+2026-06-28 10:50:35,688 INFO feature_group=speed_reliability horizon=6 seed=2025 MAE=0.949577
+2026-06-28 10:50:35,693 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h6_seed2026.parquet existing_n=128 expected_n=12166
+2026-06-28 11:23:14,088 INFO feature_group=speed_reliability horizon=6 seed=2026 MAE=1.001847
+2026-06-28 11:23:14,094 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_reliability_h6_seed3407.parquet existing_n=128 expected_n=12166
+2026-06-28 11:59:28,467 INFO feature_group=speed_reliability horizon=6 seed=3407 MAE=0.998397
+2026-06-28 11:59:28,552 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h6_seed42.parquet existing_n=128 expected_n=12166
+2026-06-28 12:15:55,204 INFO feature_group=speed_volatility horizon=6 seed=42 MAE=0.984833
+2026-06-28 12:15:55,211 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h6_seed2024.parquet existing_n=128 expected_n=12166
+2026-06-28 12:43:06,814 INFO feature_group=speed_volatility horizon=6 seed=2024 MAE=0.985935
+2026-06-28 12:43:06,820 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h6_seed2025.parquet existing_n=128 expected_n=12166
+2026-06-28 13:13:29,068 INFO feature_group=speed_volatility horizon=6 seed=2025 MAE=0.878673
+2026-06-28 13:13:29,074 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h6_seed2026.parquet existing_n=128 expected_n=12166
+2026-06-28 13:37:27,997 INFO feature_group=speed_volatility horizon=6 seed=2026 MAE=0.956652
+2026-06-28 13:37:28,003 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\speed_volatility_h6_seed3407.parquet existing_n=128 expected_n=12166
+2026-06-28 14:14:16,162 INFO feature_group=speed_volatility horizon=6 seed=3407 MAE=0.945357
+2026-06-28 14:14:16,315 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h6_seed42.parquet existing_n=128 expected_n=12166
+2026-06-28 14:57:07,466 INFO feature_group=full_features horizon=6 seed=42 MAE=1.039276
+2026-06-28 14:57:07,474 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h6_seed2024.parquet existing_n=128 expected_n=12166
+2026-06-28 15:35:34,759 INFO feature_group=full_features horizon=6 seed=2024 MAE=1.014302
+2026-06-28 15:35:34,764 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h6_seed2025.parquet existing_n=128 expected_n=12166
+2026-06-28 16:17:50,981 INFO feature_group=full_features horizon=6 seed=2025 MAE=1.131496
+2026-06-28 16:17:50,987 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h6_seed2026.parquet existing_n=128 expected_n=12166
+2026-06-28 16:55:52,953 INFO feature_group=full_features horizon=6 seed=2026 MAE=1.132684
+2026-06-28 16:55:52,959 INFO resume_skip_rejected sample_count_mismatch path=outputs\predictions\phase15\full_features_h6_seed3407.parquet existing_n=128 expected_n=12166
+2026-06-28 17:36:30,580 INFO feature_group=full_features horizon=6 seed=3407 MAE=1.085555
+2026-06-28 17:36:30,629 INFO Completed Phase 15 full run with 75 metric rows

@@ -1,0 +1,20 @@
+{
+  "fold": 4,
+  "horizon": 1,
+  "sample_count": 70441,
+  "split_counts": {
+    "test": 6357,
+    "train": 56920,
+    "validation": 7164
+  },
+  "sequence_shape": [
+    70441,
+    24,
+    13
+  ],
+  "tabular_shape": [
+    70441,
+    315
+  ],
+  "manifest_sha256": "731cd46b8ee67f3968699542cd2a9e192655b402baaf53ff0be3a49836ce5b6f"
+}

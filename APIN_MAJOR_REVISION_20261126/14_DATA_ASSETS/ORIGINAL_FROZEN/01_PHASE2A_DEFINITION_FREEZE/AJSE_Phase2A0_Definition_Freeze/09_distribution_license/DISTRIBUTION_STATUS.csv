@@ -1,0 +1,11 @@
+﻿file_class,distribution_status,handling_rule
+raw provider records,RESTRICTED_RAW_DATA,never copy or distribute
+15-min cleaned records,INTERNAL_ONLY,contains provider-derived record-level values
+hourly derived speed panel,DERIVED_DATA_PERMISSION_UNCLEAR,do not include in public package until license approval
+sample manifests with target values,DERIVED_DATA_PERMISSION_UNCLEAR,schema/count/hash may be public; values pending approval
+feature tensors,DERIVED_DATA_PERMISSION_UNCLEAR,may reconstruct provider-derived speeds
+target arrays,DERIVED_DATA_PERMISSION_UNCLEAR,provider-derived labels
+predictions,DERIVED_DATA_PERMISSION_UNCLEAR,confirm provider terms before release
+figure source tables,DERIVED_DATA_PERMISSION_UNCLEAR,aggregate release may be possible after review
+aggregate statistics,METADATA_ONLY,non-record-level descriptive summaries only
+code/config/schema/hash,PUBLIC_CONFIRMED,contains no provider records or credentials

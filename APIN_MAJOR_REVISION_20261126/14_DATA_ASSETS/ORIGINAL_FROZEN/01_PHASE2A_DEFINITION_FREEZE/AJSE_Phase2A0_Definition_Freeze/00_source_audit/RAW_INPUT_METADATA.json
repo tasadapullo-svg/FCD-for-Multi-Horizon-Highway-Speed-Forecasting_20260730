@@ -1,0 +1,23 @@
+{
+  "path": "D:\\2026_07_23\\CRG_TCN_review_v2\\package_extracted\\03_CRG_TCN_experiment_framework_v2_final_week_blind\\data\\raw\\tomtom_cleaned_records.csv.gz",
+  "size_bytes": 15525348,
+  "modified_time": "2026-06-23T03:51:06",
+  "sha256": "915e2f50d30752c7fdb666cae83a4e49945d0d81913ea791531043ae84fdf5c3",
+  "row_count": 244477,
+  "columns": [
+    "node_id",
+    "event_time",
+    "current_speed",
+    "current_travel_time",
+    "confidence",
+    "road_closure",
+    "traffic_state",
+    "valid_record",
+    "valid_coordinates",
+    "valid_speed",
+    "valid_travel_time",
+    "valid_confidence",
+    "valid_time"
+  ],
+  "distribution_status": "RESTRICTED_RAW_DATA"
+}

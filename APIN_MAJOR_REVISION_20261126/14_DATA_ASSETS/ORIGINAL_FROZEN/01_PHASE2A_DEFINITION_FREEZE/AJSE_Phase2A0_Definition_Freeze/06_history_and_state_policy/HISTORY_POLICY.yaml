@@ -1,0 +1,10 @@
+history_length_primary_hours: 24
+history_length_sensitivity_hours:
+- 72
+- 168
+primary_reporting_rule: always report the pre-registered 24h result
+secondary_selection_rule: 72h/168h may be compared using train/validation only and must be labeled secondary
+final_test_selection: forbidden
+boundary_state: causal_carry_over
+reset_forward_fill_at_split: false
+fallback_statistics: train-only node median then train-only corridor median

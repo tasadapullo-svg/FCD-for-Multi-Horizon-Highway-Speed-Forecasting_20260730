@@ -1,0 +1,170 @@
+﻿[
+    {
+        "relative_path":  "__pycache__\\build_phase2a0.cpython-312.pyc",
+        "expected_sha256":  "71840667ee2a41c28720d3cbfcf8fbf7f75154f696e902e7419d29c76baa9149",
+        "archive_file_exists":  true,
+        "actual_sha256":  "71840667ee2a41c28720d3cbfcf8fbf7f75154f696e902e7419d29c76baa9149",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047.zip",
+        "expected_sha256":  "b34d9124044eaba0469b23e08797f8096e3827e94b35865acd68e5ea8d4a6fc7",
+        "archive_file_exists":  true,
+        "actual_sha256":  "b34d9124044eaba0469b23e08797f8096e3827e94b35865acd68e5ea8d4a6fc7",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\AJSE_Phase2A0_TERMINAL_SUMMARY.txt",
+        "expected_sha256":  "a14ef79de79504b08b9f1aacb0a40e43f075d6d589b8f696879d6fef41b97075",
+        "archive_file_exists":  true,
+        "actual_sha256":  "a14ef79de79504b08b9f1aacb0a40e43f075d6d589b8f696879d6fef41b97075",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\configs\\matrices\\v2_2\\P7_final_week_resolved.yaml",
+        "expected_sha256":  "99f7ab61358cf4015217e0b0de861bbc5c5c358b03a4c86f84f9da5a30074518",
+        "archive_file_exists":  true,
+        "actual_sha256":  "99f7ab61358cf4015217e0b0de861bbc5c5c358b03a4c86f84f9da5a30074518",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\configs\\p8_postunlock_v2_2_resolved.yaml",
+        "expected_sha256":  "dc60a0cb893f7041b52271351e0ae9ed7f51c47d6355f2cedeb1b0226cd4e11a",
+        "archive_file_exists":  true,
+        "actual_sha256":  "dc60a0cb893f7041b52271351e0ae9ed7f51c47d6355f2cedeb1b0226cd4e11a",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\FILE_HASHES.csv",
+        "expected_sha256":  "71e2383b809df07b58d4868a40fb9a05549c3655270ff54243b51852cd03ac9d",
+        "archive_file_exists":  true,
+        "actual_sha256":  "71e2383b809df07b58d4868a40fb9a05549c3655270ff54243b51852cd03ac9d",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\final_week_blind_split_manifest.json",
+        "expected_sha256":  "da3e54d9e956ca96e4b7a813e1c054f1818b959bfeebad04c257e099bdd2f0f1",
+        "archive_file_exists":  true,
+        "actual_sha256":  "da3e54d9e956ca96e4b7a813e1c054f1818b959bfeebad04c257e099bdd2f0f1",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\P8_FINAL_REPORT.md",
+        "expected_sha256":  "669815001b03958de966c89b897bfa44841c382681274b34ee1607e364270051",
+        "archive_file_exists":  true,
+        "actual_sha256":  "669815001b03958de966c89b897bfa44841c382681274b34ee1607e364270051",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\phase7_blind_inputs_manifest.json",
+        "expected_sha256":  "dbf88c401ee991522f6a32cd627f70563b66406892f7ea27e19f6f7e876306ff",
+        "archive_file_exists":  true,
+        "actual_sha256":  "dbf88c401ee991522f6a32cd627f70563b66406892f7ea27e19f6f7e876306ff",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\phase7_final_week_integrity_audit.json",
+        "expected_sha256":  "661f0163431a6b1e769ff291a6bb2d4cc4b11952984dae52fe7a7a38cec4d389",
+        "archive_file_exists":  true,
+        "actual_sha256":  "661f0163431a6b1e769ff291a6bb2d4cc4b11952984dae52fe7a7a38cec4d389",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\phase7_final_week_integrity_audit_attempt1_config_placeholder.json",
+        "expected_sha256":  "36cbd63d5c5462f5c798a6f7ce6837e069c1bdd18baae1b708be54579eff3787",
+        "archive_file_exists":  true,
+        "actual_sha256":  "36cbd63d5c5462f5c798a6f7ce6837e069c1bdd18baae1b708be54579eff3787",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\phase7_frozen_predictions_manifest.json",
+        "expected_sha256":  "9ece796d3340bb345dc6a2812a45a945528443e4fe142bc78c4ebcd76183dcbb",
+        "archive_file_exists":  true,
+        "actual_sha256":  "9ece796d3340bb345dc6a2812a45a945528443e4fe142bc78c4ebcd76183dcbb",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\phase7_matrix_preflight.json",
+        "expected_sha256":  "41cdb0b710ef0909d9c57cf0fff138c417b7e97107f357492febbef55dcbf804",
+        "archive_file_exists":  true,
+        "actual_sha256":  "41cdb0b710ef0909d9c57cf0fff138c417b7e97107f357492febbef55dcbf804",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\manifests\\v2_2_2of4\\phase7_validation.json",
+        "expected_sha256":  "6c67322bb3c527d793d109204d42785c511915bfbd1430fa47a65d8785964adf",
+        "archive_file_exists":  true,
+        "actual_sha256":  "6c67322bb3c527d793d109204d42785c511915bfbd1430fa47a65d8785964adf",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\prompts\\P7_final_week_blind.md",
+        "expected_sha256":  "78e74908a0c6bdf14abc72fb918309da2c153455b2baffbaa38b6a320a904d66",
+        "archive_file_exists":  true,
+        "actual_sha256":  "78e74908a0c6bdf14abc72fb918309da2c153455b2baffbaa38b6a320a904d66",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\results\\P8_v2_2_final_week_comparison\\metrics_by_day.csv",
+        "expected_sha256":  "273d00a32680f01261e33a16f1073f299c210551c3147082b26fc174fe6cbec3",
+        "archive_file_exists":  true,
+        "actual_sha256":  "273d00a32680f01261e33a16f1073f299c210551c3147082b26fc174fe6cbec3",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\results\\P8_v2_2_final_week_comparison\\metrics_by_horizon.csv",
+        "expected_sha256":  "81cf39970889896bccb301875f2a951e1fa1a5c1a9d5d22467eafe851fdb0060",
+        "archive_file_exists":  true,
+        "actual_sha256":  "81cf39970889896bccb301875f2a951e1fa1a5c1a9d5d22467eafe851fdb0060",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\results\\P8_v2_2_final_week_comparison\\metrics_by_segment.csv",
+        "expected_sha256":  "e8bbecb9aa378fa9f512944ea44bf53eb071135b693ceb0f77a5c92c79b0c986",
+        "archive_file_exists":  true,
+        "actual_sha256":  "e8bbecb9aa378fa9f512944ea44bf53eb071135b693ceb0f77a5c92c79b0c986",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\results\\P8_v2_2_final_week_comparison\\metrics_by_state.csv",
+        "expected_sha256":  "aa6e728a9565de1be9146f79e471adc12af72b125035eeea4ecc8f9dd2c1927d",
+        "archive_file_exists":  true,
+        "actual_sha256":  "aa6e728a9565de1be9146f79e471adc12af72b125035eeea4ecc8f9dd2c1927d",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\results\\P8_v2_2_final_week_comparison\\metrics_overall.csv",
+        "expected_sha256":  "2ffa39b25ef99ee8bde2c91ec9cccd0715f1173b9dd68bbfe70b51b8e2d40b97",
+        "archive_file_exists":  true,
+        "actual_sha256":  "2ffa39b25ef99ee8bde2c91ec9cccd0715f1173b9dd68bbfe70b51b8e2d40b97",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\results\\P8_v2_2_final_week_comparison\\truth_unlock_manifest.json",
+        "expected_sha256":  "c16764a6b882b19ea5e60bd43f9d61da4a1a0c8eeac0ff76c588dc263a358270",
+        "archive_file_exists":  true,
+        "actual_sha256":  "c16764a6b882b19ea5e60bd43f9d61da4a1a0c8eeac0ff76c588dc263a358270",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\scripts\\23_compare_final_week_predictions.py",
+        "expected_sha256":  "f5490f784c6daefacddb5efc7505dc7aecc997d6b3a04d8f306fc930a8cebdaf",
+        "archive_file_exists":  true,
+        "actual_sha256":  "f5490f784c6daefacddb5efc7505dc7aecc997d6b3a04d8f306fc930a8cebdaf",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_P8_GPT_Review_Core_20260729_2047\\scripts\\24_audit_final_week_experiment.py",
+        "expected_sha256":  "be747af19b6120dd554f1967523eabfba6e9eb0a711094722324998729e2b443",
+        "archive_file_exists":  true,
+        "actual_sha256":  "be747af19b6120dd554f1967523eabfba6e9eb0a711094722324998729e2b443",
+        "hash_match":  true
+    },
+    {
+        "relative_path":  "AJSE_Phase6_GPT_Review_Core_20260729.zip",
+        "expected_sha256":  "fc2cc2fa11303ef3c264ad9290633d08420467d758e450b3691baff2097997aa",
+        "archive_file_exists":  true,
+        "actual_sha256":  "fc2cc2fa11303ef3c264ad9290633d08420467d758e450b3691baff2097997aa",
+        "hash_match":  true
+    }
+]

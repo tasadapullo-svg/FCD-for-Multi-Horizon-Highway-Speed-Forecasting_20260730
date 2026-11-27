@@ -1,0 +1,25 @@
+﻿{
+    "status":  "PASS",
+    "canonical_root":  "D:\\2026_AJSE_FINAL",
+    "canonical_target":  "FUTURE_WINDOW_MEAN_SPEED",
+    "canonical_horizons_hours":  [
+                                     1,
+                                     3,
+                                     6
+                                 ],
+    "phase2a0_status":  "BLOCKED",
+    "phase2a1_result_files_detected":  0,
+    "legacy_top_level_items_remaining":  0,
+    "legacy_top_level_names_remaining":  [
+
+                                         ],
+    "convergence_orchestrator_processes_remaining":  0,
+    "quarantined_source_files_expected":  24,
+    "quarantined_files_hash_verified":  24,
+    "quarantine_hash_failures":  0,
+    "phase2a_release_zip_sha256":  "362a0bc541325ad77f2b713bee592470cdf6dc9f46d48a281c594e3a8e78df68",
+    "phase2a_release_sidecar_matches":  true,
+    "canonical_file_count_excluding_self_inventory":  57,
+    "quarantine_root":  "D:\\2026_AJSE_FINAL_QUARANTINE\\AJSE_non_Phase2A_20260730_093635",
+    "verified_at":  "2026-07-30T09:39:26.8227310+08:00"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "expected_runs": 180,
+  "completed": 180,
+  "failed": 0,
+  "current_run": null,
+  "pid": 28032,
+  "task_index": 180,
+  "last_update": "2026-07-30T12:55:18.911081",
+  "finished_at": "2026-07-30T12:55:18.913082"
+}

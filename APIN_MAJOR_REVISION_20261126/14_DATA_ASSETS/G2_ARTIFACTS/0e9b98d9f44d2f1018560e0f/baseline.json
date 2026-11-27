@@ -1,0 +1,7 @@
+{
+  "train_reference": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\ba3adb226ab4ad85a411\\manifest.parquet",
+  "configuration": {
+    "rule": "node_hour_weekday",
+    "fallback": "node_target_mean_then_corridor_target_mean"
+  }
+}

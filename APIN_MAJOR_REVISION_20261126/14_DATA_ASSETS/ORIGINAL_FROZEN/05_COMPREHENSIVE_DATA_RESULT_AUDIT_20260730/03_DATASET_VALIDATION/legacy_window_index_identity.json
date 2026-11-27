@@ -1,0 +1,18 @@
+{
+  "path": "D:\\2026_PD\\outputs\\tables\\window_index_all.csv",
+  "size_bytes": 1020058072,
+  "sha256": "c6e6715a7e530915ca64a87446201154e412f2d193baed58abb555377d7fc6c3",
+  "total_rows": 5390088,
+  "relevant_valid_window_id_hashes": {
+    "1": "8618215b29de569b7d62dc84e69b0e4e86801229f3ce8012f043c1cd2e63daa4",
+    "3": "422e205afe7fd56cc851ae2632debecd510e103d2b9c2b72f57f92bd669d6883",
+    "6": "4d034f8f84316639140b74f7e00d54548deb208b3a10ba1e9bfe2508cca462b8"
+  },
+  "relevant_valid_window_counts": {
+    "1": 91051,
+    "3": 88262,
+    "6": 90580
+  },
+  "split_design": "single chronological 70/15/15 split",
+  "six_fold_rolling_origin": false
+}

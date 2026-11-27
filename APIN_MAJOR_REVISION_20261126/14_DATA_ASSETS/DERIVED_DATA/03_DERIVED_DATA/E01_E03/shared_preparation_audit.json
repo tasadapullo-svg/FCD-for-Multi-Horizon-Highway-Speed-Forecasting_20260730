@@ -1,0 +1,18 @@
+{
+  "raw_csv_count": 83,
+  "raw_original_rows": 244477,
+  "cleaned_rows": 244477,
+  "raw_cleaned_identifier_match": {
+    "both": 244477,
+    "left_only": 0,
+    "right_only": 0
+  },
+  "raw_cleaned_missing_mapping": 0,
+  "upstream_caveat": "mapped original IDs/values to cleaned corrected event_time one-to-one; date correction program and request failure logs not recovered",
+  "dedup_15_comparison": {
+    "both": 241601,
+    "unmatched": 0,
+    "max_abs_speed_diff": 0.0
+  },
+  "hour_speed_diff": 0.0
+}

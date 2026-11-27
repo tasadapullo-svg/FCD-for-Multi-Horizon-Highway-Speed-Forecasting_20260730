@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-25T19:49:13.322820+08:00",
+  "bbox_wgs84": [
+    1.4316388,
+    109.7247799,
+    1.8394398,
+    110.3547315
+  ],
+  "query": "[out:json][timeout:40];way[\"highway\"~\"^(motorway|trunk|primary|secondary|motorway_link|trunk_link|primary_link|secondary_link)$\"](1.4316388,109.7247799,1.8394398,110.3547315);(._;>;);out body;",
+  "attempts": [
+    {
+      "server": "https://overpass-api.de/api/interpreter",
+      "status": "SUCCESS",
+      "bytes": 1971117
+    }
+  ],
+  "license": "OpenStreetMap ODbL; attribution OpenStreetMap contributors",
+  "source": "https://www.openstreetmap.org/copyright",
+  "historical_representativeness": "current snapshot not proof of2025-12..2026-02 road state",
+  "status": "DOWNLOADED"
+}

@@ -1,0 +1,65 @@
+﻿[
+    {
+        "action":  "MOVE_TO_QUARANTINE",
+        "source":  "D:\\2026_AJSE_FINAL\\AJSE_P8_GPT_Review_Core_20260729_2047",
+        "destination":  "D:\\2026_AJSE_FINAL_QUARANTINE\\AJSE_non_Phase2A_20260730_093635\\AJSE_P8_GPT_Review_Core_20260729_2047",
+        "reason":  "v2.2 P8 direct point-forecast retrospective result package; not Phase 2A future-window-mean evidence",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_TO_QUARANTINE",
+        "source":  "D:\\2026_AJSE_FINAL\\AJSE_P8_GPT_Review_Core_20260729_2047.zip",
+        "destination":  "D:\\2026_AJSE_FINAL_QUARANTINE\\AJSE_non_Phase2A_20260730_093635\\AJSE_P8_GPT_Review_Core_20260729_2047.zip",
+        "reason":  "compressed duplicate of v2.2 P8 direct point-forecast retrospective result package",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_TO_QUARANTINE",
+        "source":  "D:\\2026_AJSE_FINAL\\AJSE_Phase6_GPT_Review_Core_20260729.zip",
+        "destination":  "D:\\2026_AJSE_FINAL_QUARANTINE\\AJSE_non_Phase2A_20260730_093635\\AJSE_Phase6_GPT_Review_Core_20260729.zip",
+        "reason":  "v2.2 Phase 6 point-forecast spatial audit package; not Phase 2A future-window-mean evidence",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_TO_QUARANTINE",
+        "source":  "D:\\2026_AJSE_FINAL\\__pycache__",
+        "destination":  "D:\\2026_AJSE_FINAL_QUARANTINE\\AJSE_non_Phase2A_20260730_093635\\__pycache__",
+        "reason":  "generated Python cache; not research evidence",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_WITHIN_CANONICAL_ROOT",
+        "source":  "D:\\2026_AJSE_FINAL\\AJSE_Phase2A0_Definition_Freeze",
+        "destination":  "D:\\2026_AJSE_FINAL\\01_PHASE2A_DEFINITION_FREEZE\\AJSE_Phase2A0_Definition_Freeze",
+        "reason":  "canonical Phase 2A-0 definition and eligibility freeze evidence",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_WITHIN_CANONICAL_ROOT",
+        "source":  "D:\\2026_AJSE_FINAL\\AJSE_Phase2A0_Definition_Freeze.zip",
+        "destination":  "D:\\2026_AJSE_FINAL\\02_PHASE2A_RELEASE_PACKAGE\\AJSE_Phase2A0_Definition_Freeze.zip",
+        "reason":  "canonical Phase 2A-0 release package",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_WITHIN_CANONICAL_ROOT",
+        "source":  "D:\\2026_AJSE_FINAL\\AJSE_Phase2A0_Definition_Freeze.zip.sha256",
+        "destination":  "D:\\2026_AJSE_FINAL\\02_PHASE2A_RELEASE_PACKAGE\\AJSE_Phase2A0_Definition_Freeze.zip.sha256",
+        "reason":  "Phase 2A-0 release package checksum",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_WITHIN_CANONICAL_ROOT",
+        "source":  "D:\\2026_AJSE_FINAL\\AJSE_Phase2A0_TERMINAL_SUMMARY.txt",
+        "destination":  "D:\\2026_AJSE_FINAL\\02_PHASE2A_RELEASE_PACKAGE\\AJSE_Phase2A0_TERMINAL_SUMMARY.txt",
+        "reason":  "Phase 2A-0 terminal status summary",
+        "recoverable":  true
+    },
+    {
+        "action":  "MOVE_WITHIN_CANONICAL_ROOT",
+        "source":  "D:\\2026_AJSE_FINAL\\build_phase2a0.py",
+        "destination":  "D:\\2026_AJSE_FINAL\\03_PHASE2A_BUILD_CODE\\build_phase2a0.py",
+        "reason":  "Phase 2A-0 package generation code",
+        "recoverable":  true
+    }
+]

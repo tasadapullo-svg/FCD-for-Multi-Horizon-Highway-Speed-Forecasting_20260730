@@ -1,0 +1,83 @@
+{
+  "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+  "condition": "base",
+  "model": "GRU_WITH_STATIC",
+  "fold": 5,
+  "horizon": 3,
+  "seed": 3407,
+  "configuration": {
+    "hidden_size": 128,
+    "num_layers": 1,
+    "batch_size": 256,
+    "maximum_epochs": 30,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "MSE_standardized_y",
+    "optimizer": "AdamW",
+    "gradient_clip_norm": 1.0,
+    "static": true
+  },
+  "split_hashes": {
+    "train": "caee515872499258a0d2eb507d920fde9039bae03350dffbc5b7e3b76179d0c1",
+    "validation": "123c730c0e4e1e8ae5876debeda8869f000b48858634f0be55a4e06eb0fd164e",
+    "test": "1a0bab2046020c42bc95c593d50466c39b266c39e230544fcdf519e175d703c1"
+  },
+  "schema_hash": "3a77196e721532bb39d4d1696ec993cfde3b33eec910e29e881324b9b9fd1a06",
+  "target": "future_observed_window_mean",
+  "preprocessing": "revision_data_v2",
+  "run_id": "61b7c5d23d95d563f7d6ffc4",
+  "experiment_first_use": "E06_STATIC_INFORMATION",
+  "status": "COMPLETED",
+  "started_at": "2026-11-26T01:12:25.602644+08:00",
+  "artifact_folder": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G2_ARTIFACTS\\61b7c5d23d95d563f7d6ffc4",
+  "support": {
+    "train": {
+      "n": 49575,
+      "nodes": 51,
+      "dates": 62
+    },
+    "validation": {
+      "n": 4171,
+      "nodes": 51,
+      "dates": 7
+    },
+    "test": {
+      "n": 3286,
+      "nodes": 51,
+      "dates": 7
+    }
+  },
+  "preprocess_seconds": 1.182561399997212,
+  "config_id": "191573cf129c35f84211b22b440ef7fa9f7b4e4a857db26d7cc80760fbd898cf",
+  "manifest_path": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\f4fc7b331a067cad6192\\manifest.parquet",
+  "manifest_sha256": "e207c99932217e5e5a90a4f91dbd3359de0043a92e3f74a998a1bef8aa68cbf8",
+  "model_fit": true,
+  "deterministic_execution": false,
+  "validation_only": false,
+  "best_epoch": 9,
+  "epochs_ran": 14,
+  "budget_still_improving": false,
+  "validation_seconds": 1.9321941001107916,
+  "training_seconds": 91.74759059998905,
+  "validation_metrics": {
+    "n": 4171,
+    "MAE": 1.1411670446395874,
+    "RMSE": 2.2243824005126953,
+    "Bias": 0.3695591688156128,
+    "sMAPE": 1.624531626701355
+  },
+  "model_type": "torch",
+  "ended_at": "2026-11-26T01:13:57.368516+08:00",
+  "model_size_bytes": 224909,
+  "inference_seconds": 0.11673650000011548,
+  "test_metrics": {
+    "n": 3286,
+    "MAE": 1.3623244591994987,
+    "RMSE": 2.609316387010745,
+    "Bias": -0.31487612338306986,
+    "sMAPE": 1.721951614201967
+  },
+  "prediction_path": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G2_ARTIFACTS\\61b7c5d23d95d563f7d6ffc4\\predictions_test.parquet",
+  "prediction_sha256": "0db5d1bb5100107852f2e89b2171ab178bd91c097f1dbc0ea85c7bb34315aa97"
+}

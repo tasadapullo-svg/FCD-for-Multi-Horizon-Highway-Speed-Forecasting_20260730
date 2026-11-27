@@ -1,0 +1,61 @@
+{
+  "implementation": "REVISION_INDEPENDENT_IMPLEMENTATION_v1",
+  "condition": "base",
+  "model": "Ridge",
+  "fold": 1,
+  "horizon": 3,
+  "seed": 42,
+  "configuration": {
+    "alpha": 0.1,
+    "solver": "cholesky",
+    "fit_intercept": true
+  },
+  "split_hashes": {
+    "train": "df55c275d4d7cebb8db18c400becefde3f8f8b9db074a63d0f6c506e6d2dd03b",
+    "validation": "6f5d873eb9e4fac9182f78ce9a5951c7067d0654bef275909e98520e841475e1",
+    "test": "4a3ad67e8fc56b5fcd8c484e7b1e9cb43cf2e8e5251ddeb85e9f3c134081739e"
+  },
+  "schema_hash": "1b6916a39fac00adaa724672116a04390dad6366afad83d390b2bd987d0d6f0a",
+  "target": "future_observed_window_mean",
+  "preprocessing": "revision_data_v2",
+  "run_id": "fd54c41bf3ba08009c10b52c",
+  "experiment_first_use": "E06_TUNE_F1",
+  "status": "COMPLETED_VALIDATION_ONLY",
+  "started_at": "2026-11-25T21:27:15.189405+08:00",
+  "artifact_folder": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\04_EXPERIMENTS\\G2_ARTIFACTS\\fd54c41bf3ba08009c10b52c",
+  "support": {
+    "train": {
+      "n": 34063,
+      "nodes": 51,
+      "dates": 34
+    },
+    "validation": {
+      "n": 3412,
+      "nodes": 51,
+      "dates": 7
+    },
+    "test": {
+      "n": 2919,
+      "nodes": 51,
+      "dates": 7
+    }
+  },
+  "preprocess_seconds": 0.9396983000333421,
+  "config_id": "43c05324f2b3c2b9278f34d1722eb9c5f80243ec89f636cf6c70150a84f0928c",
+  "manifest_path": "E:\\20261125_论文修改_Applied Intelligence\\大修_Applied Intelligence_2026112_论文修改\\02_DATA\\03_DERIVED_DATA\\E04_E07\\fbc2de76c709698215da\\manifest.parquet",
+  "manifest_sha256": "95702fdc14c099e14772dbd99df1105500011b5ec29ef83e51e9cc2ba73d1814",
+  "model_fit": true,
+  "deterministic_execution": false,
+  "validation_only": true,
+  "training_seconds": 0.8305289999698289,
+  "validation_metrics": {
+    "n": 3412,
+    "MAE": 0.9782611727714539,
+    "RMSE": 1.722273349761963,
+    "Bias": -0.17513419687747955,
+    "sMAPE": 1.3461520671844482
+  },
+  "model_type": "sklearn",
+  "ended_at": "2026-11-25T21:27:16.036016+08:00",
+  "model_size_bytes": 1804
+}
