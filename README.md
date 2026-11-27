@@ -90,3 +90,5 @@ Corrections: archived observations replace unsupported raw archive wording; hist
 Use [FINAL_FIGURE_PANEL_DATA_INDEX.csv](FINAL_FIGURE_PANEL_DATA_INDEX.csv) and [FINAL_TABLE_DATA_INDEX.csv](FINAL_TABLE_DATA_INDEX.csv). Dictionaries alone never imply numerical-data availability. Historical source workbooks remain snapshots; the local version map identifies all overrides.
 
 Actual Prompt12 release diff: 4 added files, 42 modified files; 22 CSVs, 4 XLSX, 3 LaTeX files changed (these are changed files, not all newly added). New numerical-result CSV uploads: 0. Public figure CSV content is the corrected Fig03 method data. Full numerical plotting remains in the controlled local delivery.
+
+Prompt12 final local comparator clarification: Fig08 base-reference rows are restricted to the frozen fixed configuration and seed42, with full tuning/seed registry retained separately locally. The existing history24_matched condition remains the history-window comparator. This is filtering of existing results, not a new run.

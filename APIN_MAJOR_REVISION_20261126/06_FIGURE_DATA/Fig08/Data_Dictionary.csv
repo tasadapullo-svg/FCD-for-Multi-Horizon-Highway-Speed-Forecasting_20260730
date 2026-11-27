@@ -39,6 +39,7 @@ Fig08A_Threshold_Sensitivity.csv,final_Bias,float64,Frozen value or documented f
 Fig08A_Threshold_Sensitivity.csv,numerical_status,object,Frozen value or documented formatting only; no new metric
 Fig08A_Threshold_Sensitivity.csv,evaluation_population,object,Frozen value or documented formatting only; no new metric
 Fig08A_Threshold_Sensitivity.csv,source_version,object,Frozen value or documented formatting only; no new metric
+Fig08A_Threshold_Sensitivity.csv,reference_configuration_scope,object,Frozen value or documented formatting only; no new metric
 Fig08B_H6_Target_Completeness.csv,run_id,object,Frozen value or documented formatting only; no new metric
 Fig08B_H6_Target_Completeness.csv,status,object,Frozen value or documented formatting only; no new metric
 Fig08B_H6_Target_Completeness.csv,experiment_first_use,object,Frozen value or documented formatting only; no new metric
@@ -79,6 +80,7 @@ Fig08B_H6_Target_Completeness.csv,final_Bias,float64,Frozen value or documented 
 Fig08B_H6_Target_Completeness.csv,numerical_status,object,Frozen value or documented formatting only; no new metric
 Fig08B_H6_Target_Completeness.csv,evaluation_population,object,Frozen value or documented formatting only; no new metric
 Fig08B_H6_Target_Completeness.csv,source_version,object,Frozen value or documented formatting only; no new metric
+Fig08B_H6_Target_Completeness.csv,reference_configuration_scope,object,Frozen value or documented formatting only; no new metric
 Fig08C_Imputation_Sensitivity.csv,run_id,object,Frozen value or documented formatting only; no new metric
 Fig08C_Imputation_Sensitivity.csv,status,object,Frozen value or documented formatting only; no new metric
 Fig08C_Imputation_Sensitivity.csv,experiment_first_use,object,Frozen value or documented formatting only; no new metric
@@ -119,6 +121,7 @@ Fig08C_Imputation_Sensitivity.csv,final_Bias,float64,Frozen value or documented 
 Fig08C_Imputation_Sensitivity.csv,numerical_status,object,Frozen value or documented formatting only; no new metric
 Fig08C_Imputation_Sensitivity.csv,evaluation_population,object,Frozen value or documented formatting only; no new metric
 Fig08C_Imputation_Sensitivity.csv,source_version,object,Frozen value or documented formatting only; no new metric
+Fig08C_Imputation_Sensitivity.csv,reference_configuration_scope,object,Frozen value or documented formatting only; no new metric
 Fig08D_History_Window_Sensitivity.csv,run_id,object,Frozen value or documented formatting only; no new metric
 Fig08D_History_Window_Sensitivity.csv,status,object,Frozen value or documented formatting only; no new metric
 Fig08D_History_Window_Sensitivity.csv,experiment_first_use,object,Frozen value or documented formatting only; no new metric
@@ -159,6 +162,7 @@ Fig08D_History_Window_Sensitivity.csv,final_Bias,float64,Frozen value or documen
 Fig08D_History_Window_Sensitivity.csv,numerical_status,object,Frozen value or documented formatting only; no new metric
 Fig08D_History_Window_Sensitivity.csv,evaluation_population,object,Frozen value or documented formatting only; no new metric
 Fig08D_History_Window_Sensitivity.csv,source_version,object,Frozen value or documented formatting only; no new metric
+Fig08D_History_Window_Sensitivity.csv,reference_configuration_scope,object,Frozen value or documented formatting only; no new metric
 Fig08E_Grid_Protocol_Ablation.csv,run_id,object,Frozen value or documented formatting only; no new metric
 Fig08E_Grid_Protocol_Ablation.csv,status,object,Frozen value or documented formatting only; no new metric
 Fig08E_Grid_Protocol_Ablation.csv,experiment_first_use,object,Frozen value or documented formatting only; no new metric
@@ -199,6 +203,7 @@ Fig08E_Grid_Protocol_Ablation.csv,final_Bias,float64,Frozen value or documented 
 Fig08E_Grid_Protocol_Ablation.csv,numerical_status,object,Frozen value or documented formatting only; no new metric
 Fig08E_Grid_Protocol_Ablation.csv,evaluation_population,object,Frozen value or documented formatting only; no new metric
 Fig08E_Grid_Protocol_Ablation.csv,source_version,object,Frozen value or documented formatting only; no new metric
+Fig08E_Grid_Protocol_Ablation.csv,reference_configuration_scope,object,Frozen value or documented formatting only; no new metric
 Fig08E_Causal_Scaling_Diagnostic.csv,run_id,object,Frozen value or documented formatting only; no new metric
 Fig08E_Causal_Scaling_Diagnostic.csv,status,object,Frozen value or documented formatting only; no new metric
 Fig08E_Causal_Scaling_Diagnostic.csv,experiment_first_use,object,Frozen value or documented formatting only; no new metric
@@ -239,6 +244,7 @@ Fig08E_Causal_Scaling_Diagnostic.csv,final_Bias,float64,Frozen value or document
 Fig08E_Causal_Scaling_Diagnostic.csv,numerical_status,object,Frozen value or documented formatting only; no new metric
 Fig08E_Causal_Scaling_Diagnostic.csv,evaluation_population,object,Frozen value or documented formatting only; no new metric
 Fig08E_Causal_Scaling_Diagnostic.csv,source_version,object,Frozen value or documented formatting only; no new metric
+Fig08E_Causal_Scaling_Diagnostic.csv,reference_configuration_scope,object,Frozen value or documented formatting only; no new metric
 Fig08E_Causal_Scaling_Diagnostic.csv,interpretation,object,Frozen value or documented formatting only; no new metric
 Fig08_Key_Statistical_Comparisons.csv,comparison_id,object,Frozen value or documented formatting only; no new metric
 Fig08_Key_Statistical_Comparisons.csv,paired_samples,int64,Frozen value or documented formatting only; no new metric
