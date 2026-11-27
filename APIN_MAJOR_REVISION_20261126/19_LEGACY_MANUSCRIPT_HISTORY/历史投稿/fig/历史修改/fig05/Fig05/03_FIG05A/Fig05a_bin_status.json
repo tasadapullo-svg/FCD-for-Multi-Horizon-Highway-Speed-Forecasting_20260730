@@ -1,0 +1,11 @@
+{
+  "valid_variables": [
+    "history_coverage_ratio",
+    "history_imputation_ratio"
+  ],
+  "blocked_variables": [
+    "max_gap_24h",
+    "hours_since_last_observation"
+  ],
+  "status": "PASS_WITH_VARIABLE_LIMITATIONS"
+}

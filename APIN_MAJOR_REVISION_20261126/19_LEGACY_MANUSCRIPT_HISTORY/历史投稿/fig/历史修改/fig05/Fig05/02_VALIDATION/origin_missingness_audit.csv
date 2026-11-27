@@ -1,0 +1,5 @@
+variable,missing_count,missing_rate
+history_coverage_ratio,0,0
+history_imputation_ratio,0,0
+max_gap_24h,0,0
+hours_since_last_observation,0,0

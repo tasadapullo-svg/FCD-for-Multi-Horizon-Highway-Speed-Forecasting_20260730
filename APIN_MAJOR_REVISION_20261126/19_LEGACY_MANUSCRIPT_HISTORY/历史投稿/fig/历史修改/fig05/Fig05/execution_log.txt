@@ -1,0 +1,34 @@
+{
+  "started": "2026-08-07T11:41:17.108115",
+  "finished": "2026-08-07T11:42:20.720255",
+  "formal": "E:\\20260730_AJSE_FINAL_bak\\04_PHASE2A_DATA_RESULTS",
+  "out": "D:\\2026_AJSE_FINAL\\Fig05_DERIVATION_20260807",
+  "unique_origins": 92147,
+  "model_sample_rows": 552882,
+  "joined_rows": 552882,
+  "mae_max_mismatch": 2.220446049250313e-16,
+  "bin_status": {
+    "valid_variables": [
+      "history_coverage_ratio",
+      "history_imputation_ratio"
+    ],
+    "blocked_variables": [
+      "max_gap_24h",
+      "hours_since_last_observation"
+    ],
+    "status": "PASS_WITH_VARIABLE_LIMITATIONS"
+  },
+  "node_fold_rows": 5508,
+  "node_risk_rows": 918,
+  "feb17_sensitivity_status": "PASS",
+  "stable_high_risk_threshold_status": "USER_APPROVAL_REQUIRED",
+  "data_audit_status": "PASS_WITH_LIMITATIONS",
+  "workbook_payload": "D:\\2026_AJSE_FINAL\\Fig05_DERIVATION_20260807\\tmp\\workbook_payload.json",
+  "corridor_endpoint_km": null,
+  "figure_status": "READY_WITH_LIMITATIONS",
+  "final_zip": "D:\\2026_AJSE_FINAL\\Fig05_DERIVATION_20260807\\Fig05_COMPLETE_RESULT_PACKAGE.zip",
+  "model_retraining": "NO",
+  "legacy_results_used": "NO",
+  "formal_results_modified": "NO",
+  "stop_gate_failure": "NO_CORE_STOP_GATE_FAILURE; DOCUMENTED_LIMITATIONS_PRESENT"
+}

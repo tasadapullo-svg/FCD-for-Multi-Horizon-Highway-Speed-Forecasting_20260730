@@ -1,0 +1,5 @@
+variable,min,max,inf_count,expected_range,status
+history_coverage_ratio,0,1,0,"[0,1]",PASS
+history_imputation_ratio,0,1,0,"[0,1]",PASS
+max_gap_24h,0,24,0,>=0,PASS
+hours_since_last_observation,0,27,0,>=0,PASS

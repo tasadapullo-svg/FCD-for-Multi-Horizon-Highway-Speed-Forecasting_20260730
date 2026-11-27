@@ -1,0 +1,4 @@
+check,expected,observed,status
+rows,552882,552882,PASS
+duplicate_model_sample_keys,0,0,PASS
+formal_models,6,6,PASS

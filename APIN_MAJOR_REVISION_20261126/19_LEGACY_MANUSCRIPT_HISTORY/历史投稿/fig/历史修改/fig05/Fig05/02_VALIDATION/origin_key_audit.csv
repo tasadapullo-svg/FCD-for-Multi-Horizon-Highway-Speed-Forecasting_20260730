@@ -1,0 +1,6 @@
+check,expected,observed,status
+rows,92147,92147,PASS
+duplicate_sample_fold_horizon_keys,0,0,PASS
+nodes,51,51,PASS
+folds,6,6,PASS
+horizons,3,3,PASS

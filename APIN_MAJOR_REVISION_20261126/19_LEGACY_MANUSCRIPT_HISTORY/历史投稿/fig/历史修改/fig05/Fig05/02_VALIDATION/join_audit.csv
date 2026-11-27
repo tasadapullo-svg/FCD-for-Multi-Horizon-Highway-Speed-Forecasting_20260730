@@ -1,0 +1,7 @@
+check,expected,observed,status
+joined_rows,552882,552882,PASS
+origin_join_rate,1,1,PASS
+node_join_rate,1,1,PASS
+unmatched_sample_ids,0,0,PASS
+unmatched_node_ids,0,0,PASS
+origin_timestamp_mismatches,0,0,PASS

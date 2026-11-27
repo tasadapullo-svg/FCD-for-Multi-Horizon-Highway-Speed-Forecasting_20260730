@@ -1,0 +1,26 @@
+check,expected,observed,status
+Formal source = Phase 2A-1 only,YES,YES,PASS
+Legacy result used,NO,NO,PASS
+Unique origins,92147,92147,PASS
+Model-sample rows,552882,552882,PASS
+Joined rows,552882,552882,PASS
+Models,6,6,PASS
+Horizons,3,3,PASS
+Folds,6,6,PASS
+Nodes,51,51,PASS
+Origin join rate,1.0,1.0,PASS
+Node join rate,1.0,1.0,PASS
+Target mismatch across models,0,0,PASS
+Figure 4 MAE reproduction max mismatch < 1e-12,<1e-12,2.220446049250313e-16,PASS
+Reliability bins are error-blind,YES,YES,PASS
+Reliability variables with valid quartiles,4,2,LIMITATION
+Every node-fold cell reports n,YES,True,PASS
+Empty node-fold cells stored as NaN,YES,True,PASS
+2026-02-17 main and sensitivity reconciled,YES,YES,PASS
+Confidence variable used,NO,NO,PASS
+Stable-high-risk minimum sample threshold frozen,YES,NO,LIMITATION
+Audit package verified node sequence available,YES,NO,LIMITATION
+Verified cumulative distance axis available,YES,NO,LIMITATION
+Python 3.10 used,YES,NO,LIMITATION
+Causal language used,NO,NO,PASS
+Blind-test language used,NO,NO,PASS
