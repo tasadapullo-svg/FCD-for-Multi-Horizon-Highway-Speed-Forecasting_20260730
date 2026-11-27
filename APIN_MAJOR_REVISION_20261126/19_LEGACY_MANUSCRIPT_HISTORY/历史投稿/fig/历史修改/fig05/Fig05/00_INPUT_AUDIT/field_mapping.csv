@@ -1,0 +1,9 @@
+source_relative_path,source_field,target_field,semantic_evidence,status
+01_DATA_PIPELINE/folds/*/sample_manifest_fold*_H*.parquet,forecast_origin,origin_timestamp,Formal Phase 2A-1 sample manifest; build script defines forecast origin,PASS
+01_DATA_PIPELINE/folds/*/sample_manifest_fold*_H*.parquet,node_order,node_order_verified,Formal manifest order is invariant across 51 nodes,PASS_WITH_LIMITATION
+01_DATA_PIPELINE/folds/*/sample_manifest_fold*_H*.parquet,history_coverage_ratio,history_coverage_ratio,Direct formal manifest field,PASS
+01_DATA_PIPELINE/folds/*/sample_manifest_fold*_H*.parquet,history_imputation_ratio,history_imputation_ratio,Direct formal manifest field,PASS
+01_DATA_PIPELINE/folds/*/sample_manifest_fold*_H*.parquet,max_gap_24h,max_gap_24h,Direct formal manifest field,PASS
+01_DATA_PIPELINE/folds/*/H*/X_sequence.npy,last timestep feature index 3,hours_since_last_observation,Reverse fold-train scaler using formal fold_train_parameters.json; alignment cross-checked against three manifest reliability fields,PASS_WITH_LIMITATION
+04_METRICS/seed_averaged_sample_errors.parquet,forecast_origin,origin_timestamp,Direct model-sample field,PASS
+04_METRICS/seed_averaged_sample_errors.parquet,absolute_error,absolute_error,Formal seed-averaged per-sample absolute error; preserved without re-averaging,PASS

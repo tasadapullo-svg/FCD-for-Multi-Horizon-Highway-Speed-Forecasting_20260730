@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-07T11:41:18.720405",
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "executable": "C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "formal_input_root": "E:\\20260730_AJSE_FINAL_bak\\04_PHASE2A_DATA_RESULTS",
+  "output_root": "D:\\2026_AJSE_FINAL\\Fig05_DERIVATION_20260807",
+  "python_3_10_available": false,
+  "runtime_limitation": "Python 3.10 was not installed; existing Python 3.14 was used without modifying source results."
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "relative_path": "04_METRICS/fold_level_model_metrics.csv",
+    "actual_size_bytes": 16066,
+    "actual_sha256": "21ddeb4f40760661328eb41a937e1be9d36bf024e6d124d28539e0adf19db4e1"
+  },
+  {
+    "relative_path": "04_METRICS/model_horizon_summary.csv",
+    "actual_size_bytes": 2036,
+    "actual_sha256": "c0d52d55f3ba67764292e2cf9bb88280d6d18c9fef762f45c3b95945423d247d"
+  },
+  {
+    "relative_path": "04_METRICS/per_run_test_metrics.csv",
+    "actual_size_bytes": 20729,
+    "actual_sha256": "6dd4354e8d8530322672ac32b7fff99dcbe5229513f2f0398ee3bdc387d73fea"
+  },
+  {
+    "relative_path": "04_METRICS/seed_averaged_sample_errors.parquet",
+    "actual_size_bytes": 27546996,
+    "actual_sha256": "54aab2ca3da69ea870abf461bf221ae7afe56720f18038f164e850b9a612bbb0"
+  },
+  {
+    "relative_path": "04_METRICS/seed_stability.csv",
+    "actual_size_bytes": 1695,
+    "actual_sha256": "c3f2a6f45f26f5729331d876b310e6bdb55152a4b891a7639947911a11458178"
+  },
+  {
+    "relative_path": "05_STATISTICS/clustered_day_spatial_block_bootstrap.csv",
+    "actual_size_bytes": 1938,
+    "actual_sha256": "907f00ec680d16157d2555211bc67092dbc40b8deee065c197e27e816004450b"
+  },
+  {
+    "relative_path": "05_STATISTICS/corrected_fold_pairwise_tests_holm.csv",
+    "actual_size_bytes": 3438,
+    "actual_sha256": "4b5373b1c68a7c8a666a0fef637d747bb0eaf220b0626ea337daa5d3900a47a8"
+  },
+  {
+    "relative_path": "05_STATISTICS/day_level_metrics.csv",
+    "actual_size_bytes": 61740,
+    "actual_sha256": "f4cddf94addcdbf16e75d822c22c0bac9f57e0df93846014bd1161d7fc9a25da"
+  },
+  {
+    "relative_path": "05_STATISTICS/forecast_origin_metrics.csv",
+    "actual_size_bytes": 1520631,
+    "actual_sha256": "dbb2a5bf5bd86509200bf3e2d646e0a8bf7c2d4e1a5a7912e8f4560d666c83ef"
+  },
+  {
+    "relative_path": "05_STATISTICS/spatial_block_day_metrics.csv",
+    "actual_size_bytes": 316420,
+    "actual_sha256": "fd54df0fd3cc3986fc8b10560b1644277b8677ef7635b2e8aac0bd5039e7a797"
+  }
+]
