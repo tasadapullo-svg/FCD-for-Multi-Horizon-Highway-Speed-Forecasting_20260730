@@ -1,0 +1,295 @@
+% AJSE-ready manuscript skeleton
+% Journal: Arabian Journal for Science and Engineering
+% Based on Springer Nature LaTeX Template v3.1 (December 2024)
+%
+% IMPORTANT:
+% 1) Keep sn-jnl.cls and the Springer Nature .bst files in the Overleaf project.
+% 2) Keep the manuscript as one main .tex file.
+% 3) Upload figure files separately and reference them with \includegraphics.
+% 4) AJSE recommends the Springer Nature template with the [iicol] option.
+% 5) AJSE uses numbered references in square brackets.
+%
+% Replace all text marked [TO BE COMPLETED] before submission.
+
+\documentclass[pdflatex,sn-mathphys-num,iicol]{sn-jnl}
+
+%%%% Essential packages
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{booktabs}
+
+% Optional: place all figures in an Overleaf folder named "figures".
+% If you keep figures in the project root, comment out the next line.
+\graphicspath{{figures/}}
+
+\raggedbottom
+%%\unnumbered % Uncomment only if unnumbered section headings are required.
+
+\begin{document}
+
+% =========================================================
+% TITLE
+% =========================================================
+\title[Short Article Title]{Full Article Title}
+
+% =========================================================
+% AUTHORS AND AFFILIATIONS
+% Replace the placeholders below with the final author list.
+% The corresponding author is marked with *.
+% =========================================================
+\author*[1]{\fnm{First} \sur{Author}}
+\email{corresponding.author@institution.edu}
+
+\author[1]{\fnm{Second} \sur{Author}}
+\email{second.author@institution.edu}
+
+% Add/remove author blocks as required.
+% Example:
+% \author[2]{\fnm{Third} \sur{Author}}
+% \email{third.author@institution.edu}
+
+\affil*[1]{%
+  \orgdiv{Department},
+  \orgname{Institution},
+  \orgaddress{
+    \city{City},
+    \postcode{Postcode},
+    \state{State},
+    \country{Country}
+  }
+}
+
+% Add additional affiliations only if required.
+% \affil[2]{%
+%   \orgdiv{Department},
+%   \orgname{Institution},
+%   \orgaddress{
+%     \city{City},
+%     \postcode{Postcode},
+%     \state{State},
+%     \country{Country}
+%   }
+% }
+
+% =========================================================
+% ABSTRACT
+% AJSE: 150--250 words.
+% The abstract should define abbreviations when first used
+% and should not contain unspecified references.
+% =========================================================
+\abstract{%
+[TO BE COMPLETED: Insert the final 150--250 word abstract here.]
+}
+
+% AJSE: provide 4--6 keywords.
+\keywords{Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5}
+
+\maketitle
+
+% =========================================================
+% 1 INTRODUCTION
+% =========================================================
+\section{Introduction}\label{sec:introduction}
+
+[TO BE COMPLETED: Insert the final Introduction here.]
+
+% =========================================================
+% 2
+% Keep the exact section title used in the final manuscript.
+% =========================================================
+\section{Literature Review}\label{sec:literature}
+
+[TO BE COMPLETED: Insert Section 2 here.]
+
+% =========================================================
+% 3
+% Replace this title if the final manuscript uses a different title.
+% =========================================================
+\section{Study Area and FCD Data}\label{sec:data}
+
+[TO BE COMPLETED: Insert Section 3 here.]
+
+% =========================================================
+% 4 METHODS / METHODOLOGY
+% =========================================================
+\section{Methodology}\label{sec:methodology}
+
+[TO BE COMPLETED: Insert Section 4 here.]
+
+% Example equation:
+%
+% \begin{equation}
+%   y = f(x)
+%   \label{eq:example}
+% \end{equation}
+%
+% Refer to it as Equation~\ref{eq:example}.
+
+% =========================================================
+% 5 RESULTS
+% =========================================================
+\section{Results}\label{sec:results}
+
+[TO BE COMPLETED: Insert Section 5 here.]
+
+% =========================================================
+% FIGURE INSERTION EXAMPLES
+% Keep image files separate in the Overleaf project.
+% For AJSE, do not type "Fig. 1" manually inside \caption{}.
+% The class handles figure numbering.
+% =========================================================
+
+% ---- Single-column figure example ----
+%
+% \begin{figure}[t]
+% \centering
+% \includegraphics[width=\columnwidth]{Fig1}
+% \caption{Insert the concise Figure 1 caption here}
+% \label{fig:fig1}
+% \end{figure}
+
+% ---- Double-column / wide figure example ----
+%
+% \begin{figure*}[t]
+% \centering
+% \includegraphics[width=\textwidth]{Fig2}
+% \caption{Insert the concise Figure 2 caption here}
+% \label{fig:fig2}
+% \end{figure*}
+
+% =========================================================
+% TABLE INSERTION EXAMPLES
+% =========================================================
+
+% ---- Single-column table example ----
+%
+% \begin{table}[t]
+% \caption{Insert the table title here}
+% \label{tab:table1}
+% \centering
+% \begin{tabular}{@{}lll@{}}
+% \toprule
+% Column 1 & Column 2 & Column 3 \\
+% \midrule
+% Data & Data & Data \\
+% Data & Data & Data \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+
+% ---- Double-column / wide table example ----
+%
+% \begin{table*}[t]
+% \caption{Insert the wide table title here}
+% \label{tab:table2}
+% \centering
+% \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
+% \toprule
+% Column 1 & Column 2 & Column 3 & Column 4 & Column 5 & Column 6 \\
+% \midrule
+% Data & Data & Data & Data & Data & Data \\
+% \bottomrule
+% \end{tabular*}
+% \end{table*}
+
+% =========================================================
+% 6 DISCUSSION
+% =========================================================
+\section{Discussion}\label{sec:discussion}
+
+\subsection{What Eligible Sparse FCD Can Support}\label{subsec:eligible-fcd}
+
+[TO BE COMPLETED: Insert Section 6.1 here.]
+
+\subsection{Horizon Dependence and Competitive Simple Baselines}\label{subsec:horizon}
+
+[TO BE COMPLETED: Insert Section 6.2 here.]
+
+% Replace the following two subsection titles with the exact
+% headings in the final manuscript.
+\subsection{Subsection 6.3 Title}\label{subsec:discussion63}
+
+[TO BE COMPLETED: Insert Section 6.3 here.]
+
+\subsection{Subsection 6.4 Title}\label{subsec:discussion64}
+
+[TO BE COMPLETED: Insert Section 6.4 here.]
+
+% =========================================================
+% 7 CONCLUSIONS
+% =========================================================
+\section{Conclusions}\label{sec:conclusions}
+
+[TO BE COMPLETED: Insert the final Conclusions here.]
+
+% =========================================================
+% BACK MATTER
+% =========================================================
+\backmatter
+
+% AJSE research articles may include acknowledgements.
+\bmhead{Acknowledgements}
+
+[TO BE COMPLETED OR REMOVE THIS TEXT IF NO ACKNOWLEDGEMENTS ARE REQUIRED.]
+
+% AJSE requests relevant statements under the heading
+% "Statements and Declarations".
+\section*{Statements and Declarations}
+
+\subsection*{Funding}
+[TO BE COMPLETED: Insert the applicable funding statement.]
+
+\subsection*{Competing Interests}
+[TO BE COMPLETED: Insert the applicable competing-interests statement.]
+
+\subsection*{Author Contributions}
+[TO BE COMPLETED: Insert the final author-contribution statement.]
+
+\subsection*{Data Availability}
+[TO BE COMPLETED: Insert the applicable data-availability statement.]
+
+\subsection*{Code Availability}
+[TO BE COMPLETED: Insert the applicable code-availability statement.]
+
+% Add the following only when applicable:
+%
+% \subsection*{Ethics Approval}
+% [TO BE COMPLETED]
+%
+% \subsection*{Consent to Participate}
+% [TO BE COMPLETED]
+%
+% \subsection*{Consent for Publication}
+% [TO BE COMPLETED]
+
+% =========================================================
+% OPTIONAL SUPPLEMENTARY INFORMATION
+% Uncomment only if supplementary files accompany the paper.
+% =========================================================
+%
+% \bmhead{Supplementary Information}
+% [TO BE COMPLETED: Describe the supplementary files.]
+
+% =========================================================
+% OPTIONAL APPENDIX
+% Uncomment only if required.
+% =========================================================
+%
+% \begin{appendices}
+% \section{Appendix Title}\label{sec:appendix}
+% [TO BE COMPLETED]
+% \end{appendices}
+
+% =========================================================
+% REFERENCES
+% Keep the bibliography database file as sn-bibliography.bib
+% in the Overleaf project.
+% Example in text: \cite{reference_key}
+% =========================================================
+\bibliography{sn-bibliography}
+
+\end{document}

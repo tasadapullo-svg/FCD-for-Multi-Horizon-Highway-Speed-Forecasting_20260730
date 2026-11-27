@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the corresponding paper and archived release when available."
+title: "Auditable Rolling-Origin Evaluation of Sparse FCD for Multi-Horizon Highway Speed Forecasting"
+type: software
+authors:
+  - family-names: Sun
+    given-names: Wenjie
+  - family-names: Mokhtar
+    given-names: Safizahanin
+repository-code: "TO_BE_ADDED"
+version: "1.0.0"
+date-released: "2026-07-30"
+license: "NOASSERTION"
