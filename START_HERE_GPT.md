@@ -1,3 +1,10 @@
 # GPT complete research-data entry
 
 Latest full publication is author-authorized on 2026-11-27. Read README.md, FIGURE_DATA_INDEX.csv (55 actual CSVs), TABLE_DATA_INDEX.csv (all nine full main tables), EXPERIMENT_RESULT_INDEX.csv, SUPPLEMENTARY_DATA_INDEX.csv, CANONICAL_RESULT_INDEX.csv, SCIENTIFIC_CLAIMS_REGISTRY.csv. Actual data, not README placeholders, are at repository_path. Read MASTER_WORKBOOK_SHEET_INDEX.csv for 37 saved-sheet CSVs. MASTER_FILE_INDEX.csv points to small per-section index shards; ALL_SCIENTIFIC_CONTENT_UPLOAD_MAP.csv resolves source files and byte-identical aliases. Binary Excel existence is separate from client sheet-reading capability. Historical versions, original G1 Method A and independent G2, native SVD and unavailable common-target metrics stay separate. No new fitting, observations, statistics or GIS processing occurred. Credentials/runtime are excluded; source-deduplicated content is still available at the mapped real path.
+
+
+## Completed full-support publication and local cleanup
+
+Scientific data commit: `ee6764fa121d6c451cf211414b365f748c0516d5` (normal commits/push, historical large batch split into11 smaller transfers after a disconnect). All 7654 selected scientific-source records resolve to 5949 actual repository paths; source Git blob identity mismatches:0. This includes the full55 figure/auxiliary CSVs, all9 numerical main tables, S01–S08,37 saved master-sheet CSVs, and selected raw/prediction/feature/weight payloads. Large binary existence/download does not imply a GPT connector can parse the format.
+
+Local cleanup deleted 1358 exact duplicate files, merged 304 immutable paths into NTFS hardlinks, removed95 empty historical directories and consolidated18 ZIPs. Necessary independent/editable/control copies (52) are explicit exceptions. Duplicate content affected: 4162800679 logical bytes. No scientific calculation was repeated. See [classified file index](REPOSITORY_CLASSIFIED_FILE_INDEX.csv) and [not-uploaded list](NOT_UPLOADED_FILES.csv). Credentials were excluded by class and actual source/Office/archive scan found0 matching credentials; the report states scan limits.
