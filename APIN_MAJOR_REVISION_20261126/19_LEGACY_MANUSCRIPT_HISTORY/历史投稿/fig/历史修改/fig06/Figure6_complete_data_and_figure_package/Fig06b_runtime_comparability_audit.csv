@@ -1,0 +1,13 @@
+﻿audit_item,observed_status,verdict,interpretation
+Run Registry exists,YES,PASS,Master workbook records 180 formal runs.
+Completed/failed runs,180 / 0,PASS,Campaign completeness supports performance audit.
+elapsed_seconds field,Available,PASS,Raw elapsed values exist in Run_Registry.
+Single-run normalization,Required and used conceptually,PASS,Total campaign time is not compared across unequal run counts.
+Timer scope documented uniformly,NO,FAIL,Cannot confirm whether all models include identical read/train/validate/predict/save stages.
+Per-run device recorded,NO,FAIL,Run Registry does not include a device column.
+XGBoost CPU/GPU mode recorded,NO,FAIL,Device mode and thread count are not frozen per run.
+Hardware consistency,Environment-level only,PARTIAL,"Windows/Python/CUDA/A3000 environment is documented, but not tied to every run."
+Concurrent-run interference,Not formally audited,FAIL,"Sequential timestamps are visible in sampled rows, but a full interference assertion is absent."
+Fold-size dependence handled,YES,PASS,Any runtime comparison would need matched fold×horizon or median/IQR.
+Universal computational benchmark claim,PROHIBITED,PASS,Recorded elapsed time is implementation-specific.
+Quantitative performance–runtime scatter,NOT APPROVED,FAIL,Use an objective engineering selection matrix instead.

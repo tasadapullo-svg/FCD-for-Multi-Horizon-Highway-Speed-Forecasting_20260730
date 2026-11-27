@@ -1,0 +1,45 @@
+{
+  "source_zip": "output_tomtom_data_fixed_dates_CSV_only.zip",
+  "csv_files": 83,
+  "raw_records": 244477,
+  "stable_nodes": 51,
+  "time_min_15min_floor": "2025-12-08 13:15:00",
+  "time_max_15min_floor": "2026-02-28 23:45:00",
+  "invalid_pd_create_time": 0,
+  "invalid_core_records": 0,
+  "duplicate_node_15min_records": 1594,
+  "road_closure_records": 0,
+  "coverage": [
+    {
+      "granularity": "15min",
+      "time_steps": 7915,
+      "expected_node_time_cells": 403665,
+      "observed_node_time_cells": 242883,
+      "missing_node_time_cells": 160782,
+      "coverage_rate": 0.601694474378507
+    },
+    {
+      "granularity": "30min",
+      "time_steps": 3958,
+      "expected_node_time_cells": 201858,
+      "observed_node_time_cells": 176026,
+      "missing_node_time_cells": 25832,
+      "coverage_rate": 0.8720288519652429
+    },
+    {
+      "granularity": "1h",
+      "time_steps": 1979,
+      "expected_node_time_cells": 100929,
+      "observed_node_time_cells": 97094,
+      "missing_node_time_cells": 3835,
+      "coverage_rate": 0.9620029922024393
+    }
+  ],
+  "mean_TTI_hourly": 1.0445042102169897,
+  "max_TTI_hourly": 3.742424242424242,
+  "mean_speed_hourly": 88.84711173364643,
+  "gap_count_15min": 108625,
+  "median_gap_hours": 0.25,
+  "p95_gap_hours": 0.75,
+  "max_gap_hours": 25.75
+}

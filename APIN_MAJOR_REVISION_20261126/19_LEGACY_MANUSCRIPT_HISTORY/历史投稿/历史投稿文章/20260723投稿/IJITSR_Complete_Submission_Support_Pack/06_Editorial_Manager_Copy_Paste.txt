@@ -1,0 +1,35 @@
+JOURNAL
+International Journal of Intelligent Transportation Systems Research
+
+ARTICLE TYPE
+Research Paper
+
+TITLE
+Reliability-Informed Traffic Speed Forecasting from Sparse Floating-Car Data on a Data-Scarce Highway Corridor
+
+AUTHORS
+Sun Wenjie; Safizahanin binti Mokhtar; Gabriel Ling Hoh Teck; Li Ruiqing; Liu Lvmin
+
+CORRESPONDING AUTHOR
+Sun Wenjie
+sunwenjie@graduate.utm.my
+
+ABSTRACT
+Traffic speed forecasting supports route guidance and corridor control on highways with limited sensing. Most models are evaluated on dense sensor networks, so their validity with incomplete floating-car data (FCD) remains uncertain. Sparse FCD also produces uneven sample availability across locations and time. Future-data leakage and different test samples can distort model comparisons. This study examines the Pan Borneo Highway, a long interurban corridor in Sarawak, Malaysia. A 15-min FCD stream is cleaned, aligned to an hourly panel, and used to predict mean speed over 1-, 3-, and 6-h future windows. Seven models are evaluated on the same chronological samples. TCN ablation, stress tests, and regime analysis examine feature value and conditions associated with large errors. By fixing samples and preprocessing rules, the evaluation removes unequal-sample bias; XGBoost records the lowest MAEs of 0.9736, 0.8689, and 0.7867 km/h. Missing observations cause the largest error increase, while high-volatility and degraded traffic states remain the most difficult regimes. Future work should test longer records, other corridors, independent sensors, and calibrated prediction intervals.
+
+KEYWORDS
+Floating-car data; Traffic speed forecasting; Sparse data; Data reliability; Highway corridor; Intelligent transportation systems
+
+FUNDING
+The authors received no specific funding for this work.
+
+COMPETING INTERESTS
+The authors have no relevant financial or non-financial interests to disclose.
+
+DATA AVAILABILITY
+Processed and anonymized data products, figure and table source files, configurations, statistical outputs, validation reports, and checksums are available at:
+https://github.com/tasadapullo-svg/2026-PanBorneo-FCD-Forecasting-Reproducibility
+Zenodo DOI: https://doi.org/10.5281/zenodo.20901687
+
+CODE AVAILABILITY
+Scripts for training, evaluation, statistical analysis, validation, and figure generation are included in the archived reproducibility package.

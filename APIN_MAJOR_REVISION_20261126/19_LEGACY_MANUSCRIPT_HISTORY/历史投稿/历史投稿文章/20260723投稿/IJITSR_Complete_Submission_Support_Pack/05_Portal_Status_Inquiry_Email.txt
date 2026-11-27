@@ -1,0 +1,22 @@
+Subject: Clarification of the active submission portal for IJITSR
+
+Dear Editorial Office,
+
+I am preparing to submit the following Research Paper to the International Journal of Intelligent Transportation Systems Research:
+
+Reliability-Informed Traffic Speed Forecasting from Sparse Floating-Car Data on a Data-Scarce Highway Corridor
+
+The official journal and Springer pages direct authors to https://www.editorialmanager.com/ijit/. However, the portal currently displays the message “Site under development. Do not use for live manuscript submission.”
+
+Could you please confirm the active submission URL and whether regular Research Paper submissions are currently being accepted?
+
+Corresponding author:
+Sun Wenjie
+Department of Urban and Regional Planning
+Universiti Teknologi Malaysia
+Email: sunwenjie@graduate.utm.my
+
+Thank you for your assistance.
+
+Kind regards,
+Sun Wenjie

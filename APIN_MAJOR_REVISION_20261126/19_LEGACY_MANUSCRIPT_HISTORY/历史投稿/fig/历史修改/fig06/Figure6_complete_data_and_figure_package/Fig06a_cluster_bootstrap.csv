@@ -1,0 +1,16 @@
+﻿comparison,model_A,model_B,horizon,metric,paired_unit,estimate_A_minus_B,CI_lower,CI_upper,n_days,n_block_days,bootstrap_replicates,inference_role,direction_definition
+XGBoost_vs_SeasonalHA,XGBoost,SeasonalHA,1,MAE,day_then_spatial_block,0.0684244852751401,-0.1509711283155028,0.3762201205562139,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_GRU,XGBoost,GRU,1,MAE,day_then_spatial_block,-0.2165533563740059,-0.2838362121855929,-0.1458035214189507,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_Ridge,XGBoost,Ridge,1,MAE,day_then_spatial_block,-0.2625505062724203,-0.3520563263017451,-0.1514782397330082,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+Persistence_vs_HA,Persistence,HA,1,MAE,day_then_spatial_block,-1.0931002937139125,-1.310570975446553,-0.8883078096882452,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+GRU_vs_Ridge,GRU,Ridge,1,MAE,day_then_spatial_block,-0.0459971498984143,-0.1186362209658456,0.0403255937578327,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_SeasonalHA,XGBoost,SeasonalHA,3,MAE,day_then_spatial_block,0.0251850349076826,-0.1115564351347946,0.1890946825413066,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_GRU,XGBoost,GRU,3,MAE,day_then_spatial_block,-0.2964466754812432,-0.5229053278023278,-0.1363100996226718,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_Ridge,XGBoost,Ridge,3,MAE,day_then_spatial_block,-0.3912177152920465,-0.6283582414164096,-0.2078313542981629,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+Persistence_vs_HA,Persistence,HA,3,MAE,day_then_spatial_block,-0.6298077785985181,-0.7691977002335662,-0.4952117880810718,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+GRU_vs_Ridge,GRU,Ridge,3,MAE,day_then_spatial_block,-0.0947710398108033,-0.1859482388020815,-0.0080045499468936,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_SeasonalHA,XGBoost,SeasonalHA,6,MAE,day_then_spatial_block,0.0225896739809555,-0.0944902726532968,0.2109977943295553,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_GRU,XGBoost,GRU,6,MAE,day_then_spatial_block,-0.3863571936333909,-0.7837858799880417,-0.1440790272258605,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+XGBoost_vs_Ridge,XGBoost,Ridge,6,MAE,day_then_spatial_block,-0.4537170387183774,-0.7544852846593367,-0.2241716075880616,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+Persistence_vs_HA,Persistence,HA,6,MAE,day_then_spatial_block,-0.0345655065105381,-0.2043507698006306,0.1078127400411621,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A
+GRU_vs_Ridge,GRU,Ridge,6,MAE,day_then_spatial_block,-0.0673598450849864,-0.21513217486011,0.1218148121892639,41,205,10000,supplementary,MAE_A - MAE_B; negative favors A

@@ -1,0 +1,5 @@
+coverage_class_1h,nodes,mean_coverage_1h
+low_<80%,0,
+medium_80-90%,0,
+high_90-95%,0,
+very_high_>=95%,51,0.9620029922024392

@@ -1,0 +1,4 @@
+granularity,time_steps,expected_node_time_cells,observed_node_time_cells,missing_node_time_cells,coverage_rate
+15min,7915,403665,242883,160782,0.601694474378507
+30min,3958,201858,176026,25832,0.8720288519652429
+1h,1979,100929,97094,3835,0.9620029922024393

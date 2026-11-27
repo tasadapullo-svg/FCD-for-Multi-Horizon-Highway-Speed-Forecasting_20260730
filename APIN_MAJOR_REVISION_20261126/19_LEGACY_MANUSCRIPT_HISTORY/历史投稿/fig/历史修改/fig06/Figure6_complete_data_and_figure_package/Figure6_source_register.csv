@@ -1,0 +1,8 @@
+﻿source_file,source_object,role,frozen_sha256_or_identifier,status
+AJSE_PHASE2A_RESULT_MASTER.xlsx,Executive_Summary / Statistics_Corrected / Cluster_Bootstrap / Run_Registry,Primary formal source,config commit 245055057b2427a804eb45515131dd258fe85359; tag ajse-phase2a1-final-audit-freeze-20260730,USED
+04_METRICS/model_horizon_summary.csv,model×horizon performance,Figure 6(b) performance,c0d52d55f3ba67764292e2cf9bb88280d6d18c9fef762f45c3b95945423d247d,USED
+04_METRICS/fold_level_model_metrics.csv,model×fold×horizon MAE,Recalculation and fold uncertainty,21ddeb4f40760661328eb41a937e1be9d36bf024e6d124d28539e0adf19db4e1,USED
+05_STATISTICS/corrected_fold_pairwise_tests_holm.csv,15 primary comparisons,"Figure 6(a), primary inference",4b5373b1c68a7c8a666a0fef637d747bb0eaf220b0626ea337daa5d3900a47a8,USED
+05_STATISTICS/clustered_day_spatial_block_bootstrap.csv,15 supplementary comparisons,"Figure 6(a), supplementary inference",907f00ec680d16157d2555211bc67092dbc40b8deee065c197e27e816004450b,USED
+AJSE_PHASE2A_RESULT_LEVEL_FINAL_AUDIT_REPORT.md,Evidence boundaries,Prohibited/allowed claims,PASS_WITH_LIMITATIONS,USED
+Old Phase 13/15; P6/P7/P8; CRG-TCN,Excluded evidence,Not eligible for Figure 6,EXCLUDED_BY_PROTOCOL,EXCLUDED
