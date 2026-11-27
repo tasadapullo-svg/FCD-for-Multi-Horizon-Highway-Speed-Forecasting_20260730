@@ -1,0 +1,1574 @@
+% AJSE-ready manuscript skeleton
+% Journal: Arabian Journal for Science and Engineering
+% Based on Springer Nature LaTeX Template v3.1 (December 2024)
+%
+% IMPORTANT:
+% 1) Keep sn-jnl.cls and the Springer Nature .bst files in the Overleaf project.
+% 2) Keep the manuscript as one main .tex file.
+% 3) Upload figure files separately and keep them in the project root directory.
+% 4) AJSE recommends the Springer Nature template with the [iicol] option.
+% 5) AJSE uses numbered references in square brackets.
+%
+% Replace all text marked [TO BE COMPLETED] before submission.
+
+\documentclass[pdflatex,sn-mathphys-num,iicol]{sn-jnl}
+
+%%%% Essential packages
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{booktabs}
+
+\raggedbottom
+%%\unnumbered % Uncomment only if unnumbered section headings are required.
+\begin{document}
+
+% =========================================================
+% TITLE
+% =========================================================
+
+\title[Auditable Multi-Horizon Highway Speed Forecasting]
+{Auditable Multi-Horizon Highway Speed Forecasting from Sparse Floating Car Data: The GATE-FCD Framework}
+
+
+% =========================================================
+% AUTHORS
+% =========================================================
+
+% Corresponding author 1
+\author*[1]{\fnm{Wenjie} \sur{Sun}}
+\email{sunwenjie@graduate.utm.my}
+
+% Corresponding author 2
+\author*[1]{\fnm{Safizahanin binti} \sur{Mokhtar}}
+\email{safizahanin@utm.my}
+
+% Co-author
+\author[1]{\fnm{Gabriel} \sur{Ling Hoh Teck}}
+\email{gabriel.ling@utm.my}
+
+% Co-author
+\author[2]{\fnm{Ruiqing} \sur{Li}}
+\email{liruiqing@graduate.utm.my}
+
+% Co-author
+\author[3]{\fnm{Lvmin} \sur{Liu}}
+\email{llm1194568495@gmail.com}
+
+
+% =========================================================
+% AFFILIATIONS
+% =========================================================
+
+\affil*[1]{%
+  \orgdiv{Department of Urban and Regional Planning},
+  \orgname{Universiti Teknologi Malaysia},
+  \orgaddress{
+    \city{Skudai},
+    \postcode{81310},
+    \state{Johor},
+    \country{Malaysia}
+  }
+}
+
+\affil[2]{%
+  \orgdiv{Faculty of Computing},
+  \orgname{Universiti Teknologi Malaysia},
+  \orgaddress{
+    \city{Johor Bahru},
+    \postcode{81310},
+    \state{Johor},
+    \country{Malaysia}
+  }
+}
+
+\affil[3]{%
+  \orgdiv{School of Information Engineering},
+  \orgname{Nanjing Normal University Taizhou College},
+  \orgaddress{
+    \city{Taizhou},
+    \state{Jiangsu Province},
+    \country{China}
+  }
+}
+
+
+% =========================================================
+% ABSTRACT
+% =========================================================
+
+\abstract{%
+Floating car data (FCD) support highway speed forecasting where roadside sensors are sparse. However, FCD services may omit planned slots, which obscures the full observation space. Model comparisons may also use inconsistent samples or preprocessing boundaries. Many evaluations use one test period and mean error without reliability checks. In response to these challenges, this study proposes the Grid-Reconstructed, Auditable, Temporally Causal, and Eligibility-Gated Multi-Horizon FCD Forecasting (GATE-FCD) framework. The framework builds reproducible multi-horizon evidence before model selection. It reconstructs the grid, applies eligibility gating, and builds a 24-h causal history at 51 fixed virtual nodes. It also freezes common manifests for six retrospective rolling-origin folds across H1, H3, and H6. XGBoost recorded the lowest descriptive MAE at all horizons (0.949, 0.829, and 0.752~km~h$^{-1}$), but SeasonalHA remained close and no Holm-adjusted comparison was significant (0/15). Future work should use longer periods, independent reference speeds, and other corridors and providers.
+}
+
+
+% =========================================================
+% KEYWORDS
+% =========================================================
+
+\keywords{
+floating car data,
+highway speed forecasting,
+data eligibility,
+rolling-origin evaluation,
+multi-horizon forecasting,
+model reliability
+}
+
+\maketitle
+
+
+% =========================================================
+% 1 INTRODUCTION
+% =========================================================
+% =========================================================
+% 1 INTRODUCTION
+% =========================================================
+
+\section{Introduction}\label{sec:introduction}
+
+Intelligent transportation systems now use fixed roadside sensors, vehicle trajectories, crowdsourced data, and traffic-data services. In areas with limited fixed detection infrastructure, floating car data (FCD) have become an important source of traffic-state information. Zhang et al.~\cite{Zhang2025FCD} reviewed applications of FCD to road-speed estimation, travel-time analysis, congestion identification, and traffic-state monitoring. They also reported continued growth in transportation-engineering applications alongside connected vehicles and traffic-data services. Ipekyuz et al.~\cite{Ipekyuz2025FCD} combined FCD with Bluetooth data to estimate speed on urban arterials. Their findings show that these data can supplement conventional traffic observations where fixed sensing resources are limited. Much of the traffic-forecasting literature still relies on curated regular time series or relatively complete datasets. In practice, data collected on long-distance regional highways with few fixed detectors are often spatially discrete, temporally discontinuous, and uneven in quality. The first methodological challenge is to convert records returned by an FCD API into valid traffic observations. The observations need an explicit theoretical denominator, clear spatiotemporal semantics, and defined quality criteria. The next challenge is to determine which observations can form reliable forecasting samples.
+
+This study examines a long-distance corridor of the Pan Borneo Highway in Sarawak, Malaysia. The highway connects regions across Borneo and supports connectivity and economic development in Sabah and Sarawak~\cite{Kam2025PanBorneo,Azmi2025PanBorneo}. The study segment is approximately 130~km long and contains 51 fixed virtual observation nodes along the mainline. Where practicable, the nodes were placed away from side roads and complex intersections. They therefore provide spatially discrete FCD samples rather than continuous corridor sensing. The study covers 8 December 2025 to 28 February 2026 at a planned 15-min resolution. Planned slots with no API response do not appear automatically as missing records. Null checks on returned records therefore cannot recover true temporal completeness. Coverage, confidence, and consecutive gaps also vary across nodes and time. Direct use of returned records can change valid samples and blur information boundaries during filling, feature generation, and splitting. These problems affect fair and reproducible evaluation for 1-, 3-, and 6-h forecasting.
+
+Prior studies cover FCD applications, forecasting models, and missing-data treatment. Ipekyuz et al.~\cite{Ipekyuz2025FCD} examined FCD speed estimation, while Hadry et al.~\cite{Hadry2025TrafficForecasting} compared models across forecast horizons using HERE data. Later work applied deep ensembles~\cite{Cini2024DeepEnsemble}, multi-step feature projection~\cite{Zeb2024FeatureProjection}, and a spatial-temporal Transformer~\cite{Liu2024SpatialTemporalTransformer}. Chen et al.~\cite{Chen2024TrafficCompletion}, Bikram et al.~\cite{Bikram2024Imputation}, and Wang et al.~\cite{Wang2024RoadNetworkPixelization} addressed incomplete traffic observations. These studies establish relevant components but do not combine them into one audited workflow for sparse regional-highway FCD.
+
+Existing research has not yet fully addressed the construction of forecasting evidence from FCD on data-scarce, long-distance highways. Planned time slots that are not returned by an FCD API may be absent from the raw data altogether. The complete theoretical node$\times$time observation space must therefore be reconstructed before modeling, with explicit eligibility criteria for record quality, historical coverage, and future targets. Different models may use different forecast origins. Preprocessing or feature construction may also use information after the forecast origin. Either problem can confound comparisons through sample differences or temporal leakage. Reliance on a single test period and average error alone also makes it difficult to assess model stability across time, nodes, and data-reliability conditions. The focus is therefore not a more complex forecasting model. It is a complete engineering workflow that begins with FCD eligibility determination and proceeds through multi-horizon evaluation and result auditing.
+
+To address these gaps, we introduce the Grid-Reconstructed, Auditable, Temporally Causal, and Eligibility-Gated Multi-Horizon FCD Forecasting Framework (GATE-FCD). The framework converts raw FCD into auditable multi-horizon forecasting evidence. It is not a new neural-network architecture. The study addresses four research questions. First, can spatially discrete, incomplete, and quality-heterogeneous FCD form traceable samples under complete-grid reconstruction and explicit eligibility rules? Second, can strictly causal inputs support future-window mean-speed forecasting over 1, 3, and 6~h? Third, how do forecast horizon and model complexity affect the relative performance of Historical Average (HA), SeasonalHA, Persistence, Ridge, XGBoost, and GRU? The comparison treats added complexity as useful only when its gain is stable and practically meaningful. Fourth, which temporal, spatial, and reliability conditions define the engineering boundaries of GATE-FCD?
+
+The study makes four contributions. First, it establishes a complete-grid and eligibility-gating protocol for planned time slots not returned by the FCD API. These slots enter the theoretical observation space, so forecasting-sample eligibility is determined before model training. Second, train-only preprocessing, a 24-h causal history, common sample manifests, six-fold retrospective rolling-origin evaluation, and result auditing are integrated into a unified temporally causal and reproducible evaluation process. Third, it provides empirical multi-horizon evidence for future 1-, 3-, and 6-h window-mean FCD-reported speed at 51 fixed virtual observation nodes on the Pan Borneo Highway. Fourth, it defines the engineering value of model complexity through forecast horizon, cross-fold stability, data reliability, and statistical uncertainty. Model selection is therefore tied to a specific horizon and evidence boundary instead of assuming that a complex model will perform best in every setting.
+
+Section~\ref{sec:literature} defines the research gap, Section~\ref{sec:data} describes the data, and Section~\ref{sec:methodology} presents GATE-FCD. Section~\ref{sec:results} reports the results, Section~\ref{sec:discussion} discusses their engineering meaning and limitations, and Section~\ref{sec:conclusions} states the conclusions.
+
+% =========================================================
+% 2 LITERATURE REVIEW
+% Keep the exact section title used in the final manuscript.
+% =========================================================
+% =========================================================
+% 2 LITERATURE REVIEW AND RESEARCH GAP
+% =========================================================
+
+\section{Literature Review and Research Gap}
+\label{sec:literature}
+
+
+% =========================================================
+% 2.1 FCD FOR TRAFFIC MONITORING
+% =========================================================
+
+\subsection{FCD for Traffic Monitoring}
+\label{subsec:fcd-monitoring}
+
+The central question for FCD has progressed from ``whether FCD can be used for traffic analysis'' to ``which observations can enter a reliable forecasting process.'' Over the past five years, FCD applications have expanded from traffic-state monitoring to speed estimation, travel-time analysis, congestion identification, and traffic forecasting. Zhang et al.~\cite{Zhang2025FCD} showed that FCD are an important data source for traffic-operations analysis. Their review also described a shift from descriptive monitoring toward spatiotemporal forecasting. FCD also reduce dependence on fixed detection infrastructure. Ipekyuz et al.~\cite{Ipekyuz2025FCD} combined FCD with Bluetooth data to estimate speed on urban arterials. The combined data supported traffic-state evaluation where fixed detection resources are limited. Hadry et al.~\cite{Hadry2025TrafficForecasting} used HERE API data for multi-horizon traffic forecasting. Together, these studies provide a basis for extending traffic monitoring toward forecasting applications.
+
+However, different FCD sources have different data structures and observation semantics. Vehicle-level GPS or taxi trajectories can describe the continuous movement of individual vehicles. Services such as TomTom and HERE instead provide processed road-level or virtual-location-level speed, travel-time, and quality information through an FCD API. Yu et al.~\cite{Yu2024AutoformerFCD} used taxi GPS trajectories for traffic-state forecasting, illustrating the advantages of continuous trajectory data for modeling spatiotemporal relationships. In contrast, users of FCD generally cannot directly control upstream sampling, map matching, or data filtering. Existing FCD research has focused largely on urban roads, dense networks, or continuous vehicle trajectories. Long-distance regional corridors may instead have only discrete virtual nodes. They may also contain unreturned time slots, node-level coverage differences, and quality fluctuations.
+
+
+% =========================================================
+% 2.2 TRAFFIC FORECASTING AND MODEL COMPLEXITY
+% =========================================================
+
+\subsection{Traffic Forecasting and Model Complexity}
+\label{subsec:model-complexity}
+
+Traffic forecasting increasingly uses complex spatiotemporal models in addition to historical means, periodic patterns, and state persistence. Cini and Aydin~\cite{Cini2024DeepEnsemble} used CNN, LSTM, and GRU models. Zeb et al.~\cite{Zeb2024FeatureProjection} studied horizon-specific representations, while Liu and Zhang~\cite{Liu2024SpatialTemporalTransformer} combined a Transformer, temporal aggregation, and spatial memory.
+
+Greater model complexity, however, does not necessarily produce commensurate engineering gains. Historical Average, SeasonalHA, and Persistence are structurally simple. They represent long-term mean state, recurring periodicity, and short-term state inertia, respectively. These baselines show whether complex models add predictive information. Hadry et al.~\cite{Hadry2025TrafficForecasting} compared naive, statistical, and learning-based models. Their study shows why complex models should be assessed against strong simple baselines rather than from isolated error levels.
+
+Multi-horizon forecasting makes such comparisons even more necessary. Short-horizon forecasts can often exploit current-state persistence more strongly, whereas the relative importance of periodic structure and nonlinear historical relationships may change as the forecast window increases~\cite{Hadry2025TrafficForecasting,Zeb2024FeatureProjection}. Recent reviews have also expanded the focus beyond accuracy alone to robustness, efficiency, transferability, and practical deployment~\cite{Du2025TrafficSurvey,Khatiriolyaee2026TrafficPrediction,Liu2026DeepLearningReview}. Here, we treat HA, SeasonalHA, Persistence, Ridge, XGBoost, and GRU as representatives of different traffic mechanisms and levels of model complexity rather than as entries in a simple algorithm ranking. Strong simple baselines are retained to determine whether predictability in FCD forecasting is primarily explained by historical averages, periodicity, short-term inertia, or more complex nonlinear and sequential modeling.
+
+
+% =========================================================
+% 2.3 DATA QUALITY AND TEMPORALLY CAUSAL EVALUATION
+% =========================================================
+
+\subsection{Data Quality and Temporally Causal Evaluation}
+\label{subsec:data-quality-causality}
+
+Data completeness is central to traffic forecasting. Chen et al.~\cite{Chen2024TrafficCompletion} and Wang et al.~\cite{Wang2024RoadNetworkPixelization} recovered incomplete traffic data using spatiotemporal and road-network structure. Bikram et al.~\cite{Bikram2024Imputation} linked imputation with speed forecasting, and Xu et al.~\cite{Xu2023AGNP} added uncertainty analysis. Zhang et al.~\cite{Zhang2024MissingData} reviewed missing-data patterns and evaluation, while Qu et al.~\cite{Qu2024TrafficPredictionImputation} jointly modeled imputation and forecasting. This work shifts attention from filling values alone to the reliability of imputation and forecasts.
+
+FCD add a prior completeness problem because planned slots with no API response are absent from the raw files. Most imputation methods begin with an established sensor$\times$time or network$\times$time matrix~\cite{Chen2024TrafficCompletion,Bikram2024Imputation,Wang2024RoadNetworkPixelization}. FCD analysis must first reconstruct the complete node$\times$time table before identifying missingness. Forecast evaluation must also preserve temporal causality. Hewamalage et al.~\cite{Hewamalage2023ForecastEvaluation} showed that correct train/test chronology does not prevent leakage from normalization or feature extraction. Rolling-origin evaluation better represents forecasting from past information. Missing-data treatment, scaling, statistical features, and model training must therefore use only information available before each origin, with parameters estimated from training data.
+
+Fair model comparison also requires all models to face the same forecasting task. Models may retain different forecast origins because of their missing-value handling, sequence length, or input format. Even with one evaluation metric, the resulting errors may reflect sample composition as well as model capability. For multi-horizon forecasting, the future targets themselves must also satisfy the same completeness criteria.
+
+
+% =========================================================
+% 2.4 RESEARCH GAP AND POSITIONING OF GATE-FCD
+% =========================================================
+
+\subsection{Research Gap and Positioning of GATE-FCD}
+\label{subsec:research-gap}
+
+Recent work shows that FCD applications in transportation are relatively mature~\cite{Zhang2025FCD,Ipekyuz2025FCD,Hadry2025TrafficForecasting,Yu2024AutoformerFCD}. Machine-learning and deep-learning methods have substantially advanced multi-horizon traffic forecasting~\cite{Cini2024DeepEnsemble,Zeb2024FeatureProjection,Liu2024SpatialTemporalTransformer}, while multiple approaches address missing-data completion and forecasting from incomplete data~\cite{Chen2024TrafficCompletion,Bikram2024Imputation,Wang2024RoadNetworkPixelization,Xu2023AGNP,Zhang2024MissingData,Qu2024TrafficPredictionImputation}. Rolling-origin evaluation and the prevention of temporal leakage also rest on established methodological principles~\cite{Hewamalage2023ForecastEvaluation}. In studies published from 2024 to 2026, attention has increasingly shifted from accuracy alone toward data quality, robustness, efficiency, generalization, and practical deployment~\cite{Du2025TrafficSurvey,Khatiriolyaee2026TrafficPrediction,Liu2026DeepLearningReview}. The research gap is not the absence of any one technique. It is the lack of a unified evidence-construction workflow for data-scarce, long-distance FCD forecasting.
+
+Four linked issues define this gap. Unreturned planned slots obscure the theoretical denominator. Record quality, historical coverage, and future-target completeness lack a unified eligibility contract. Rolling-origin chronology alone does not prevent preprocessing leakage or unequal samples across models. Mean error alone cannot define stability across horizons, folds, nodes, and reliability conditions.
+
+GATE-FCD addresses whether FCD can form credible forecasts and whether model complexity has practical value across horizons. It combines grid reconstruction, eligibility gating, causal preprocessing, common manifests, rolling-origin evaluation, and auditing. The framework is not a new imputer or predictor. It organizes observation recovery, eligibility, temporal causality, common samples, cross-time evaluation, and consistency checks into one protocol for future 1-, 3-, and 6-h tasks.
+% =========================================================
+% 3 STUDY AREA AND FCD DATA
+% Replace this title if the final manuscript uses
+% a different section title.
+% =========================================================
+% =========================================================
+% 3 STUDY AREA AND FCD
+% =========================================================
+
+\section{Study Area and FCD}
+\label{sec:data}
+
+
+% =========================================================
+% 3.1 STUDY CORRIDOR AND VIRTUAL OBSERVATION NODES
+% =========================================================
+
+\subsection{Study Corridor and Virtual Observation Nodes}
+\label{subsec:study-corridor}
+
+The analysis focuses on a long-distance corridor segment of the Pan Borneo Highway in Sarawak, Malaysia. The Pan Borneo Highway is a major interregional road infrastructure system in East Malaysia. It supports regional connectivity and transport operations in Sabah and Sarawak~\cite{Kam2025PanBorneo,Azmi2025PanBorneo}. The corridor was selected to examine the feasibility and data requirements of multi-horizon speed forecasting using FCD in a regional-highway environment with limited fixed roadside sensing infrastructure.
+
+
+% =========================================================
+% FIGURE 1
+% =========================================================
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{Fig1.png}
+\caption{Study corridor, spatial distribution of FCD nodes, and adjacent-node spacing. 
+(a) The approximately 130~km study corridor and 51 fixed virtual FCD observation nodes (N001--N051). Arrows indicate the node-numbering order along the corridor rather than the direction of traffic flow. 
+(b) Adjacent-node spacing calculated from cumulative distance along the road. The mean spacing is 2.60~km, the median is 2.81~km, the interquartile range is 2.34~km, and the maximum spacing is 4.35~km. All nodes are discrete FCD observation locations and do not represent continuous sensing over the entire corridor.}
+\label{fig:study-corridor}
+\end{figure*}
+
+
+The study corridor is approximately 130~km long and contains 51 fixed virtual observation nodes (N001--N51) numbered sequentially along the road. Figure~\ref{fig:study-corridor}(a) shows the nodes along the highway mainline. Where practicable, they were placed away from side roads and complex intersections that may introduce local disturbances. The latitude and longitude coordinates of N001--N051 and the reproduction materials are archived in the study GitHub repository. The arrows in the figure indicate the spatial ordering from N001 to N051 and do not imply continuous sensing along the road. Accordingly, the dataset consists of spatially discrete FCD observations, and road conditions between adjacent nodes are not continuously and directly measured.
+
+Figure~\ref{fig:study-corridor}(b) further quantifies this spatial discreteness. The 51 nodes produce 50 adjacent-node intervals, corresponding to a node density of approximately 0.39~nodes~km$^{-1}$. The mean adjacent spacing is 2.60~km, the median is 2.81~km, the IQR is 2.34~km, and the maximum adjacent spacing is 4.35~km. Node spacing is not uniform along the corridor: some segments are approximately 1--2~km apart, whereas others exceed 4~km. Thus, although the observations span the study corridor, their spatial structure represents discrete node sampling rather than continuous spatial coverage.
+% =========================================================
+% 3.2 FCD SOURCE AND OBSERVATION CHARACTERISTICS
+% =========================================================
+
+\subsection{FCD Source and Observation Characteristics}
+\label{subsec:fcd-source}
+
+FCD are used as the traffic-state data source. The observation period extends from 8 December 2025 to 28 February 2026, and the raw data have a 15-min temporal resolution. Each record corresponds to a specific virtual node and timestamp and includes current speed, free-flow speed, current/free-flow travel time, confidence, and road-closure information. The analyzed quantity is FCD-reported speed: road speed generated by the FCD service from its underlying data sources and processing pipeline. It is not an independently measured reference from a fixed detector. The 51 nodes represent fixed virtual observation locations distributed along the corridor; therefore, the dataset consists of spatially discrete FCD observations rather than continuous sensing of the entire road segment. The raw files contain only records actually returned by the FCD service. A planned node-time slot may be absent when the API returns no data. Missingness therefore cannot be identified fully by inspecting returned records alone. Table~\ref{tab:study-data-contract} summarizes the study data, theoretical observation space, and main forecasting-eligibility contract.
+
+
+% =========================================================
+% TABLE 1
+% =========================================================
+
+\begin{table*}[t]
+\caption{Study data, theoretical observation space, and main forecasting-eligibility contract.}
+\label{tab:study-data-contract}
+\centering
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{|p{0.30\textwidth}|p{0.62\textwidth}|}
+\hline
+\textbf{Item} & \textbf{Frozen definition/value} \\
+\hline
+
+Study corridor
+&
+Pan Borneo Highway study segment, approximately 130~km
+\\
+\hline
+
+Fixed virtual observation nodes
+&
+51 (N001--N051)
+\\
+\hline
+
+Observation period
+&
+2025-12-08 to 2026-02-28
+\\
+\hline
+
+Raw temporal resolution
+&
+15 min
+\\
+\hline
+
+Theoretical node$\times$15-min slots
+&
+403,512
+\\
+\hline
+
+Theoretical node$\times$hour slots
+&
+100,878
+\\
+\hline
+
+Record-level eligibility
+&
+$0 < \mathrm{speed} \leq 130$~km~h$^{-1}$; confidence $\geq 0.80$; current travel time $> 0$; valid\_* = True; road\_closure = False
+\\
+\hline
+
+Primary hourly aggregation rule
+&
+2-of-4: at least 2 eligible 15-min observations per hour
+\\
+\hline
+
+Input history
+&
+24 h before the forecast origin; strictly causal
+\\
+\hline
+
+Target contract
+&
+H1 = 1/1; H3 = 3/3; H6 $\geq$ 6/6; no target imputation and no crossing of split boundaries
+\\
+\hline
+
+Speed semantics
+&
+FCD-reported / provider-derived speed; not independent ground truth
+\\
+\hline
+
+\end{tabular}
+
+\vspace{2mm}
+\begin{flushleft}
+\footnotesize
+\textit{Note:} The thresholds and eligibility rules in this table are prespecified data-contract settings for the present study and are not interpreted as universally optimal thresholds across regions.
+\end{flushleft}
+\end{table*}
+
+% =========================================================
+% FIGURE 2
+% =========================================================
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{Fig2.png}
+\caption{Temporal availability, missingness, and spatiotemporal variation of FCD during the study period. 
+Panel (a) shows daily FCD availability relative to the theoretical node--time observation combinations. Panel (b) shows the corresponding daily number of missing records. Panel (c) compares actual and theoretically expected daily observations. Panel (d) shows the spatiotemporal distribution of speed anomalies along the study corridor. Availability and missingness are calculated using the predefined node--time observation grid as the denominator rather than only the records actually returned in the raw files. Speed anomaly denotes the signed deviation of speed from the specified reference speed, with positive and negative values indicating speeds above and below the reference level, respectively. The figure characterizes temporal incompleteness and spatiotemporal heterogeneity of the FCD and is not intended to demonstrate forecasting performance.}
+\label{fig:fcd-availability}
+\end{figure*}
+
+
+Figure~\ref{fig:fcd-availability} shows that FCD availability was generally high during the study period but remained temporally incomplete and varied across days. Figure~\ref{fig:fcd-availability}(a) shows a mean availability of 97.30\%, with a minimum of 94.21\% and a maximum of 99.03\%. Figure~\ref{fig:fcd-availability}(b) shows substantial day-to-day variation in missing records. Some days contained only 1--3 missing records, whereas more affected days exceeded 40. The maximum was approximately 44, so missingness was not uniformly distributed. In Figure~\ref{fig:fcd-availability}(c), under the daily aggregation used in that panel, the theoretically expected number of records is 1,224 records/day. Actual observations were generally close to this value, but on some days decreased to approximately 1,179--1,190 records/day, indicating locally concentrated periods of missingness. Figure~\ref{fig:fcd-availability}(d) shows that speed anomalies were approximately distributed from $-15$ to $+15$~km~h$^{-1}$ and varied non-uniformly across dates and corridor positions. Overall, the dataset is spatially discrete and highly available but not temporally continuous. It also contains localized missingness and spatiotemporal heterogeneity. These characteristics provide the practical basis for the subsequent eligibility gating and reliability analysis.
+
+% =========================================================
+% 4 METHODOLOGY
+% =========================================================
+% =========================================================
+% 4 GATE-FCD METHODOLOGY
+% =========================================================
+
+\section{GATE-FCD Methodology}
+\label{sec:methodology}
+
+
+% =========================================================
+% 4.1 OVERALL ARCHITECTURE OF GATE-FCD
+% =========================================================
+
+\subsection{Overall Architecture of GATE-FCD}
+\label{subsec:overall-architecture}
+
+GATE-FCD denotes the Grid-Reconstructed, Auditable, Temporally Causal, and Eligibility-Gated Multi-Horizon FCD Forecasting Framework. It transforms spatially discrete, temporally incomplete, and quality-heterogeneous FCD into multi-horizon forecasting evidence with explicit eligibility, temporal causality, model comparability, and auditable results. GATE-FCD is not a new forecasting algorithm. Its core principle is to fix the observation space, eligibility rules, temporal boundaries, and common evaluation samples before model training. After forecasting, the framework audits sample, target, and result consistency. The workflow therefore begins by determining which data can form credible forecasting evidence; only then are models of different complexity used to evaluate that evidence. Model choice does not dictate the preceding data treatment. This design is consistent with recent principles in traffic missing-data treatment, multi-horizon forecasting, and leakage-aware time-series evaluation that emphasize data completeness and temporal consistency.
+
+GATE-FCD is built around four core principles. Grid-Reconstructed recovers planned node--time combinations that do not explicitly appear in the raw files so that data completeness has a fixed theoretical denominator. Eligibility-Gated then determines whether records, hours, historical windows, and future targets are eligible for forecasting. Temporally Causal requires all inputs, imputations, and preprocessing statistics to use only information that is permitted and available before the forecast origin. Auditable uses unique sample IDs, common manifests, target recomputation, run registration, and consistency checks of result files so that forecasting evidence can be traced and reproduced. Together, these principles form a complete evidence chain of ``data denominator--data eligibility--temporal causality--fair comparison--result audit.''
+
+Table~\ref{tab:gate-fcd-overview} turns these four principles into an executable and reproducible sequence. It summarizes the core equations and protocol elements developed in Sections 4.2--4.5. The sequence is observation-space reconstruction, eligibility gating, temporal aggregation, causal history, multi-horizon target, common samples, model validation, statistical evaluation, and result audit. The steps are not independent computational modules. The eligible output of each stage becomes the input to the next, forming a continuous logic from raw FCD to auditable forecasting evidence.
+
+
+% =========================================================
+% TABLE 2
+% =========================================================
+
+\begin{table*}[!t]
+\caption{Overview of the core GATE-FCD equations and methodological linkages.}
+\label{tab:gate-fcd-overview}
+\centering
+
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{3pt}
+\scriptsize
+
+\begin{tabular}{
+|p{0.16\textwidth}
+|p{0.04\textwidth}
+|p{0.29\textwidth}
+|p{0.29\textwidth}
+|p{0.12\textwidth}|
+}
+\hline
+
+\textbf{Stage}
+&
+\textbf{Step}
+&
+\textbf{Procedure}
+&
+\textbf{Main output and linkage to the next stage}
+&
+\textbf{Equation/rule}
+\\
+\hline
+
+Observation-space reconstruction
+&
+1
+&
+Construct the complete node$\times$time grid from node set $\mathcal{N}$ and planned timeline $\mathcal{T}_{\Delta}$, explicitly restoring planned slots not returned by the API.
+&
+Fixed theoretical denominator $\mathcal{G}_{\Delta}$ $\rightarrow$ record-eligibility gating.
+&
+Equation (1)
+\\
+\hline
+
+Record-eligibility gating
+&
+2
+&
+Check speed, confidence, travel time, valid\_* fields, and road closure; distinguish missing, quality-ineligible, and eligible records.
+&
+Eligible 15-min records $e_{i,t}$ $\rightarrow$ duplicate handling.
+&
+Equation (2)
+\\
+\hline
+
+Duplicate-record handling
+&
+3
+&
+For eligible duplicates with the same node$\times$time key, compute the representative mean under the frozen rule and retain duplicate count.
+&
+Unique 15-min speed $\tilde{v}_{i,t}$ $\rightarrow$ hourly aggregation.
+&
+Equation (3)
+\\
+\hline
+
+Hourly aggregation and coverage
+&
+4
+&
+Count eligible observations among four 15-min slots per hour; apply the 2-of-4 primary rule and compute hourly speed and coverage.
+&
+$v^{\mathrm{obs}}_{i,h}$, $C_{i,h}$ $\rightarrow$ 24-h history and future targets.
+&
+Equation (4)
+\\
+\hline
+
+Strict causal history
+&
+5
+&
+Use only the 24 h before the forecast origin; handle missing values using forward fill $\rightarrow$ train-node median $\rightarrow$ train-corridor median.
+&
+Causal input $x^{*}_{i,t}$; no future information $\rightarrow$ reliability features.
+&
+Equation (5)
+\\
+\hline
+
+Reliability features
+&
+6
+&
+Compute coverage, imputation ratio, observation age, and max gap, while retaining missing/imputed states.
+&
+13 frozen input features $X$ $\rightarrow$ forecasting samples.
+&
+Equation (6)
+\\
+\hline
+
+Multi-horizon target gating
+&
+7
+&
+H1/H3/H6 are future-window mean speeds; eligibility is 1/1, 3/3, and $\geq$5/6; targets are not imputed and may not cross split boundaries.
+&
+Eligible target $y^{(H)}_{i,t_0}$ $\rightarrow$ forecast samples.
+&
+Equation (7)
+\\
+\hline
+
+Common-sample freezing
+&
+8
+&
+For each fold$\times$horizon, freeze sample ID, node, forecast origin, and target; all models share the same manifest.
+&
+$M_{F,H}$; 18 unified benchmark units $\rightarrow$ model comparison.
+&
+Common-manifest rule
+\\
+\hline
+
+Model validation
+&
+9
+&
+Compare HA, SeasonalHA, Persistence, Ridge, XGBoost, and GRU on the same manifest; the latter two each use 3 seeds.
+&
+Predictions $\hat{y}$, fold$\times$horizon results, and run registry; 180 runs in total.
+&
+Equation (8)
+\\
+\hline
+
+Evaluation, statistics, and audit
+&
+10
+&
+Use MAE as primary and RMSE/sMAPE/Bias as secondary metrics; apply fold-level inference, Holm correction, and cluster bootstrap; audit leakage, target recomputation, and file consistency.
+&
+Statistical and audit evidence $\rightarrow$ engineering decisions by horizon and reliability.
+&
+Equation (9) + audit protocol
+\\
+\hline
+
+\end{tabular}
+
+\vspace{2mm}
+
+\begin{flushleft}
+\footnotesize
+\textit{Note:} Equations (1)--(9) are developed in Sections 4.1--4.5. The common sample manifest and result audit are protocol constraints rather than newly defined forecasting algorithms. The ``Main output and linkage to the next stage'' column indicates how the output of each stage enters the subsequent stage.
+\end{flushleft}
+
+\end{table*}
+
+
+The overall GATE-FCD logic follows two linked sequences. The first is raw FCD $R$ $\rightarrow$ complete grid $\mathcal{G}_{\Delta}$ $\rightarrow$ eligible 15-min observations $E$ $\rightarrow$ eligible hourly observations $V^{\mathrm{obs}}$ $\rightarrow$ causal inputs $X^{*}$ $\rightarrow$ multi-horizon targets $Y^{(H)}$. The second is common manifest $M_{F,H}$ $\rightarrow$ model predictions $\hat{Y}^{(H)}$ $\rightarrow$ statistical evidence $B$ $\rightarrow$ audit output $A$. This notation summarizes methodological dependencies and does not define another predictor. If an upstream eligibility condition fails, the corresponding sample does not enter the downstream benchmark or statistical evidence chain.
+
+Let $\mathcal{N}$ denote the set of fixed virtual observation nodes and $\mathcal{T}_{\Delta}$ the set of planned time points, where $\Delta$ denotes the temporal resolution. The complete theoretical observation space is then defined as
+
+\begin{equation}
+\mathcal{G}_{\Delta}
+=
+\mathcal{N}\times\mathcal{T}_{\Delta},
+\qquad
+\left|\mathcal{G}_{\Delta}\right|
+=
+\left|\mathcal{N}\right|
+\left|\mathcal{T}_{\Delta}\right|.
+\label{eq:grid-reconstruction}
+\end{equation}
+
+Here, $\mathcal{G}_{\Delta}$ denotes the complete node$\times$time grid, and $|\mathcal{N}|$ is the number of nodes. The symbol $|\mathcal{T}_{\Delta}|$ is the number of theoretically planned time slots during the study period. The symbol $|\mathcal{G}_{\Delta}|$ is the total number of theoretical records. The analysis uses 51 fixed virtual observation nodes, yielding 403,512 theoretical node$\times$15-min slots and 100,878 theoretical node$\times$hour slots. Forecast inputs use the 24 h preceding the forecast origin, and the targets are future-window mean FCD-reported speeds over 1, 3, and 6 h. Recent research has shown that incomplete traffic observations and their spatiotemporal structure should be defined before data completion or forecasting~\cite{Chen2024TrafficCompletion,Bikram2024Imputation,Chan2023MissingTrafficData}. This definition is a prerequisite for reliable analysis. However, the complete-grid reconstruction in Equation~\ref{eq:grid-reconstruction} is an operational step designed specifically for the FCD return mechanism in this study. Its purpose is not to immediately impute missing speeds, but first to recover the planned time slots that should theoretically exist but were not returned.
+
+
+% =========================================================
+% FIGURE 3
+% =========================================================
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{Fig3.png}
+\caption{Overall architecture of the GATE-FCD multi-horizon FCD forecasting framework. 
+The figure presents the overall system architecture of GATE-FCD and the logical relationships among its modules. The framework has five stages. Stage (1) covers raw FCD input and complete node$\times$time grid reconstruction. Stage (2) covers data-eligibility checks, duplicate-record handling, and hourly aggregation. Stage (3) constructs a strictly causal 24-h history, multi-horizon targets, and reliability features. Stage (4) covers six-fold retrospective rolling-origin evaluation, common-sample model comparison, and consistency checks. Stage (5) covers result auditing, statistical evaluation, and horizon-oriented engineering decisions. The figure illustrates the composition, information flow, and module dependencies of GATE-FCD. The forecasting models are used only as tools for framework validation and do not imply that GATE-FCD itself is a new forecasting algorithm.}
+\label{fig:gate-fcd-architecture}
+\end{figure*}
+
+
+Figure~\ref{fig:gate-fcd-architecture} presents the overall GATE-FCD system architecture and the logical relationships among its functional modules. The framework proceeds through raw input and complete-grid construction, data qualification and hourly aggregation, causal feature construction and target definition, rolling-origin evaluation and benchmark loop, and audit, decision, and outputs. The fourth stage, the rolling-origin evaluation and benchmark loop, links forecasting-sample construction to the final evidence. Each of the six consecutive temporal folds includes the three forecast horizons H1, H3, and H6. The corresponding prespecified common sample manifest gives all models identical forecast origins, train/validation/test sample IDs, and target definitions. Model training, forecasting, and consistency checks are then performed while strictly preserving temporal order. This design yields 6 folds $\times$ 3 horizons = 18 unified benchmark units. It reduces the chance that observed model differences arise from sample composition or temporal splitting rather than from the models. Figure~\ref{fig:gate-fcd-architecture} presents the full processing chain from raw FCD to auditable forecasting evidence. It also shows how cross-time rolling-origin evaluation and common-sample benchmarking support temporal causality, fair comparison, and reproducible results.
+
+
+% =========================================================
+% FIGURE 4
+% =========================================================
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{Fig4.png}
+\caption{Operational implementation of GATE-FCD, multi-horizon target construction, rolling evaluation, and audit protocol. 
+The figure further details the implementation of GATE-FCD in this study. (a) The workflow starts with 51 fixed virtual FCD nodes, complete-grid reconstruction, eligibility filtering, and duplicate handling. It continues through 2-of-4 hourly aggregation, 24-h causal history construction, H1/H3/H6 target-eligibility checks, six-fold rolling-origin evaluation, common-manifest comparison, and horizon-oriented engineering decisions. Panel (b) shows the temporal-causal relationship between the 24-h history before the forecast origin and the future 1-, 3-, and 6-h target windows. H1, H3, and H6 represent future-window mean FCD-reported speed, not point forecasts. Targets are not imputed and may not cross data-split boundaries. Panel (c) shows the six-fold retrospective rolling-origin training, validation, and test chronology. It also shows the 18 fold$\times$horizon common manifests, model validation, and result-audit structure. The figure describes the detailed data-processing steps, forecasting-task construction, algorithm-validation workflow, and audit mechanism of GATE-FCD.}
+\label{fig:gate-fcd-implementation}
+\end{figure*}
+
+
+Figure~\ref{fig:gate-fcd-implementation} further presents the implementation of GATE-FCD and its algorithm-validation procedure. Figure~\ref{fig:gate-fcd-implementation}(a) expands the framework into an operational chain. The chain starts with the 51-node panel, complete-grid reconstruction, eligibility filtering, 2-of-4 hourly aggregation, 24-h causal history, and H1/H3/H6 target definition. It then proceeds to six-fold rolling-origin evaluation, common-manifest benchmarking, and horizon-oriented decisions. Figure~\ref{fig:gate-fcd-implementation}(b) defines the temporal boundary among the 24-h historical information, the forecast origin, and the future 1-, 3-, and 6-h target windows. Figure~\ref{fig:gate-fcd-implementation}(c) presents the six-fold retrospective rolling-origin evaluation, common samples, model comparison, and audit structure. The implementation follows two parts of one fixed sequence. The first is complete theoretical grid $\rightarrow$ data-eligibility gating $\rightarrow$ hourly aggregation $\rightarrow$ 24-h causal history $\rightarrow$ H1/H3/H6 target definition. The second is common manifest $\rightarrow$ six-fold rolling-origin evaluation $\rightarrow$ model validation $\rightarrow$ fold-level statistical inference $\rightarrow$ result audit.
+
+\FloatBarrier
+% =========================================================
+% 4.2 COMPLETE-GRID RECONSTRUCTION AND ELIGIBILITY GATING
+% =========================================================
+
+\subsection{Complete-Grid Reconstruction and Eligibility Gating}
+\label{subsec:grid-gating}
+
+The method begins with two sequential data layers. Grid recovers the complete theoretical observation space, and Gate selects the observations eligible for the subsequent forecasting workflow. Raw FCD files contain only records that were successfully returned; therefore, the absence of a record does not necessarily appear as NA or another explicit null value. GATE-FCD first reconstructs the complete theoretical 15-min grid using Equation~\ref{eq:grid-reconstruction}, and then classifies each node$\times$time slot as missing, observed but quality-ineligible, or eligible. This step answers ``how many observations should theoretically exist''; eligibility gating then answers ``which of the available observations can participate in forecasting.''
+
+Let $o_{i,t}=1$ indicate that a record was actually returned for node $i$ at 15-min time $t$, and $o_{i,t}=0$ otherwise. For returned records, record-level eligibility is defined as
+
+\begin{equation}
+e_{i,t}
+=
+o_{i,t}
+\mathbb{I}\!\left(0<v_{i,t}\leq130\right)
+\mathbb{I}\!\left(c_{i,t}\geq0.80\right)
+\mathbb{I}\!\left(\tau_{i,t}>0\right)
+\mathbb{I}\!\left(q_{i,t}=1\right)
+\mathbb{I}\!\left(r_{i,t}=0\right).
+\label{eq:record-eligibility}
+\end{equation}
+
+Here, $e_{i,t}\in\{0,1\}$ indicates whether the record is eligible. The terms $v_{i,t}$, $c_{i,t}$, and $\tau_{i,t}$ denote FCD-reported speed, confidence, and current travel time, respectively. The term $q_{i,t}$ indicates that all applicable validity fields are satisfied, and $r_{i,t}$ denotes road-closure status. The term $\mathbb{I}(\cdot)$ is the indicator function. Node and time validity are guaranteed by the complete-grid index. The formal data contract specifies $0<\mathrm{speed}\leq130$~km~h$^{-1}$, confidence $\geq0.80$, travel time $>0$, and road\_closure = False. Because the raw data do not contain a provider\_status field, no such condition is artificially introduced.
+
+The numerical thresholds in Equation~\ref{eq:record-eligibility} are prespecified engineering data-contract settings for this study. Existing studies support explicit treatment of FCD quality and missingness before forecasting~\cite{Ipekyuz2025FCD,Xu2023AGNP,Zhang2024MissingData,Chan2023MissingTrafficData}. They do not establish 130~km~h$^{-1}$, 0.80, or the other thresholds used here as universally optimal. These values are not generalized beyond the present contract.
+
+For duplicate returned records at the same node and 15-min time, duplicate resolution is performed after the eligibility check according to the prespecified rule. If $m_{i,t}$ valid values exist for the same node$\times$time key, the representative speed is defined as
+
+\begin{equation}
+\tilde{v}_{i,t}
+=
+\frac{1}{m_{i,t}}
+\sum_{r=1}^{m_{i,t}}
+v_{i,t,r}.
+\label{eq:duplicate-resolution}
+\end{equation}
+
+where $v_{i,t,r}$ is the $r$-th valid duplicate record and $\tilde{v}_{i,t}$ is the deduplicated 15-min speed; the duplicate count is retained for subsequent auditing. Explicit management of incomplete, duplicate, and abnormal traffic observations is consistent with the data-state management principles emphasized in recent traffic data-completion and missing-data studies~\cite{Chen2024TrafficCompletion,Bikram2024Imputation,Chan2023MissingTrafficData}.
+
+Formal forecasting is conducted at the hourly scale. Each hour theoretically contains four 15-min time slots. Let $n_{i,h}$ denote the number of eligible 15-min observations for node $i$ in hour $h$; the hourly speed is then defined as
+
+\begin{equation}
+\begin{aligned}
+n_{i,h}
+&=
+\sum_{q=1}^{4} e_{i,h,q},
+\\[4pt]
+v^{\mathrm{obs}}_{i,h}
+&=
+\begin{cases}
+\dfrac{\displaystyle\sum_{q=1}^{4}
+e_{i,h,q}\tilde{v}_{i,h,q}}
+{n_{i,h}},
+&
+n_{i,h}\geq2,
+\\[10pt]
+\mathrm{NA},
+&
+n_{i,h}<2,
+\end{cases}
+\\[6pt]
+C_{i,h}
+&=
+\dfrac{n_{i,h}}{4}.
+\end{aligned}
+\label{eq:hourly-aggregation}
+\end{equation}
+
+where $v^{\mathrm{obs}}_{i,h}$ is the eligible hourly FCD speed and $C_{i,h}$ is the actual observation coverage for that hour. The primary rule is 2-of-4, meaning that at least two eligible 15-min observations are required to form an eligible hour. The 1-of-4, 3-of-4, and 4-of-4 conditions are used only for descriptive or sensitivity purposes and are not selected post hoc according to test performance. This rule was frozen in the formal experimental contract.
+
+% =========================================================
+% 4.3 CAUSAL HISTORY AND MULTI-HORIZON TARGET CONSTRUCTION
+% =========================================================
+
+\subsection{Causal History and Multi-Horizon Target Construction}
+\label{subsec:causal-history}
+
+After hourly eligibility has been determined, GATE-FCD constructs a 24-h historical window before each forecast origin $t_0$. All data processing follows strict temporal causality: information used by the model at $t_0$ must have been genuinely available before $t_0$. Hewamalage et al.~\cite{Hewamalage2023ForecastEvaluation} showed that correct train/test chronology does not prevent every form of leakage. Normalization, feature extraction, or missing-value processing can still leak information when they use future periods. We therefore exclude backward filling, centered rolling, future merges, and the use of full-study, validation, or test data to fit imputers or scalers.
+
+If an hourly value is missing from the historical window, a strict three-stage causal procedure is applied:
+
+\begin{equation}
+x^{*}_{i,t}
+=
+\begin{cases}
+v^{\mathrm{obs}}_{i,t},
+&
+v^{\mathrm{obs}}_{i,t}\ \text{available},
+\\[4pt]
+
+v^{\mathrm{obs}}_{i,t^{-}},
+&
+t^{-}<t\ \text{and a prior observation exists},
+\\[4pt]
+
+\operatorname{Median}\!\left(\mathcal{D}^{\mathrm{train}}_{F,i}\right),
+&
+\text{node training median available},
+\\[4pt]
+
+\operatorname{Median}\!\left(\mathcal{D}^{\mathrm{train}}_{F}\right),
+&
+\text{otherwise}.
+\end{cases}
+\label{eq:causal-imputation}
+\end{equation}
+
+Here, $x^{*}_{i,t}$ is the final causal speed used as model input. The term $t^{-}$ denotes the most recent valid observation time before $t$. The term $\mathcal{D}^{\mathrm{train}}_{F,i}$ denotes the training data for node $i$ in fold $F$, and $\mathcal{D}^{\mathrm{train}}_{F}$ denotes all-node training data in that fold. The historical processing order is therefore fixed as strict forward fill $\rightarrow$ fold-training node median $\rightarrow$ fold-training corridor median.
+
+Validation and test samples may use historical observations that occurred before the forecast origin to construct the 24-h input. All fallback statistics, however, are estimated only from the corresponding fold-training data. This design is consistent with recent missing-data and forecast-evaluation requirements for temporal information isolation~\cite{Qu2024TrafficPredictionImputation,Hewamalage2023ForecastEvaluation,Chan2023MissingTrafficData}.
+
+Imputed values are not treated as genuine observations. GATE-FCD retains missingness, imputation, and history-reliability information. Let $o_{i,t}=1$ indicate that the hourly speed is a genuinely eligible observation and $\iota_{i,t}=1$ indicate that the value was causally imputed. The principal reliability indicators within the 24-h window are defined as
+
+\begin{equation}
+\begin{aligned}
+\mathrm{Coverage}_{i,t_0}
+&=
+\frac{1}{24}
+\sum_{\ell=1}^{24}
+o_{i,t_0-\ell},
+\\[6pt]
+
+\mathrm{Imputation}_{i,t_0}
+&=
+\frac{1}{24}
+\sum_{\ell=1}^{24}
+\iota_{i,t_0-\ell},
+\\[6pt]
+
+\mathrm{Age}_{i,t_0}
+&=
+\frac{
+t_0-\max\{t<t_0:o_{i,t}=1\}
+}{
+1\,\mathrm{h}
+},
+\\[6pt]
+
+\mathrm{MaxGap}_{i,t_0}
+&=
+\max\{
+\text{consecutive missing hours within the 24-h history}
+\}.
+\end{aligned}
+\label{eq:history-reliability}
+\end{equation}
+
+where Coverage corresponds to history\_coverage\_ratio, Imputation to history\_imputation\_ratio, Age to hours\_since\_last\_observation, and MaxGap to max\_gap\_24h. Explicitly retaining missingness and observation-reliability information is consistent with recent approaches to forecasting and probabilistic reliability under incomplete traffic data~\cite{Xu2023AGNP,Chan2023MissingTrafficData}.
+
+The formal model input comprises 13 frozen features: input\_speed\_filled, hourly\_missing\_mask, imputed\_flag, hours\_since\_last\_observation, history\_coverage\_ratio, history\_imputation\_ratio, max\_gap\_24h, volatility\_24h, hour\_sin, hour\_cos, dow\_sin, dow\_cos, and weekend\_flag. These variables describe speed state, observation reliability, and temporal periodicity. The final mathematical definition of volatility\_24h must remain exactly consistent with the formal feature-generation code and is not redefined empirically before submission.
+
+
+% =========================================================
+% 4.3.1 MULTI-HORIZON TARGET CONSTRUCTION
+% =========================================================
+
+\subsubsection{Multi-Horizon Target Construction}
+\label{subsubsec:multi-horizon-target}
+
+H1, H3, and H6 all denote future-window mean speed rather than the point speed 1, 3, or 6 h after the forecast origin. Multi-horizon traffic-forecasting studies show that performance and relative model advantages can vary with forecast horizon; the different windows are therefore evaluated as independent forecasting tasks~\cite{Hadry2025TrafficForecasting,Zeb2024FeatureProjection,Du2025TrafficSurvey}. Let $a_{i,t_0+k}=1$ indicate that an actually observed future hour $k$ satisfies target eligibility. The number of eligible hours within the future $H$-hour window is then
+
+The future-window mean target is defined as
+
+\begin{equation}
+y^{(H)}_{i,t_0}
+=
+\begin{cases}
+\dfrac{
+\displaystyle\sum_{k=1}^{H}
+a_{i,t_0+k}
+v^{\mathrm{obs}}_{i,t_0+k}
+}{
+m^{(H)}_{i,t_0}
+},
+&
+m^{(H)}_{i,t_0}\geq q_H,
+\quad
+W_H(t_0)\subseteq S,
+\\[12pt]
+
+\mathrm{NA},
+&
+\text{otherwise},
+\end{cases}
+\qquad
+q_1=1,\quad q_3=3,\quad q_6=5.
+\label{eq:multi-horizon-target}
+\end{equation}
+
+Here, $H\in\{1,3,6\}$, and $y^{(H)}_{i,t_0}$ is the mean speed over the future $H$-hour window. The term $W_H(t_0)$ is the corresponding future window, and $S$ is the current train, validation, or test split. The term $q_H$ is the minimum target-completeness requirement. Under this definition, H1 requires 1/1 valid hour, H3 requires 3/3 valid hours, and the primary H6 rule requires at least 5/6 valid hours; the H6 6/6 rule is used only for sensitivity analysis. All targets are computed from genuinely eligible future observations, target imputation is prohibited, and the target window may not cross split boundaries. This target contract was frozen in the formal experimental design. Figure~\ref{fig:gate-fcd-implementation}(b) illustrates the temporal meaning of Equations~\ref{eq:causal-imputation}--\ref{eq:multi-horizon-target}. The 24-h history on the left must lie entirely before the forecast origin. All H1, H3, and H6 target windows lie after that origin, and no information may cross between the two sides.
+% =========================================================
+% 4.4 ROLLING-ORIGIN EVALUATION AND COMMON-SAMPLE BENCHMARKING
+% =========================================================
+
+\subsection{Rolling-Origin Evaluation and Common-Sample Benchmarking}
+\label{subsec:rolling-origin}
+
+GATE-FCD enters the algorithm-validation stage only after data eligibility, causal history, and target definition have been completed. We use a six-fold expanding-window retrospective rolling-origin evaluation. The design preserves the strict chronological order train $\rightarrow$ validation $\rightarrow$ test and repeats evaluation across multiple consecutive test periods, reducing the dependence of model conclusions on a single test window~\cite{Hewamalage2023ForecastEvaluation}.
+
+Data-preprocessing parameters and model parameters are re-estimated in every fold. The training period is used to fit the model and fold-specific preprocessing. The validation period is used only for permitted model selection, early stopping, or hyperparameter procedures. The test period is used only for final evaluation. It does not participate in scaler fitting, imputer fitting, feature-statistic estimation, or model selection.
+
+The formal rolling-origin boundaries are as follows:
+
+
+% =========================================================
+% TABLE 3
+% =========================================================
+
+\begin{table*}[!t]
+\caption{Six-fold retrospective rolling-origin training, validation, and test boundaries.}
+\label{tab:rolling-origin-folds}
+\centering
+
+\renewcommand{\arraystretch}{1.15}
+
+\begin{tabular}{
+|p{0.08\textwidth}
+|p{0.27\textwidth}
+|p{0.27\textwidth}
+|p{0.27\textwidth}|
+}
+\hline
+
+\textbf{Fold}
+&
+\textbf{Training period}
+&
+\textbf{Validation period}
+&
+\textbf{Test period}
+\\
+\hline
+
+F1
+&
+2025-12-09 -- 2026-01-12
+&
+2026-01-12 -- 2026-01-19
+&
+2026-01-19 -- 2026-01-26
+\\
+\hline
+
+F2
+&
+2025-12-09 -- 2026-01-19
+&
+2026-01-19 -- 2026-01-26
+&
+2026-01-26 -- 2026-02-02
+\\
+\hline
+
+F3
+&
+2025-12-09 -- 2026-01-26
+&
+2026-01-26 -- 2026-02-02
+&
+2026-02-02 -- 2026-02-09
+\\
+\hline
+
+F4
+&
+2025-12-09 -- 2026-02-02
+&
+2026-02-02 -- 2026-02-09
+&
+2026-02-09 -- 2026-02-16
+\\
+\hline
+
+F5
+&
+2025-12-09 -- 2026-02-09
+&
+2026-02-09 -- 2026-02-16
+&
+2026-02-16 -- 2026-02-23
+\\
+\hline
+
+F6
+&
+2025-12-09 -- 2026-02-16
+&
+2026-02-16 -- 2026-02-23
+&
+2026-02-23 -- 2026-03-01
+\\
+\hline
+
+\end{tabular}
+
+\vspace{2mm}
+
+\begin{flushleft}
+\footnotesize
+\textit{Note:} Each interval is implemented as $[\mathrm{start},\mathrm{end})$. The Fold 6 test period had previously been exposed during historical development. The full evaluation is therefore described as retrospective rolling-origin evaluation, not as an evaluation with an independently blinded test period.
+\end{flushleft}
+
+\end{table*}
+
+
+In the formal implementation, all intervals are left-closed and right-open, $[\mathrm{start},\mathrm{end})$. The training window expands across successive folds while consecutive validation and test periods are maintained. The final test period in the original design had appeared in earlier historical development experiments. The present evidence must therefore be described as retrospective rolling-origin evaluation, not as an independently blinded evaluation. The six-fold definition and its evidence boundary are explicitly specified in the study control materials.
+
+
+% =========================================================
+% 4.4.1 COMMON SAMPLE MANIFESTS
+% =========================================================
+
+\subsubsection{Common Sample Manifests}
+\label{subsubsec:common-manifests}
+
+If different models remove different samples because of differences in missing-data treatment, input structure, or sequence requirements, the final error may reflect both model capability and sample composition. To avoid this problem, GATE-FCD freezes a common sample manifest for each fold$\times$horizon before model training:
+
+\[
+\mathcal{M}_{F,H}
+=
+\left\{
+ID_j,\,
+i_j,\,
+t_{0,j},\,
+y_j^{(H)}
+\right\}.
+\]
+
+where $ID_j$ is the unique sample ID, $i_j$ is the node, $t_{0,j}$ is the forecast origin, and $y_j^{(H)}$ is the frozen target value. The six folds and three horizons yield 18 fold$\times$horizon manifests, and all candidate models must use identical sample IDs, forecast origins, and targets. The formal experiment uses these 18 common manifests and 180 formal runs as the unified evaluation basis.
+
+
+% =========================================================
+% 4.4.2 BENCHMARK MODELS AS FRAMEWORK VALIDATION TOOLS
+% =========================================================
+
+\subsubsection{Benchmark Models as Framework Validation Tools}
+\label{subsubsec:benchmark-models}
+
+HA, SeasonalHA, Persistence, Ridge, XGBoost, and GRU serve as framework-validation tools, not as evidence for a new model architecture. Together, they form a hierarchy of model complexity with interpretable traffic assumptions.
+
+HA represents the long-term mean state; SeasonalHA represents recurring periodic patterns; and Persistence represents short-term continuation of the current state. These three simple models are used to determine whether predictability in the traffic series can already be explained by the mean, periodicity, or inertia. Ridge provides a multi-feature linear control, XGBoost further represents nonlinear feature interactions, and GRU represents deep sequential modeling. Strong simple baselines help avoid overstating the value of additional complexity through comparisons only among complex models~\cite{Hadry2025TrafficForecasting,Hewamalage2023ForecastEvaluation}. Recent traffic-forecasting reviews likewise emphasize robustness, efficiency, and deployability in addition to accuracy~\cite{Du2025TrafficSurvey,Khatiriolyaee2026TrafficPrediction,Liu2026DeepLearningReview}.
+
+The basic mathematical forms of the six model classes can be summarized as
+
+\begin{equation}
+\begin{aligned}
+\widehat{y}^{\mathrm{HA}}
+&=
+\frac{1}{N}
+\sum_{j=1}^{N} y_j,
+\\[6pt]
+
+\widehat{y}_{t}^{\mathrm{SeasonalHA}}
+&=
+\frac{1}{|\mathcal{S}_{t}|}
+\sum_{j\in\mathcal{S}_{t}} y_j,
+\\[6pt]
+
+\widehat{y}_{t_0}^{\mathrm{Persistence}}
+&=
+x^{*}_{t_0},
+\\[8pt]
+
+\widehat{\boldsymbol{\beta}}
+&=
+\arg\min_{\boldsymbol{\beta}}
+\left[
+\sum_j
+\left(
+y_j-\beta_0-\mathbf{x}_j^{\top}\boldsymbol{\beta}
+\right)^2
++
+\lambda
+\left\|
+\boldsymbol{\beta}
+\right\|_2^2
+\right],
+\\[8pt]
+
+\widehat{y}_{j}^{\mathrm{XGB}}
+&=
+\sum_{k=1}^{K}
+f_k(\mathbf{x}_j),
+\\[8pt]
+
+\mathbf{z}_t
+&=
+\sigma
+\left(
+W_z\mathbf{x}_t
++
+U_z\mathbf{h}_{t-1}
++
+\mathbf{b}_z
+\right),
+\\[6pt]
+
+\mathbf{r}_t
+&=
+\sigma
+\left(
+W_r\mathbf{x}_t
++
+U_r\mathbf{h}_{t-1}
++
+\mathbf{b}_r
+\right),
+\\[6pt]
+
+\widetilde{\mathbf{h}}_t
+&=
+\tanh
+\left(
+W_h\mathbf{x}_t
++
+U_h
+\left(
+\mathbf{r}_t
+\odot
+\mathbf{h}_{t-1}
+\right)
++
+\mathbf{b}_h
+\right),
+\\[6pt]
+
+\mathbf{h}_t
+&=
+\left(
+1-\mathbf{z}_t
+\right)
+\odot
+\mathbf{h}_{t-1}
++
+\mathbf{z}_t
+\odot
+\widetilde{\mathbf{h}}_t .
+\end{aligned}
+\label{eq:benchmark-models}
+\end{equation}
+
+Here, $N$ is the number of samples in the corresponding training reference set. The term $\mathcal{S}_t$ is the frozen seasonal reference set matched to the target time in SeasonalHA. The term $\mathbf{x}_j$ denotes the forecasting features. The terms $\boldsymbol{\beta}$ and $\lambda$ are the Ridge regression coefficient and L2 regularization parameter, respectively. The terms $f_k$ and $K$ denote the $k$-th boosting tree and the number of trees. The term $\mathbf{h}_t$ is the GRU hidden state, and $\mathbf{z}_t$ and $\mathbf{r}_t$ are the update and reset gates. The term $\widetilde{\mathbf{h}}_t$ is the candidate hidden state, and $\odot$ denotes element-wise multiplication. These model forms and their applications in traffic forecasting are supported by recent forecasting studies and reviews~\cite{Hadry2025TrafficForecasting,Cini2024DeepEnsemble,Du2025TrafficSurvey,Khatiriolyaee2026TrafficPrediction,Liu2026DeepLearningReview}.
+
+HA, SeasonalHA, Persistence, and Ridge use one formal configuration for each fold$\times$horizon, whereas XGBoost and GRU each use three random seeds. As a result, HA, SeasonalHA, Persistence, and Ridge each produce 18 runs. XGBoost and GRU each produce 54 runs, for a total of 180 formal runs.
+
+Figure~\ref{fig:gate-fcd-implementation}(c) summarizes the temporal order, six-fold structure, 18 common manifests, and audit relationships in this stage; Table~\ref{tab:rolling-origin-folds} further summarizes the formal fold design and rolling-origin time boundaries.
+
+% =========================================================
+% 4.5 EVALUATION, STATISTICAL INFERENCE, AND AUDIT PROTOCOL
+% =========================================================
+
+\subsection{Evaluation, Statistical Inference, and Audit Protocol}
+\label{subsec:evaluation-audit}
+
+MAE is used as the primary performance metric because it has the same units as FCD-reported speed and therefore directly represents the average forecasting deviation in km~h$^{-1}$. RMSE, sMAPE, and Bias are used as supplementary metrics to characterize larger errors, relative error, and systematic over- or underestimation, respectively. Multi-metric evaluation and appropriate comparison of errors in time-dependent forecasting have been widely adopted in recent traffic-forecasting and forecast-evaluation studies~\cite{Hadry2025TrafficForecasting,Hewamalage2023ForecastEvaluation}.
+
+For $n$ valid forecasting samples in a common manifest, let $y_j$ denote the true future-window target, $\hat{y}_j$ the predicted value, and $e_j=\hat{y}_j-y_j$ the residual. Then
+
+\begin{equation}
+\begin{aligned}
+\mathrm{MAE}
+&=
+\frac{1}{n}
+\sum_{j=1}^{n}
+|e_j|,
+\\[6pt]
+\mathrm{RMSE}
+&=
+\sqrt{
+\frac{1}{n}
+\sum_{j=1}^{n}
+e_j^{2}
+},
+\\[6pt]
+\mathrm{sMAPE}
+&=
+\frac{100}{n}
+\sum_{j=1}^{n}
+\frac{
+2|y_j-\hat{y}_j|
+}{
+|y_j|+|\hat{y}_j|+\varepsilon
+},
+\\[6pt]
+\mathrm{Bias}
+&=
+\frac{1}{n}
+\sum_{j=1}^{n}
+(\hat{y}_j-y_j),
+\\[6pt]
+\Delta_{f,H}^{A,B}
+&=
+\mathrm{MAE}_{A,f,H}
+-
+\mathrm{MAE}_{B,f,H}.
+\end{aligned}
+\label{eq:evaluation-metrics}
+\end{equation}
+
+Here, $n$ is the number of samples in the current common set. The term $\varepsilon$ is a fixed small constant that prevents a zero denominator in sMAPE. The terms $A$ and $B$ denote the compared models, $f$ denotes the rolling-origin fold, and $H$ denotes the forecast horizon. When $\Delta_{f,H}^{A,B}<0$, model $A$ has a lower MAE than model $B$ in that fold and horizon.
+
+Statistical inference uses the rolling-origin fold as the primary independent unit. Because predictions across nodes and times within the same test period are correlated, tens of thousands of sample rows cannot be treated as an equivalent number of independent replicates. Each horizon therefore uses six paired fold observations as the primary inferential sample. For XGBoost and GRU, multiple random seeds are first aggregated within the same fold$\times$horizon before prespecified paired MAE differences are computed between models. Multiple comparisons within each horizon are adjusted using the Holm procedure to control the family-wise error rate. This choice follows time-series forecasting principles that emphasize avoiding pseudoreplication and using appropriate statistical tests~\cite{Hewamalage2023ForecastEvaluation,GarciaPerez2023MultipleTesting}. A supplementary uncertainty analysis uses 10,000 clustered bootstrap replicates to examine the stability of model-difference directions and interval estimates under temporal and spatial clustering. This bootstrap layer is supplementary evidence and does not replace the primary inference based on rolling-origin folds.
+
+The final layer of GATE-FCD is result auditing. The audit first checks common sample IDs and verifies that each 24-h history lies before its forecast origin. It then confirms that preprocessing statistics use only fold-training data, target windows remain within the current split, and targets are not imputed. Final checks cover one-to-one matching between predictions and targets and the integrity or hash consistency of manifests, the run registry, and result files.
+
+% =========================================================
+% 5 RESULTS
+% =========================================================
+% =========================================================
+% 5 RESULTS
+% =========================================================
+
+\section{Results}
+\label{sec:results}
+
+
+% =========================================================
+% 5.1 SAMPLE INTEGRITY AND AUDIT RESULTS
+% =========================================================
+
+\subsection{Sample Integrity and Audit Results}
+\label{subsec:sample-integrity}
+
+The 18 frozen fold$\times$horizon common manifests were used for all 180/180 formal runs; 0 runs failed. The six folds and three forecast horizons jointly formed 18 unified benchmark units. Within each fold and horizon, all candidate models used identical forecast origins, sample IDs, and future-window targets. Subsequent performance differences were therefore not driven by differences in sample composition across models.
+
+The manifests contained 1,053,618 sample records in total: 873,874 training, 87,597 validation, and 92,147 test records. Test records comprised 38,201 for H1, 24,805 for H3, and 29,141 for H6. Because the expanding-window folds overlap in time, these records are used for sample accounting and forecasting evaluation but cannot be regarded as 1,053,618 mutually independent statistical replicates. Formal statistical inference therefore continues to use the six rolling-origin folds ($n=6$) as the primary paired unit.
+
+All 20 full-sample leakage assertions passed. Across the 1,053,618 audited records, future-information violations = 0, target recomputation mismatches = 0, cross-split target-window violations = 0, and the common-manifest consistency checks passed. Within the frozen protocol, no future information was detected in model inputs. No target window crossed a split boundary, and no target inconsistency was found across models.
+
+The evidence level remains retrospective. The Fold 6 test period had appeared during earlier historical development; therefore, the present results constitute a six-fold retrospective rolling-origin evaluation rather than an independently blinded evaluation. This limitation does not alter the internal completeness of the common samples, causal preprocessing, or six-fold evaluation, but it constrains the evidential strength of the conclusions.
+
+
+% =========================================================
+% TABLE 4
+% =========================================================
+
+\begin{table*}[!t]
+\caption{Summary of formal experimental scale and result auditing.}
+\label{tab:experiment-audit}
+\centering
+
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{
+|p{0.39\textwidth}
+|p{0.53\textwidth}|
+}
+\hline
+
+\textbf{Audit/scale item}
+&
+\textbf{Formal result}
+\\
+\hline
+
+Common fold$\times$horizon manifests
+&
+18
+\\
+\hline
+
+Formal runs
+&
+180/180 completed; 0 failed
+\\
+\hline
+
+Total manifest records
+&
+1,053,618
+\\
+\hline
+
+Training / validation / test
+&
+873,874 / 87,597 / 92,147
+\\
+\hline
+
+Test records by horizon
+&
+H1 38,201; H3 24,805; H6 29,141
+\\
+\hline
+
+Full-sample leakage assertions
+&
+20/20 PASS
+\\
+\hline
+
+Future-information violations
+&
+0
+\\
+\hline
+
+Target recomputation mismatches
+&
+0
+\\
+\hline
+
+Cross-split target-window violations
+&
+0
+\\
+\hline
+
+Primary inferential unit
+&
+rolling-origin fold ($n=6$)
+\\
+\hline
+
+Evidence level
+&
+retrospective rolling-origin; blind-test wording prohibited
+\\
+\hline
+
+\end{tabular}
+
+\vspace{2mm}
+
+\begin{flushleft}
+\footnotesize
+\textit{Note:} Sample-record counts are reported for experimental-scale and common-manifest accounting. Because the rolling-origin folds overlap in time, statistical inference does not treat all sample rows as independent replicates.
+\end{flushleft}
+
+\end{table*}
+% =========================================================
+% 5.2 MULTI-HORIZON FORECASTING PERFORMANCE
+% =========================================================
+
+\subsection{Multi-Horizon Forecasting Performance}
+\label{subsec:multi-horizon-performance}
+
+Across all three future-window horizons, XGBoost achieved the lowest descriptive fold-macro mean MAE, while SeasonalHA remained very close. XGBoost MAE values for H1, H3, and H6 were $0.949 \pm 0.258$, $0.829 \pm 0.168$, and $0.752 \pm 0.142$~km~h$^{-1}$, respectively, compared with $0.961 \pm 0.115$, $0.853 \pm 0.105$, and $0.774 \pm 0.102$~km~h$^{-1}$ for SeasonalHA. The descriptive differences (XGBoost $-$ SeasonalHA) were only $-0.0117$, $-0.0235$, and $-0.0222$~km~h$^{-1}$, corresponding to approximately 1.2\%, 2.8\%, and 2.9\% of the SeasonalHA MAE, respectively. Thus, mean rankings establish a descriptive ordering, but the gap between the two leading models is small.
+
+Persistence showed the clearest horizon dependence. At H1, its MAE was $0.950 \pm 0.155$~km~h$^{-1}$, nearly identical to XGBoost at 0.949~km~h$^{-1}$ and approximately 0.0106~km~h$^{-1}$ lower than SeasonalHA. At H3 and H6, however, Persistence MAE increased to $1.170 \pm 0.136$ and $1.470 \pm 0.182$~km~h$^{-1}$, respectively, exceeding SeasonalHA by 0.317 and 0.696~km~h$^{-1}$. Short-term state persistence is therefore descriptively competitive at H1, but this competitiveness cannot be directly extrapolated to H3 or H6.
+
+GRU, Ridge, and HA did not enter the descriptive first tier at any of the three horizons. GRU achieved H1/H3/H6 MAE values of $1.151 \pm 0.230$, $1.043 \pm 0.195$, and $0.958 \pm 0.199$~km~h$^{-1}$. Ridge achieved $1.225 \pm 0.267$, $1.131 \pm 0.213$, and $1.086 \pm 0.277$~km~h$^{-1}$. HA achieved $1.825 \pm 0.119$, $1.704 \pm 0.136$, and $1.505 \pm 0.120$~km~h$^{-1}$. The current results therefore do not show that the additional sequential complexity of GRU translates into lower primary-metric error than XGBoost or SeasonalHA.
+
+Figure~\ref{fig:forecast-performance}(a--b) and Table~\ref{tab:fold-macro-mae} report the main-text comparison for the prespecified primary metric, MAE. Run-level RMSE, sMAPE, and Bias are retained in the formal result registry and recomputation assets for supplementary consistency checks. MAE values across different horizons should primarily be compared within the same horizon because H1, H3, and H6 represent future-window mean targets of different lengths. For example, the lower absolute MAE at H6 must not be interpreted as ``longer-horizon forecasting is easier,'' because the H6 target itself has a stronger temporal-averaging and smoothing effect.
+
+
+% =========================================================
+% TABLE 5
+% =========================================================
+
+\begin{table*}[!t]
+\caption{Fold-macro MAE of the six models at H1, H3, and H6.}
+\label{tab:fold-macro-mae}
+\centering
+
+\renewcommand{\arraystretch}{1.15}
+
+\begin{tabular}{
+|p{0.22\textwidth}
+|p{0.21\textwidth}
+|p{0.21\textwidth}
+|p{0.21\textwidth}|
+}
+\hline
+
+\textbf{Model}
+&
+\textbf{H1 MAE}
+&
+\textbf{H3 MAE}
+&
+\textbf{H6 MAE}
+\\
+\hline
+
+XGBoost
+&
+$0.949 \pm 0.258$
+&
+$0.829 \pm 0.168$
+&
+$0.752 \pm 0.142$
+\\
+\hline
+
+SeasonalHA
+&
+$0.961 \pm 0.115$
+&
+$0.853 \pm 0.105$
+&
+$0.774 \pm 0.102$
+\\
+\hline
+
+Persistence
+&
+$0.950 \pm 0.155$
+&
+$1.170 \pm 0.136$
+&
+$1.470 \pm 0.182$
+\\
+\hline
+
+GRU
+&
+$1.151 \pm 0.230$
+&
+$1.043 \pm 0.195$
+&
+$0.958 \pm 0.199$
+\\
+\hline
+
+Ridge
+&
+$1.225 \pm 0.267$
+&
+$1.131 \pm 0.213$
+&
+$1.086 \pm 0.277$
+\\
+\hline
+
+HA
+&
+$1.825 \pm 0.119$
+&
+$1.704 \pm 0.136$
+&
+$1.505 \pm 0.120$
+\\
+\hline
+
+\end{tabular}
+
+\vspace{2mm}
+
+\begin{flushleft}
+\footnotesize
+\textit{Note:} Values are mean $\pm$ sample SD across the six rolling-origin folds, in km~h$^{-1}$. XGBoost and GRU are first averaged across seeds 42, 2026, and 3407 within each fold$\times$horizon, after which the six-fold summary is calculated. This table is a descriptive performance summary and does not imply statistically significant superiority.
+\end{flushleft}
+
+\end{table*}
+
+
+% =========================================================
+% 5.3 CROSS-FOLD AND RANDOM-SEED STABILITY
+% =========================================================
+
+\subsection{Cross-Fold and Random-Seed Stability}
+\label{subsec:cross-fold-stability}
+
+The lowest mean MAE does not mean that XGBoost was the lowest-error model in every test period. In Figure~\ref{fig:forecast-performance}(c), XGBoost had the lowest MAE in 4 of the 6 H1 folds. It also had the lowest value in 3 of the 6 folds for H3 and H6. SeasonalHA achieved the remaining fold-level minima. H1-F5 provides one of the clearest reversals: XGBoost recorded 1.338~km~h$^{-1}$ compared with 0.909~km~h$^{-1}$ for SeasonalHA, a gap of approximately 0.429~km~h$^{-1}$. Multiple XGBoost--SeasonalHA ranking reversals also occurred at H3 and H6, showing that the overall mean cannot substitute for cross-time stability assessment.
+
+Cross-fold variation was also substantially larger than the random-seed variation of XGBoost. Figure~\ref{fig:forecast-performance}(d) uses the MAE range (max $-$ min) across the three fixed seeds within each fold and horizon to quantify training randomness. Across all 18 fold$\times$horizon units, the mean range was 0.0193~km~h$^{-1}$ for XGBoost and 0.1038~km~h$^{-1}$ for GRU. The maximum XGBoost range was 0.0974~km~h$^{-1}$ at F5--H1, whereas the maximum GRU range was 0.3873~km~h$^{-1}$ at F5--H3.
+
+The principal performance variation arose across rolling-origin test periods, not from a particular XGBoost random initialization. GRU showed greater within-fold seed sensitivity. This conclusion is limited to the frozen dataset and the three seeds used here and is not generalized to other datasets or all neural-network models.
+
+
+% =========================================================
+% FIGURE 5
+% =========================================================
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{Fig5.png}
+\caption{Multi-horizon forecasting performance and stability across rolling-origin folds and random seeds. 
+Panel (a) shows the fold-macro mean MAE of the six models at H1, H3, and H6. Error bars show the SD across the six rolling-origin folds. 
+Panel (b) shows descriptive $\Delta$MAE relative to SeasonalHA, defined as $\mathrm{MAE}_{\mathrm{model}}-\mathrm{MAE}_{\mathrm{SeasonalHA}}$. Negative values indicate lower descriptive MAE. 
+Panel (c) shows fold-level MAE across the six chronologically ordered folds. 
+Panel (d) shows the MAE range across seeds 42, 2026, and 3407 for XGBoost and GRU within each fold$\times$horizon. No artificial seed distribution is constructed for deterministic models. All rankings and differences are descriptive and do not constitute claims of statistically significant superiority.}
+\label{fig:forecast-performance}
+\end{figure*}
+
+
+% =========================================================
+% 5.4 RELIABILITY AND SPATIAL ERROR BOUNDARIES
+% =========================================================
+
+\subsection{Reliability and Spatial Error Boundaries}
+\label{subsec:reliability-spatial}
+
+Overall mean ranking does not represent all data-reliability conditions. In Figure~\ref{fig:reliability-boundaries}(c), error-blind, horizon-specific quartiles are defined solely from history\_coverage\_ratio before the forecast origin. The relative relationship between XGBoost and SeasonalHA changes across coverage conditions. For H1, XGBoost has a fold-macro MAE of 1.109~km~h$^{-1}$ in the lowest-coverage group Q1. SeasonalHA has 0.889~km~h$^{-1}$ in the same group. In the highest-coverage group Q4, the corresponding values are 0.774 and 0.886~km~h$^{-1}$. Thus, the model ordering at H1 can reverse under different history-coverage conditions.
+
+The stratified relationship is not strictly monotonic and does not support causal identification. The intermediate coverage quartiles at H3 and H6 show local increases and crossings. The results support two statements: error is associated with historical coverage conditions, and model applicability is conditional. They do not show that more coverage reduces error by a fixed amount or that any quartile cutpoint is an optimal deployment threshold. Figure~\ref{fig:reliability-boundaries}(a--b) also shows spatial and temporal heterogeneity in node$\times$fold MAE and valid sample counts. High-error units should therefore be interpreted together with their actual sample support.
+
+Node-level error distributions further reveal substantial tails beyond average error. In Figure~\ref{fig:reliability-boundaries}(d), the mean median absolute errors along the formal node sequence are approximately 0.30, 0.32, and 0.38~km~h$^{-1}$ for H1, H3, and H6. The corresponding mean P90 absolute errors are approximately 1.97, 2.99, and 1.98~km~h$^{-1}$. The corresponding maximum P90 values are approximately 4.75, 5.75, and 4.75~km~h$^{-1}$. P90 denotes the 90th percentile of the absolute-error distribution. The formal spatial audit does not map every node consistently to verified cumulative road distance. Figure~\ref{fig:reliability-boundaries}(d) is therefore shown only by formal node sequence. Node indices do not represent continuous distance along the 130~km corridor, and the analysis assigns no stable high-risk road segment.
+
+
+% =========================================================
+% FIGURE 6
+% =========================================================
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{Fig6.png}
+\caption{Reliability conditions and node-level error boundaries of the audited forecasts. 
+Panel (a) shows node$\times$fold MAE for XGBoost. 
+Panel (b) shows the unique sample count for the same node$\times$fold units. 
+Panel (c) shows error-blind, horizon-specific quartiles based only on history coverage before the forecast origin. It compares fold-macro MAE for XGBoost and SeasonalHA. Because of ties, actual group sizes may not be exactly equal, and the curves do not imply strict monotonicity or causality. 
+Panel (d) shows median absolute error, P90 absolute error, and worst-fold MAE along the formal node sequence. P90 is the 90th percentile of the absolute-error distribution rather than a confidence interval; no stable high-risk node or road segment is assigned from this analysis.}
+\label{fig:reliability-boundaries}
+\end{figure*}
+
+
+% =========================================================
+% 5.5 STATISTICAL EVIDENCE AND SENSITIVITY
+% =========================================================
+
+\subsection{Statistical Evidence and Sensitivity}
+\label{subsec:statistical-evidence}
+
+With common manifests, strict temporal-causal control, and six-fold retrospective rolling-origin evaluation, XGBoost had the lowest descriptive mean MAE at H1, H3, and H6. SeasonalHA remained consistently close. Persistence was competitive only at H1, whereas GRU and Ridge did not show stable performance gains commensurate with their additional model complexity. Cross-fold, reliability-stratified, and statistical analyses further show that relative model performance depends on forecast horizon and data reliability. The current evidence therefore supports horizon- and reliability-conditioned model selection rather than a claim of universal superiority for a single model. Figure~\ref{fig:statistical-evidence} tests whether this descriptive ranking corresponds to stable statistical differences. It evaluates 15 prespecified paired comparisons using the rolling-origin fold ($n=6$) as the primary inferential unit and applies Holm correction within each horizon. In total, 0/15 of the prespecified comparisons were statistically significant after Holm adjustment.
+
+For the closest comparison, XGBoost--SeasonalHA, the fold-level $\Delta$MAE values (XGBoost $-$ SeasonalHA) at H1, H3, and H6 were $-0.0117$, $-0.0235$, and $-0.0222$~km~h$^{-1}$, respectively. The corresponding 95\% unadjusted paired-bootstrap confidence intervals were [$-0.1574$, 0.1825], [$-0.1210$, 0.0800], and [$-0.0837$, 0.0397]~km~h$^{-1}$, with Holm-adjusted $p$ values of 0.5625, 0.8438, and 1.000. All three intervals crossed zero. Thus, although XGBoost had a lower descriptive six-fold mean, the evidence was insufficient to establish a stable difference relative to SeasonalHA.
+
+The supplementary day$\times$spatial-block cluster bootstrap uses a different weighting and correlation structure and indicates that the small difference is sensitive to the estimand and clustering structure. The supplementary XGBoost $-$ SeasonalHA estimates were $+0.068$, $+0.025$, and $+0.023$~km~h$^{-1}$ for H1, H3, and H6. Their 95\% intervals were [$-0.151$, 0.376], [$-0.112$, 0.189], and [$-0.094$, 0.211], respectively. All intervals again crossed zero. The sign difference between the supplementary cluster estimates and the fold-macro descriptive means is not a data inconsistency, but reflects differences in weighting and correlation structure between the two summaries. The cluster bootstrap is therefore treated as supplementary uncertainty analysis rather than as a replacement for the primary fold-level inference.
+
+As an evidence-boundary diagnostic, when Fold 6, the period previously exposed during historical development, is excluded, SeasonalHA becomes the descriptive leader at H1 and H3, while XGBoost remains the descriptive leader at H6. However, the first-tier candidate set remains XGBoost/SeasonalHA/Persistence for H1 and XGBoost/SeasonalHA for H3 and H6. Figures~\ref{fig:forecast-performance}--\ref{fig:statistical-evidence} therefore support horizon- and reliability-conditioned model choice rather than a winner declaration.
+
+
+% =========================================================
+% FIGURE 7
+% =========================================================
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{Fig7.png}
+\caption{Statistical evidence boundaries for the prespecified paired model comparisons. 
+The horizontal axis is defined as $\Delta\mathrm{MAE}=\mathrm{MAE}_{A}-\mathrm{MAE}_{B}$; negative values favor model A and positive values favor model B. Blue circles show the primary fold-level paired effect based on six rolling-origin folds, with error bars representing 95\% unadjusted confidence intervals obtained from 10,000 paired fold bootstrap resamples. Orange squares show supplementary day$\times$spatial-block cluster-bootstrap estimates, with 95\% intervals based on 10,000 bootstrap replicates. The confidence intervals are not adjusted for multiple comparisons. The $p$ values shown on the right correspond to the primary fold-level comparisons and are Holm-adjusted within each forecast horizon. None of the 15 prespecified comparisons reached statistical significance after Holm correction.}
+\label{fig:statistical-evidence}
+\end{figure*}
+
+\FloatBarrier
+
+
+% =========================================================
+% 6 DISCUSSION
+% =========================================================
+% =========================================================
+% 6 DISCUSSION
+% =========================================================
+
+\section{Discussion}
+\label{sec:discussion}
+
+
+% =========================================================
+% 6.1 EVIDENCE RELATIVE TO PREVIOUS STUDIES
+% AND ENGINEERING IMPLICATIONS
+% =========================================================
+
+\subsection{Evidence Relative to Previous Studies and Engineering Implications}
+\label{subsec:evidence-engineering}
+
+GATE-FCD defines when spatially discrete, incomplete, and quality-heterogeneous FCD can form credible and reproducible forecasting evidence. Its complete grid, eligibility rules, causal processing, and common manifests support H1, H3, and H6 tasks across 18 fold$\times$horizon units. This focus extends earlier FCD research. Zhang et al.~\cite{Zhang2025FCD} reviewed broad traffic uses, Ipekyuz et al.~\cite{Ipekyuz2025FCD} examined FCD where fixed detection was limited, and Yu et al.~\cite{Yu2024AutoformerFCD} stressed data-source conditions. The present study moves eligibility before model training. It defines which node$\times$time observations, histories, and targets may enter forecasting.
+
+This upstream treatment also differs from most traffic missing-data methods. Chen et al.~\cite{Chen2024TrafficCompletion}, Bikram et al.~\cite{Bikram2024Imputation}, and Wang et al.~\cite{Wang2024RoadNetworkPixelization} mainly recover missing observations within established sensor$\times$time or network$\times$time structures. Chan et al.~\cite{Chan2023MissingTrafficData} and Zhang et al.~\cite{Zhang2024MissingData} reviewed missing-data patterns and imputation evaluation. Qu et al.~\cite{Qu2024TrafficPredictionImputation} jointly modeled imputation and forecasting. GATE-FCD does not introduce a new imputation algorithm. It first restores the theoretically planned slots that were not explicitly returned by the API, then distinguishes missing, quality-ineligible, and eligible states before constructing causal histories and forecasting targets. Its methodological increment therefore lies in forecasting-evidence eligibility and auditability rather than in improving the numerical accuracy of a particular imputer.
+
+The clearest characteristic of relative model competitiveness is forecast-horizon dependence. At H1, Persistence achieved an MAE of $0.950 \pm 0.155$~km~h$^{-1}$, almost identical to XGBoost at $0.949 \pm 0.258$~km~h$^{-1}$. SeasonalHA was in the same descriptive first tier at $0.961 \pm 0.115$~km~h$^{-1}$. Its MAE, however, increased to $1.170 \pm 0.136$~km~h$^{-1}$ at H3 and $1.470 \pm 0.182$~km~h$^{-1}$ at H6. This pattern is consistent with Hadry et al.~\cite{Hadry2025TrafficForecasting}, who linked model and input value to the forecasting task and temporal scale. It also agrees with the horizon-specific representations discussed by Zeb et al.~\cite{Zeb2024FeatureProjection}. The result indicates that short-term state continuation cannot be directly extrapolated to longer future-window targets.
+
+Unlike Persistence, SeasonalHA remained consistently competitive across all three horizons, with MAE values of $0.961 \pm 0.115$, $0.853 \pm 0.105$, and $0.774 \pm 0.102$~km~h$^{-1}$ for H1, H3, and H6. This result suggests that recurring temporal structure explains a substantial portion of predictability on the current corridor. As the forecast window becomes longer, the representativeness of a single current state decreases, whereas the periodic baseline retains useful information. The interpretations of ``state inertia'' and ``periodicity'' are mechanisms consistent with the observed results and do not constitute causal identification.
+
+XGBoost achieved the lowest descriptive mean MAE among the six models at all three horizons: $0.949 \pm 0.258$, $0.829 \pm 0.168$, and $0.752 \pm 0.142$~km~h$^{-1}$ for H1, H3, and H6, respectively. This suggests that nonlinear interactions among speed history, temporal periodicity, and reliability features may provide additional predictive information. However, the mean $\Delta$MAE relative to SeasonalHA was only $-0.0117$, $-0.0235$, and $-0.0222$~km~h$^{-1}$, and ranking reversals occurred across multiple folds and history-coverage strata. The XGBoost result is therefore more appropriately interpreted as a small but conditional descriptive gain rather than as an advantage that is stable across time and reliability conditions.
+
+GRU and Ridge further show that ``greater complexity'' is not synonymous with ``stable gain.'' Their H1/H3/H6 MAE values were 1.151/1.043/0.958~km~h$^{-1}$ for GRU and 1.225/1.131/1.086~km~h$^{-1}$ for Ridge; neither had lower MAE than XGBoost or SeasonalHA. This finding does not conflict with studies reporting advantages of deep models on larger network datasets~\cite{Cini2024DeepEnsemble,Liu2024SpatialTemporalTransformer,Yu2024AutoformerFCD}. The present study concerns one long-distance corridor with 51 discrete nodes and approximately three months of data. It uses a 24-h history and lacks full road-network topology and rich exogenous-event variables. The evidence shows that GRU did not provide a stable additional gain under the current data scale, information structure, and evaluation protocol. It does not support a general rejection of deep traffic-forecasting methods.
+
+Descriptive ranking must be distinguished from statistical evidence. XGBoost achieved the lowest fold-macro mean MAE at all three horizons, but its fold-level paired differences relative to SeasonalHA were small. All three 95\% unadjusted paired-bootstrap confidence intervals crossed zero, and 0/15 of the prespecified comparisons reached statistical significance after Holm correction within each horizon. ``Lowest mean MAE'' therefore establishes only a descriptive ordering in the current sample and cannot be converted into ``statistically stable superiority over SeasonalHA.'' Non-significance also does not establish complete equivalence. The primary inferential unit contains only six rolling-origin folds, and cross-fold variation is large relative to the mean difference between the models.
+
+This evidence boundary is consistent with forecast-evaluation principles concerning temporal dependence and pseudoreplication~\cite{Hewamalage2023ForecastEvaluation}. The study does not treat tens of thousands of correlated sample rows as independent replicates. Instead, it uses the fold as the primary paired inferential unit. Holm correction controls the risk of chance findings from multiple comparisons within the same horizon~\cite{GarciaPerez2023MultipleTesting}. The supplementary day$\times$spatial-block cluster bootstrap produces differently weighted estimates from the fold-macro means in the XGBoost--SeasonalHA comparison, but its intervals also cross zero. The small model difference is sensitive to temporal and spatial clustering and to the estimand definition. The cluster bootstrap is therefore used as an uncertainty diagnostic, not as another winner-selection procedure.
+
+From an engineering perspective, the statistical results should be translated into the question of whether additional complexity provides sufficiently stable incremental value. SeasonalHA already achieves an error level close to XGBoost. Use of the more complex model depends on whether the small improvement matters for the target application and persists across time and reliability conditions. The decision must also consider additional training, maintenance, and updating costs. Because this study does not establish a complete life-cycle cost model, it cannot claim cost optimality for any model. A more defensible decision criterion is to jointly consider accuracy, temporal stability, reliability conditions, and deployment complexity.
+
+GATE-FCD separates two ordered engineering decisions. The first asks whether a forecast is eligible, and the second selects a model after eligibility is established. Complete-grid reconstruction and eligibility gating first determine whether planned observations, the 24-h history, and future targets satisfy the data contract. Only eligible samples enter common-manifest benchmarking. This sequence prevents model complexity from obscuring poor data quality. It also makes forecast rejection, flagging, or confidence downgrading an explicit system behavior instead of a post hoc correction.
+
+This protocol complements existing studies on forecasting with incomplete traffic data. Xu et al.~\cite{Xu2023AGNP} emphasize probabilistic forecasting and imputation. Qu et al.~\cite{Qu2024TrafficPredictionImputation} emphasize joint learning. GATE-FCD instead constrains upstream data eligibility, temporal information boundaries, and downstream result auditing for these forecasting processes. Its engineering contribution is a reusable evidence-construction layer, not a replacement for existing predictors. It freezes identical forecast origins, targets, and preprocessing information boundaries before modeling. Differences among models therefore remain interpretable.
+
+Taken together, the comparison with previous work narrows the contribution of the present study. Many forecasting studies compare algorithms after accepting a prepared dataset, whereas GATE-FCD audits data eligibility before model comparison. Many missing-data studies focus on numerical recovery, whereas this framework records whether each observation, history, and target satisfies explicit rules. The results show why the distinction matters. Small descriptive differences between XGBoost and SeasonalHA do not support a winner claim, but the eligibility and consistency controls remain useful across all models. Thus, the reusable output is an evidence protocol linked to horizon-specific model selection.
+
+The current results support configuring candidate models according to forecast horizon and history reliability. At H1, selection can be made among Persistence, SeasonalHA, and XGBoost, because the simple baselines are already strongly competitive. At H3 and H6, Persistence degrades markedly, shifting the principal comparison toward SeasonalHA and XGBoost. Figure~\ref{fig:reliability-boundaries} further shows that the relative ranking of XGBoost and SeasonalHA changes with history coverage, indicating that model selection should not rely on overall mean MAE alone. Some forecast origins have insufficient historical coverage or unstable eligibility. In these cases, the system should flag or downgrade confidence instead of assuming that model complexity can remove data uncertainty.
+
+
+% =========================================================
+% 6.2 LIMITATIONS AND TRANSFERABILITY
+% =========================================================
+
+\subsection{Limitations and Transferability}
+\label{subsec:limitations-transferability}
+
+First, the study covers only one Pan Borneo Highway corridor, 51 fixed virtual nodes, and an approximately three-month observation period. The study cannot represent the full range of seasonal variation, additional holidays, or abnormal events. It also cannot establish that the current model ranking will transfer to other highways or urban networks. Six chronologically advancing rolling-origin folds reduce sensitivity to a single test week but do not replace cross-corridor and cross-season external validation.
+
+Second, the forecasting target is FCD-reported speed rather than an independently measured reference speed from a fixed detector. The reported MAE therefore characterizes future forecasting capability within the semantics of the FCD source and does not simultaneously validate the measurement accuracy of the provider's upstream speed estimates. Future work should use fixed detectors, Bluetooth, or other independent probe data for external cross-validation~\cite{Ipekyuz2025FCD}.
+
+Third, the formal evidence comes from retrospective rolling-origin evaluation. The Fold 6 period was exposed during early development, so the study is not a prospectively locked or independently blinded final evaluation. The primary statistical inference also contains only six paired folds, limiting power for small effects. These factors do not invalidate the internal consistency of the common samples, train-only preprocessing, or leakage audit, but they constrain the strength of statistical conclusions and the evidence level.
+
+Fourth, the 51 virtual nodes are discrete observation locations, and the current node-level error profile is presented according to the formal node sequence rather than fully validated cumulative road distance. It therefore cannot be used to assign stable high-risk segments along the continuous road. Fifth, the model set includes simple baselines, linear, tree-based, and GRU models but not all deep, graph-based, or multimodal methods. The main experiment also excludes weather, incidents, and construction variables. Sixth, the confidence threshold, 2-of-4 hourly aggregation, and H6 5-of-6 eligibility rule are frozen engineering contracts for this study rather than universally optimal thresholds across providers.
+
+Future research should replicate GATE-FCD on other regional highways, with other FCD providers, and over longer periods. It should prespecify a prospective test period and add independent reference-speed data. It should also test weather, incidents, construction, and other external variables under common manifests and identical temporal-causal conditions. Further work should assess eligibility thresholds, missingness robustness, training and inference resources, maintenance requirements, and model-update costs.
+% =========================================================
+% 7 CONCLUSIONS
+% =========================================================
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+We developed the GATE-FCD multi-horizon forecasting framework to address spatially discrete FCD, potentially missing planned time slots, and heterogeneous data quality on a long-distance regional highway. Complete-grid reconstruction restores the theoretical node$\times$time observation space, while eligibility gating determines whether records, hourly histories, and future targets can enter forecasting. The framework then integrates a 24-h strictly causal history, common sample manifests, six-fold retrospective rolling-origin evaluation, and result auditing into a unified protocol. The formal experiment produced 18 fold$\times$horizon common manifests and completed 180/180 formal runs. All 20/20 full-sample leakage assertions passed. Future-information violations, target recomputation mismatches, and cross-split target-window violations were all zero. These results confirm consistent auditing of forecasting samples, temporal information boundaries, and target definitions under the frozen protocol.
+
+XGBoost had the lowest descriptive fold-macro MAE under common manifests, strict temporal-causal control, and six-fold retrospective rolling-origin evaluation. The H1, H3, and H6 values were $0.949 \pm 0.258$, $0.829 \pm 0.168$, and $0.752 \pm 0.142$~km~h$^{-1}$, respectively. SeasonalHA remained consistently close at $0.961 \pm 0.115$, $0.853 \pm 0.105$, and $0.774 \pm 0.102$~km~h$^{-1}$. Persistence was competitive only at H1 ($0.950 \pm 0.155$~km~h$^{-1}$) and degraded to $1.170 \pm 0.136$ and $1.470 \pm 0.182$~km~h$^{-1}$ at H3 and H6. GRU achieved $1.151 \pm 0.230$, $1.043 \pm 0.195$, and $0.958 \pm 0.199$~km~h$^{-1}$. Ridge achieved $1.225 \pm 0.267$, $1.131 \pm 0.213$, and $1.086 \pm 0.277$~km~h$^{-1}$. Neither model showed stable gains that matched the added complexity. The descriptive XGBoost--SeasonalHA $\Delta$MAE values were only $-0.0117$, $-0.0235$, and $-0.0222$~km~h$^{-1}$. All three paired-bootstrap intervals crossed zero, and 0/15 prespecified comparisons were significant after Holm correction. Together with cross-fold ranking reversals and history-coverage stratification, these results support horizon- and reliability-conditioned model selection rather than a claim of universal superiority for a single model.
+
+From an engineering perspective, model selection should follow forecasting-eligibility determination. At H1, Persistence, SeasonalHA, and XGBoost can be considered jointly, whereas at H3/H6 greater emphasis should be placed on the conditional differences between SeasonalHA and XGBoost. When historical coverage or target eligibility is insufficient, forecasts should preferentially be flagged, assigned lower confidence, or rejected rather than forced through a more complex model. These conclusions are limited to the current Pan Borneo Highway study, 51 discrete virtual nodes, an approximately three-month observation period, FCD-reported speed semantics, and the retrospective rolling-origin evidence level. Future work therefore requires replication across corridors, seasons, and providers, together with prospectively locked testing, independent reference-speed data, and systematic deployment-cost assessment. The core contribution of GATE-FCD is a reproducible engineering pathway rather than a claim that one predictor is universally best. The pathway first determines whether FCD form eligible and temporally causal forecasting evidence, then evaluates the practical value of model complexity within explicit horizon, reliability, and evidence boundaries.
+
+
+% =========================================================
+% BACK MATTER
+% =========================================================
+
+\backmatter
+
+
+% =========================================================
+% ACKNOWLEDGMENTS
+% =========================================================
+
+\bmhead{Acknowledgments}
+
+The authors thank the Faculty of Built Environment and Surveying, Universiti Teknologi Malaysia, for providing laboratory support. The authors also acknowledge the planning background information related to corridor operations in Sarawak, Malaysia, which helped clarify the practical context of this study. No individual or institution influenced the study design, data analysis, interpretation of the results, or conclusions of the manuscript.
+
+
+% =========================================================
+% STATEMENTS AND DECLARATIONS
+% =========================================================
+
+\section*{Statements and Declarations}
+
+
+% =========================================================
+% FUNDING
+% =========================================================
+
+\subsection*{Funding}
+
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+
+% =========================================================
+% DATA AND CODE AVAILABILITY
+% =========================================================
+
+\subsection*{Data and Code Availability}
+
+The FCD used in this study were obtained through the TomTom Traffic API. Public code, frozen configurations, aggregated results, and audit materials are available at \url{https://github.com/tasadapullo-svg/FCD-for-Multi-Horizon-Highway-Speed-Forecasting_20260730}. The raw FCD and sample-level records are not publicly redistributed because of provider licensing restrictions.
+
+
+% =========================================================
+% REFERENCES
+% =========================================================
+
+\bibliography{sn-bibliography}
+
+\end{document}
+
+
+\bibliography{sn-bibliography}
+
+\end{document}
