@@ -1,0 +1,70 @@
+{
+  "source": "imagegen.png",
+  "source_pixels": [
+    1448,
+    1086
+  ],
+  "method": "300 dpi retains source pixels; 600 dpi uses 2x Lanczos upscaling to preserve the same physical print size.",
+  "files": [
+    {
+      "file": "Figure2_300dpi.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "pixels": [
+        1448,
+        1086
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "bytes": 1527975,
+      "sha256": "316a37c26e57aaa85bb500116b150191a86181564beecc46af6fa5d978240ebf"
+    },
+    {
+      "file": "Figure2_600dpi.png",
+      "format": "PNG",
+      "mode": "RGB",
+      "pixels": [
+        2896,
+        2172
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "bytes": 3622613,
+      "sha256": "0f1e9c2714bac89e0c6bce87adcf532589a469af4010f0b6e5c3d7693550748a"
+    },
+    {
+      "file": "Figure2_300dpi.tiff",
+      "format": "TIFF",
+      "mode": "RGB",
+      "pixels": [
+        1448,
+        1086
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ],
+      "bytes": 1916834,
+      "sha256": "9e63116994c0e4bba76752b3b393332883ebd4b4e24eeedcd78f5f92c2b0b3a4"
+    },
+    {
+      "file": "Figure2_600dpi.tiff",
+      "format": "TIFF",
+      "mode": "RGB",
+      "pixels": [
+        2896,
+        2172
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ],
+      "bytes": 7135726,
+      "sha256": "e671cb8bf5a2fe2bb9559827f28ae8b1b183e61513ec1a252e92d66528e086ca"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "source_file": "a_clean_infographic_figure_with_three_main_horizon.png",
+  "source_pixel_dimensions": [
+    1536,
+    1024
+  ],
+  "exports": [
+    {
+      "filename": "Figure3_GATE_FCD_300dpi.png",
+      "format": "PNG",
+      "pixel_dimensions": [
+        1536,
+        1024
+      ],
+      "dpi": [
+        299.999,
+        299.999
+      ],
+      "file_size_bytes": 1509323
+    },
+    {
+      "filename": "Figure3_GATE_FCD_600dpi.png",
+      "format": "PNG",
+      "pixel_dimensions": [
+        3072,
+        2048
+      ],
+      "dpi": [
+        599.999,
+        599.999
+      ],
+      "file_size_bytes": 4072195
+    },
+    {
+      "filename": "Figure3_GATE_FCD_300dpi.tiff",
+      "format": "TIFF",
+      "pixel_dimensions": [
+        1536,
+        1024
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ],
+      "file_size_bytes": 1941564
+    },
+    {
+      "filename": "Figure3_GATE_FCD_600dpi.tiff",
+      "format": "TIFF",
+      "pixel_dimensions": [
+        3072,
+        2048
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ],
+      "file_size_bytes": 7258740
+    }
+  ],
+  "note": "The 600 dpi versions use twice the pixel width and height of the 300 dpi versions, preserving the same nominal print dimensions."
+}

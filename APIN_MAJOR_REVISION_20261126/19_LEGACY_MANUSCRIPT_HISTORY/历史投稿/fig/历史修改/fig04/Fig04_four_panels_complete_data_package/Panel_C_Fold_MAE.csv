@@ -1,0 +1,109 @@
+﻿model,horizon,fold,n_test,MAE,seed_aggregation,evaluation_unit
+XGBoost,H1,F1,5978,1.1288143947245812,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H1,F1,5978,1.0705610122969946,deterministic single run,chronological rolling-origin evaluation
+Persistence,H1,F1,5978,1.090331366718279,deterministic single run,chronological rolling-origin evaluation
+GRU,H1,F1,5978,1.3725250572135672,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H1,F1,5978,1.3574996221633184,deterministic single run,chronological rolling-origin evaluation
+HA,H1,F1,5978,1.9403060420880656,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H1,F2,6540,0.7941640350310689,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H1,F2,6540,0.902847031642902,deterministic single run,chronological rolling-origin evaluation
+Persistence,H1,F2,6540,0.8154944643752298,deterministic single run,chronological rolling-origin evaluation
+GRU,H1,F2,6540,1.0169811137954758,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H1,F2,6540,1.019317214180327,deterministic single run,chronological rolling-origin evaluation
+HA,H1,F2,6540,1.787443156927733,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H1,F3,7164,0.6400033923708274,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H1,F3,7164,0.7827222348590726,deterministic single run,chronological rolling-origin evaluation
+Persistence,H1,F3,7164,0.749837344684224,deterministic single run,chronological rolling-origin evaluation
+GRU,H1,F3,7164,0.8542552850139786,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H1,F3,7164,0.9117673435136634,deterministic single run,chronological rolling-origin evaluation
+HA,H1,F3,7164,1.71140737141308,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H1,F4,6357,1.0062497688231982,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H1,F4,6357,1.0689563467183678,deterministic single run,chronological rolling-origin evaluation
+Persistence,H1,F4,6357,1.1417336561177576,deterministic single run,chronological rolling-origin evaluation
+GRU,H1,F4,6357,1.2240659803656837,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H1,F4,6357,1.276490821816376,deterministic single run,chronological rolling-origin evaluation
+HA,H1,F4,6357,1.9922900781715984,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H1,F5,5526,1.3381332437806188,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H1,F5,5526,0.9087169660793052,deterministic single run,chronological rolling-origin evaluation
+Persistence,H1,F5,5526,1.002428135851941,deterministic single run,chronological rolling-origin evaluation
+GRU,H1,F5,5526,1.437157428542183,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H1,F5,5526,1.656387887568824,deterministic single run,chronological rolling-origin evaluation
+HA,H1,F5,5526,1.8156316209319765,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H1,F6,6636,0.7884830423500349,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H1,F6,6636,1.0322922348664758,deterministic single run,chronological rolling-origin evaluation
+Persistence,H1,F6,6636,0.9026272076543116,deterministic single run,chronological rolling-origin evaluation
+GRU,H1,F6,6636,0.9984159270323542,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H1,F6,6636,1.1293589450375536,deterministic single run,chronological rolling-origin evaluation
+HA,H1,F6,6636,1.7010551875725506,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H3,F1,2919,0.9477727004574882,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H3,F1,2919,0.9210616667130628,deterministic single run,chronological rolling-origin evaluation
+Persistence,H3,F1,2919,1.2951925650641585,deterministic single run,chronological rolling-origin evaluation
+GRU,H3,F1,2919,1.2450325183356077,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H3,F1,2919,1.1610862441812733,deterministic single run,chronological rolling-origin evaluation
+HA,H3,F1,2919,1.83320443893676,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H3,F2,3836,0.6865600980327667,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H3,F2,3836,0.8134336383714833,deterministic single run,chronological rolling-origin evaluation
+Persistence,H3,F2,3836,1.0697631192323624,deterministic single run,chronological rolling-origin evaluation
+GRU,H3,F2,3836,0.9160769557278868,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H3,F2,3836,0.9560762960517716,deterministic single run,chronological rolling-origin evaluation
+HA,H3,F2,3836,1.6735651443626416,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H3,F3,5027,0.6043939147164071,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H3,F3,5027,0.7108450454244131,deterministic single run,chronological rolling-origin evaluation
+Persistence,H3,F3,5027,1.0053269670363951,deterministic single run,chronological rolling-origin evaluation
+GRU,H3,F3,5027,0.7593432825413665,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H3,F3,5027,0.8528341232585466,deterministic single run,chronological rolling-origin evaluation
+HA,H3,F3,5027,1.6097208755817274,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H3,F4,4171,1.026437939045888,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H3,F4,4171,0.9652978276249928,deterministic single run,chronological rolling-origin evaluation
+Persistence,H3,F4,4171,1.3617372529375558,deterministic single run,chronological rolling-origin evaluation
+GRU,H3,F4,4171,1.1714979444584557,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H3,F4,4171,1.2451574203160745,deterministic single run,chronological rolling-origin evaluation
+HA,H3,F4,4171,1.911465761013006,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H3,F5,3286,0.9465970560716516,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H3,F5,3286,0.7621800656201607,deterministic single run,chronological rolling-origin evaluation
+Persistence,H3,F5,3286,1.1137572240703533,deterministic single run,chronological rolling-origin evaluation
+GRU,H3,F5,3286,1.2132657349199671,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H3,F5,3286,1.4540703121398648,deterministic single run,chronological rolling-origin evaluation
+HA,H3,F5,3286,1.6235549320771212,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H3,F6,5566,0.7643382945809355,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H3,F6,5566,0.9443254271690898,deterministic single run,chronological rolling-origin evaluation
+Persistence,H3,F6,5566,1.1753005489560495,deterministic single run,chronological rolling-origin evaluation
+GRU,H3,F6,5566,0.9529983658949934,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H3,F6,5566,1.1197187536637665,deterministic single run,chronological rolling-origin evaluation
+HA,H3,F6,5566,1.5741618467851728,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H6,F1,3511,0.8605711665134842,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H6,F1,3511,0.8083011914636558,deterministic single run,chronological rolling-origin evaluation
+Persistence,H6,F1,3511,1.522352904339615,deterministic single run,chronological rolling-origin evaluation
+GRU,H6,F1,3511,1.0931431282758373,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H6,F1,3511,1.0465297594308558,deterministic single run,chronological rolling-origin evaluation
+HA,H6,F1,3511,1.603905100774009,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H6,F2,4824,0.6537238160981482,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H6,F2,4824,0.745149275495221,deterministic single run,chronological rolling-origin evaluation
+Persistence,H6,F2,4824,1.3911599794800007,deterministic single run,chronological rolling-origin evaluation
+GRU,H6,F2,4824,0.8353208645725198,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H6,F2,4824,0.8964749041898751,deterministic single run,chronological rolling-origin evaluation
+HA,H6,F2,4824,1.48659270442782,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H6,F3,6233,0.5436532355982086,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H6,F3,6233,0.6133166742415782,deterministic single run,chronological rolling-origin evaluation
+Persistence,H6,F3,6233,1.2433968687105927,deterministic single run,chronological rolling-origin evaluation
+GRU,H6,F3,6233,0.6554726034809619,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H6,F3,6233,0.7597159093698401,deterministic single run,chronological rolling-origin evaluation
+HA,H6,F3,6233,1.4073183137860457,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H6,F4,4770,0.9265481673006,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H6,F4,4770,0.9063768554516892,deterministic single run,chronological rolling-origin evaluation
+Persistence,H6,F4,4770,1.7891988110777302,deterministic single run,chronological rolling-origin evaluation
+GRU,H6,F4,4770,1.0757916691558906,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H6,F4,4770,1.2292734870759583,deterministic single run,chronological rolling-origin evaluation
+HA,H6,F4,4770,1.6925207427118365,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H6,F5,3689,0.8141550118107682,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H6,F5,3689,0.7266031533715768,deterministic single run,chronological rolling-origin evaluation
+Persistence,H6,F5,3689,1.405955594089027,deterministic single run,chronological rolling-origin evaluation
+GRU,H6,F5,3689,1.191915946047324,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H6,F5,3689,1.5521867317247275,deterministic single run,chronological rolling-origin evaluation
+HA,H6,F5,3689,1.4534317304533593,deterministic single run,chronological rolling-origin evaluation
+XGBoost,H6,F6,6114,0.7106025932939729,3-seed mean within fold,chronological rolling-origin evaluation
+SeasonalHA,H6,F6,6114,0.8427919840442657,deterministic single run,chronological rolling-origin evaluation
+Persistence,H6,F6,6114,1.466351922062272,deterministic single run,chronological rolling-origin evaluation
+GRU,H6,F6,6114,0.8981024623938281,3-seed mean within fold,chronological rolling-origin evaluation
+Ridge,H6,F6,6114,1.0328891998037006,deterministic single run,chronological rolling-origin evaluation
+HA,H6,F6,6114,1.385073951577272,deterministic single run,chronological rolling-origin evaluation
